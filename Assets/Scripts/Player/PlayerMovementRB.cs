@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovementRB : MonoBehaviour {
     
     private Rigidbody2D rb2d;
     public float velocity = 1;
