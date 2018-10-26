@@ -4,6 +4,10 @@
 /[Bb]uild/
 /[Bb]uilds/
 
+#Exclude Plugins
+[Aa]ssets/Plugins/
+[Aa]ssets/Plugins.meta
+
 # Exclude 3rd party libraries installed from the assets store
 [Aa]ssets/Asset Store Resources/
 
