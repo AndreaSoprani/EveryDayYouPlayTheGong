@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour {
     public bool hasDeadZone=false;
     public float marginX=0f;
     public float marginY=0f;
-
+    [Range(0,1)]
     public float smoothTime = 0.3F;
 
     private Vector3 offset;

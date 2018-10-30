@@ -5,8 +5,11 @@ using UnityEngine;
 public class PlayerMovementTR : MonoBehaviour
 {
 
-	public float Velocity = 0.2f;
-
+	public float Velocity = 2f;
+	public float RunIncrement = 1.2f;
+	public float CrawlDecrement = 0.7f;
+	
+	
 	private Transform _tr;
 	
 	// Use this for initialization
@@ -16,9 +19,19 @@ public class PlayerMovementTR : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+		float movementVelocity=Velocity;
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
-		_tr.position += new Vector3(horizontal*Velocity, vertical*Velocity, 0);
+
+		if (Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftShift))
+			movementVelocity *= RunIncrement;
+		if (Input.GetKey(KeyCode.LeftShift))
+			movementVelocity *= CrawlDecrement;
+		
+		//Debug.Log("velocity " +	 movementVelocity.ToString());
+		_tr.position += new Vector3(horizontal * movementVelocity * Time.deltaTime, vertical * movementVelocity * Time.deltaTime,
+				0);
 	}
 }
