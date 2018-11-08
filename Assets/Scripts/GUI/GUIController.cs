@@ -31,4 +31,10 @@ public class GUIController : MonoBehaviour {
 	{
 		return _timePassed / _timeSlot;
 	}
+
+	void DisplayInteractionOption(KeyCode keyCode)
+	{
+		Debug.Log("Press " + keyCode.ToString() + " to interact."); //TODO: Display it on the screen.
+	}
+	
 }

@@ -11,19 +11,21 @@ public class Player : MonoBehaviour
 	public float RunIncrement = 1.2f;
 	public float CrawlDecrement = 0.7f;
 
-	[Header("RayCast Directions")]
-	public Transform RayCastUp;
-	public Transform RayCastDown;
-	public Transform RayCastRight;
-	public Transform RayCastLeft;
-
-	[Header("Collisions")]
+	[Header("Collisions")] 
+	public RayCastPositions RayCastPositions;
 	public LayerMask ObstacleLayer;
+	public LayerMask InteractiveLayer;
+	public LayerMask PlayableLayer;
+
+	[Header("Interaction")] public float InteractionDetectionRadius = 1f;
 	
 	// Stores all the keycodes for the player's actions.
 	private IDictionary<string, KeyCode> _actionKeyCodes;
 	
 	private Transform _tr;
+
+	// Direction in which the player is facing.
+	private Vector3 facing;
 	
 	// Use this for initialization
 	void Start ()
@@ -38,6 +40,8 @@ public class Player : MonoBehaviour
 			{"Play", KeyCode.Space},
 			{"Interact", KeyCode.X}
 		};
+		
+		facing = Vector3.up;
 
 	}
 	
@@ -46,12 +50,14 @@ public class Player : MonoBehaviour
 	{
 		Move();
 
-		if (Input.GetKeyDown(_actionKeyCodes["Play"]))
-		{
-			Play();
-		} else if (Input.GetKeyDown(_actionKeyCodes["Interact"]))
+		GameObject interactiveObject = HasInteraction();
+		
+		if (interactiveObject != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
 		{
 			Interact();
+		} else if (Input.GetKeyDown(_actionKeyCodes["Play"]))
+		{
+			Play();
 		}
 		
 	}
@@ -72,6 +78,8 @@ public class Player : MonoBehaviour
 		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;
 		float deltaVertical = Input.GetAxis("Vertical") * movementVelocity * Time.deltaTime;
 		
+		//TODO: update facing.
+		
 		if (CanMoveHorizontally(deltaHorizontal))
 		{
 			_tr.position += new Vector3(deltaHorizontal, 0, 0);
@@ -91,8 +99,8 @@ public class Player : MonoBehaviour
 	{
 		Vector3 position = Vector3.zero;
 
-		if (delta > 0) position = RayCastRight.position; // Going right
-		else if (delta < 0) position = RayCastLeft.position; // Going left
+		if (delta > 0) position = RayCastPositions.Right.position; // Going right
+		else if (delta < 0) position = RayCastPositions.Left.position; // Going left
 
 		RaycastHit2D hit = Physics2D.Raycast(position, _tr.right * Math.Sign(delta), delta, ObstacleLayer);
 
@@ -109,8 +117,8 @@ public class Player : MonoBehaviour
 	{
 		Vector3 position = Vector3.zero;
 
-		if (delta > 0) position = RayCastUp.position; // Going up
-		else if (delta < 0) position = RayCastDown.position; // Going down
+		if (delta > 0) position = RayCastPositions.Up.position; // Going up
+		else if (delta < 0) position = RayCastPositions.Down.position; // Going down
 
 		RaycastHit2D hit = Physics2D.Raycast(position, _tr.up * Math.Sign(delta), delta, ObstacleLayer);
 
@@ -126,6 +134,26 @@ public class Player : MonoBehaviour
 	void Interact()
 	{
 		//TODO: implement
+	}
+
+	/// <summary>
+	/// Allows to detect an interactive object in the facing direction (within the InteractionDetectionRadius range).
+	/// </summary>
+	/// <returns>the object detected or null if nothing was detected.</returns>
+	GameObject HasInteraction()
+	{
+		Vector3 position = RayCastPositions.Vector3ToRaycastPosition(facing).position;
+
+		RaycastHit2D hit = Physics2D.Raycast(position, facing, InteractionDetectionRadius, InteractiveLayer);
+
+		if (hit.collider != null)
+		{
+			Debug.Log("LEBRUM");
+			//TODO: GUIController.DisplayInteractionOption
+			return hit.collider.transform.parent.gameObject;
+		}
+		else return null;
+
 	}
 	
 }

@@ -130,7 +130,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498071974383292}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4498071974383292
 Transform:
@@ -145,8 +145,8 @@ Transform:
   - {fileID: 4648221847241770}
   - {fileID: 4223357099568058}
   - {fileID: 4651327693767684}
-  - {fileID: 4265592903585452}
   - {fileID: 4690180828996152}
+  - {fileID: 4265592903585452}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498071974383292}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50809595710215840
 Rigidbody2D:
@@ -273,13 +273,18 @@ MonoBehaviour:
   Velocity: 5
   RunIncrement: 1.2
   CrawlDecrement: 0.7
-  RayCastUp: {fileID: 4223357099568058}
-  RayCastDown: {fileID: 4651327693767684}
-  RayCastRight: {fileID: 4265592903585452}
-  RayCastLeft: {fileID: 4690180828996152}
+  RayCastPositions:
+    Up: {fileID: 4223357099568058}
+    Down: {fileID: 4651327693767684}
+    Left: {fileID: 4690180828996152}
+    Right: {fileID: 4265592903585452}
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 256
+  InteractiveLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  InteractionDetectionRadius: 0
 --- !u!212 &212663735428517544
 SpriteRenderer:
   m_ObjectHideFlags: 1

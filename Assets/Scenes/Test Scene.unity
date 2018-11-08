@@ -305,6 +305,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4429577149826748, guid: 382eefb8537995f45ba56a639adf8949, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842849326366154, guid: 382eefb8537995f45ba56a639adf8949, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382eefb8537995f45ba56a639adf8949, type: 2}
   m_IsPrefabAsset: 0
@@ -748,6 +756,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4498071974383292, guid: 95f9c2f7e18521e44adecfe0018e3690, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114121826318504196, guid: 95f9c2f7e18521e44adecfe0018e3690,
+        type: 2}
+      propertyPath: PlayableLayer.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 114121826318504196, guid: 95f9c2f7e18521e44adecfe0018e3690,
+        type: 2}
+      propertyPath: InteractionDetectionRadius
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
