@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
 		
 		if (interactiveObject != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
 		{
-			Interact();
+			Interact(interactiveObject);
 		} else if (Input.GetKeyDown(_actionKeyCodes["Play"]))
 		{
 			Play();
@@ -131,9 +131,14 @@ public class Player : MonoBehaviour
 		//TODO: implement
 	}
 
-	void Interact()
+	/// <summary>
+	/// Triggers an event called "Interact" + name of the GameObject.
+	/// </summary>
+	/// <param name="obj">GameObject to interact with.</param>
+	void Interact(GameObject obj)
 	{
-		//TODO: implement
+		// Triggers the event to interact with the object.
+		EventManager.TriggerEvent("Interact" + obj.ToString());
 	}
 
 	/// <summary>
@@ -148,8 +153,7 @@ public class Player : MonoBehaviour
 
 		if (hit.collider != null)
 		{
-			Debug.Log("LEBRUM");
-			//TODO: GUIController.DisplayInteractionOption
+			EventManager.TriggerEvent("InteractionGUIElement");
 			return hit.collider.transform.parent.gameObject;
 		}
 		else return null;

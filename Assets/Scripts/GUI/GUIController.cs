@@ -14,7 +14,13 @@ public class GUIController : MonoBehaviour {
 	void Start()
 	{
 	    _timeSlot=TimeDuration*60;
-	} 
+	}
+
+	private void OnEnable()
+	{
+		EventManager.StartListening("InteractionGUIElement", DisplayInteraction);
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -23,18 +29,23 @@ public class GUIController : MonoBehaviour {
 			_timePassed = 0;
 		
 		ProgressBar.value=CalculateProgress();
-		
-
 	}
+	
+	
 
 	float CalculateProgress()
 	{
 		return _timePassed / _timeSlot;
 	}
 
-	void DisplayInteractionOption(KeyCode keyCode)
+	/// <summary>
+	/// Used to display the option to interact with an object on screen.
+	/// </summary>
+	void DisplayInteraction()
 	{
-		Debug.Log("Press " + keyCode.ToString() + " to interact."); //TODO: Display it on the screen.
+		Debug.Log("Press KEY to interact."); 
+		//TODO: Retrieve correct key.
+		//TODO: Display it on the screen.
 	}
 	
 }
