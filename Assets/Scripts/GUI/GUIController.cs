@@ -7,9 +7,12 @@ public class GUIController : MonoBehaviour {
 	[Range(1,60)]
     public int TimeDuration = 1;
 	public Slider ProgressBar;
+	public GameObject PauseMenu;
+	public GameObject Inventory;
 	
-    private float _timePassed=0f;
+    private float _timePassed;
     private float _timeSlot;
+	private bool _isGamePaused;
 	
 	void Start()
 	{
@@ -24,14 +27,50 @@ public class GUIController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		_timePassed += Time.deltaTime;
-		if (_timePassed > _timeSlot)
-			_timePassed = 0;
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			if (_isGamePaused)
+			{
+				
+				Resume();
+			}
+			else
+			{
+				
+				Pause();
+			}
+		}
+
+		if (Input.GetKeyDown(KeyCode.I))
+		{
+			Inventory.SetActive(true);
+		}
 		
-		ProgressBar.value=CalculateProgress();
+		if (!_isGamePaused)
+		{
+			_timePassed += Time.deltaTime;
+			if (_timePassed > _timeSlot)
+				_timePassed = 0;
+		
+			ProgressBar.value=CalculateProgress();
+		}
+		
 	}
-	
-	
+
+	private void Pause()
+	{
+		Time.timeScale = 0;
+		_isGamePaused = true;
+		PauseMenu.SetActive(true);
+	}
+
+	public void Resume()
+	{
+		Time.timeScale = 1;
+		_isGamePaused = false;
+		PauseMenu.SetActive(false);
+	}
+
 
 	float CalculateProgress()
 	{
@@ -46,6 +85,20 @@ public class GUIController : MonoBehaviour {
 		Debug.Log("Press KEY to interact."); 
 		//TODO: Retrieve correct key.
 		//TODO: Display it on the screen.
+	}
+
+	public void QuitGame()
+	{
+		Debug.Log("NOPEEEE");
+	}
+	
+	public void LoadGame()
+	{
+		Debug.Log("Load");
+	}
+	public void Options()
+	{
+		Debug.Log("Options");
 	}
 	
 }
