@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -67,31 +68,17 @@ public class NPCMovement : MonoBehaviour
 	/// <returns>True if the NPC can move in the direction set, false otherwise.</returns>
 	private bool CanMove(Vector3 delta)
 	{
-		Vector3 vertical = Vector3.zero;
-		Vector3 horizontal = Vector3.zero;
+		Collection<Vector3> movement = RayCastPositions.Vector3ToRayCastPosition(delta);
 
-		if (delta.x > 0)
+		for (int i = 0; i < movement.Count; i++)
 		{
-			horizontal = RayCastPositions.Right.position;
+			RaycastHit2D hitX = Physics2D.Raycast(movement[i], transform.right * Math.Sign(delta.x), delta.x, ObstacleLayer);
+			RaycastHit2D hitY = Physics2D.Raycast(movement[i], transform.up * Math.Sign(delta.y), delta.y, ObstacleLayer);
+			if (hitX.collider != null || hitY.collider != null) return false;
 		}
-		else if (delta.x < 0)
-		{
-			horizontal = RayCastPositions.Left.position;
-		}
-		
-		if (delta.y > 0)
-		{
-			vertical = RayCastPositions.Up.position;
-		}
-		else if (delta.y < 0)
-		{
-			vertical = RayCastPositions.Down.position;
-		}
-		
-		RaycastHit2D hitX = Physics2D.Raycast(horizontal, transform.right * Math.Sign(delta.x), delta.x, ObstacleLayer);
-		RaycastHit2D hitY = Physics2D.Raycast(vertical, transform.up * Math.Sign(delta.y), delta.y, ObstacleLayer);
 
-		return hitX.collider == null || hitY.collider == null;
+		return true;
+
 	}
 	
 	/// <summary>

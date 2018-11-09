@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4651327693767684}
   m_Layer: 0
-  m_Name: RayCastDown
+  m_Name: RayCastDownLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4223357099568058}
   m_Layer: 0
-  m_Name: RaycastUp
+  m_Name: RaycastUpLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4690180828996152}
   m_Layer: 0
-  m_Name: RayCastLeft
+  m_Name: RayCastUpRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4265592903585452}
   m_Layer: 0
-  m_Name: RayCastRight
+  m_Name: RayCastDownRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222487157921540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.1, z: 0}
+  m_LocalPosition: {x: -0.1, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498071974383292}
@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1751943070753214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0.1, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498071974383292}
@@ -144,8 +144,8 @@ Transform:
   m_Children:
   - {fileID: 4648221847241770}
   - {fileID: 4223357099568058}
-  - {fileID: 4651327693767684}
   - {fileID: 4690180828996152}
+  - {fileID: 4651327693767684}
   - {fileID: 4265592903585452}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -170,11 +170,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1201894938702000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: -0.1, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498071974383292}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4690180828996152
 Transform:
@@ -183,11 +183,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1536313383882036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0.1, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498071974383292}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50809595710215840
 Rigidbody2D:
@@ -274,17 +274,20 @@ MonoBehaviour:
   RunIncrement: 1.2
   CrawlDecrement: 0.7
   RayCastPositions:
-    Up: {fileID: 4223357099568058}
-    Down: {fileID: 4651327693767684}
-    Left: {fileID: 4690180828996152}
-    Right: {fileID: 4265592903585452}
+    UpLeft: {fileID: 4223357099568058}
+    UpRight: {fileID: 4690180828996152}
+    DownLeft: {fileID: 4651327693767684}
+    DownRight: {fileID: 4265592903585452}
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 256
   InteractiveLayer:
     serializedVersion: 2
     m_Bits: 512
-  InteractionDetectionRadius: 0
+  PlayableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  InteractionDetectionRadius: 1
 --- !u!212 &212663735428517544
 SpriteRenderer:
   m_ObjectHideFlags: 1

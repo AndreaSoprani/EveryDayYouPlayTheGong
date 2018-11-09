@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -97,15 +98,18 @@ public class Player : MonoBehaviour
 	/// <returns>true if the player can move of delta horizontally, false otherwise.</returns>
 	bool CanMoveHorizontally(float delta)
 	{
-		Vector3 position = Vector3.zero;
+		Collection<Vector3> positions = new Collection<Vector3>();
 
-		if (delta > 0) position = RayCastPositions.Right.position; // Going right
-		else if (delta < 0) position = RayCastPositions.Left.position; // Going left
+		if (delta > 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.right); // Going right
+		else if (delta < 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.left); // Going left
 
-		RaycastHit2D hit = Physics2D.Raycast(position, _tr.right * Math.Sign(delta), delta, ObstacleLayer);
-
-		if (hit.collider != null) return false;
-		else return true;
+		for (int i = 0; i < positions.Count; i++)
+		{
+			RaycastHit2D hit = Physics2D.Raycast(positions[i], _tr.right * Math.Sign(delta), delta, ObstacleLayer);
+			if (hit.collider != null) return false;
+		}
+		
+		return true;
 	}
 
 	/// <summary>
@@ -115,15 +119,18 @@ public class Player : MonoBehaviour
 	/// <returns>true if the player can move of delta vertically, false otherwise.</returns>
 	bool CanMoveVertically(float delta)
 	{
-		Vector3 position = Vector3.zero;
+		Collection<Vector3> positions = new Collection<Vector3>();
 
-		if (delta > 0) position = RayCastPositions.Up.position; // Going up
-		else if (delta < 0) position = RayCastPositions.Down.position; // Going down
+		if (delta > 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.up); // Going up
+		else if (delta < 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.down); // Going down
 
-		RaycastHit2D hit = Physics2D.Raycast(position, _tr.up * Math.Sign(delta), delta, ObstacleLayer);
-
-		if (hit.collider != null) return false;
-		else return true;
+		for (int i = 0; i < positions.Count; i++)
+		{
+			RaycastHit2D hit = Physics2D.Raycast(positions[i], _tr.up * Math.Sign(delta), delta, ObstacleLayer);
+			if (hit.collider != null) return false;
+		}
+		
+		return true;
 	}
 
 	void Play()
@@ -147,16 +154,19 @@ public class Player : MonoBehaviour
 	/// <returns>the object detected or null if nothing was detected.</returns>
 	GameObject HasInteraction()
 	{
-		Vector3 position = RayCastPositions.Vector3ToRaycastPosition(facing).position;
+		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(facing);
 
-		RaycastHit2D hit = Physics2D.Raycast(position, facing, InteractionDetectionRadius, InteractiveLayer);
-
-		if (hit.collider != null)
+		for (int i = 0; i < positions.Count; i++)
 		{
-			EventManager.TriggerEvent("InteractionGUIElement");
-			return hit.collider.transform.parent.gameObject;
+			RaycastHit2D hit = Physics2D.Raycast(positions[i], facing, InteractionDetectionRadius, InteractiveLayer);
+			if (hit.collider != null)
+			{
+				EventManager.TriggerEvent("InteractionGUIElement");
+				return hit.collider.transform.parent.gameObject;
+			}
 		}
-		else return null;
+
+		return null;
 
 	}
 	
