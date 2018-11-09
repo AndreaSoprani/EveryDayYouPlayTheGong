@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
 		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;
 		float deltaVertical = Input.GetAxis("Vertical") * movementVelocity * Time.deltaTime;
 		
-		//TODO: update facing.
+		UpdateFacing(new Vector3(deltaHorizontal, deltaVertical, 0));
 		
 		if (CanMoveHorizontally(deltaHorizontal))
 		{
@@ -131,6 +131,29 @@ public class Player : MonoBehaviour
 		}
 		
 		return true;
+	}
+
+	/// <summary>
+	/// Used to check if the facing Vector must be updated and in case updates it.
+	/// </summary>
+	/// <param name="movement">The Vector3 for the next movement</param>
+	void UpdateFacing(Vector3 movement)
+	{
+		if (movement.Equals(Vector3.zero)) return;
+		float angle = Vector3.SignedAngle(Vector3.right, movement, Vector3.forward);
+		Vector3 newFacing;
+		
+		if(angle > -45f && angle < 45f) newFacing = Vector3.right;
+		else if (angle >= 45f && angle <= 135f) newFacing = Vector3.up;
+		else if (angle > 135f || angle < -135f) newFacing = Vector3.left;
+		else newFacing = Vector3.down;
+
+		if (!facing.Equals(newFacing))
+		{
+			facing = newFacing;
+			Debug.Log(facing.ToString());
+			//TODO: update animation.
+		}
 	}
 
 	void Play()
