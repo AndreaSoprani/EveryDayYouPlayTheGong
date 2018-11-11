@@ -69,12 +69,12 @@ public class NPCMovement : MonoBehaviour
 	private bool CanMove(Vector3 delta)
 	{
 		Collection<Vector3> movement = RayCastPositions.Vector3ToRayCastPosition(delta);
-
+		
 		for (int i = 0; i < movement.Count; i++)
 		{
-			RaycastHit2D hitX = Physics2D.Raycast(movement[i], transform.right * Math.Sign(delta.x), delta.x, ObstacleLayer);
-			RaycastHit2D hitY = Physics2D.Raycast(movement[i], transform.up * Math.Sign(delta.y), delta.y, ObstacleLayer);
-			if (hitX.collider != null || hitY.collider != null) return false;
+			RaycastHit2D hit = Physics2D.Raycast(movement[i], delta, delta.magnitude , ObstacleLayer);
+			
+			if (hit.collider != null) return false;
 		}
 
 		return true;
@@ -90,6 +90,8 @@ public class NPCMovement : MonoBehaviour
 
 		_direction = _endPosition - transform.position;
 		_direction.Normalize();
+		
+		//TODO Start walk animation
 	}
 
 	/// <summary>
