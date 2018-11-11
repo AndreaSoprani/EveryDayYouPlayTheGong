@@ -82,7 +82,7 @@ public class GUIController : MonoBehaviour {
 	/// </summary>
 	void DisplayInteraction()
 	{
-		Debug.Log("Press KEY to interact."); 
+		//Debug.Log("Press KEY to interact."); 
 		//TODO: Retrieve correct key.
 		//TODO: Display it on the screen.
 	}

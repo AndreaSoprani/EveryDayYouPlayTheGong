@@ -288,6 +288,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   InteractionDetectionRadius: 1
+  PlayRadius: 1
 --- !u!212 &212663735428517544
 SpriteRenderer:
   m_ObjectHideFlags: 1

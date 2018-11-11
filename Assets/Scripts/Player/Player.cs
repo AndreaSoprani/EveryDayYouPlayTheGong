@@ -18,7 +18,9 @@ public class Player : MonoBehaviour
 	public LayerMask InteractiveLayer;
 	public LayerMask PlayableLayer;
 
-	[Header("Interaction")] public float InteractionDetectionRadius = 1f;
+	[Header("Interact & Play")] 
+	public float InteractionDetectionRadius = 1f;
+	public float PlayRadius = 1f;
 	
 	// Stores all the keycodes for the player's actions.
 	private IDictionary<string, KeyCode> _actionKeyCodes;
@@ -26,7 +28,7 @@ public class Player : MonoBehaviour
 	private Transform _tr;
 
 	// Direction in which the player is facing.
-	private Vector3 facing;
+	private Vector3 _facing;
 	
 	// Use this for initialization
 	void Start ()
@@ -42,7 +44,7 @@ public class Player : MonoBehaviour
 			{"Interact", KeyCode.X}
 		};
 		
-		facing = Vector3.up;
+		_facing = Vector3.up;
 
 	}
 	
@@ -51,7 +53,7 @@ public class Player : MonoBehaviour
 	{
 		Move();
 
-		GameObject interactiveObject = HasInteraction();
+		IInteractiveObject interactiveObject = HasInteraction();
 		
 		if (interactiveObject != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
 		{
@@ -148,44 +150,64 @@ public class Player : MonoBehaviour
 		else if (angle > 135f || angle < -135f) newFacing = Vector3.left;
 		else newFacing = Vector3.down;
 
-		if (!facing.Equals(newFacing))
+		if (!_facing.Equals(newFacing))
 		{
-			facing = newFacing;
-			Debug.Log(facing.ToString());
+			_facing = newFacing;
 			//TODO: update animation.
 		}
 	}
 
+	/// <summary>
+	/// Detects if there is an object to be played and plays it.
+	/// </summary>
 	void Play()
 	{
-		//TODO: implement
+		//TODO: play animation.
+		
+		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
+
+		for (int i = 0; i < positions.Count; i++)
+		{
+			RaycastHit2D hit = Physics2D.Raycast(positions[i], _facing, PlayRadius, ObstacleLayer);
+			if (hit.collider == null) continue;
+			
+			IPlayableObject pObject = hit.collider.gameObject.GetComponent<IPlayableObject>();
+			if (pObject != null && pObject.IsPlayable())
+			{
+				pObject.Play();
+				break;
+			}
+		}
+		
 	}
 
 	/// <summary>
-	/// Triggers an event called "Interact" + name of the GameObject.
+	/// Calls the Interaction on the Interactive Object
 	/// </summary>
 	/// <param name="obj">GameObject to interact with.</param>
-	void Interact(GameObject obj)
+	void Interact(IInteractiveObject obj)
 	{
-		// Triggers the event to interact with the object.
-		EventManager.TriggerEvent("Interact" + obj.ToString());
+		obj.Interact();
 	}
 
 	/// <summary>
 	/// Allows to detect an interactive object in the facing direction (within the InteractionDetectionRadius range).
 	/// </summary>
 	/// <returns>the object detected or null if nothing was detected.</returns>
-	GameObject HasInteraction()
+	IInteractiveObject HasInteraction()
 	{
-		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(facing);
+		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
 
 		for (int i = 0; i < positions.Count; i++)
 		{
-			RaycastHit2D hit = Physics2D.Raycast(positions[i], facing, InteractionDetectionRadius, InteractiveLayer);
-			if (hit.collider != null)
+			RaycastHit2D hit = Physics2D.Raycast(positions[i], _facing, InteractionDetectionRadius, ObstacleLayer);
+			if (hit.collider == null) continue;
+			
+			IInteractiveObject iObject = hit.collider.gameObject.GetComponent<IInteractiveObject>();
+			if (iObject != null && iObject.IsInteractable())
 			{
 				EventManager.TriggerEvent("InteractionGUIElement");
-				return hit.collider.transform.parent.gameObject;
+				return iObject;
 			}
 		}
 
