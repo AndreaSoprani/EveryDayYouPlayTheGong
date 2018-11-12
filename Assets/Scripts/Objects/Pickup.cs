@@ -11,6 +11,7 @@ public class Pickup : MonoBehaviour, IInteractiveObject
 	void Start ()
 	{
 		this.GetComponent<SpriteRenderer>().sprite = Item.PickupArtwork;
+		this.name = "Pickup" + Item.Id;
 	}
 
 	public bool IsInteractable()
