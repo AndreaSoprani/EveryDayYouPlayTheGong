@@ -12,6 +12,6 @@ public interface IInteractiveObject {
 	/// <summary>
 	/// Used to interact with the object.
 	/// </summary>
-	void Interact();
+	void Interact(Player player);
 	
 }

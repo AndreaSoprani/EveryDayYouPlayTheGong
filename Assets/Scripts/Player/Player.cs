@@ -30,7 +30,9 @@ public class Player : MonoBehaviour
 
 	// Direction in which the player is facing.
 	private Vector3 _facing;
-	
+
+	// List of all the items possessed by the player.
+	private Collection<Item> _items;
 	
 	// Use this for initialization
 	void Start ()
@@ -47,6 +49,9 @@ public class Player : MonoBehaviour
 		};
 		
 		_facing = Vector3.up;
+		
+		_items = new Collection<Item>();
+		//TODO: initialize as checkpoint.
 
 	}
 	
@@ -67,6 +72,10 @@ public class Player : MonoBehaviour
 		
 	}
 
+	/*
+	 * MOVEMENT
+	 */
+	
 	/// <summary>
 	/// Calculates the velocity of the player and updates the position.
 	/// Must be called once per frame.
@@ -159,6 +168,10 @@ public class Player : MonoBehaviour
 		}
 	}
 
+	/*
+	 * PLAY AND INTERACT
+	 */
+	
 	/// <summary>
 	/// Detects if there is an object to be played and plays it.
 	/// </summary>
@@ -189,7 +202,7 @@ public class Player : MonoBehaviour
 	/// <param name="obj">GameObject to interact with.</param>
 	void Interact(IInteractiveObject obj)
 	{
-		obj.Interact();
+		obj.Interact(this);
 	}
 
 	/// <summary>
@@ -215,6 +228,60 @@ public class Player : MonoBehaviour
 
 		return null;
 
+	}
+	
+	/*
+	 * ITEMS
+	 */
+
+	/// <summary>
+	/// Tells if the player is in possession of a specific item.
+	/// </summary>
+	/// <param name="item">the item requested</param>
+	/// <returns>true if the player has the item, false otherwise</returns>
+	public bool HasItem(Item item)
+	{
+		return _items.Contains(item);
+	}
+	
+	/// <summary>
+	/// Tells if the player is in possession of a specific item.
+	/// </summary>
+	/// <param name="itemId">the ID of the item requested</param>
+	/// <returns>true if the player has the item, false otherwise</returns>
+	public bool HasItem(string itemId)
+	{
+		for (int i = 0; i < _items.Count; i++)
+		{
+			if (_items[i].Id == itemId) return true;
+		}	
+		return false;
+	}
+
+	/// <summary>
+	/// Adds an item to the player's possessions.
+	/// </summary>
+	/// <param name="item">the item to be added</param>
+	public void AddItem(Item item)
+	{
+		_items.Add(item);
+		Debug.Log("Item acquired: " + item.Name);
+		// TODO: display object acquired text.
+	}
+
+	/// <summary>
+	/// Removes an item from the player's possessions.
+	/// </summary>
+	/// <param name="item">the item to be removed</param>
+	/// <returns>true if the player possessed the item, false otherwise</returns>
+	public bool RemoveItem(Item item)
+	{
+		bool removed = _items.Remove(item);
+		
+		if (removed) Debug.Log("Item acquired: " + item.Name);
+		// TODO: display object removed text.
+
+		return removed;
 	}
 	
 }

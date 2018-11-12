@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -210,10 +210,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Items
-
-
-'
+  m_Text: 'Items '
 --- !u!222 &29452842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -451,8 +448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3fa417b6b7b3f40a7ca27e88944fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notesPanel: {fileID: 1282552371365182, guid: ed40ab712ddbcd94c8828de85beeb3f9, type: 2}
-  MenuHolder: {fileID: 155740468}
 --- !u!1 &155740468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1111,48 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1001 &487823864
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &529840720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,9 +2739,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Notes
-
-'
+  m_Text: 'Notes '
 --- !u!222 &1895621541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2782,9 +2817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'QUIT
-
-'
+  m_Text: 'QUIT '
 --- !u!222 &1913732951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3028,9 +3061,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Map
-
-'
+  m_Text: 'Map '
 --- !u!222 &2015245590
 CanvasRenderer:
   m_ObjectHideFlags: 0

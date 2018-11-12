@@ -40,7 +40,7 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject {
 		return true;
 	}
 
-	public void Interact()
+	public void Interact(Player player)
 	{
 		Debug.Log("It's a very ancient gong, it should not be played.");
 		//TODO implement.
