@@ -7,6 +7,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
+	
 	[Header("Movement")]
 	public float Velocity = 2f;
 	public float RunIncrement = 1.2f;
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour
 
 	// Direction in which the player is facing.
 	private Vector3 _facing;
+	
 	
 	// Use this for initialization
 	void Start ()

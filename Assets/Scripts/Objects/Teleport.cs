@@ -7,6 +7,7 @@ public class Teleport : MonoBehaviour
     public Teleport Destination;
     public Vector3 Offset;
     
+    
     private bool _teleportActive = true;
     private bool _needDeactivation;
 
@@ -25,6 +26,7 @@ public class Teleport : MonoBehaviour
                     Destination.StopTeleport();
               
                 other.gameObject.transform.position = Destination.transform.position + Offset;
+                GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
             }
         }
     }

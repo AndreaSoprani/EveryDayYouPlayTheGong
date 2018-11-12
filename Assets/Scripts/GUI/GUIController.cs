@@ -31,23 +31,31 @@ public class GUIController : MonoBehaviour {
 		{
 			if (_isGamePaused)
 			{
-				
-				Resume();
+				if (Inventory.activeInHierarchy)
+					CloseInventory();
+				else
+					Resume();
 			}
 			else
 			{
-				
-				Pause();
+					Pause();
 			}
 		}
-
-		if (Input.GetKeyDown(KeyCode.I))
+		if (Input.GetKeyDown(KeyCode.I) && !PauseMenu.activeInHierarchy)
 		{
-			Inventory.SetActive(true);
+			if (!Inventory.activeInHierarchy)
+				OpenInventory();
+			else
+				CloseInventory();
+			
+
+			
 		}
-		
 		if (!_isGamePaused)
 		{
+			
+		
+			
 			_timePassed += Time.deltaTime;
 			if (_timePassed > _timeSlot)
 				_timePassed = 0;
@@ -55,6 +63,20 @@ public class GUIController : MonoBehaviour {
 			ProgressBar.value=CalculateProgress();
 		}
 		
+	}
+
+	private void CloseInventory()
+	{
+		Inventory.SetActive(false);
+		Time.timeScale = 1;
+		_isGamePaused = false;
+	}
+
+	private void OpenInventory()
+	{
+		Inventory.SetActive(true);
+		Time.timeScale = 0;
+		_isGamePaused = true;
 	}
 
 	private void Pause()

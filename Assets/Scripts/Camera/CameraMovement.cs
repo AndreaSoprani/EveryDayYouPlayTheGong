@@ -6,13 +6,18 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour {
     public GameObject player;
 
-    public bool hasDeadZone=false;
-    public float marginX=0f;
-    public float marginY=0f;
+    public bool hasDeadZone;
+    public float marginX;
+    public float marginY;
     [Range(0,1)]
     public float smoothTime = 0.3F;
 
     private Vector3 offset;
+    private Vector2 _dynamicOffset;
+    
+    //This variable has been introduced to reduce bounce back after being teleported
+    private bool _hasTeleported;
+    
    
    
 
@@ -24,8 +29,15 @@ public class CameraMovement : MonoBehaviour {
 
     void LateUpdate()
     {
+        if (!hasDeadZone || Mathf.Abs(_dynamicOffset.x) > marginX || Mathf.Abs(_dynamicOffset.y) > marginY)
+            transform.position = Vector3.Slerp(transform.position, player.transform.position + offset, (_hasTeleported ? 1 : smoothTime) * Time.deltaTime);
+        if (_hasTeleported)
+            _hasTeleported = false;
+    }
 
-        if (!hasDeadZone || (Mathf.Abs(transform.position.x - player.transform.position.x) > marginX || Mathf.Abs(transform.position.y - player.transform.position.y) > marginY))
-            transform.position = Vector3.Slerp(transform.position, player.transform.position + offset, smoothTime * Time.deltaTime);
+    public void TeleportCamera()
+    {
+        transform.position = player.transform.position +offset;
+        _hasTeleported = true;
     }
 }
