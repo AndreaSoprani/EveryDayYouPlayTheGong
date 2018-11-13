@@ -22,8 +22,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	[Header("Scenes")]
-	public Collection<Scene> Scenes;
-	public Scene StartScene;
+	public string StartScene;
 
 	[Header("Player Prefab")]
 	public GameObject Player;
@@ -38,8 +37,9 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		_currentScene = StartScene;
-		SceneManager.SetActiveScene(_currentScene);
+		_eventManager = EventManager.Instance;
+		_soundManager = SoundManager.Instance;
+		SetNewScene(StartScene);
 		_player = Instantiate(Player, Vector2.zero, Quaternion.identity);
 	}
 
@@ -48,14 +48,22 @@ public class GameManager : MonoBehaviour {
 	/// </summary>
 	/// <param name="scene">the scene to load</param>
 	/// <param name="playerPosition">the position of the player in the new scene</param>
-	void ChangeScene(Scene scene, Vector2 playerPosition)
+	void ChangeScene(string scene, Vector2 playerPosition)
 	{
-		if (!Scenes.Contains(scene)) return;
-		_currentScene = scene;
-		SceneManager.SetActiveScene(_currentScene);
+		string oldScene = _currentScene.name;
+		SetNewScene(scene);
 		_player.transform.position = playerPosition;
+		//TODO save and destroy previous scene
 		
 	}
+
+	void SetNewScene(string scene)
+	{
+		SceneManager.LoadScene(scene);
+		_currentScene = SceneManager.GetSceneByName(scene);
+		SceneManager.SetActiveScene(_currentScene);
+	}
+	
 	
 	
 }
