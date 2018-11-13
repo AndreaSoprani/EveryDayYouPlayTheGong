@@ -15,11 +15,6 @@ public class CameraMovement : MonoBehaviour {
     private Vector3 offset;
     private Vector2 _dynamicOffset;
     
-    //This variable has been introduced to reduce bounce back after being teleported
-    private bool _hasTeleported;
-    
-   
-   
 
     void Start () {
         
@@ -29,15 +24,15 @@ public class CameraMovement : MonoBehaviour {
 
     void LateUpdate()
     {
+        _dynamicOffset = transform.position - player.transform.position;
         if (!hasDeadZone || Mathf.Abs(_dynamicOffset.x) > marginX || Mathf.Abs(_dynamicOffset.y) > marginY)
-            transform.position = Vector3.Slerp(transform.position, player.transform.position + offset, (_hasTeleported ? 1 : smoothTime) * Time.deltaTime);
-        if (_hasTeleported)
-            _hasTeleported = false;
+            transform.position = Vector3.Slerp(transform.position, player.transform.position + offset,  smoothTime * Time.deltaTime);
+        
     }
 
     public void TeleportCamera()
     {
-        transform.position = player.transform.position +offset;
-        _hasTeleported = true;
+        transform.position = player.transform.position + offset;
+        
     }
 }
