@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LayerSwitch
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: CharacterBehind
+    uniqueID: 1444426355
+    locked: 0
+  - name: Objects
+    uniqueID: 1683700601
+    locked: 0
+  - name: CharacterFront
+    uniqueID: 667477397
     locked: 0
   - name: gongGUI
     uniqueID: 4235606345
