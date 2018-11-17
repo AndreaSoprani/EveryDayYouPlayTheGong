@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 	private Vector3 _facing;
 
 	// List of all the items possessed by the player.
-	private Collection<Item> _items;
+	public Collection<Item> _items;
 	
 	// Use this for initialization
 	void Start ()

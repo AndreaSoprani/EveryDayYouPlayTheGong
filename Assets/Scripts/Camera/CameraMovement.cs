@@ -14,6 +14,7 @@ public class CameraMovement : MonoBehaviour {
 
     private Vector3 offset;
     private Vector2 _dynamicOffset;
+    private bool _isFollowingSomeone;
     
 
     void Start () {
@@ -24,9 +25,12 @@ public class CameraMovement : MonoBehaviour {
 
     void LateUpdate()
     {
-        _dynamicOffset = transform.position - player.transform.position;
-        if (!hasDeadZone || Mathf.Abs(_dynamicOffset.x) > marginX || Mathf.Abs(_dynamicOffset.y) > marginY)
-            transform.position = Vector3.Slerp(transform.position, player.transform.position + offset,  smoothTime * Time.deltaTime);
+       
+            _dynamicOffset = transform.position - player.transform.position;
+            if (!hasDeadZone || Mathf.Abs(_dynamicOffset.x) > marginX || Mathf.Abs(_dynamicOffset.y) > marginY)
+                transform.position = Vector3.Slerp(transform.position, player.transform.position + offset,  smoothTime * Time.deltaTime);
+        
+       
         
     }
 
@@ -35,4 +39,6 @@ public class CameraMovement : MonoBehaviour {
         transform.position = player.transform.position + offset;
         
     }
+
+   
 }

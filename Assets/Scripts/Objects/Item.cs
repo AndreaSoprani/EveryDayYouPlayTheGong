@@ -18,5 +18,5 @@ public class Item : ScriptableObject
 	public Sprite MenuArtwork; // Artwork displayed in the item menu.
 	public Sprite PickupArtwork; // Artwork displayed when the item has to be picked up.
 
-
+	
 }
