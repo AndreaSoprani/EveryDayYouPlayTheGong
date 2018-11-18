@@ -33,6 +33,8 @@ public class Player : MonoBehaviour
 
 	// List of all the items possessed by the player.
 	public Collection<Item> _items;
+
+	private bool _inDialogue;
 	
 	// Use this for initialization
 	void Start ()
@@ -53,11 +55,16 @@ public class Player : MonoBehaviour
 		_items = new Collection<Item>();
 		//TODO: initialize as checkpoint.
 
+		_inDialogue = false;
+
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+
+		if (_inDialogue) return;
+		
 		Move();
 
 		IInteractiveObject interactiveObject = HasInteraction();
@@ -265,8 +272,9 @@ public class Player : MonoBehaviour
 	public void AddItem(Item item)
 	{
 		_items.Add(item);
-		Debug.Log("Item acquired: " + item.Name);
-		// TODO: display object acquired text.
+		string message = "Item acquired: " + item.Name;
+		TextBoxManager.Instance.LoadScript(message, "");
+		TextBoxManager.Instance.EnableTextBox();
 	}
 
 	/// <summary>
@@ -282,6 +290,32 @@ public class Player : MonoBehaviour
 		// TODO: display object removed text.
 
 		return removed;
+	}
+
+	/**
+	 * Used to enter in dialogue mode.
+	 * All control on the player is disabled.
+	 */
+	public void EnterDialogue()
+	{
+		_inDialogue = true;
+	}
+
+	/**
+	 * Used to exit dialogue mode.
+	 * Control on player is re-enabled.
+	 */
+	public void ExitDialogue()
+	{
+		_inDialogue = false;
+	}
+
+	/**
+	 * Used to check if the player is in dialogue.
+	 */
+	public bool IsInDialogue()
+	{
+		return _inDialogue;
 	}
 	
 }

@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject {
+public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public TextAsset InteractionMessage;
+	public string GongName;
 
 	/*
 	 * PLAY
@@ -42,7 +36,7 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject {
 
 	public void Interact(Player player)
 	{
-		Debug.Log("It's a very ancient gong, it should not be played.");
-		//TODO implement.
+		TextBoxManager.Instance.LoadScript(InteractionMessage, GongName);
+		TextBoxManager.Instance.EnableTextBox();
 	}
 }
