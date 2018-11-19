@@ -40,7 +40,6 @@ public class TextBoxManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Debug.Log("START");
 		Player = FindObjectOfType<Player>();
 		IsActive = false;
 
@@ -64,10 +63,10 @@ public class TextBoxManager : MonoBehaviour
 		
 	}
 
-	/**
-	 * Enables the text box and starts the dialogue at the current position.
-	 * TextBox can only be enabled if a text file is loaded.
-	 */
+	/// <summary>
+	/// Enables the text box and starts the dialogue at the current position.
+	/// TextBox can only be enabled if a text file is loaded.
+	/// </summary>
 	public void EnableTextBox()
 	{
 		if (_textLines.Length == 0) return;
@@ -76,9 +75,9 @@ public class TextBoxManager : MonoBehaviour
 		if(StopPlayerMovementOnDialogue) Player.EnterDialogue();
 	}
 
-	/**
-	 * Disables text box and stops the dialogue at the current position.
-	 */
+	/// <summary>
+	/// Disables text box and stops the dialogue at the current position.
+	/// </summary>
 	private void DisableTextBox()
 	{
 		TextBox.SetActive(false);
@@ -86,11 +85,13 @@ public class TextBoxManager : MonoBehaviour
 		Player.ExitDialogue();
 	}
 
-	/**
-	 * Used to load a text script.
-	 * Standard startLine = 0.
-	 * Standard endAtLine = -1 (end of document).
-	 */
+	/// <summary>
+	/// Used to load a text script.
+	/// </summary>
+	/// <param name="newTextFile">The TextAsset to read from.</param>
+	/// <param name="npcName">The name displayed.</param>
+	/// <param name="startLine">The starting line to read from. Default = 0.</param>
+	/// <param name="endAtLine">The ending line. Default = -1 (end of document).</param>
 	public void LoadScript(TextAsset newTextFile, string npcName, int startLine = 0, int endAtLine = -1)
 	{
 		if (newTextFile != null)
@@ -104,6 +105,11 @@ public class TextBoxManager : MonoBehaviour
 		_endAtLine = endAtLine < _textLines.Length && endAtLine >= 0 ? endAtLine : (_textLines.Length - 1);
 	}
 
+	/// <summary>
+	/// Used to load a string as a text script.
+	/// </summary>
+	/// <param name="text">The string to be displayed.</param>
+	/// <param name="npcName">The name displayed.</param>
 	public void LoadScript(string text, string npcName)
 	{
 		_textLines = new string[1];

@@ -20,8 +20,7 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 
 	public void Play()
 	{
-		Debug.Log("GOOOOOOOOOOOOOONG");
-		//TODO implement.
+		AudioManager.Instance.PlaySound("GongSoundTest");
 	}
 
 	

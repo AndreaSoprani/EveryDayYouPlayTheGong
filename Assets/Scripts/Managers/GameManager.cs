@@ -31,14 +31,9 @@ public class GameManager : MonoBehaviour {
 
 	private GameObject _player;
 	
-	private EventManager _eventManager;
-	private SoundManager _soundManager;
-	
 	// Use this for initialization
 	void Start ()
 	{
-		_eventManager = EventManager.Instance;
-		_soundManager = SoundManager.Instance;
 		SetNewScene(StartScene);
 		_player = Instantiate(Player, Vector2.zero, Quaternion.identity);
 	}
