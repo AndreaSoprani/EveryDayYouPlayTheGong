@@ -30,7 +30,10 @@ public class Teleport : MonoBehaviour
             }
         }
     }
-
+    
+    /// <summary>
+    /// Deactivate the teleport
+    /// </summary>
     private void StopTeleport()
     {
         _teleportActive = false;
