@@ -27,36 +27,37 @@ public class GameManager : MonoBehaviour {
 	[Header("Player Prefab")]
 	public GameObject Player;
 
+	[Header("Camera Prefab")]
+	public GameObject Camera;
+	
 	private Scene _currentScene;
 
 	private GameObject _player;
 	
 	// Use this for initialization
 	void Start ()
+<<<<<<< HEAD
 	{
 		SetNewScene(StartScene);
 		_player = Instantiate(Player, Vector2.zero, Quaternion.identity);
+=======
+	{	
+		//TODO Change with menu management
+		InitNewArea(StartScene);
+>>>>>>> 53553f1884dfe6ff4e1def69072e9ea1a0716c03
 	}
 
 	/// <summary>
-	/// Changes the current scene.
+	/// Initialize the first scene where the player starts playing
 	/// </summary>
-	/// <param name="scene">the scene to load</param>
-	/// <param name="playerPosition">the position of the player in the new scene</param>
-	void ChangeScene(string scene, Vector2 playerPosition)
+	/// <param name="scene">Name of the scene to start</param>
+	void InitNewArea(string scene)
 	{
-		string oldScene = _currentScene.name;
-		SetNewScene(scene);
-		_player.transform.position = playerPosition;
-		//TODO save and destroy previous scene
-		
-	}
-
-	void SetNewScene(string scene)
-	{
+		//TODO Need to change the coordinate of the MC
+		Player.SetActive(true);
+		//TODO Need to change the coordinate based on MC position
+		Camera.SetActive(true);
 		SceneManager.LoadScene(scene);
-		_currentScene = SceneManager.GetSceneByName(scene);
-		SceneManager.SetActiveScene(_currentScene);
 	}
 	
 	
