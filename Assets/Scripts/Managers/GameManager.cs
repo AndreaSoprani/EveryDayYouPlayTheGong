@@ -36,15 +36,9 @@ public class GameManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start ()
-<<<<<<< HEAD
-	{
-		SetNewScene(StartScene);
-		_player = Instantiate(Player, Vector2.zero, Quaternion.identity);
-=======
 	{	
 		//TODO Change with menu management
 		InitNewArea(StartScene);
->>>>>>> 53553f1884dfe6ff4e1def69072e9ea1a0716c03
 	}
 
 	/// <summary>
