@@ -29,7 +29,6 @@ public class Door : MonoBehaviour, IInteractiveObject
 	/// </summary>
 	public void OpenDoor()
 	{
-		//TODO animation (for now it just disappears).
 		GetComponent<SpriteRenderer>().enabled = false;
 		
 		GetComponent<BoxCollider2D>().enabled = false;
@@ -41,7 +40,6 @@ public class Door : MonoBehaviour, IInteractiveObject
 	/// </summary>
 	public void CloseDoor()
 	{
-		//TODO animation (for now it just re-appears).
 		GetComponent<SpriteRenderer>().enabled = true;
 		
 		GetComponent<BoxCollider2D>().enabled = true;

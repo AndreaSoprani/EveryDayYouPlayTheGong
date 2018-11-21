@@ -270,8 +270,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1683700601
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 84ed7a183db6f3941bd5287dda61980f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -368,8 +368,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 612772525}
-  - component: {fileID: 612772526}
   - component: {fileID: 612772527}
+  - component: {fileID: 612772526}
   m_Layer: 0
   m_Name: Switcher
   m_TagString: Untagged
@@ -390,8 +390,8 @@ Transform:
   m_Father: {fileID: 68705698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &612772526
-BoxCollider2D:
+--- !u!68 &612772526
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -402,19 +402,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.15}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.8}
-    newSize: {x: 0.4, y: 0.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.5}
+  m_Offset: {x: 0, y: 0.4}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.2, y: 0}
+  - {x: 0.2, y: 0}
 --- !u!114 &612772527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,6 +706,16 @@ Prefab:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1300251740}
+    - target: {fileID: 212099640882985238, guid: 98eaac2ec994cf34b8ebbf3005f5f770,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1683700601
+      objectReference: {fileID: 0}
+    - target: {fileID: 212099640882985238, guid: 98eaac2ec994cf34b8ebbf3005f5f770,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98eaac2ec994cf34b8ebbf3005f5f770, type: 2}
   m_IsPrefabAsset: 0

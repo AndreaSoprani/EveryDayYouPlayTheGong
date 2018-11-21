@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -16,8 +17,6 @@ public class Player : MonoBehaviour
 	[Header("Collisions")] 
 	public RayCastPositions RayCastPositions;
 	public LayerMask ObstacleLayer;
-	public LayerMask InteractiveLayer;
-	public LayerMask PlayableLayer;
 
 	[Header("Interact & Play")] 
 	public float InteractionDetectionRadius = 1f;
@@ -125,7 +124,7 @@ public class Player : MonoBehaviour
 
 		for (int i = 0; i < positions.Count; i++)
 		{
-			RaycastHit2D hit = Physics2D.Raycast(positions[i], _tr.right * Math.Sign(delta), delta, ObstacleLayer);
+			RaycastHit2D hit = Physics2D.Linecast(positions[i], positions[i] + _tr.right * delta, ObstacleLayer);
 			if (hit.collider != null) return false;
 		}
 		
@@ -146,7 +145,7 @@ public class Player : MonoBehaviour
 
 		for (int i = 0; i < positions.Count; i++)
 		{
-			RaycastHit2D hit = Physics2D.Raycast(positions[i], _tr.up * Math.Sign(delta), delta, ObstacleLayer);
+			RaycastHit2D hit = Physics2D.Linecast(positions[i], positions[i] + _tr.up * delta, ObstacleLayer);
 			if (hit.collider != null) return false;
 		}
 		
