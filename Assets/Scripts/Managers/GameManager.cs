@@ -36,9 +36,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start ()
-
-	
-
 	{	
 		//TODO Change with menu management
 		InitNewArea(StartScene);

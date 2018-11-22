@@ -259,9 +259,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1156232457356786, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 61799002441972064, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.0021517873
+      objectReference: {fileID: 0}
+    - target: {fileID: 61799002441972064, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.19524825
+      objectReference: {fileID: 0}
+    - target: {fileID: 61799002441972064, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61799002441972064, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.60407925
       objectReference: {fileID: 0}
     - target: {fileID: 114216785292418014, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
         type: 2}
