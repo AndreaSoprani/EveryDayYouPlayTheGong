@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 		_tr = GetComponent<Transform>();
 
 		//TODO: load keys from file + add edit
-		_actionKeyCodes = new Dictionary<string, KeyCode>()
+		_actionKeyCodes = new Dictionary<string, KeyCode>
 		{
 			{"Run", KeyCode.LeftControl},
 			{"Crawl", KeyCode.LeftShift},
@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
 		
 		if (interactiveObject != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
 		{
+			Debug.Log("Interract");
 			Interact(interactiveObject);
 		} else if (Input.GetKeyDown(_actionKeyCodes["Play"]))
 		{
@@ -210,6 +211,8 @@ public class Player : MonoBehaviour
 	void Interact(IInteractiveObject obj)
 	{
 		obj.Interact(this);
+		Debug.Log(_items.Count);
+		
 	}
 
 	/// <summary>
@@ -228,7 +231,7 @@ public class Player : MonoBehaviour
 			IInteractiveObject iObject = hit.collider.gameObject.GetComponent<IInteractiveObject>();
 			if (iObject != null && iObject.IsInteractable())
 			{
-				EventManager.TriggerEvent("InteractionGUIElement");
+				//EventManager.TriggerEvent("InteractionGUIElement");
 				return iObject;
 			}
 		}
@@ -272,9 +275,10 @@ public class Player : MonoBehaviour
 	public void AddItem(Item item)
 	{
 		_items.Add(item);
-		string message = "Item acquired: " + item.Name;
-		TextBoxManager.Instance.LoadScript(message, "");
-		TextBoxManager.Instance.EnableTextBox();
+		//GameObject.FindGameObjectWithTag("Inventory").SendMessage("UpdateItems");
+		//string message = "Item acquired: " + item.Name;
+		//TextBoxManager.Instance.LoadScript(message, "");
+		//TextBoxManager.Instance.EnableTextBox();
 	}
 
 	/// <summary>

@@ -8,35 +8,32 @@ public class InventoryController : MonoBehaviour
 {
 
 	public GameObject NotesTab;
-	public GameObject ItemsTab;
+	public InventoryListWindow ItemsTab;
 	public GameObject MapTab;
-	public Player Player;
-
-	private Collection<Item> _items;
+	
 
 
-	private void Start()
-	{
-		_items = Player._items;
-		ItemsTab.GetComponents<RawImage>();
-	}
+
+
+	
 
 	public void DisplayNotes()
 	{
 		NotesTab.SetActive(true);
-		ItemsTab.SetActive(false);
+		ItemsTab.gameObject.SetActive(false);
 		MapTab.SetActive(false);
 	}
 	public void DisplayItems()
 	{
 		NotesTab.SetActive(false);
-		ItemsTab.SetActive(true);
+		ItemsTab.gameObject.SetActive(true);
 		MapTab.SetActive(false);
+		ItemsTab.UpdateItems();
 	}
 	public void DisplayMap()
 	{
 		NotesTab.SetActive(false);
-		ItemsTab.SetActive(false);
+		ItemsTab.gameObject.SetActive(false);
 		MapTab.SetActive(true);
 	}
 

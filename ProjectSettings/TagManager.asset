@@ -6,6 +6,9 @@ TagManager:
   tags:
   - LayerSwitch
   - MapBorder
+  - InventoryDescription
+  - InventoryImage
+  - Inventory
   layers:
   - Default
   - TransparentFX

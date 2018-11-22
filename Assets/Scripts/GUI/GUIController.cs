@@ -4,20 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GUIController : MonoBehaviour {
-	[Range(1,60)]
-    public int TimeDuration = 1;
-	public Slider ProgressBar;
+	
+	
 	public GameObject PauseMenu;
-	public GameObject Inventory;
+	public InventoryController Inventory;
 	
     private float _timePassed;
-    private float _timeSlot;
 	private bool _isGamePaused;
 	
-	void Start()
-	{
-	    _timeSlot=TimeDuration*60;
-	}
+	
 
 	private void OnEnable()
 	{
@@ -31,7 +26,7 @@ public class GUIController : MonoBehaviour {
 		{
 			if (_isGamePaused)
 			{
-				if (Inventory.activeInHierarchy)
+				if (Inventory.gameObject.activeInHierarchy)
 					CloseInventory();
 				else
 					Resume();
@@ -43,7 +38,7 @@ public class GUIController : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.I) && !PauseMenu.activeInHierarchy)
 		{
-			if (!Inventory.activeInHierarchy)
+			if (!Inventory.gameObject.activeInHierarchy)
 				OpenInventory();
 			else
 				CloseInventory();
@@ -51,30 +46,21 @@ public class GUIController : MonoBehaviour {
 
 			
 		}
-		if (!_isGamePaused)
-		{
-			
 		
-			
-			_timePassed += Time.deltaTime;
-			if (_timePassed > _timeSlot)
-				_timePassed = 0;
-		
-			ProgressBar.value=CalculateProgress();
-		}
 		
 	}
 
 	private void CloseInventory()
 	{
-		Inventory.SetActive(false);
+		Inventory.gameObject.SetActive(false);
 		Time.timeScale = 1;
 		_isGamePaused = false;
 	}
 
 	private void OpenInventory()
 	{
-		Inventory.SetActive(true);
+		Inventory.gameObject.SetActive(true);
+		Inventory.ItemsTab.UpdateItems();
 		Time.timeScale = 0;
 		_isGamePaused = true;
 	}
@@ -94,10 +80,7 @@ public class GUIController : MonoBehaviour {
 	}
 
 
-	float CalculateProgress()
-	{
-		return _timePassed / _timeSlot;
-	}
+	
 
 	/// <summary>
 	/// Used to display the option to interact with an object on screen.
