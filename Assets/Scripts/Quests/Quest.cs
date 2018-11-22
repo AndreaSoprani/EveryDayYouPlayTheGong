@@ -1,4 +1,6 @@
-﻿namespace Quests
+﻿using Quests.Objectives;
+
+namespace Quests
 {
     /// <summary>
     /// The Quest class contains the information for a single quest with all the relative objectives.
