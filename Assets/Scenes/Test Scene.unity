@@ -226,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Alpha: 0.7
+  TransitionTime: 1
 --- !u!60 &133035654
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -512,6 +514,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 1545200985}
   Offset: {x: 0, y: 0, z: 0}
+  TimeIn: 0.4
+  Pause: 0.3
+  TimeOut: 0.5
 --- !u!61 &1162935931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -627,6 +632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 1162935930}
   Offset: {x: -1, y: 0, z: 0}
+  TimeIn: 0.4
+  Pause: 0.3
+  TimeOut: 0.5
 --- !u!61 &1545200986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1003,6 +1011,10 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793750896223370, guid: 5a873f7ebaf525f45bdbedd4e5ef25de, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a873f7ebaf525f45bdbedd4e5ef25de, type: 2}

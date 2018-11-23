@@ -13,7 +13,6 @@ public class LayerSwitcher : MonoBehaviour
     public float TransitionTime = 1f;
     
     private SpriteRenderer _spriteRenderer;
-    private bool _occupied;
     private Coroutine _coroutine;
     
     private void Start()

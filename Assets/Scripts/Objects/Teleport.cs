@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,11 @@ public class Teleport : MonoBehaviour
 {
     public Teleport Destination;
     public Vector3 Offset;
+
+    [Header("Fade")]
+    public float TimeIn = 0.4f;
+    public float Pause = 0.3f;
+    public float TimeOut = 0.5f;
     
     
     private bool _teleportActive = true;
@@ -18,16 +24,15 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (_teleportActive && other.CompareTag("Player"))
         {
-            if (_teleportActive)
-            {  
-                if(_needDeactivation)
-                    Destination.StopTeleport();
-              
-                other.gameObject.transform.position = Destination.transform.position + Offset;
-                GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
-            }
+            StartCoroutine(ApplyTeleport(other));
+            if(_needDeactivation)
+                Destination.StopTeleport();
+            
+            //other.gameObject.transform.position = Destination.transform.position + Offset;
+            //GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
+            
         }
     }
     
@@ -42,5 +47,21 @@ public class Teleport : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         _teleportActive = true;
+    }
+
+    private IEnumerator ApplyTeleport(Collider2D other)
+    {
+        //TODO Stop player movement
+        yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeIn, 1f));
+        
+
+        other.gameObject.transform.position = Destination.transform.position + Offset;
+        GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
+        
+        yield return new WaitForSeconds(Pause);
+        
+        yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeOut, 0f));
+        
+        //TODO Restart player movement
     }
 }
