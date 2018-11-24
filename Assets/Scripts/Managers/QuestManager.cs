@@ -25,8 +25,8 @@ public class QuestManager : MonoBehaviour
 		_instance = this;
 		DontDestroyOnLoad(this.gameObject);
 	}
-	
-	public List<Quest> Quests;
+
+	public static List<Quest> Quests = new List<Quest>();
 	
 	// Use this for initialization
 	void Start ()
@@ -34,30 +34,28 @@ public class QuestManager : MonoBehaviour
 		Quests = new List<Quest>();
 	}
 
-	public void AddQuest(Quest quest)
+	public static void AddQuest(Quest quest)
 	{
 		Quests.Add(quest);
 		
 		// Listen on events for all objectives.
-		Objective[] objectives = quest.Objectives;
+		Objective[] objectives = quest.Objectives.ToArray();
 		for (int i = 0; i < objectives.Length; i++)
 		{
 			objectives[i].StartListening();
 		}
 	}
 
-	public void RemoveQuest(Quest quest)
+	public static void RemoveQuest(Quest quest)
 	{
 		Quests.Remove(quest);
 		
 		// Stop listening on events for all objectives.
-		Objective[] objectives = quest.Objectives;
+		Objective[] objectives = quest.Objectives.ToArray();
 		for (int i = 0; i < objectives.Length; i++)
 		{
 			objectives[i].StopListening();
 		}
 	}
-
-	
 	
 }

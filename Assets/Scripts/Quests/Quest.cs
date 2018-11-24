@@ -1,4 +1,6 @@
-﻿using Quests.Objectives;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Quests.Objectives;
 
 namespace Quests
 {
@@ -11,7 +13,7 @@ namespace Quests
 
         public string QuestID; // Unique ID of the Quest.
         public string Description; // Text description of the Quest.
-        public Objective[] Objectives;
+        public List<Objective> Objectives;
 
         /// <summary>
         /// Signals if all the objectives are completed.
@@ -19,7 +21,7 @@ namespace Quests
         /// <returns>True if all objectives are completed, false if at least one is not.</returns>
         public bool IsComplete()
         {
-            for (int i = 0; i < Objectives.Length; i++)
+            for (int i = 0; i < Objectives.Count(); i++)
             {
                 if (!Objectives[i].Completed) return false;
             }
@@ -33,7 +35,7 @@ namespace Quests
         /// <returns>The first uncompleted objective, null if they are all complete.</returns>
         public Objective NextObjective()
         {
-            for (int i = 0; i < Objectives.Length; i++)
+            for (int i = 0; i < Objectives.Count; i++)
             {
                 if (!Objectives[i].Completed) return Objectives[i];
             }

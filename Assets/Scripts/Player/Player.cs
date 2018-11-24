@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
 		
 		if (interactiveObject != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
 		{
-			Debug.Log("Interract");
+			Debug.Log("Interact");
 			Interact(interactiveObject);
 		} else if (Input.GetKeyDown(_actionKeyCodes["Play"]))
 		{
@@ -231,6 +231,7 @@ public class Player : MonoBehaviour
 			if (pObject != null && pObject.IsPlayable())
 			{
 				pObject.Play();
+				EventManager.TriggerEvent("Play" + pObject);
 				break;
 			}
 		}
@@ -244,6 +245,7 @@ public class Player : MonoBehaviour
 	void Interact(IInteractiveObject obj)
 	{
 		obj.Interact(this);
+		EventManager.TriggerEvent("Interact" + obj);
 		Debug.Log(_items.Count);
 		
 	}
@@ -312,6 +314,8 @@ public class Player : MonoBehaviour
 		//string message = "Item acquired: " + item.Name;
 		//TextBoxManager.Instance.LoadScript(message, "");
 		//TextBoxManager.Instance.EnableTextBox();
+		
+		EventManager.TriggerEvent("AddItem" + item.Id);
 	}
 
 	/// <summary>
@@ -323,9 +327,10 @@ public class Player : MonoBehaviour
 	{
 		bool removed = _items.Remove(item);
 		
-		if (removed) Debug.Log("Item acquired: " + item.Name);
+		if (removed) EventManager.TriggerEvent("RemoveItem" + item.Id);
+		
 		// TODO: display object removed text.
-
+		
 		return removed;
 	}
 

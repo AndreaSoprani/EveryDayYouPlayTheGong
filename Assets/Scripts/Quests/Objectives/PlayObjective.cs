@@ -1,11 +1,11 @@
+using UnityEngine;
+
 namespace Quests.Objectives
 {
     [System.Serializable]
     public class PlayObjective : Objective
     {
         public IPlayableObject PlayableObject;
-        
-        //TODO trigger event in player when playing occurs.
 
         public override void StartListening()
         {
@@ -21,6 +21,7 @@ namespace Quests.Objectives
         {
             EventManager.StopListening("Play" + PlayableObject, Complete);
             this.Completed = true;
+            Debug.Log("Objective " + this.ObjectiveID + " completed.");
         }
     }
 }
