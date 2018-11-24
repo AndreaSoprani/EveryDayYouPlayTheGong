@@ -7,6 +7,7 @@ public class Pickup : MonoBehaviour, IInteractiveObject
 
 	public Item Item;
 	
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -23,5 +24,10 @@ public class Pickup : MonoBehaviour, IInteractiveObject
 	{
 		player.AddItem(Item);
 		Destroy(gameObject);
+	}
+
+	public void setIsInteractable(bool value)
+	{
+		
 	}
 }

@@ -1,7 +1,9 @@
 ﻿/// <summary>
 /// Interface used for objects that can be interacted with.
 /// </summary>
-public interface IInteractiveObject {
+public interface IInteractiveObject
+{
+
 
 	/// <summary>
 	/// Used to check if the object can be interacted with.
@@ -13,5 +15,7 @@ public interface IInteractiveObject {
 	/// Used to interact with the object.
 	/// </summary>
 	void Interact(Player player);
+
 	
+
 }
