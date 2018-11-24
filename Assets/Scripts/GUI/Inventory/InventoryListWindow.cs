@@ -11,26 +11,32 @@ public class InventoryListWindow : MonoBehaviour
 	public GameObject Content;
 	public Player player;
 
+	private InventoryListElementController _firstElement;
 
 	
 
 	public void UpdateItems()
 	{
-		Debug.Log("ciao");
+	
 		foreach (Transform child in Content.transform)
 		{
 			Destroy(child.gameObject);
-			Debug.Log("cancellato");
+			
 		}
-		/*InventoryListElementController newItem = Instantiate(ItemSlotPrefab);
-		newItem.transform.SetParent(Content.transform);
-		newItem.SetItem(player._items[player._items.Count-1]);*/
+
+		bool first = true;
 		foreach (Item item in player._items)
 		{
-			Debug.Log(item.ToString());
+			
 			InventoryListElementController newItem = Instantiate(ItemSlotPrefab);
 			newItem.transform.SetParent(Content.transform);
 			newItem.SetItem(item);
+			if (first)
+			{
+				_firstElement = newItem;
+				_firstElement.GetComponent<Toggle>().Select();
+				first = false;
+			}
 		}
 	}
 	
