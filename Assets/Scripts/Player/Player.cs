@@ -34,6 +34,8 @@ public class Player : MonoBehaviour
 	public Collection<Item> _items;
 
 	private bool _inDialogue;
+
+	private Animator _animator;
 	
 	// Use this for initialization
 	void Start ()
@@ -48,6 +50,8 @@ public class Player : MonoBehaviour
 			{"Play", KeyCode.Space},
 			{"Interact", KeyCode.X}
 		};
+
+		_animator = GetComponent<Animator>();
 		
 		_facing = Vector3.up;
 		
@@ -98,16 +102,29 @@ public class Player : MonoBehaviour
 		
 		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;
 		float deltaVertical = Input.GetAxis("Vertical") * movementVelocity * Time.deltaTime;
+
+		Vector3 movement = new Vector3(deltaHorizontal, deltaVertical, 0);
 		
-		UpdateFacing(new Vector3(deltaHorizontal, deltaVertical, 0));
-		
-		if (CanMoveHorizontally(deltaHorizontal))
+		if (movement.Equals(Vector3.zero))
 		{
-			_tr.position += new Vector3(deltaHorizontal, 0, 0);
-		} 
-		if (CanMoveVertically(deltaVertical))
+			_animator.SetBool("Walking", false);
+		}
+		else
 		{
-			_tr.position += new Vector3(0, deltaVertical, 0);
+			if(!_animator.GetBool("Walking"))
+				_animator.SetBool("Walking", true);
+			
+			UpdateFacing(movement);
+
+			if (CanMoveHorizontally(deltaHorizontal))
+			{
+				_tr.position += new Vector3(deltaHorizontal, 0, 0);
+			}
+
+			if (CanMoveVertically(deltaVertical))
+			{
+				_tr.position += new Vector3(0, deltaVertical, 0);
+			}
 		}
 	}
 
@@ -159,19 +176,36 @@ public class Player : MonoBehaviour
 	/// <param name="movement">The Vector3 for the next movement</param>
 	void UpdateFacing(Vector3 movement)
 	{
-		if (movement.Equals(Vector3.zero)) return;
 		float angle = Vector3.SignedAngle(Vector3.right, movement, Vector3.forward);
 		Vector3 newFacing;
+		int anim;
 		
-		if(angle > -45f && angle < 45f) newFacing = Vector3.right;
-		else if (angle >= 45f && angle <= 135f) newFacing = Vector3.up;
-		else if (angle > 135f || angle < -135f) newFacing = Vector3.left;
-		else newFacing = Vector3.down;
+		if (angle > -45f && angle < 45f)
+		{
+			newFacing = Vector3.right;
+			anim = 1;
+		}
+		else if (angle >= 45f && angle <= 135f)
+		{
+			newFacing = Vector3.up;
+			anim = 0;
+		}
+		else if (angle > 135f || angle < -135f)
+		{
+			newFacing = Vector3.left;
+			anim = 3;
+		}
+		else
+		{
+			newFacing = Vector3.down;
+			anim = 2;
+		}
 
 		if (!_facing.Equals(newFacing))
 		{
 			_facing = newFacing;
-			//TODO: update animation.
+			
+			_animator.SetInteger("Direction", anim);
 		}
 	}
 
@@ -184,7 +218,7 @@ public class Player : MonoBehaviour
 	/// </summary>
 	void Play()
 	{
-		//TODO: play animation.
+		_animator.SetTrigger("Playing");
 		
 		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
 

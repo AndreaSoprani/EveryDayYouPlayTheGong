@@ -759,6 +759,7 @@ GameObject:
   - component: {fileID: 1779538409}
   - component: {fileID: 1779538408}
   - component: {fileID: 1779538410}
+  - component: {fileID: 1779538411}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -852,6 +853,24 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!95 &1779538411
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779538407}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69b9c755383c7fe4b9bc1a2ee07a9fa3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1920793406
 GameObject:
   m_ObjectHideFlags: 0

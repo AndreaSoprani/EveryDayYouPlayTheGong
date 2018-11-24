@@ -21,11 +21,13 @@ public class NPCMovement : MonoBehaviour
 	private Vector3 _endPosition;
 	private Vector3 _direction;
 
+	private Animator _animator;
 	private bool _walk = true;
 	
 	// Use this for initialization
 	void Start ()
 	{
+		_animator = GetComponent<Animator>();
 		_center  = transform.position;
 		PickNewDestination();
 	}
@@ -91,7 +93,26 @@ public class NPCMovement : MonoBehaviour
 		_direction = _endPosition - transform.position;
 		_direction.Normalize();
 		
-		//TODO Start walk animation
+		
+		float angle = Vector3.SignedAngle(Vector3.right, _direction, Vector3.forward);
+		
+		if (angle > -45f && angle < 45f)
+		{
+			_animator.SetInteger("Direction", 1);
+		}
+		else if (angle >= 45f && angle <= 135f)
+		{
+			_animator.SetInteger("Direction", 0);
+		}
+		else if (angle > 135f || angle < -135f)
+		{
+			_animator.SetInteger("Direction", 3);
+		}
+		else
+		{
+			_animator.SetInteger("Direction", 2);
+		}
+
 	}
 
 	/// <summary>
@@ -100,10 +121,12 @@ public class NPCMovement : MonoBehaviour
 	/// <returns></returns>
 	IEnumerator Wait()
 	{
-		//TODO Start idle animation
+		_animator.SetBool("Walking", false);
 		
 		yield return new WaitForSeconds(WaitTime);
 
 		_walk = true;
+		
+		_animator.SetBool("Walking", true);
 	}
 }
