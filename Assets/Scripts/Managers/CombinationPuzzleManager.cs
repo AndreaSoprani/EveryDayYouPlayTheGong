@@ -38,12 +38,11 @@ public class CombinationPuzzleManager : MonoBehaviour
 			item.setSolved(true);
 			
 		}
-		if(TypeOfPuzzle.Equals(PuzzleType.ItemReward))
+		if(TypeOfPuzzle == PuzzleType.ItemReward)
 			Reward.Interact(John);
-		else
-		{
+		else if(TypeOfPuzzle == PuzzleType.OpenDoor)
 			DoorToBeOpened.Interact(John);
-		}
+		
 	}
 }
 public enum PuzzleType
