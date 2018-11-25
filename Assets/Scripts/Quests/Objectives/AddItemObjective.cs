@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Quests.Objectives
 {
-    [System.Serializable]
+    [CreateAssetMenu(fileName = "New Add Item Objective", menuName = "AddItemObjective", order = 1)]
     public class AddItemObjective : Objective
     {
         public string ItemId;
-
-        //TODO trigger event in player when item is added.
+        
+        // TODO check if player already has the item
 
         public override void StartListening()
         {

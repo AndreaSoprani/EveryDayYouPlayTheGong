@@ -3,12 +3,10 @@ using UnityEngine;
 
 namespace Quests.Objectives
 {
-    [System.Serializable]
+    [CreateAssetMenu(fileName = "New Remove Item Objective", menuName = "RemoveItemObjective", order = 2)]
     public class RemoveItemObjective : Objective
     {
         public string ItemId;
-        
-        //TODO add event when item is removed.
         
         public override void StartListening()
         {

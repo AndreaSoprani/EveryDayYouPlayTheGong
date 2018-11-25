@@ -2,11 +2,11 @@ using UnityEngine;
 
 namespace Quests.Objectives
 {
-    [System.Serializable]
+    [CreateAssetMenu( fileName = "New Interact Objective", menuName = "InteractObjective", order = 3)]
     public class InteractObjective : Objective
     {
         public IInteractiveObject InteractiveObject;
-
+        
         public override void StartListening()
         {
             EventManager.StartListening("Interact" + InteractiveObject, Complete);
@@ -19,7 +19,11 @@ namespace Quests.Objectives
 
         public override void Complete()
         {
-            if (!Quest.NextObjective().Equals(this)) return;
+            Quest quest = QuestManager.GetQuestById(QuestID);
+            Debug.Log(quest);
+            if (quest == null) return; 
+            if (quest.NextObjective() != this) return;
+            
             EventManager.StopListening("Interact" + InteractiveObject, Complete);
             this.Completed = true;
             Debug.Log("Objective " + this.ObjectiveID + " completed.");

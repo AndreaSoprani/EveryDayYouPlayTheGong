@@ -54,23 +54,19 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 			Objectives = new List<Objective>()
 		};
 
-		InteractObjective iObj = new InteractObjective
-		{
-			ObjectiveID = "O_00", 
-			Quest = quest,
-			Description = "Test interact objective", 
-			Completed = false, 
-			InteractiveObject = GetComponent<IInteractiveObject>()
-		};
+		InteractObjective iObj = ScriptableObject.CreateInstance<InteractObjective>();
+		iObj.ObjectiveID = "O_00";
+		iObj.QuestID = quest.QuestID;
+		iObj.Description = "Test interact objective";
+		iObj.Completed = false;
+		iObj.InteractiveObject = GetComponent<IInteractiveObject>();
 		
-		PlayObjective pObj = new PlayObjective
-         {
-			ObjectiveID = "O_01", 
-			Quest = quest,
-			Description = "Test play objective", 
-			Completed = false, 
-			PlayableObject = GetComponent<IPlayableObject>()
-		};
+		PlayObjective pObj = ScriptableObject.CreateInstance<PlayObjective>();
+		pObj.ObjectiveID = "O_001";
+		pObj.QuestID = quest.QuestID;
+		pObj.Description = "Test play objective";
+		pObj.Completed = false;
+		pObj.PlayableObject = GetComponent<IPlayableObject>();
 		
 		quest.Objectives.Add(iObj);
 		quest.Objectives.Add(pObj);

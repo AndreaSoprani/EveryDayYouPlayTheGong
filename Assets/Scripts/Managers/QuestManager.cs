@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Quests;
 using Quests.Objectives;
 using UnityEngine;
@@ -27,12 +28,6 @@ public class QuestManager : MonoBehaviour
 	}
 
 	public static List<Quest> Quests = new List<Quest>();
-	
-	// Use this for initialization
-	void Start ()
-	{
-		Quests = new List<Quest>();
-	}
 
 	public static void AddQuest(Quest quest)
 	{
@@ -56,6 +51,17 @@ public class QuestManager : MonoBehaviour
 		{
 			objectives[i].StopListening();
 		}
+	}
+
+	public static Quest GetQuestById(string questID)
+	{
+		for (int i = 0; i < Quests.Count; i++)
+		{
+			Debug.Log("for loop: quest " + Quests[i].QuestID);
+			if (Quests[i].QuestID == questID) return Quests[i];
+		}
+
+		return null;
 	}
 	
 }
