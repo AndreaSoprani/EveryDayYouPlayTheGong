@@ -7,6 +7,7 @@
     public abstract class Objective
     {
         public string ObjectiveID; // Unique ID of the Objective.
+        public Quest Quest; // Quest containing this Objective.
         public string Description; // Text description of the objective.
         public bool Completed;
 

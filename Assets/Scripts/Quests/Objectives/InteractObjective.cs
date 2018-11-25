@@ -19,6 +19,7 @@ namespace Quests.Objectives
 
         public override void Complete()
         {
+            if (!Quest.NextObjective().Equals(this)) return;
             EventManager.StopListening("Interact" + InteractiveObject, Complete);
             this.Completed = true;
             Debug.Log("Objective " + this.ObjectiveID + " completed.");

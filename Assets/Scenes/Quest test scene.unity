@@ -161,7 +161,7 @@ Prefab:
         type: 2}
       propertyPath: TextBoxText
       value: 
-      objectReference: {fileID: 1538382805}
+      objectReference: {fileID: 1229742927}
     - target: {fileID: 114767018207234036, guid: 8730667e070e93547a77a8c2ce001b87,
         type: 2}
       propertyPath: TextBoxName
@@ -274,6 +274,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1353137089732310, guid: 5a873f7ebaf525f45bdbedd4e5ef25de,
     type: 2}
   m_PrefabInternal: {fileID: 1279318936}
+--- !u!114 &1229742927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114211778256976994, guid: 5a873f7ebaf525f45bdbedd4e5ef25de,
+    type: 2}
+  m_PrefabInternal: {fileID: 1279318936}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1279318936
 Prefab:
   m_ObjectHideFlags: 0
@@ -313,15 +319,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1931451811452334, guid: 5a873f7ebaf525f45bdbedd4e5ef25de, type: 2}
+      propertyPath: m_Name
+      value: ContinueText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353137089732310, guid: 5a873f7ebaf525f45bdbedd4e5ef25de, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224607151660792394, guid: 5a873f7ebaf525f45bdbedd4e5ef25de,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 112.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224607151660792394, guid: 5a873f7ebaf525f45bdbedd4e5ef25de,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -292.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a873f7ebaf525f45bdbedd4e5ef25de, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &1538382805 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114062843824126886, guid: 5a873f7ebaf525f45bdbedd4e5ef25de,
-    type: 2}
-  m_PrefabInternal: {fileID: 1279318936}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1598462817
 Prefab:
   m_ObjectHideFlags: 0
