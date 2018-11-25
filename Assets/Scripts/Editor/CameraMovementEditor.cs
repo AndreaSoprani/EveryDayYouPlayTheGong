@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 [CustomEditor (typeof(CameraMovement))]
-public class CameraMovementEditor : Editor {
+public class CameraMovementEditor : UnityEditor.Editor {
 
 	public override void OnInspectorGUI()
     {

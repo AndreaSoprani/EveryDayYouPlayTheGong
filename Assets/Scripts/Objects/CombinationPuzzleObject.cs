@@ -15,7 +15,11 @@ public class CombinationPuzzleObject : MonoBehaviour, IPlayableObject
 	public void Play()
 	{
 		if(!_solved)
-			GetComponentInParent<CombinationPuzzleRewardManager>().Selection(this);
+		{
+			
+				GetComponentInParent<CombinationPuzzleManager>().Selection(this);
+			
+		}
 	}
 
 	public void setSolved(bool b)

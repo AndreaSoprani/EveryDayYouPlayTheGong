@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombinationPuzzleRewardManager : MonoBehaviour
+public class CombinationPuzzleManager : MonoBehaviour
 {
 
 	public List<CombinationPuzzleObject> PuzzlePiece;
 	public Pickup Reward;
+	public Door DoorToBeOpened;
+	public PuzzleType TypeOfPuzzle;
 	
 	//TO BE DELETED WHEN PLAYER BECOMES A SINGLETON
 	public Player John;
@@ -36,6 +38,16 @@ public class CombinationPuzzleRewardManager : MonoBehaviour
 			item.setSolved(true);
 			
 		}
-		Reward.Interact(John);
+		if(TypeOfPuzzle.Equals(PuzzleType.ItemReward))
+			Reward.Interact(John);
+		else
+		{
+			DoorToBeOpened.Interact(John);
+		}
 	}
+}
+public enum PuzzleType
+   
+{
+	ItemReward, OpenDoor
 }
