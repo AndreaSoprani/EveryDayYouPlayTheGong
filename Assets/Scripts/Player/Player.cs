@@ -8,6 +8,8 @@ using UnityEngine.Experimental.UIElements;
 public class Player : MonoBehaviour
 {
 
+	private static Player _instance;
+	public static Player Instance { get { return _instance; } }
 	
 	[Header("Movement")]
 	public float Velocity = 2f;
@@ -31,7 +33,7 @@ public class Player : MonoBehaviour
 	private Vector3 _facing;
 
 	// List of all the items possessed by the player.
-	public Collection<Item> _items;
+	private Collection<Item> _items;
 
 	private bool _inDialogue;
 
@@ -334,6 +336,10 @@ public class Player : MonoBehaviour
 		return removed;
 	}
 
+	public Collection<Item> GetItem()
+	{
+		return _items;
+	}
 	/**
 	 * Used to enter in dialogue mode.
 	 * All control on the player is disabled.

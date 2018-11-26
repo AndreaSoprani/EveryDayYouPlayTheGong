@@ -9,8 +9,7 @@ public class CameraMovementEditor : UnityEditor.Editor {
 	public override void OnInspectorGUI()
     {
         CameraMovement myScript = (CameraMovement) target;
-        myScript.player = (GameObject   )EditorGUILayout.ObjectField("Target",myScript.player,typeof(GameObject),true);
-       // myScript.smoothTime= EditorGUILayout.FloatField("Smoothness", myScript.smoothTime);
+       
         myScript.smoothTime = EditorGUILayout.Slider("Smooth", myScript.smoothTime, 0, 1);
         myScript.hasDeadZone = EditorGUILayout.Toggle("Dead zone", myScript.hasDeadZone);
         if(myScript.hasDeadZone)

@@ -9,7 +9,7 @@ public class InventoryListWindow : MonoBehaviour
 
 	public InventoryListElementController ItemSlotPrefab;
 	public GameObject Content;
-	public Player player;
+
 
 	private InventoryListElementController _firstElement;
 
@@ -25,7 +25,7 @@ public class InventoryListWindow : MonoBehaviour
 		}
 
 		bool first = true;
-		foreach (Item item in player._items)
+		foreach (Item item in Player.Instance.GetItem())
 		{
 			
 			InventoryListElementController newItem = Instantiate(ItemSlotPrefab);

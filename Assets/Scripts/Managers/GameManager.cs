@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour {
 	[Header("Scenes")]
 	public string StartScene;
 
-	[Header("Player Prefab")]
-	public GameObject Player;
+	
 
 	[Header("Camera Prefab")]
 	public GameObject Camera;
@@ -48,7 +47,7 @@ public class GameManager : MonoBehaviour {
 	void InitNewArea(string scene)
 	{
 		//TODO Need to change the coordinate of the MC
-		Player.SetActive(true);
+		Player.Instance.gameObject.SetActive(true);
 		//TODO Need to change the coordinate based on MC position
 		Camera.SetActive(true);
 		SceneManager.LoadScene(scene);

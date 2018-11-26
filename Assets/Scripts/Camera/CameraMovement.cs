@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 public class CameraMovement : MonoBehaviour {
-    public GameObject player;
+    
 
     public bool hasDeadZone;
     public float marginX;
@@ -19,16 +19,16 @@ public class CameraMovement : MonoBehaviour {
 
     void Start () {
         
-        offset = transform.position - player.transform.position;
+        offset = transform.position - Player.Instance.transform.position;
 	}
 
 
     void LateUpdate()
     {
        
-            _dynamicOffset = transform.position - player.transform.position;
+            _dynamicOffset = transform.position - Player.Instance.transform.position;
             if (!hasDeadZone || Mathf.Abs(_dynamicOffset.x) > marginX || Mathf.Abs(_dynamicOffset.y) > marginY)
-                transform.position = Vector3.Slerp(transform.position, player.transform.position + offset,  smoothTime * Time.deltaTime);
+                transform.position = Vector3.Slerp(transform.position, Player.Instance.transform.position + offset,  smoothTime * Time.deltaTime);
         
        
         
@@ -36,7 +36,7 @@ public class CameraMovement : MonoBehaviour {
 
     public void TeleportCamera()
     {
-        transform.position = player.transform.position + offset;
+        transform.position =Player.Instance.transform.position + offset;
         
     }
 

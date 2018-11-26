@@ -5,13 +5,13 @@ using UnityEngine;
 public class CombinationPuzzleManager : MonoBehaviour
 {
 
+    public string PuzzleId;
 	public List<CombinationPuzzleObject> PuzzlePiece;
 	public Pickup Reward;
 	public Door DoorToBeOpened;
 	public PuzzleType TypeOfPuzzle;
 	
-	//TO BE DELETED WHEN PLAYER BECOMES A SINGLETON
-	public Player John;
+	
 
 	private int _currentIndex;
 
@@ -39,10 +39,12 @@ public class CombinationPuzzleManager : MonoBehaviour
 			
 		}
 		if(TypeOfPuzzle == PuzzleType.ItemReward)
-			Reward.Interact(John);
+			Reward.Interact(Player.Instance);
 		else if(TypeOfPuzzle == PuzzleType.OpenDoor)
-			DoorToBeOpened.Interact(John);
+			DoorToBeOpened.Interact(Player.Instance);
 		
+		EventManager.TriggerEvent("PuzzleSolved" + PuzzleId);
+
 	}
 }
 public enum PuzzleType

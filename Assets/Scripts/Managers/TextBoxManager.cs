@@ -27,7 +27,7 @@ public class TextBoxManager : MonoBehaviour
 	public Text TextBoxText;
 	public Text TextBoxName;
 
-	public Player Player;
+	
 	
 	private string[] _textLines;
 
@@ -40,7 +40,7 @@ public class TextBoxManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Player = FindObjectOfType<Player>();
+		
 		IsActive = false;
 
 	}
@@ -72,7 +72,7 @@ public class TextBoxManager : MonoBehaviour
 		if (_textLines.Length == 0) return;
 		TextBox.SetActive(true);
 		IsActive = true;
-		if(StopPlayerMovementOnDialogue) Player.EnterDialogue();
+		if(StopPlayerMovementOnDialogue) Player.Instance.EnterDialogue();
 	}
 
 	/// <summary>
@@ -82,7 +82,7 @@ public class TextBoxManager : MonoBehaviour
 	{
 		TextBox.SetActive(false);
 		IsActive = false;
-		Player.ExitDialogue();
+		Player.Instance.ExitDialogue();
 	}
 
 	/// <summary>
