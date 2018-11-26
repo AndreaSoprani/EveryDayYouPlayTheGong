@@ -16,6 +16,7 @@ public class CameraMovement : MonoBehaviour {
     private Vector2 _dynamicOffset;
     private bool _isFollowingSomeone;
     
+    
 
     void Start () {
         

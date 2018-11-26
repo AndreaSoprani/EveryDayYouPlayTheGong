@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 {
 
 	private static Player _instance;
-	public static Player Instance { get { return _instance; } }
+	public static Player Instance { get ; private set; }
 	
 	[Header("Movement")]
 	public float Velocity = 2f;
@@ -38,6 +38,19 @@ public class Player : MonoBehaviour
 	private bool _inDialogue;
 
 	private Animator _animator;
+	
+	private void Awake()
+	{
+		if (Instance == null)
+		{
+			Instance = this;
+			DontDestroyOnLoad(gameObject);
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
+	}
 	
 	// Use this for initialization
 	void Start ()
