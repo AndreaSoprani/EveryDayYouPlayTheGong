@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
@@ -32,7 +33,6 @@ public class TextBoxManager : MonoBehaviour
 	private string[] _textLines;
 
 	private int _currentLine;
-	private int _endAtLine;
 
 	public bool IsActive;
 	public bool StopPlayerMovementOnDialogue = true;
@@ -59,7 +59,7 @@ public class TextBoxManager : MonoBehaviour
 			_currentLine++;
 		}
 
-		if (_currentLine > _endAtLine) DisableTextBox();
+		if (_currentLine >= _textLines.Length) DisableTextBox();
 		
 	}
 
@@ -90,19 +90,16 @@ public class TextBoxManager : MonoBehaviour
 	/// </summary>
 	/// <param name="newTextFile">The TextAsset to read from.</param>
 	/// <param name="npcName">The name displayed.</param>
-	/// <param name="startLine">The starting line to read from. Default = 0.</param>
-	/// <param name="endAtLine">The ending line. Default = -1 (end of document).</param>
-	public void LoadScript(TextAsset newTextFile, string npcName, int startLine = 0, int endAtLine = -1)
+	public void LoadScript(TextAsset newTextFile, string npcName)
 	{
 		if (newTextFile != null)
 		{
-			_textLines = newTextFile.text.Split('\n');
+			_textLines = newTextFile.text.Split(new[] {"\r\n\r\n"}, StringSplitOptions.None);
 		}
 
 		TextBoxName.text = npcName;
 
-		_currentLine = startLine < _textLines.Length && startLine >= 0 ? startLine : 0;
-		_endAtLine = endAtLine < _textLines.Length && endAtLine >= 0 ? endAtLine : (_textLines.Length - 1);
+		_currentLine = 0;
 	}
 
 	/// <summary>
@@ -118,9 +115,7 @@ public class TextBoxManager : MonoBehaviour
 		TextBoxName.text = npcName;
 
 		_currentLine = 0;
-		_endAtLine = 0;
 
 	}
-	
 	
 }
