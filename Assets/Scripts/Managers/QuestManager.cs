@@ -29,6 +29,11 @@ public class QuestManager : MonoBehaviour
 
 	public static List<Quest> Quests = new List<Quest>();
 
+	/// <summary>
+	/// Adds a quest to the list of quests in the manager.
+	/// It also makes all the objectives listen for events for their completeness.
+	/// </summary>
+	/// <param name="quest">The quest to add.</param>
 	public static void AddQuest(Quest quest)
 	{
 		Quests.Add(quest);
@@ -40,7 +45,12 @@ public class QuestManager : MonoBehaviour
 			objectives[i].StartListening();
 		}
 	}
-
+	
+	/// <summary>
+	/// Removes a quest from the list of quests in the manager.
+	/// It also makes all the objectives stop listening for events for their completeness.
+	/// </summary>
+	/// <param name="quest">The quest to remove.</param>
 	public static void RemoveQuest(Quest quest)
 	{
 		Quests.Remove(quest);
@@ -53,7 +63,12 @@ public class QuestManager : MonoBehaviour
 		}
 	}
 
-	public static Quest GetQuestById(string questID)
+	/// <summary>
+	/// Used to get a quest by ID.
+	/// </summary>
+	/// <param name="questID">The QuestID of the quest to retrieve.</param>
+	/// <returns></returns>
+	public static Quest GetQuest(string questID)
 	{
 		for (int i = 0; i < Quests.Count; i++)
 		{
@@ -61,6 +76,30 @@ public class QuestManager : MonoBehaviour
 		}
 
 		return null;
+	}
+
+	/// <summary>
+	/// Used to activate a quest given its ID.
+	/// </summary>
+	/// <param name="questID">The QuestID of the quest to activate.</param>
+	public static void ActivateQuest(string questID)
+	{
+		for (int i = 0; i < Quests.Count; i++)
+		{
+			if (Quests[i].QuestID == questID) Quests[i].Active = true;
+		}
+	}
+
+	/// <summary>
+	/// Used to deactivate a quest given its ID.
+	/// </summary>
+	/// <param name="questID">The QuestID of the quest to deactivate.</param>
+	public static void DeactivateQuest(string questID)
+	{
+		for (int i = 0; i < Quests.Count; i++)
+		{
+			if (Quests[i].QuestID == questID) Quests[i].Active = false;
+		}
 	}
 	
 }

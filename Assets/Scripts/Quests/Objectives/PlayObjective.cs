@@ -19,7 +19,7 @@ namespace Quests.Objectives
 
         public override void Complete()
         {
-            Quest quest = QuestManager.GetQuestById(QuestID);
+            Quest quest = QuestManager.GetQuest(QuestID);
             if (quest == null) return; 
             if (quest.NextObjective() != this) return;
             
