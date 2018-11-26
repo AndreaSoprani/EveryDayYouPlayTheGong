@@ -47,12 +47,11 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 
 	private void Start()
 	{
-		Quest quest = new Quest
-		{
-			QuestID = "00", 
-			Description = "Test play quest", 
-			Objectives = new List<Objective>()
-		};
+		Quest quest = ScriptableObject.CreateInstance<Quest>();
+		quest.QuestID = "00";
+		quest.Description = "Test play quest";
+		quest.Objectives = new List<Objective>();
+		
 
 		InteractObjective iObj = ScriptableObject.CreateInstance<InteractObjective>();
 		iObj.ObjectiveID = "O_00";

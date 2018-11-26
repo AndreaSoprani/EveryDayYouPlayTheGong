@@ -57,7 +57,6 @@ public class QuestManager : MonoBehaviour
 	{
 		for (int i = 0; i < Quests.Count; i++)
 		{
-			Debug.Log("for loop: quest " + Quests[i].QuestID);
 			if (Quests[i].QuestID == questID) return Quests[i];
 		}
 

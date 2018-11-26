@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Quests.Objectives;
+using UnityEngine;
 
 namespace Quests
 {
     /// <summary>
     /// The Quest class contains the information for a single quest with all the relative objectives.
     /// </summary>
-    [System.Serializable]
-    public class Quest
+    [CreateAssetMenu(fileName = "New Quest", menuName = "Quest", order = 0)]
+    public class Quest : ScriptableObject
     {
 
         public string QuestID; // Unique ID of the Quest.
