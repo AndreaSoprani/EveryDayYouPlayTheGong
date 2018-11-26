@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7c7734cb6b4e2983a95fa56ea72824, type: 3}
   m_Name: addItemObjective
   m_EditorClassIdentifier: 
-  ObjectiveID: O_00
-  QuestID: 00
+  ObjectiveID: O_02
+  QuestID: 01
   Description: Add the item
   Completed: 0
   ItemId: hotdog

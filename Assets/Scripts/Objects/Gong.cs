@@ -61,7 +61,7 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 		iObj.InteractiveObject = GetComponent<IInteractiveObject>();
 		
 		PlayObjective pObj = ScriptableObject.CreateInstance<PlayObjective>();
-		pObj.ObjectiveID = "O_001";
+		pObj.ObjectiveID = "O_01";
 		pObj.QuestID = quest.QuestID;
 		pObj.Description = "Test play objective";
 		pObj.Completed = false;
@@ -70,6 +70,6 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 		quest.Objectives.Add(iObj);
 		quest.Objectives.Add(pObj);
 		
-		QuestManager.AddQuest(quest);
+		QuestManager.Instance.AddQuest(quest);
 	}
 }

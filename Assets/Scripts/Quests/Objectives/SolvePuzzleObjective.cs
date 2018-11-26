@@ -1,6 +1,8 @@
+using UnityEngine;
+
 namespace Quests.Objectives
 {
-    [System.Serializable]
+    [CreateAssetMenu( fileName = "New Puzzle Objective", menuName = "SolvePuzzleObjective", order = 5)]
     public class SolvePuzzleObjective: Objective
     {
         //TODO: implementation

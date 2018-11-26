@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4743154761574562, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114492516894442688, guid: 0b67fc17101e8254e8ae3daa765a6400,
         type: 2}
@@ -223,7 +223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4169421197325162, guid: a88d12dd32e8c44478946d2f5673e2ae, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114908075731733014, guid: a88d12dd32e8c44478946d2f5673e2ae,
         type: 2}
@@ -351,48 +351,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382eefb8537995f45ba56a639adf8949, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &569147608
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 569147610}
-  - component: {fileID: 569147609}
-  m_Layer: 0
-  m_Name: QuestLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &569147609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569147608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 895f7926fdde8d840b6b8b8fec2aa6df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Quests:
-  - {fileID: 11400000, guid: 61590a74ede1aab4090116d9a2544865, type: 2}
---- !u!4 &569147610
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569147608}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &777655665
 Prefab:
   m_ObjectHideFlags: 0
@@ -534,11 +492,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f2b267038a814647a61cd8ed1d696ee, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1736349382 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1156232457356786, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
-    type: 2}
-  m_PrefabInternal: {fileID: 2042583486}
 --- !u!114 &1736349383 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114216785292418014, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
@@ -591,6 +544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f9d48680da96143ac2ae0f68f5da54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Quests:
+  - {fileID: 11400000, guid: 61590a74ede1aab4090116d9a2544865, type: 2}
 --- !u!1 &1972768945
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +575,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63458f847fcc6164b8c351be1ae0e7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1736349382}
   hasDeadZone: 0
   marginX: 10
   marginY: 10
