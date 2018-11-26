@@ -1,19 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Quests.Objectives;
+using UnityEngine;
 
 namespace Quests
 {
     /// <summary>
     /// The Quest class contains the information for a single quest with all the relative objectives.
     /// </summary>
-    [System.Serializable]
-    public class Quest
+    [CreateAssetMenu(fileName = "New Quest", menuName = "Quest", order = 0)]
+    public class Quest : ScriptableObject
     {
 
         public string QuestID; // Unique ID of the Quest.
         public string Description; // Text description of the Quest.
         public List<Objective> Objectives;
+        public bool Active; // True if the quest is active in the game, false otherwise.
 
         /// <summary>
         /// Signals if all the objectives are completed.

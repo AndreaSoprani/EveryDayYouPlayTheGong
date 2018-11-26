@@ -1,12 +1,14 @@
-﻿namespace Quests.Objectives
+﻿using UnityEngine;
+
+namespace Quests.Objectives
 {
     /// <summary>
     /// The Objective class contains the information for a single objective inside a quest.
     /// </summary>
-    [System.Serializable]
-    public abstract class Objective
+    public abstract class Objective : ScriptableObject
     {
         public string ObjectiveID; // Unique ID of the Objective.
+        public string QuestID; // QuestID of the quest containing this Objective.
         public string Description; // Text description of the objective.
         public bool Completed;
 
