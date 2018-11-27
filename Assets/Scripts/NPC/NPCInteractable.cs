@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 public class NPCInteractable : MonoBehaviour, IInteractiveObject
 {
 
-	public TextAsset TextFile;
-	public string NPCName;
+	public Dialogue Dialogue;
 
 	public bool IsInteractable()
 	{
@@ -15,7 +15,6 @@ public class NPCInteractable : MonoBehaviour, IInteractiveObject
 
 	public void Interact(Player player)
 	{
-		TextBoxManager.Instance.LoadScript(TextFile, NPCName);
-		TextBoxManager.Instance.EnableTextBox();
+		Dialogue.StartDialogue();
 	}
 }

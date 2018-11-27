@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
+using Utility;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -86,36 +87,28 @@ public class TextBoxManager : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Used to load a text script.
+	/// Used to load a dialogue.
 	/// </summary>
-	/// <param name="newTextFile">The TextAsset to read from.</param>
-	/// <param name="npcName">The name displayed.</param>
-	public void LoadScript(TextAsset newTextFile, string npcName)
+	/// <param name="dialogue">The dialogue to read from.</param>
+	public void LoadDialogue(Dialogue dialogue)
 	{
-		if (newTextFile != null)
+		
+		// Set the text lines.
+		if (dialogue.TextAsset != null)
 		{
-			_textLines = newTextFile.text.Split(new[] {"\r\n\r\n"}, StringSplitOptions.None);
+			_textLines = dialogue.TextAsset.text.Split(new[] {"\r\n\r\n"}, StringSplitOptions.None);
 		}
 
-		TextBoxName.text = npcName;
+		// Set the NPC name.
+		TextBoxName.text = dialogue.NPCName;
+
+		// Activate all quests to activate
+		for (int i = 0; i < dialogue.QuestsToActivate.Count; i++)
+		{
+			QuestManager.Instance.ActivateQuest(dialogue.QuestsToActivate[i].QuestID);
+		}
 
 		_currentLine = 0;
-	}
-
-	/// <summary>
-	/// Used to load a string as a text script.
-	/// </summary>
-	/// <param name="text">The string to be displayed.</param>
-	/// <param name="npcName">The name displayed.</param>
-	public void LoadScript(string text, string npcName)
-	{
-		_textLines = new string[1];
-		_textLines[0] = text;
-
-		TextBoxName.text = npcName;
-
-		_currentLine = 0;
-
 	}
 	
 }

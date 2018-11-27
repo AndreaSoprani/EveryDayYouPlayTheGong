@@ -258,8 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextFile: {fileID: 4900000, guid: 6d7fe8c6afe72204f887ac012735d246, type: 3}
-  NPCName: SampleNPC
+  Dialogue: {fileID: 11400000, guid: 9f258ddf261a9794faac2c459c8dd44a, type: 2}
 --- !u!212 &212060353291323350
 SpriteRenderer:
   m_ObjectHideFlags: 1

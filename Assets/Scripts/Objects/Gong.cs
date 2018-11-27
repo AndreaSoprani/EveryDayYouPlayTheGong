@@ -4,12 +4,12 @@ using Quests;
 using Quests.Objectives;
 using UnityEditor;
 using UnityEngine;
+using Utility;
 
 public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 {
 
-	public TextAsset InteractionMessage;
-	public string GongName;
+	public Dialogue Dialogue;
 
 	/*
 	 * PLAY
@@ -37,8 +37,7 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 
 	public void Interact(Player player)
 	{
-		TextBoxManager.Instance.LoadScript(InteractionMessage, GongName);
-		TextBoxManager.Instance.EnableTextBox();
+		Dialogue.StartDialogue();
 	}
 	
 	/*
