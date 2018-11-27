@@ -5,21 +5,23 @@ namespace Quests.Objectives
     [CreateAssetMenu( fileName = "New Puzzle Objective", menuName = "SolvePuzzleObjective", order = 5)]
     public class SolvePuzzleObjective: Objective
     {
-        //TODO: implementation
+        public string PuzzleId;
 
         public override void StartListening()
         {
-            throw new System.NotImplementedException();
+            EventManager.StartListening("PuzzleSolved" + PuzzleId, Complete);
         }
 
         public override void StopListening()
         {
-            throw new System.NotImplementedException();
+            EventManager.StopListening("PuzzleSolved" + PuzzleId, Complete);
         }
 
         public override void Complete()
         {
-            throw new System.NotImplementedException();
+            EventManager.StopListening("PuzzleSolved" + PuzzleId, Complete);
+            this.Completed = true;
+            Debug.Log("Objective " + this.ObjectiveID + " completed.");
         }
     }
 }

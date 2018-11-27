@@ -38,35 +38,5 @@ public class Gong : InGameObject
 		Dialogue.StartDialogue();
 	}
 	
-	/*
-	 * FOR TESTING PURPOSES
-	 */
-
-	private void Start()
-	{
-		Quest quest = ScriptableObject.CreateInstance<Quest>();
-		quest.QuestID = "00";
-		quest.Description = "Test play quest";
-		quest.Objectives = new List<Objective>();
-		
-
-		InteractObjective iObj = ScriptableObject.CreateInstance<InteractObjective>();
-		iObj.ObjectiveID = "O_00";
-		iObj.QuestID = quest.QuestID;
-		iObj.Description = "Test interact objective";
-		iObj.Completed = false;
-		iObj.ObjectID = this.ObjectID;
-		
-		PlayObjective pObj = ScriptableObject.CreateInstance<PlayObjective>();
-		pObj.ObjectiveID = "O_01";
-		pObj.QuestID = quest.QuestID;
-		pObj.Description = "Test play objective";
-		pObj.Completed = false;
-		pObj.ObjectID = this.ObjectID;
-		
-		quest.Objectives.Add(iObj);
-		quest.Objectives.Add(pObj);
-		
-		QuestManager.Instance.AddQuest(quest);
-	}
+	
 }

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: c852cb3b47a34f849cbeb70e0ec1e2b8, type: 3}
   NPCName: Ancient Gong
-  QuestsToActivate: []
+  QuestsToActivate:
+  - {fileID: 11400000, guid: ebe6a8bb9c64dd64783be0ab4efe4d8e, type: 2}

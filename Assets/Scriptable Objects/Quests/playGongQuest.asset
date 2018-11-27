@@ -8,11 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c7734cb6b4e2983a95fa56ea72824, type: 3}
-  m_Name: addItemObjective
+  m_Script: {fileID: 11500000, guid: 111c15b9b772c784aa0404581e8192b3, type: 3}
+  m_Name: playGongQuest
   m_EditorClassIdentifier: 
-  ObjectiveID: O_02
-  QuestID: 01
-  Description: Add the item
-  Completed: 0
-  ItemId: hotdog
+  QuestID: 00
+  Description: "Play that motherf#@\xA7ing gong."
+  Objectives:
+  - {fileID: 11400000, guid: d6f33f55cc5cca946b6a895636fd8964, type: 2}
+  Active: 0

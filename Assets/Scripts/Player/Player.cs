@@ -246,7 +246,7 @@ public class Player : MonoBehaviour
 			if (pObject != null && pObject.IsPlayable())
 			{
 				pObject.Play();
-				EventManager.TriggerEvent("Play" + pObject);
+				EventManager.TriggerEvent("Play" + pObject.ObjectID);
 				break;
 			}
 		}
