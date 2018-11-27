@@ -5,16 +5,16 @@ namespace Quests.Objectives
     [CreateAssetMenu( fileName = "New Play Objective", menuName = "PlayObjective", order = 4)]
     public class PlayObjective : Objective
     {
-        public IPlayableObject PlayableObject;
+        public string ObjectID;
 
         public override void StartListening()
         {
-            EventManager.StartListening("Play" + PlayableObject, Complete);
+            EventManager.StartListening("Play" + ObjectID, Complete);
         }
 
         public override void StopListening()
         {
-            EventManager.StopListening("Play" + PlayableObject, Complete);
+            EventManager.StopListening("Play" + ObjectID, Complete);
         }
 
         public override void Complete()
@@ -23,7 +23,7 @@ namespace Quests.Objectives
             if (quest == null) return; 
             if (quest.NextObjective() != this) return;
             
-            EventManager.StopListening("Play" + PlayableObject, Complete);
+            EventManager.StopListening("Play" + ObjectID, Complete);
             this.Completed = true;
             Debug.Log("Objective " + this.ObjectiveID + " completed.");
         }

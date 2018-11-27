@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563cba875933551409e8cd9437882594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjectID: gong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
+  SoundName: GongSoundTest
 --- !u!212 &212515094628488910
 SpriteRenderer:
   m_ObjectHideFlags: 1

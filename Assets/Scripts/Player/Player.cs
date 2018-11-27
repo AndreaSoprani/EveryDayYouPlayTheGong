@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Objects;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
@@ -85,12 +86,11 @@ public class Player : MonoBehaviour
 		
 		Move();
 
-		IInteractiveObject interactiveObject = HasInteraction();
+		InGameObject interactable = HasInteraction();
 		
-		if (interactiveObject != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
+		if (interactable != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
 		{
-			Debug.Log("Interact");
-			Interact(interactiveObject);
+			Interact(interactable);
 		} else if (Input.GetKeyDown(_actionKeyCodes["Play"]))
 		{
 			Play();
@@ -242,7 +242,7 @@ public class Player : MonoBehaviour
 			RaycastHit2D hit = Physics2D.Raycast(positions[i], _facing, PlayRadius, ObstacleLayer);
 			if (hit.collider == null) continue;
 			
-			IPlayableObject pObject = hit.collider.gameObject.GetComponent<IPlayableObject>();
+			InGameObject pObject = hit.collider.gameObject.GetComponent<InGameObject>();
 			if (pObject != null && pObject.IsPlayable())
 			{
 				pObject.Play();
@@ -256,12 +256,11 @@ public class Player : MonoBehaviour
 	/// <summary>
 	/// Calls the Interaction on the Interactive Object
 	/// </summary>
-	/// <param name="obj">GameObject to interact with.</param>
-	void Interact(IInteractiveObject obj)
+	/// <param name="obj">InGameObject to interact with.</param>
+	void Interact(InGameObject obj)
 	{
 		obj.Interact(this);
-		EventManager.TriggerEvent("Interact" + obj);
-		Debug.Log(_items.Count);
+		EventManager.TriggerEvent("Interact" + obj.ObjectID);
 		
 	}
 
@@ -269,7 +268,7 @@ public class Player : MonoBehaviour
 	/// Allows to detect an interactive object in the facing direction (within the InteractionDetectionRadius range).
 	/// </summary>
 	/// <returns>the object detected or null if nothing was detected.</returns>
-	IInteractiveObject HasInteraction()
+	InGameObject HasInteraction()
 	{
 		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
 
@@ -278,7 +277,7 @@ public class Player : MonoBehaviour
 			RaycastHit2D hit = Physics2D.Raycast(positions[i], _facing, InteractionDetectionRadius, ObstacleLayer);
 			if (hit.collider == null) continue;
 			
-			IInteractiveObject iObject = hit.collider.gameObject.GetComponent<IInteractiveObject>();
+			InGameObject iObject = hit.collider.gameObject.GetComponent<InGameObject>();
 			if (iObject != null && iObject.IsInteractable())
 			{
 				//EventManager.TriggerEvent("InteractionGUIElement");

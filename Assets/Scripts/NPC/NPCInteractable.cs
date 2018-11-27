@@ -1,19 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Objects;
 using UnityEngine;
 using Utility;
 
-public class NPCInteractable : MonoBehaviour, IInteractiveObject
+public class NPCInteractable : InGameObject
 {
 
 	public Dialogue Dialogue;
-
-	public bool IsInteractable()
-	{
-		return true;
-	}
-
-	public void Interact(Player player)
+	
+	public override void Interact(Player player)
 	{
 		Dialogue.StartDialogue();
 	}

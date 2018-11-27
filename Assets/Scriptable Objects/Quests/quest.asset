@@ -15,4 +15,4 @@ MonoBehaviour:
   Description: Acquire an item
   Objectives:
   - {fileID: 11400000, guid: b235221276549294db4b11588763d60e, type: 2}
-  Active: 1
+  Active: 0

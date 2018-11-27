@@ -183,6 +183,11 @@ Prefab:
       propertyPath: m_Name
       value: Pickuphotdog
       objectReference: {fileID: 0}
+    - target: {fileID: 114492516894442688, guid: 0b67fc17101e8254e8ae3daa765a6400,
+        type: 2}
+      propertyPath: ObjectID
+      value: pickuphotdog
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b67fc17101e8254e8ae3daa765a6400, type: 2}
   m_IsPrefabAsset: 0

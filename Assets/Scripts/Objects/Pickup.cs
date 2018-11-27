@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Objects;
 using UnityEngine;
 [ExecuteInEditMode]
-public class Pickup : MonoBehaviour, IInteractiveObject
+public class Pickup : InGameObject
 {
 
 	public Item Item;
@@ -15,19 +16,9 @@ public class Pickup : MonoBehaviour, IInteractiveObject
 		this.name = "Pickup" + Item.Id;
 	}
 
-	public bool IsInteractable()
-	{
-		return true;
-	}
-
-	public void Interact(Player player)
+	public override void Interact(Player player)
 	{
 		player.AddItem(Item);
 		Destroy(gameObject);
-	}
-
-	public void setIsInteractable(bool value)
-	{
-		
 	}
 }

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Objects;
 using UnityEngine;
 
-public class Door : MonoBehaviour, IInteractiveObject
+public class Door : InGameObject
 {
 	
 	public bool IsOpen;
@@ -13,13 +14,13 @@ public class Door : MonoBehaviour, IInteractiveObject
 		else CloseDoor();
 	}
 
-	public bool IsInteractable()
+	public override bool IsInteractable()
 	{
 		//For now doors are interactable only if they are closed.
 		return !IsOpen;
 	}
 
-	public void Interact(Player player)
+	public override void Interact(Player player)
 	{
 		OpenDoor();
 	}
@@ -30,7 +31,6 @@ public class Door : MonoBehaviour, IInteractiveObject
 	public void OpenDoor()
 	{
 		GetComponent<SpriteRenderer>().enabled = false;
-		
 		GetComponent<BoxCollider2D>().enabled = false;
 		IsOpen = true;
 	}
@@ -41,7 +41,6 @@ public class Door : MonoBehaviour, IInteractiveObject
 	public void CloseDoor()
 	{
 		GetComponent<SpriteRenderer>().enabled = true;
-		
 		GetComponent<BoxCollider2D>().enabled = true;
 		IsOpen = false;
 	}

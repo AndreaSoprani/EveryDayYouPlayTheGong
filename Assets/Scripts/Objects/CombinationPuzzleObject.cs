@@ -1,30 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Objects;
 using UnityEngine;
 
-public class CombinationPuzzleObject : MonoBehaviour, IPlayableObject
+public class CombinationPuzzleObject : InGameObject
 {
 
 	private bool _solved;
 
-	public bool IsPlayable()
+	public override bool IsPlayable()
 	{
 		return !_solved;
 	}
 
-	public void Play()
+	public override void Play()
 	{
 		if(!_solved)
 		{
-			
-				GetComponentInParent<CombinationPuzzleManager>().Selection(this);
-			
+				GetComponentInParent<CombinationPuzzleManager>().Selection(this);	
 		}
 	}
 
 	public void setSolved(bool b)
 	{
 		_solved = b;
-		
 	}
 }

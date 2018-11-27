@@ -5,16 +5,16 @@ namespace Quests.Objectives
     [CreateAssetMenu( fileName = "New Interact Objective", menuName = "InteractObjective", order = 3)]
     public class InteractObjective : Objective
     {
-        public IInteractiveObject InteractiveObject;
+        public string ObjectID;
         
         public override void StartListening()
         {
-            EventManager.StartListening("Interact" + InteractiveObject, Complete);
+            EventManager.StartListening("Interact" + ObjectID, Complete);
         }
 
         public override void StopListening()
         {
-            EventManager.StopListening("Interact" + InteractiveObject, Complete);
+            EventManager.StopListening("Interact" + ObjectID, Complete);
         }
 
         public override void Complete()
@@ -23,7 +23,7 @@ namespace Quests.Objectives
             if (quest == null) return; 
             if (quest.NextObjective() != this) return;
             
-            EventManager.StopListening("Interact" + InteractiveObject, Complete);
+            EventManager.StopListening("Interact" + ObjectID, Complete);
             this.Completed = true;
             Debug.Log("Objective " + this.ObjectiveID + " completed.");
         }

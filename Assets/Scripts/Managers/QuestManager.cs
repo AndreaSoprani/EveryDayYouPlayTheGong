@@ -128,7 +128,7 @@ public class QuestManager : MonoBehaviour
 	}
 
 	/// <summary>
-	/// On destroy "de-complete" all objectives.
+	/// On destroy "de-complete" all objectives and deactivates all quests.
 	/// </summary>
 	private void OnDestroy()
 	{
@@ -138,6 +138,8 @@ public class QuestManager : MonoBehaviour
 			{
 				objective.Completed = false;
 			}
+
+			quest.Active = false;
 		}
 	}
 }

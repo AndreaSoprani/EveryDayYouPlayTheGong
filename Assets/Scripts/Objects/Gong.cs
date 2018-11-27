@@ -1,41 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Objects;
 using Quests;
 using Quests.Objectives;
 using UnityEditor;
 using UnityEngine;
 using Utility;
 
-public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
+public class Gong : InGameObject
 {
 
 	public Dialogue Dialogue;
+	public string SoundName;
 
 	/*
 	 * PLAY
 	 */
 
-	public bool IsPlayable()
+	public override bool IsPlayable()
 	{
 		return true;
 	}
 
-	public void Play()
+	public override void Play()
 	{
-		AudioManager.Instance.PlaySound("GongSoundTest");
+		AudioManager.Instance.PlaySound(SoundName);
 	}
 
 	
 	/*
 	 * INTERACT
 	 */
-	
-	public bool IsInteractable()
-	{
-		return true;
-	}
 
-	public void Interact(Player player)
+
+	public override void Interact(Player player)
 	{
 		Dialogue.StartDialogue();
 	}
@@ -57,14 +55,14 @@ public class Gong : MonoBehaviour, IPlayableObject, IInteractiveObject
 		iObj.QuestID = quest.QuestID;
 		iObj.Description = "Test interact objective";
 		iObj.Completed = false;
-		iObj.InteractiveObject = GetComponent<IInteractiveObject>();
+		iObj.ObjectID = this.ObjectID;
 		
 		PlayObjective pObj = ScriptableObject.CreateInstance<PlayObjective>();
 		pObj.ObjectiveID = "O_01";
 		pObj.QuestID = quest.QuestID;
 		pObj.Description = "Test play objective";
 		pObj.Completed = false;
-		pObj.PlayableObject = GetComponent<IPlayableObject>();
+		pObj.ObjectID = this.ObjectID;
 		
 		quest.Objectives.Add(iObj);
 		quest.Objectives.Add(pObj);
