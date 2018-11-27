@@ -34,7 +34,7 @@ public class NPCFollowController : MonoBehaviour
 
 
 	void LateUpdate () {
-		if (FollowPath.canFollow())
+		if (FollowPath.canFollow() && !FollowPath.IsInDialogue())
 		{
 			// Insert newest position into our cache.
 			// If the cache is full, overwrite the latest sample.

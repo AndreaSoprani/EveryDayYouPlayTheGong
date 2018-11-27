@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using Utility;
 
 public class FollowPathScript : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class FollowPathScript : MonoBehaviour
 	private bool _canFollow;
 	private bool _hasFinished;
 	private int _position;
+	private bool _isInDialogue;
 
 
 	void Start()
@@ -31,10 +33,28 @@ public class FollowPathScript : MonoBehaviour
 		if (_canFollow)
 		{
 			
-			transform.position = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].position, Speed*Time.deltaTime);
-			if (transform.position == PathToFollow.WayPoints[_position].position)
+			transform.position = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].transform.position, Speed*Time.deltaTime);
+			if (transform.position == PathToFollow.WayPoints[_position].transform.position)
 			{
-				_position++;
+				if (PathToFollow.WayPoints[_position].Type == PathNodeType.Dialogue )
+				{
+					if (!_isInDialogue && !TextBoxManager.Instance.IsActive)
+					{
+						_isInDialogue = true;
+						TextBoxManager.Instance.LoadDialogue(PathToFollow.WayPoints[_position].Text);
+					}
+					else if(_isInDialogue && !TextBoxManager.Instance.IsActive)
+					{
+						_position++;
+						_isInDialogue = false ;
+					}
+				}
+				else
+				{
+					_position++;	
+				}
+				
+
 				if (_position == PathToFollow.WayPoints.Count )
 				{
 					if (PathToFollow.Type == PathType.Linear)
@@ -71,6 +91,11 @@ public class FollowPathScript : MonoBehaviour
 	public bool isPathCompleted()
 	{
 		return _hasFinished;
+	}
+
+	public bool IsInDialogue()
+	{
+		return _isInDialogue;
 	}
 }
 
