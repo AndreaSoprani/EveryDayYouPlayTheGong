@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: gong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
-  SoundName: GongSoundTest
+  Sound: {fileID: 11400000, guid: 98896a35a4251c8409bd23e3ed8eb890, type: 2}
 --- !u!212 &212515094628488910
 SpriteRenderer:
   m_ObjectHideFlags: 1

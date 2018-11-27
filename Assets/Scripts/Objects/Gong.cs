@@ -11,7 +11,7 @@ public class Gong : InGameObject
 {
 
 	public Dialogue Dialogue;
-	public string SoundName;
+	public Sound Sound;
 
 	/*
 	 * PLAY
@@ -24,7 +24,7 @@ public class Gong : InGameObject
 
 	public override void Play()
 	{
-		AudioManager.Instance.PlaySound(SoundName);
+		AudioManager.Instance.PlaySound(Sound);
 	}
 
 	
