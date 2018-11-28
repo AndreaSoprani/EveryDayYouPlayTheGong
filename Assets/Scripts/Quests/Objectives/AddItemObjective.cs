@@ -29,8 +29,7 @@ namespace Quests.Objectives
         public override void Complete()
         {
             EventManager.StopListening("AddItem" + ItemId, Complete);
-            this.Completed = true;
-            Debug.Log("Objective " + this.ObjectiveID + " completed.");
+            base.Complete();
         }
     }
 }

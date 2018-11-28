@@ -21,8 +21,7 @@ namespace Quests.Objectives
         public override void Complete()
         {
             EventManager.StopListening("RemoveItem" + ItemId, Complete);
-            this.Completed = true;
-            Debug.Log("Objective " + this.ObjectiveID + " completed.");
+            base.Complete();
         }
     }
 }

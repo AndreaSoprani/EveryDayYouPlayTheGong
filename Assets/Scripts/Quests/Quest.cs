@@ -16,6 +16,7 @@ namespace Quests
         public string Description; // Text description of the Quest.
         public List<Objective> Objectives;
         public bool Active; // True if the quest is active in the game, false otherwise.
+        public List<Quest> ActivateWhenComplete; // List of quests to activate when this one is complete.
 
         /// <summary>
         /// Signals if all the objectives are completed.

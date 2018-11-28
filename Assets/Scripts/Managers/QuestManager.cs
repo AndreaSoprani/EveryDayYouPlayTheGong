@@ -28,6 +28,7 @@ public class QuestManager : MonoBehaviour
 	}
 
 	public List<Quest> Quests = new List<Quest>();
+	
 
 	
 	/// <summary>
@@ -74,15 +75,12 @@ public class QuestManager : MonoBehaviour
 	/// <param name="questID">The QuestID of the quest to activate.</param>
 	public void ActivateQuest(string questID)
 	{
-		for (int i = 0; i < Quests.Count; i++)
-		{
-			if (Quests[i].QuestID == questID)
-			{
-				Quests[i].Active = true;
-				ListenOnObjectives(Quests[i]);
-			}
-			
-		}
+		Quest quest = GetQuest(questID);
+
+		if (quest == null) return;
+		
+		quest.Active = true;
+		ListenOnObjectives(quest);
 	}
 
 	/// <summary>
@@ -91,14 +89,35 @@ public class QuestManager : MonoBehaviour
 	/// <param name="questID">The QuestID of the quest to deactivate.</param>
 	public void DeactivateQuest(string questID)
 	{
-		for (int i = 0; i < Quests.Count; i++)
+		Quest quest = GetQuest(questID);
+
+		if (quest == null) return;
+		
+		quest.Active = false;
+		StopListeningOnObjectives(quest);
+	}
+
+	/// <summary>
+	/// Used by objectives to check if the quest is completed and de-activate it (and activate possible quests).
+	/// </summary>
+	/// <param name="questID">The id of the quest.</param>
+	public void CheckComplete(string questID)
+	{
+		Quest quest = GetQuest(questID);
+		
+		if (quest == null || !quest.IsComplete()) return;
+		
+		Debug.Log("Quest " + questID + " Completed");
+
+		// Activate all quests to activate.
+		for (int i = 0; i < quest.ActivateWhenComplete.Count; i++)
 		{
-			if (Quests[i].QuestID == questID)
-			{
-				Quests[i].Active = false;
-				StopListeningOnObjectives(Quests[i]);
-			}
+			ActivateQuest(quest.ActivateWhenComplete[i].QuestID);
 		}
+		
+		// Deactivate completed quest.
+		DeactivateQuest(questID);
+
 	}
 
 	/// <summary>
@@ -142,4 +161,5 @@ public class QuestManager : MonoBehaviour
 			quest.Active = false;
 		}
 	}
+	
 }
