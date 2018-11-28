@@ -75,6 +75,8 @@ public class Player : MonoBehaviour
 		//TODO: initialize as checkpoint.
 
 		_inDialogue = false;
+		
+		EventManager.StartListening("EnterDialogue", EnterDialogue);
 
 	}
 	
@@ -352,6 +354,7 @@ public class Player : MonoBehaviour
 	{
 		return _items;
 	}
+	
 	/**
 	 * Used to enter in dialogue mode.
 	 * All control on the player is disabled.
@@ -359,6 +362,8 @@ public class Player : MonoBehaviour
 	public void EnterDialogue()
 	{
 		_inDialogue = true;
+		EventManager.StopListening("EnterDialogue", EnterDialogue);
+		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
 
 	/**
@@ -368,6 +373,8 @@ public class Player : MonoBehaviour
 	public void ExitDialogue()
 	{
 		_inDialogue = false;
+		EventManager.StopListening("ExitDialogue", ExitDialogue);
+		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 
 	/**

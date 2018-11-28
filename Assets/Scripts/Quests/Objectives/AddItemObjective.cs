@@ -1,4 +1,5 @@
 using System;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 namespace Quests.Objectives
@@ -12,6 +13,11 @@ namespace Quests.Objectives
 
         public override void StartListening()
         {
+            if (Player.Instance.HasItem(ItemId))
+            {
+                Complete();
+            }
+            
             EventManager.StartListening("AddItem" + ItemId, Complete);
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Quests;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
@@ -28,21 +29,22 @@ public class TextBoxManager : MonoBehaviour
 
 	public Text TextBoxText;
 	public Text TextBoxName;
-
 	
 	
 	private string[] _textLines;
 
 	private int _currentLine;
 
+	private List<Quest> _questsToActivate;
+
 	public bool IsActive;
-	public bool StopPlayerMovementOnDialogue = true;
 
 	// Use this for initialization
 	void Start ()
 	{
 		
 		IsActive = false;
+		_questsToActivate = new List<Quest>();
 
 	}
 
@@ -73,7 +75,7 @@ public class TextBoxManager : MonoBehaviour
 		if (_textLines.Length == 0) return;
 		TextBox.SetActive(true);
 		IsActive = true;
-		if(StopPlayerMovementOnDialogue) Player.Instance.EnterDialogue();
+		EventManager.TriggerEvent("EnterDialogue");
 	}
 
 	/// <summary>
@@ -81,9 +83,18 @@ public class TextBoxManager : MonoBehaviour
 	/// </summary>
 	private void DisableTextBox()
 	{
+		// Disable text box.
 		TextBox.SetActive(false);
 		IsActive = false;
-		Player.Instance.ExitDialogue();
+
+		// Activate all quests to activate
+		for (int i = 0; i < _questsToActivate.Count; i++)
+		{
+			QuestManager.Instance.ActivateQuest(_questsToActivate[i].QuestID);
+		}
+		
+		// Signal dialogue exit
+		EventManager.TriggerEvent("ExitDialogue");
 	}
 
 	/// <summary>
@@ -102,11 +113,7 @@ public class TextBoxManager : MonoBehaviour
 		// Set the NPC name.
 		TextBoxName.text = dialogue.NPCName;
 
-		// Activate all quests to activate
-		for (int i = 0; i < dialogue.QuestsToActivate.Count; i++)
-		{
-			QuestManager.Instance.ActivateQuest(dialogue.QuestsToActivate[i].QuestID);
-		}
+		_questsToActivate = dialogue.QuestsToActivate;
 
 		_currentLine = 0;
 	}
