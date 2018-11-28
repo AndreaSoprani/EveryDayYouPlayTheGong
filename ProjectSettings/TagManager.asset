@@ -9,6 +9,7 @@ TagManager:
   - InventoryDescription
   - InventoryImage
   - Inventory
+  - GUIController
   layers:
   - Default
   - TransparentFX

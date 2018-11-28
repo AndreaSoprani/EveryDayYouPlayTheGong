@@ -8,10 +8,10 @@ public class GUIController : MonoBehaviour {
 	
 	public GameObject PauseMenu;
 	public InventoryController Inventory;
+	public NotificationController NotificationController;
 	
     private float _timePassed;
 	private bool _isGamePaused;
-	
 	
 
 	private void OnEnable()
@@ -42,11 +42,14 @@ public class GUIController : MonoBehaviour {
 				OpenInventory();
 			else
 				CloseInventory();
-			
-
-			
 		}
 		
+		if (NotificationController.IsNotificationActive() && Input.GetKeyDown(KeyCode.Space))
+		{
+			NotificationController.HideNotification();
+			Time.timeScale = 1;
+			_isGamePaused = false;
+		}	
 		
 	}
 
@@ -79,9 +82,18 @@ public class GUIController : MonoBehaviour {
 		PauseMenu.SetActive(false);
 	}
 
+	public void NotifyGetItem(Item item)
+	{
+		Time.timeScale = 0;
+		NotificationController.ShowNotification(item, true);
+	}
 
+	public void NotifyRemoveItem(Item item)
+	{
+		Time.timeScale = 0;
+		NotificationController.ShowNotification(item, false);
+	}
 	
-
 	/// <summary>
 	/// Used to display the option to interact with an object on screen.
 	/// </summary>
