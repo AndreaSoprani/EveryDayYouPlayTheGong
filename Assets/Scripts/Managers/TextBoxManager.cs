@@ -36,6 +36,8 @@ public class TextBoxManager : MonoBehaviour
 	private int _currentLine;
 
 	private List<Quest> _questsToActivate;
+	private List<Item> _itemsToAdd;
+	private List<Item> _itemsToRemove;
 
 	public bool IsActive;
 
@@ -45,6 +47,8 @@ public class TextBoxManager : MonoBehaviour
 		
 		IsActive = false;
 		_questsToActivate = new List<Quest>();
+		_itemsToAdd = new List<Item>();
+		_itemsToRemove = new List<Item>();
 
 	}
 
@@ -93,6 +97,18 @@ public class TextBoxManager : MonoBehaviour
 			QuestManager.Instance.ActivateQuest(_questsToActivate[i].QuestID);
 		}
 		
+		// Add all items to add
+		for (int i = 0; i < _itemsToAdd.Count; i++)
+		{
+			Player.Instance.AddItem(_itemsToAdd[i]);
+		}
+		
+		// Add all items to add
+		for (int i = 0; i < _itemsToRemove.Count; i++)
+		{
+			Player.Instance.RemoveItem(_itemsToRemove[i]);
+		}
+		
 		// Signal dialogue exit
 		EventManager.TriggerEvent("ExitDialogue");
 	}
@@ -114,6 +130,8 @@ public class TextBoxManager : MonoBehaviour
 		TextBoxName.text = dialogue.NPCName;
 
 		_questsToActivate = dialogue.QuestsToActivate;
+		_itemsToAdd = dialogue.ItemsToAdd;
+		_itemsToRemove = dialogue.ItemsToRemove;
 
 		_currentLine = 0;
 	}

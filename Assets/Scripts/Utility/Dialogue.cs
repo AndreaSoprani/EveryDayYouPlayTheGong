@@ -10,6 +10,8 @@ namespace Utility
         public TextAsset TextAsset; // The text to display.
         public string NPCName; // The name of the NPC to display.
         public List<Quest> QuestsToActivate; // List of quests to activate after the dialogue.
+        public List<Item> ItemsToAdd; // List of the items to add after the dialogue.
+        public List<Item> ItemsToRemove; // List of the items to remove after the dialogue.
 
         /// <summary>
         /// Calls the TextBoxManager and starts the dialogue.
