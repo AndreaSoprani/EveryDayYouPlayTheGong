@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
 		_animator = GetComponent<Animator>();
 		_canvas = GetComponentInChildren<Canvas>();
 		
-		_facing = Vector3.up;
+		_facing = Vector3.down;
 		
 		_items = new Collection<Item>();
 		//TODO: initialize as checkpoint.

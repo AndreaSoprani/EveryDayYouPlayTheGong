@@ -229,11 +229,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4770021134030080, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.36
+      value: -6.353
       objectReference: {fileID: 0}
     - target: {fileID: 4770021134030080, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.59
+      value: 0.543
       objectReference: {fileID: 0}
     - target: {fileID: 4770021134030080, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
       propertyPath: m_LocalPosition.z
@@ -290,7 +290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartScene: Test Scene
-  Player: {fileID: 52017525}
   Camera: {fileID: 1354896260}
 --- !u!4 &2124994609
 Transform:
