@@ -26,6 +26,11 @@ namespace Quests.Objectives
         /// Method that must be called when the event associated to the objective is triggered.
         /// Stops listening on the event and sets Completed to true.
         /// </summary>
-        public abstract void Complete();
+        public virtual void Complete()
+        {
+            this.Completed = true;
+            QuestManager.Instance.CheckComplete(QuestID);
+            Debug.Log("Objective " + this.ObjectiveID + " completed.");
+        }
     }
 }

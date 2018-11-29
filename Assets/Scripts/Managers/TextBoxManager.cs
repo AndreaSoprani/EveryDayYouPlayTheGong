@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Quests;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
@@ -28,21 +29,26 @@ public class TextBoxManager : MonoBehaviour
 
 	public Text TextBoxText;
 	public Text TextBoxName;
-
 	
 	
 	private string[] _textLines;
 
 	private int _currentLine;
 
+	private List<Quest> _questsToActivate;
+	private List<Item> _itemsToAdd;
+	private List<Item> _itemsToRemove;
+
 	public bool IsActive;
-	public bool StopPlayerMovementOnDialogue = true;
 
 	// Use this for initialization
 	void Start ()
 	{
 		
 		IsActive = false;
+		_questsToActivate = new List<Quest>();
+		_itemsToAdd = new List<Item>();
+		_itemsToRemove = new List<Item>();
 
 	}
 
@@ -73,7 +79,7 @@ public class TextBoxManager : MonoBehaviour
 		if (_textLines.Length == 0) return;
 		TextBox.SetActive(true);
 		IsActive = true;
-		if(StopPlayerMovementOnDialogue) Player.Instance.EnterDialogue();
+		EventManager.TriggerEvent("EnterDialogue");
 	}
 
 	/// <summary>
@@ -81,9 +87,30 @@ public class TextBoxManager : MonoBehaviour
 	/// </summary>
 	private void DisableTextBox()
 	{
+		// Disable text box.
 		TextBox.SetActive(false);
 		IsActive = false;
-		Player.Instance.ExitDialogue();
+
+		// Activate all quests to activate
+		for (int i = 0; i < _questsToActivate.Count; i++)
+		{
+			QuestManager.Instance.ActivateQuest(_questsToActivate[i].QuestID);
+		}
+		
+		// Add all items to add
+		for (int i = 0; i < _itemsToAdd.Count; i++)
+		{
+			Player.Instance.AddItem(_itemsToAdd[i]);
+		}
+		
+		// Add all items to add
+		for (int i = 0; i < _itemsToRemove.Count; i++)
+		{
+			Player.Instance.RemoveItem(_itemsToRemove[i]);
+		}
+		
+		// Signal dialogue exit
+		EventManager.TriggerEvent("ExitDialogue");
 	}
 
 	/// <summary>
@@ -102,11 +129,9 @@ public class TextBoxManager : MonoBehaviour
 		// Set the NPC name.
 		TextBoxName.text = dialogue.NPCName;
 
-		// Activate all quests to activate
-		for (int i = 0; i < dialogue.QuestsToActivate.Count; i++)
-		{
-			QuestManager.Instance.ActivateQuest(dialogue.QuestsToActivate[i].QuestID);
-		}
+		_questsToActivate = dialogue.QuestsToActivate;
+		_itemsToAdd = dialogue.ItemsToAdd;
+		_itemsToRemove = dialogue.ItemsToRemove;
 
 		_currentLine = 0;
 	}

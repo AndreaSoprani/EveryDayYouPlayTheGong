@@ -16,3 +16,5 @@ MonoBehaviour:
   Objectives:
   - {fileID: 11400000, guid: b235221276549294db4b11588763d60e, type: 2}
   Active: 0
+  ActivateWhenComplete:
+  - {fileID: 11400000, guid: ebe6a8bb9c64dd64783be0ab4efe4d8e, type: 2}

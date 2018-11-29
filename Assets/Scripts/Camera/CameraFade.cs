@@ -14,7 +14,6 @@ public class CameraFade: MonoBehaviour
         if (Instance == null)//TODO Check if this needs to be a Singleton
         {
             Instance = this;
-            gameObject.SetActive(false); //TODO Find a way to setActive false from Inspector without returning an exception
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -25,7 +24,7 @@ public class CameraFade: MonoBehaviour
     
     public IEnumerator FadeTo(float transitionTime, float alpha)
     {
-        gameObject.SetActive(true);
+        gameObject.GetComponent<Canvas>().enabled = true;
             
         Color tmp = Img.color;
 
@@ -38,7 +37,7 @@ public class CameraFade: MonoBehaviour
         }
 
         if (alpha == 0f)
-            gameObject.SetActive(false);
+            gameObject.GetComponent<Canvas>().enabled = false;
     }
 
     //TODO Look if it's possible to use delegate to create a function that fade in and out but also perform a custom function

@@ -23,6 +23,7 @@ public class NPCMovement : MonoBehaviour
 
 	private Animator _animator;
 	private bool _walk = true;
+	private bool _inDialogue;
 	
 	// Use this for initialization
 	void Start ()
@@ -30,11 +31,16 @@ public class NPCMovement : MonoBehaviour
 		_animator = GetComponent<Animator>();
 		_center  = transform.position;
 		PickNewDestination();
+
+		_inDialogue = false;
+		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+		if (_inDialogue) return;
+		
 		if (_walk)
 		{
 			Vector3 deltaMovement = _direction * Velocity * Time.deltaTime;
@@ -128,5 +134,27 @@ public class NPCMovement : MonoBehaviour
 		_walk = true;
 		
 		_animator.SetBool("Walking", true);
+	}
+	
+	/**
+	 * Used to enter in dialogue mode.
+	 * Movement is disabled.
+	 */
+	public void EnterDialogue()
+	{
+		_inDialogue = true;
+		EventManager.StopListening("EnterDialogue", EnterDialogue);
+		EventManager.StartListening("ExitDialogue", ExitDialogue);
+	}
+
+	/**
+	 * Used to exit dialogue mode.
+	 * Movement is re-enabled.
+	 */
+	public void ExitDialogue()
+	{
+		_inDialogue = false;
+		EventManager.StopListening("ExitDialogue", ExitDialogue);
+		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 }

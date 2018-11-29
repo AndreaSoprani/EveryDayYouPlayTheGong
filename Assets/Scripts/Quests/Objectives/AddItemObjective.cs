@@ -1,4 +1,5 @@
 using System;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 namespace Quests.Objectives
@@ -12,6 +13,11 @@ namespace Quests.Objectives
 
         public override void StartListening()
         {
+            if (Player.Instance.HasItem(ItemId))
+            {
+                Complete();
+            }
+            
             EventManager.StartListening("AddItem" + ItemId, Complete);
         }
 
@@ -23,8 +29,7 @@ namespace Quests.Objectives
         public override void Complete()
         {
             EventManager.StopListening("AddItem" + ItemId, Complete);
-            this.Completed = true;
-            Debug.Log("Objective " + this.ObjectiveID + " completed.");
+            base.Complete();
         }
     }
 }

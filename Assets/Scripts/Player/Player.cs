@@ -38,7 +38,10 @@ public class Player : MonoBehaviour
 
 	private bool _inDialogue;
 
+	private bool _frontInteractable;
+	
 	private Animator _animator;
+	private Canvas _canvas;
 	
 	private void Awake()
 	{
@@ -68,13 +71,16 @@ public class Player : MonoBehaviour
 		};
 
 		_animator = GetComponent<Animator>();
+		_canvas = GetComponentInChildren<Canvas>();
 		
-		_facing = Vector3.up;
+		_facing = Vector3.down;
 		
 		_items = new Collection<Item>();
 		//TODO: initialize as checkpoint.
 
 		_inDialogue = false;
+		
+		EventManager.StartListening("EnterDialogue", EnterDialogue);
 
 	}
 	
@@ -109,9 +115,13 @@ public class Player : MonoBehaviour
 	void Move()
 	{
 		float movementVelocity = Velocity;
-		
+		bool run = false;
+
 		if (Input.GetKey(_actionKeyCodes["Run"]) && !Input.GetKey(_actionKeyCodes["Crawl"]))
+		{
 			movementVelocity *= RunIncrement;
+			run = true;
+		}
 		if (Input.GetKey(_actionKeyCodes["Crawl"]))
 			movementVelocity *= CrawlDecrement;
 		
@@ -126,8 +136,9 @@ public class Player : MonoBehaviour
 		}
 		else
 		{
-			if(!_animator.GetBool("Walking"))
-				_animator.SetBool("Walking", true);
+			_animator.SetBool("Walking", true);
+			
+			_animator.SetBool("Running", run);
 			
 			UpdateFacing(movement);
 
@@ -280,11 +291,12 @@ public class Player : MonoBehaviour
 			InGameObject iObject = hit.collider.gameObject.GetComponent<InGameObject>();
 			if (iObject != null && iObject.IsInteractable())
 			{
-				//EventManager.TriggerEvent("InteractionGUIElement");
+				_canvas.enabled = true;
 				return iObject;
 			}
 		}
 
+		_canvas.enabled = false;
 		return null;
 
 	}
@@ -329,6 +341,7 @@ public class Player : MonoBehaviour
 		//TextBoxManager.Instance.LoadScript(message, "");
 		//TextBoxManager.Instance.EnableTextBox();
 		
+		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyGetItem", item);
 		EventManager.TriggerEvent("AddItem" + item.Id);
 	}
 
@@ -340,10 +353,12 @@ public class Player : MonoBehaviour
 	public bool RemoveItem(Item item)
 	{
 		bool removed = _items.Remove(item);
-		
-		if (removed) EventManager.TriggerEvent("RemoveItem" + item.Id);
-		
-		// TODO: display object removed text.
+
+		if (removed)
+		{
+			EventManager.TriggerEvent("RemoveItem" + item.Id);
+			GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyRemoveItem", item);
+		}
 		
 		return removed;
 	}
@@ -352,6 +367,7 @@ public class Player : MonoBehaviour
 	{
 		return _items;
 	}
+	
 	/**
 	 * Used to enter in dialogue mode.
 	 * All control on the player is disabled.
@@ -359,6 +375,8 @@ public class Player : MonoBehaviour
 	public void EnterDialogue()
 	{
 		_inDialogue = true;
+		EventManager.StopListening("EnterDialogue", EnterDialogue);
+		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
 
 	/**
@@ -368,6 +386,8 @@ public class Player : MonoBehaviour
 	public void ExitDialogue()
 	{
 		_inDialogue = false;
+		EventManager.StopListening("ExitDialogue", ExitDialogue);
+		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 
 	/**

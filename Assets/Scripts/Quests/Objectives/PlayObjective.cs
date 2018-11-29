@@ -24,8 +24,7 @@ namespace Quests.Objectives
             if (quest.NextObjective() != this) return;
             
             EventManager.StopListening("Play" + ObjectID, Complete);
-            this.Completed = true;
-            Debug.Log("Objective " + this.ObjectiveID + " completed.");
+            base.Complete();
         }
     }
 }

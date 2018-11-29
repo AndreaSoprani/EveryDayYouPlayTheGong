@@ -20,8 +20,7 @@ namespace Quests.Objectives
         public override void Complete()
         {
             EventManager.StopListening("PuzzleSolved" + PuzzleId, Complete);
-            this.Completed = true;
-            Debug.Log("Objective " + this.ObjectiveID + " completed.");
+            base.Complete();
         }
     }
 }
