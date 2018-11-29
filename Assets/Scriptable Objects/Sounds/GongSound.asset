@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: GongSound
   m_EditorClassIdentifier: 
   Name: Gong
-  Clip: {fileID: 8300000, guid: e0ca55e97b4f6ae47b4707a3bf93fe39, type: 3}
+  Clip: {fileID: 8300000, guid: 430bf0b9bf0e60e489e171175bd6f7f9, type: 3}
   Volume: 0.5
   Pitch: 1
   VolumeRange: 0.1

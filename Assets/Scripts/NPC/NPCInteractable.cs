@@ -7,10 +7,15 @@ using Utility;
 public class NPCInteractable : InGameObject
 {
 
-	public Dialogue Dialogue;
+	public List<Dialogue> Dialogues;
 	
 	public override void Interact(Player player)
 	{
-		Dialogue.StartDialogue();
+		LastAvailableDialogue().StartDialogue();
+	}
+
+	private Dialogue LastAvailableDialogue()
+	{
+		return Dialogues.FindLast(d => d.IsAvailable());
 	}
 }
