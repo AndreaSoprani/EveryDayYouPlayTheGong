@@ -363,7 +363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4169421197325162, guid: a88d12dd32e8c44478946d2f5673e2ae, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4169421197325162, guid: a88d12dd32e8c44478946d2f5673e2ae, type: 2}
       propertyPath: m_LocalPosition.z
@@ -395,6 +395,10 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 15bbc5a01a72c9b49bae89178cee7395,
         type: 2}
+    - target: {fileID: 1501505001355924, guid: a88d12dd32e8c44478946d2f5673e2ae, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a88d12dd32e8c44478946d2f5673e2ae, type: 2}
   m_IsPrefabAsset: 0
@@ -603,6 +607,16 @@ Prefab:
     - target: {fileID: 4770021134030080, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114216785292418014, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
+        type: 2}
+      propertyPath: StairsSpeedModifier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114216785292418014, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
+        type: 2}
+      propertyPath: StairsPositionDisplacement
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}

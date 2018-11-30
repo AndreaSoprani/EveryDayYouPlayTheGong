@@ -155,7 +155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b14602e9dab0844bda61b232e1fb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjectID: 
   IsOpen: 0
+  ItemNeeded: {fileID: 0}
+  ClosedDoorDialogue: {fileID: 11400000, guid: 7fd771aa163ff3f4d9e2607eeb835cce, type: 2}
 --- !u!114 &114407433380536512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,6 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 0}
   Offset: {x: 0, y: 0, z: 0}
+  TimeIn: 0.4
+  Pause: 0.3
+  TimeOut: 0.5
 --- !u!212 &212099640882985238
 SpriteRenderer:
   m_ObjectHideFlags: 1

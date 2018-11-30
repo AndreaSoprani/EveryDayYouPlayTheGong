@@ -24,6 +24,13 @@ public class Player : MonoBehaviour
 	[Header("Interact & Play")] 
 	public float InteractionDetectionRadius = 1f;
 	public float PlayRadius = 1f;
+
+	[Header("Stairs")] 
+	[Range(0.1f, 1f)] public float StairsSpeedModifier = 0.5f; // Modifier for the speed when on frontal stairs.
+	[Range(0f, 0.1f)] public float StairsPositionDisplacement = 0.01f; // Modifier for position upgrade when on a side stair
+	private bool _onFrontalStairs;
+	private bool _onRightStairs;
+	private bool _onLeftStairs;
 	
 	// Stores all the keycodes for the player's actions.
 	private IDictionary<string, KeyCode> _actionKeyCodes;
@@ -79,6 +86,10 @@ public class Player : MonoBehaviour
 		//TODO: initialize as checkpoint.
 
 		_inDialogue = false;
+
+		_onFrontalStairs = false;
+		_onRightStairs = false;
+		_onLeftStairs = false;
 		
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 
@@ -128,6 +139,23 @@ public class Player : MonoBehaviour
 		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;
 		float deltaVertical = Input.GetAxis("Vertical") * movementVelocity * Time.deltaTime;
 
+		// Stairs checking
+		if (_onFrontalStairs)
+		{
+			if (deltaVertical > 0) deltaVertical = deltaVertical * StairsSpeedModifier;
+			else if (deltaVertical < 0) deltaVertical = deltaVertical / StairsSpeedModifier;
+		}
+		else if (_onRightStairs)
+		{
+			if (deltaHorizontal > 0) deltaVertical = deltaVertical + StairsPositionDisplacement;
+			else if (deltaHorizontal < 0) deltaVertical = deltaVertical - StairsPositionDisplacement;
+		} 
+		else if (_onLeftStairs)
+		{
+			if (deltaHorizontal > 0) deltaVertical = deltaVertical - StairsPositionDisplacement;
+			else if (deltaHorizontal < 0) deltaVertical = deltaVertical + StairsPositionDisplacement;
+		}
+		
 		Vector3 movement = new Vector3(deltaHorizontal, deltaVertical, 0);
 		
 		if (movement.Equals(Vector3.zero))
@@ -397,5 +425,36 @@ public class Player : MonoBehaviour
 	{
 		return _inDialogue;
 	}
-	
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.CompareTag("StairsFront"))
+		{
+			_onFrontalStairs = true;
+		}
+		else if (other.CompareTag("StairsRight"))
+		{
+			_onRightStairs = true;
+		} 
+		else if (other.CompareTag("StairsLeft"))
+		{
+			_onLeftStairs = true;
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.CompareTag("StairsFront"))
+		{
+			_onFrontalStairs = false;
+		} 
+		else if (other.CompareTag("StairsRight"))
+		{
+			_onRightStairs = false;
+		} 
+		else if (other.CompareTag("StairsLeft"))
+		{
+			_onLeftStairs = false;
+		}
+	}
 }
