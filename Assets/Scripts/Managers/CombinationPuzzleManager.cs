@@ -39,9 +39,9 @@ public class CombinationPuzzleManager : MonoBehaviour
 			
 		}
 		if(TypeOfPuzzle == PuzzleType.ItemReward)
-			Reward.Interact(Player.Instance);
+			Reward.Interact();
 		else if(TypeOfPuzzle == PuzzleType.OpenDoor)
-			DoorToBeOpened.Interact(Player.Instance);
+			DoorToBeOpened.Interact();
 		
 		EventManager.TriggerEvent("PuzzleSolved" + PuzzleId);
 

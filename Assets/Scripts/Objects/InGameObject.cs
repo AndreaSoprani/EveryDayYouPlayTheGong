@@ -21,7 +21,7 @@ namespace Objects
         /// Used to interact with the object.
         /// Without override it does nothing.
         /// </summary>
-        public virtual void Interact(Player player){}
+        public virtual void Interact(){}
         
         /// <summary>
         /// Used to check if the object can be played.

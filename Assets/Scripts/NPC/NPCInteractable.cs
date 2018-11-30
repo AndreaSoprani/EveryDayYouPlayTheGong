@@ -9,7 +9,7 @@ public class NPCInteractable : InGameObject
 
 	public List<Dialogue> Dialogues;
 	
-	public override void Interact(Player player)
+	public override void Interact()
 	{
 		LastAvailableDialogue().StartDialogue();
 	}

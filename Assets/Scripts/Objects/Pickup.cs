@@ -16,9 +16,9 @@ public class Pickup : InGameObject
 		this.name = "Pickup" + Item.Id;
 	}
 
-	public override void Interact(Player player)
+	public override void Interact()
 	{
-		player.AddItem(Item);
+		Player.Instance.AddItem(Item);
 		Destroy(gameObject);
 	}
 }

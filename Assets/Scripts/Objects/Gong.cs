@@ -33,7 +33,7 @@ public class Gong : InGameObject
 	 */
 
 
-	public override void Interact(Player player)
+	public override void Interact()
 	{
 		Dialogue.StartDialogue();
 	}

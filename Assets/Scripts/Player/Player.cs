@@ -270,7 +270,7 @@ public class Player : MonoBehaviour
 	/// <param name="obj">InGameObject to interact with.</param>
 	void Interact(InGameObject obj)
 	{
-		obj.Interact(this);
+		obj.Interact();
 		EventManager.TriggerEvent("Interact" + obj.ObjectID);
 		
 	}
