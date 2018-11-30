@@ -54,6 +54,4 @@ MonoBehaviour:
   TextBox: {fileID: 0}
   TextBoxText: {fileID: 0}
   TextBoxName: {fileID: 0}
-  Player: {fileID: 0}
   IsActive: 0
-  StopPlayerMovementOnDialogue: 1
