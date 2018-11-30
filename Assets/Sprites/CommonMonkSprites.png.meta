@@ -1,39 +1,39 @@
 fileFormatVersion: 2
-guid: 0da732a9c0f738e4cb2eac6e51e5b42e
+guid: 81e28005c2cc63449bae4e2f4f6a6cdf
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MonkIdleDown_0
-    21300002: MonkIdleDown_1
-    21300004: MonkIdleUp_0
-    21300006: MonkIdleUp_1
-    21300008: MonkIdleLeft_0
-    21300010: MonkIdleLeft_1
-    21300012: MonkIdleRight_0
-    21300014: MonkIdleRight_1
-    21300016: MonkWalkDown_0
-    21300018: MonkWalkDown_1
-    21300020: MonkWalkDown_2
-    21300022: MonkWalkDown_3
-    21300024: MonkWalkDown_4
-    21300026: MonkWalkDown_5
-    21300028: MonkWalkUp_0
-    21300030: MonkWalkUp_1
-    21300032: MonkWalkUp_2
-    21300034: MonkWalkUp_3
-    21300036: MonkWalkUp_4
-    21300038: MonkWalkUp_5
-    21300040: MonkWalkLeft_0
-    21300042: MonkWalkLeft_1
-    21300044: MonkWalkLeft_2
-    21300046: MonkWalkLeft_3
-    21300048: MonkWalkLeft_4
-    21300050: MonkWalkLeft_5
-    21300052: MonkWalkRight_0
-    21300054: MonkWalkRight_1
-    21300056: MonkWalkRight_2
-    21300058: MonkWalkRight_3
-    21300060: MonkWalkRight_4
-    21300062: MonkWalkRight_5
+    21300000: CommonMonkIdleDown_0
+    21300002: CommonMonkIdleDown_1
+    21300004: CommonMonkIdleUp_0
+    21300006: CommonMonkIdleUp_1
+    21300008: CommonMonkIdleLeft_0
+    21300010: CommonMonkIdleLeft_1
+    21300012: CommonMonkIdleRight_0
+    21300014: CommonMonkIdleRight_1
+    21300016: CommonMonkIWalkDown_0
+    21300018: CommonMonkIWalkDown_1
+    21300020: CommonMonkIWalkDown_2
+    21300022: CommonMonkIWalkDown_3
+    21300024: CommonMonkIWalkDown_4
+    21300026: CommonMonkIWalkDown_5
+    21300028: CommonMonkIWalkUp_0
+    21300030: CommonMonkIWalkUp_1
+    21300032: CommonMonkIWalkUp_2
+    21300034: CommonMonkIWalkUp_3
+    21300036: CommonMonkIWalkUp_4
+    21300038: CommonMonkIWalkUp_5
+    21300040: CommonMonkIWalkLeft_0
+    21300042: CommonMonkIWalkLeft_1
+    21300044: CommonMonkIWalkLeft_2
+    21300046: CommonMonkIWalkLeft_3
+    21300048: CommonMonkIWalkLeft_4
+    21300050: CommonMonkIWalkLeft_5
+    21300052: CommonMonkIWalkRight_0
+    21300054: CommonMonkIWalkRight_1
+    21300056: CommonMonkIWalkRight_2
+    21300058: CommonMonkIWalkRight_3
+    21300060: CommonMonkIWalkRight_4
+    21300062: CommonMonkIWalkRight_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonkIdleDown_0
+      name: CommonMonkIdleDown_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,13 +130,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21f102fcb9272674b840eda511671779
+      spriteID: cb3b1491626b4224d8ee9830049d0d6c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleDown_1
+      name: CommonMonkIdleDown_1
       rect:
         serializedVersion: 2
         x: 32
@@ -150,13 +150,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e295f76fc5f0a45b5c825fc872cee9
+      spriteID: 4a3c1ba4628c9ed4f9e1007966925385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleUp_0
+      name: CommonMonkIdleUp_0
       rect:
         serializedVersion: 2
         x: 64
@@ -170,13 +170,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c125876e0a03a7489a9f8e79f7db97c
+      spriteID: dd858bcce41fe124cb0c84162de466af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleUp_1
+      name: CommonMonkIdleUp_1
       rect:
         serializedVersion: 2
         x: 96
@@ -190,13 +190,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ed6733bfdb62d4db591915d64b0468
+      spriteID: 8fa73306b4a089b4a97642c2ca734bf7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleLeft_0
+      name: CommonMonkIdleLeft_0
       rect:
         serializedVersion: 2
         x: 128
@@ -204,19 +204,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d1376e66ae529b4d86128a577796517
+      spriteID: 2eae44f2adf2c2142b046d1048e8a30a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleLeft_1
+      name: CommonMonkIdleLeft_1
       rect:
         serializedVersion: 2
         x: 160
@@ -224,19 +224,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f535eac6edf104aa2db28e70d274fd
+      spriteID: f09251736bc9f6946961cb69bffbd96f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleRight_0
+      name: CommonMonkIdleRight_0
       rect:
         serializedVersion: 2
         x: 192
@@ -244,19 +244,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56f440af4d514d14d97544e57aaa0c70
+      spriteID: d75348d0f25658a4a9fa3432c31cec2a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkIdleRight_1
+      name: CommonMonkIdleRight_1
       rect:
         serializedVersion: 2
         x: 224
@@ -264,19 +264,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83f33d6ac2fcc6343a34d5a925caa796
+      spriteID: 5d8991b802968724b9d5bfb8f16db051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkDown_0
+      name: CommonMonkIWalkDown_0
       rect:
         serializedVersion: 2
         x: 0
@@ -290,13 +290,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a96ddc89707ad66478d437613ffbbf21
+      spriteID: a19cb3e9e1ca1df48914266b91473479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkDown_1
+      name: CommonMonkIWalkDown_1
       rect:
         serializedVersion: 2
         x: 32
@@ -310,13 +310,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2887452d3085dc74ca935ba964ef6f25
+      spriteID: bbab69babcb603c4c80077cb878e9e09
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkDown_2
+      name: CommonMonkIWalkDown_2
       rect:
         serializedVersion: 2
         x: 64
@@ -330,13 +330,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60ff9e1da61884545b934e01065a7366
+      spriteID: c92534eab4a0b184a82d87376fc9301e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkDown_3
+      name: CommonMonkIWalkDown_3
       rect:
         serializedVersion: 2
         x: 96
@@ -350,13 +350,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc6e2b4b370ae7145b97aede354f1731
+      spriteID: 872c43da0146b0e42a21942a2af670a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkDown_4
+      name: CommonMonkIWalkDown_4
       rect:
         serializedVersion: 2
         x: 128
@@ -370,13 +370,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4c9913e58ddd644910d5a068252fb0
+      spriteID: 52d3d538d53cdbe459ed3685ed5a1592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkDown_5
+      name: CommonMonkIWalkDown_5
       rect:
         serializedVersion: 2
         x: 160
@@ -390,13 +390,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c44dc1d93ea0c94bb52ff82d679b5f6
+      spriteID: f046fd99e54842f4d823333081aa80f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkUp_0
+      name: CommonMonkIWalkUp_0
       rect:
         serializedVersion: 2
         x: 0
@@ -410,13 +410,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba768fadf7b1cc54f96b0f1a3b70cacc
+      spriteID: 746caed7d432eb7498bea923ded3e095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkUp_1
+      name: CommonMonkIWalkUp_1
       rect:
         serializedVersion: 2
         x: 32
@@ -430,13 +430,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a2cb1ac7b0a2d4a96a88078dfe0b2f
+      spriteID: 82555512614513e438685a5d95fe21a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkUp_2
+      name: CommonMonkIWalkUp_2
       rect:
         serializedVersion: 2
         x: 64
@@ -450,13 +450,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6446281a513560144b89015ae243aa1a
+      spriteID: 4905ed2c648138542a966005b0221fa0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkUp_3
+      name: CommonMonkIWalkUp_3
       rect:
         serializedVersion: 2
         x: 96
@@ -470,13 +470,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a02a65fc9692ec449b0ffb508b78456e
+      spriteID: 2cd2d6bec2ab2854c961766cbec98b47
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkUp_4
+      name: CommonMonkIWalkUp_4
       rect:
         serializedVersion: 2
         x: 128
@@ -490,13 +490,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95c4ea6078cd6e7479bae6f915ca3fa2
+      spriteID: 35c5113d40a5e3245bec2441ea0b3b40
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkUp_5
+      name: CommonMonkIWalkUp_5
       rect:
         serializedVersion: 2
         x: 160
@@ -510,13 +510,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba269aa223d845f4cb7caaff28ca5673
+      spriteID: bf6be30c76721fa49bee5164499b1b32
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkLeft_0
+      name: CommonMonkIWalkLeft_0
       rect:
         serializedVersion: 2
         x: 0
@@ -524,19 +524,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf3b2fa671c5ad41bf3262380c31566
+      spriteID: e9a52b79072c022489077673ff8526d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkLeft_1
+      name: CommonMonkIWalkLeft_1
       rect:
         serializedVersion: 2
         x: 32
@@ -544,19 +544,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 440847fa88456bd46a400bbc4cdaafbc
+      spriteID: ecfd84b0b38be8640bce5f2112ca1412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkLeft_2
+      name: CommonMonkIWalkLeft_2
       rect:
         serializedVersion: 2
         x: 64
@@ -564,19 +564,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 312e7b06b00b41f459c81b91ef096079
+      spriteID: 7b8c9017d7308634ca75f5263ecc75f1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkLeft_3
+      name: CommonMonkIWalkLeft_3
       rect:
         serializedVersion: 2
         x: 96
@@ -584,19 +584,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d91913161fb67b49b15d2f1ba41f362
+      spriteID: 12d78bc41db53334388dfcad0b36b899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkLeft_4
+      name: CommonMonkIWalkLeft_4
       rect:
         serializedVersion: 2
         x: 128
@@ -604,19 +604,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22a5fe9aade771345b6ad360a39daa7d
+      spriteID: 5dbb275771747f349aa88297d6a911bb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkLeft_5
+      name: CommonMonkIWalkLeft_5
       rect:
         serializedVersion: 2
         x: 160
@@ -624,19 +624,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41ce0534045a5384c99a64c24b6f70de
+      spriteID: a5a1fa95d69d37e45a15e4f9bdfcba72
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkRight_0
+      name: CommonMonkIWalkRight_0
       rect:
         serializedVersion: 2
         x: 0
@@ -644,19 +644,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc9a2f1728b6f541930e9d0d15e0a0a
+      spriteID: 75f8920f64591f94aa588fdcdb0d4676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkRight_1
+      name: CommonMonkIWalkRight_1
       rect:
         serializedVersion: 2
         x: 32
@@ -664,19 +664,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c371a7b86401e0469f061228b7b608c
+      spriteID: f0204bcbaec8a7a4997cb8f735a2911e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkRight_2
+      name: CommonMonkIWalkRight_2
       rect:
         serializedVersion: 2
         x: 64
@@ -684,19 +684,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d91745adf80d434c9b4fce22ef54cc5
+      spriteID: 7e8938a06c00376419f6cfe31c633bc7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkRight_3
+      name: CommonMonkIWalkRight_3
       rect:
         serializedVersion: 2
         x: 96
@@ -704,19 +704,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ead85c035092e34886b5e4d3fecff7e
+      spriteID: d5a45ed9b3d1bfd47acc4761e7828137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkRight_4
+      name: CommonMonkIWalkRight_4
       rect:
         serializedVersion: 2
         x: 128
@@ -724,19 +724,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 178cd56b376976143b9f097e10594054
+      spriteID: 81bd19249ab037f4da6d62a5baaed915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonkWalkRight_5
+      name: CommonMonkIWalkRight_5
       rect:
         serializedVersion: 2
         x: 160
@@ -744,13 +744,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.485, y: 0.15}
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c861bc916166cd48a13d8e35e55b68a
+      spriteID: 8a8a894586ab42a4ba87f2ea9fe4e505
       vertices: []
       indices: 
       edges: []
@@ -758,7 +758,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 19144a950a1952b40bd64c87e9d5726f
+    spriteID: f4de17baed01a62469c162f4079d626e
     vertices: []
     indices: 
     edges: []
