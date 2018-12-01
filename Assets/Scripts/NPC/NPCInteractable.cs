@@ -25,6 +25,11 @@ public class NPCInteractable : InGameObject
 
 	}
 
+	public void InstantDialogue(Dialogue dialogue)
+	{
+		dialogue.StartDialogue();
+	}
+
 	private Dialogue LastAvailableDialogue()
 	{
 		return Dialogues.FindLast(d => d.IsAvailable());
