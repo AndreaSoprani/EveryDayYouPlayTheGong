@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 4914538577749696}
   - component: {fileID: 114750558159015930}
   - component: {fileID: 114693276583948942}
+  - component: {fileID: 114621003392848596}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1599,6 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60121ed53e60a104d98d4ffdd26f8b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ControlsSettings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
   PauseMenu: {fileID: 1675100164014754}
   Inventory: {fileID: 114907462245079906}
   NotificationController: {fileID: 114949609177123270}
@@ -1764,6 +1766,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: LOAD
+--- !u!114 &114621003392848596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1557876768635416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1327945023, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114669637746518322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2059,7 +2072,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 896b9e4093176ab428a886986da472b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2132,7 +2145,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ukkukhuhkuhkuhku
+  m_Text: Hotdog has been retrieved
 --- !u!114 &114845665321736962
 MonoBehaviour:
   m_ObjectHideFlags: 1

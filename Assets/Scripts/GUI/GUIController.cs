@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using Quests;
 using UnityEngine;
 using UnityEngine.UI;
+using Utility;
 
-public class GUIController : MonoBehaviour {
-	
-	
+public class GUIController : MonoBehaviour
+{
+
+	public ControlsSettings ControlsSettings;
 	public GameObject PauseMenu;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
@@ -23,7 +25,7 @@ public class GUIController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(ControlsSettings.Menu))
 		{
 			if (_isGamePaused)
 			{
@@ -37,7 +39,7 @@ public class GUIController : MonoBehaviour {
 					Pause();
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.I) && !PauseMenu.activeInHierarchy)
+		if (Input.GetKeyDown(ControlsSettings.ItemsMenu) && !PauseMenu.activeInHierarchy)
 		{
 			if (!Inventory.gameObject.activeInHierarchy)
 				OpenInventory();
@@ -45,7 +47,7 @@ public class GUIController : MonoBehaviour {
 				CloseInventory();
 		}
 		
-		if (NotificationController.IsNotificationActive() && Input.GetKeyDown(KeyCode.Space))
+		if (NotificationController.IsNotificationActive() && Input.GetKeyDown(KeyCode.Return))
 		{
 			NotificationController.HideNotification();
 			Time.timeScale = 1;

@@ -5,12 +5,16 @@ using System.Collections.ObjectModel;
 using Objects;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
+using Utility;
 
 public class Player : MonoBehaviour
 {
 
 	private static Player _instance;
 	public static Player Instance { get ; private set; }
+	
+	[Header("Settings")]
+	public ControlsSettings ControlsSettings;
 	
 	[Header("Movement")]
 	public float Velocity = 2f;
@@ -31,9 +35,6 @@ public class Player : MonoBehaviour
 	private bool _onFrontalStairs;
 	private bool _onRightStairs;
 	private bool _onLeftStairs;
-	
-	// Stores all the keycodes for the player's actions.
-	private IDictionary<string, KeyCode> _actionKeyCodes;
 	
 	private Transform _tr;
 
@@ -68,15 +69,6 @@ public class Player : MonoBehaviour
 	{
 		_tr = GetComponent<Transform>();
 
-		//TODO: load keys from file + add edit
-		_actionKeyCodes = new Dictionary<string, KeyCode>
-		{
-			{"Run", KeyCode.LeftControl},
-			{"Crawl", KeyCode.LeftShift},
-			{"Play", KeyCode.Space},
-			{"Interact", KeyCode.X}
-		};
-
 		_animator = GetComponent<Animator>();
 		_canvas = GetComponentInChildren<Canvas>();
 		
@@ -105,10 +97,10 @@ public class Player : MonoBehaviour
 
 		InGameObject interactable = HasInteraction();
 		
-		if (interactable != null && Input.GetKeyDown(_actionKeyCodes["Interact"]))
+		if (interactable != null && Input.GetKeyDown(ControlsSettings.Interact))
 		{
 			Interact(interactable);
-		} else if (Input.GetKeyDown(_actionKeyCodes["Play"]))
+		} else if (Input.GetKeyDown(ControlsSettings.Play))
 		{
 			Play();
 		}
@@ -128,12 +120,12 @@ public class Player : MonoBehaviour
 		float movementVelocity = Velocity;
 		bool run = false;
 
-		if (Input.GetKey(_actionKeyCodes["Run"]) && !Input.GetKey(_actionKeyCodes["Crawl"]))
+		if (Input.GetKey(ControlsSettings.Run) && !Input.GetKey(ControlsSettings.Crawl))
 		{
 			movementVelocity *= RunIncrement;
 			run = true;
 		}
-		if (Input.GetKey(_actionKeyCodes["Crawl"]))
+		if (Input.GetKey(ControlsSettings.Crawl))
 			movementVelocity *= CrawlDecrement;
 		
 		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;
