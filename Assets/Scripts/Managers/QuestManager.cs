@@ -80,6 +80,7 @@ public class QuestManager : MonoBehaviour
 		if (quest == null) return;
 		
 		quest.Active = true;
+		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyQuestActivated", quest);
 		ListenOnObjectives(quest);
 	}
 
@@ -108,7 +109,7 @@ public class QuestManager : MonoBehaviour
 		if (quest == null || !quest.IsComplete()) return;
 		
 		Debug.Log("Quest " + questID + " Completed");
-
+		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyCompletedQuest", quest);
 		// Activate all quests to activate.
 		for (int i = 0; i < quest.ActivateWhenComplete.Count; i++)
 		{

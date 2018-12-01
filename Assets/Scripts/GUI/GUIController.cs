@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Quests;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -85,13 +86,25 @@ public class GUIController : MonoBehaviour {
 	public void NotifyGetItem(Item item)
 	{
 		Time.timeScale = 0;
-		NotificationController.ShowNotification(item, true);
+		NotificationController.ShowItemNotification(item, true);
 	}
 
 	public void NotifyRemoveItem(Item item)
 	{
 		Time.timeScale = 0;
-		NotificationController.ShowNotification(item, false);
+		NotificationController.ShowItemNotification(item, false);
+	}
+	
+	public void NotifyQuestActivated(Quest quest)
+	{
+		Time.timeScale = 0;
+		NotificationController.ShowQuestNotification(quest, true);
+	}
+
+	public void NotifyQuestCompleted(Quest quest)
+	{
+		Time.timeScale = 0;
+		NotificationController.ShowQuestNotification(quest, false);
 	}
 	
 	/// <summary>

@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 222372784707794786}
   - component: {fileID: 114455226683982716}
   m_Layer: 0
-  m_Name: ItemNotification
+  m_Name: NotificationWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2132,7 +2132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: ukkukhuhkuhkuhku
 --- !u!114 &114845665321736962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2349,8 +2349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90934494a6059934c80f5e2fad4c9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemNotification: {fileID: 1253672536420356}
-  ItemText: {fileID: 114840416792479084}
+  NotificationWindow: {fileID: 1253672536420356}
+  Textbox: {fileID: 114840416792479084}
   Img: {fileID: 114809998501916402}
 --- !u!114 &114970023676892776
 MonoBehaviour:
@@ -3081,7 +3081,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224664876440884836}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34500003, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3270,7 +3270,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224664876440884836}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.34500003, y: 1}
@@ -3325,8 +3325,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 224375651822030726}
   - {fileID: 224619112036297920}
+  - {fileID: 224375651822030726}
   m_Father: {fileID: 224642644767125174}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
