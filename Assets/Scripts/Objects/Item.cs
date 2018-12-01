@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public class Item : MonoBehaviour
+[CreateAssetMenu(fileName = "New item", menuName = "Item")]
+public class Item : ScriptableObject
 {
 	
 	// ITEM ATTRIBUTES
