@@ -7,7 +7,7 @@ using UnityEditor;
 using UnityEngine;
 using Utility;
 
-public class Gong : InGameObject
+public class Instrument : InGameObject
 {
 
 	public Dialogue Dialogue;

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: 72fd930e573744da8d69c0932ce4040b, type: 3}
   NPCName: NPC
+  ActiveQuest: {fileID: 0}
+  CompletedObjectives: []
+  CompletedQuests: []
+  UncompletedQuests: []
   QuestsToActivate:
   - {fileID: 11400000, guid: 61590a74ede1aab4090116d9a2544865, type: 2}
-  ItemsToAdd:
-  - {fileID: 114690806331117192, guid: 0f0f7d0baf399d04287d5a2485214a08, type: 2}
+  ItemsToAdd: []
   ItemsToRemove:
-  - {fileID: 114690806331117192, guid: d42e1054e45a4fe419abdd35b3aeb4f2, type: 2}
+  - {fileID: 0}
