@@ -8,24 +8,18 @@ using Utility;
 public class GUIController : MonoBehaviour
 {
 
-	public ControlsSettings ControlsSettings;
+	public Settings Settings;
 	public GameObject PauseMenu;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
 	
     private float _timePassed;
 	private bool _isGamePaused;
-	
-
-	private void OnEnable()
-	{
-		EventManager.StartListening("InteractionGUIElement", DisplayInteraction);
-	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(ControlsSettings.Menu))
+		if (Input.GetKeyDown(Settings.Menu))
 		{
 			if (_isGamePaused)
 			{
@@ -39,7 +33,7 @@ public class GUIController : MonoBehaviour
 					Pause();
 			}
 		}
-		if (Input.GetKeyDown(ControlsSettings.ItemsMenu) && !PauseMenu.activeInHierarchy)
+		if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.activeInHierarchy)
 		{
 			if (!Inventory.gameObject.activeInHierarchy)
 				OpenInventory();
@@ -107,16 +101,6 @@ public class GUIController : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		NotificationController.ShowQuestNotification(quest, false);
-	}
-	
-	/// <summary>
-	/// Used to display the option to interact with an object on screen.
-	/// </summary>
-	void DisplayInteraction()
-	{
-		//Debug.Log("Press KEY to interact."); 
-		//TODO: Retrieve correct key.
-		//TODO: Display it on the screen.
 	}
 
 	public void QuitGame()

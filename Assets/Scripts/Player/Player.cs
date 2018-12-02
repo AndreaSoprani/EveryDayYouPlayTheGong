@@ -13,8 +13,7 @@ public class Player : MonoBehaviour
 	private static Player _instance;
 	public static Player Instance { get ; private set; }
 	
-	[Header("Settings")]
-	public ControlsSettings ControlsSettings;
+	public Settings Settings;
 	
 	[Header("Movement")]
 	public float Velocity = 2f;
@@ -97,10 +96,10 @@ public class Player : MonoBehaviour
 
 		InGameObject interactable = HasInteraction();
 		
-		if (interactable != null && Input.GetKeyDown(ControlsSettings.Interact))
+		if (interactable != null && Input.GetKeyDown(Settings.Interact))
 		{
 			Interact(interactable);
-		} else if (Input.GetKeyDown(ControlsSettings.Play))
+		} else if (Input.GetKeyDown(Settings.Play))
 		{
 			Play();
 		}
@@ -120,12 +119,12 @@ public class Player : MonoBehaviour
 		float movementVelocity = Velocity;
 		bool run = false;
 
-		if (Input.GetKey(ControlsSettings.Run) && !Input.GetKey(ControlsSettings.Crawl))
+		if (Input.GetKey(Settings.Run) && !Input.GetKey(Settings.Crawl))
 		{
 			movementVelocity *= RunIncrement;
 			run = true;
 		}
-		if (Input.GetKey(ControlsSettings.Crawl))
+		if (Input.GetKey(Settings.Crawl))
 			movementVelocity *= CrawlDecrement;
 		
 		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;

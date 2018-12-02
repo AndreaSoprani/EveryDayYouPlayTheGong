@@ -19,8 +19,8 @@ public class AudioManager : MonoBehaviour
 		_instance = this;
 		DontDestroyOnLoad(this.gameObject);
 	}
-	
-	private bool _sfxOn = true;
+
+	public Settings Settings;
 
 	/// <summary>
 	/// Method used to play a specific sound.
@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
 	/// <param name="sound">The sound to be played.</param>
 	public void PlaySound(Sound sound)
 	{
-		if (!_sfxOn || sound == null) return;
+		if (!Settings.SFXOn || sound == null) return;
 
 		if (!sound.HasSource())
 		{
@@ -37,18 +37,8 @@ public class AudioManager : MonoBehaviour
 			sound.SetSource(go.AddComponent<AudioSource>());
 		}
 		
-		sound.Play();
+		sound.Play(Settings.SFXVolume);
 		
-	}
-
-	public void EnableSFX()
-	{
-		_sfxOn = true;
-	}
-
-	public void DisableSFX()
-	{
-		_sfxOn = false;
 	}
 	
 }

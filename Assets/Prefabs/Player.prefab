@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5a4b1a895ef9c4ab6f73d1da770dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ControlsSettings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
+  Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
   Velocity: 1.8
   RunIncrement: 1.5
   CrawlDecrement: 0.7

@@ -43,9 +43,9 @@ namespace Utility
         /// <summary>
         /// Play the Sound on the Sound's AudioSource
         /// </summary>
-        public void Play()
+        public void Play(float SFXVolume)
         {
-            _source.volume = Volume * (1 + Random.Range(-VolumeRange / 2, VolumeRange / 2));
+            _source.volume = Volume * SFXVolume * (1 + Random.Range(-VolumeRange / 2, VolumeRange / 2));
             _source.pitch = Pitch * (1 + Random.Range(-PitchRange / 2, PitchRange / 2));
             _source.Play();
         }

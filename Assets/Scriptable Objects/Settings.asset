@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ad1a8dd7e064d59a069124ac9e01b54, type: 3}
-  m_Name: ControlsSettings
+  m_Name: Settings
   m_EditorClassIdentifier: 
   Interact: 120
   Play: 32
@@ -17,3 +17,7 @@ MonoBehaviour:
   Crawl: 304
   ItemsMenu: 105
   Menu: 27
+  MusicOn: 1
+  SFXOn: 1
+  MusicVolume: 1
+  SFXVolume: 1

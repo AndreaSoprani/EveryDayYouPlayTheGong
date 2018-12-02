@@ -51,10 +51,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea1647618d53cb4980c1298c65710f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sounds:
-  - Name: GongSoundTest
-    Clip: {fileID: 8300000, guid: e0ca55e97b4f6ae47b4707a3bf93fe39, type: 3}
-    Volume: 1
-    Pitch: 0.5
-    VolumeRange: 0
-    PitchRange: 0
+  Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}

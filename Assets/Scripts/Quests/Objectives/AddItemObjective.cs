@@ -8,8 +8,6 @@ namespace Quests.Objectives
     public class AddItemObjective : Objective
     {
         public string ItemId;
-        
-        // TODO check if player already has the item
 
         public override void StartListening()
         {

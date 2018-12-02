@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60121ed53e60a104d98d4ffdd26f8b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ControlsSettings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
+  Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
   PauseMenu: {fileID: 1675100164014754}
   Inventory: {fileID: 114907462245079906}
   NotificationController: {fileID: 114949609177123270}
