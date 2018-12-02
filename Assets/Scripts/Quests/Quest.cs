@@ -15,7 +15,7 @@ namespace Quests
         public string QuestID; // Unique ID of the Quest.
         public string Description; // Text description of the Quest.
         public List<Objective> Objectives;
-        public bool Active; // True if the quest is active in the game, false otherwise.
+        public bool Completed;
         public List<Quest> ActivateWhenComplete; // List of quests to activate when this one is complete.
 
         /// <summary>
@@ -24,12 +24,23 @@ namespace Quests
         /// <returns>True if all objectives are completed, false if at least one is not.</returns>
         public bool IsComplete()
         {
+            return Completed;
+        }
+
+        public void UpdateCompletion()
+        {
+            if (Completed) return;
+            
             for (int i = 0; i < Objectives.Count(); i++)
             {
-                if (!Objectives[i].Completed) return false;
+                if (!Objectives[i].Completed) Completed = false;
             }
 
-            return true;
+            Completed = true;
+            
+            Debug.Log("Quest " + QuestID + " Completed");
+            
+            QuestManager.Instance.QuestCompleted(this);
         }
 
         /// <summary>

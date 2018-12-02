@@ -17,6 +17,8 @@ namespace Utility
         public Quest ActiveQuest; // The quest that must be active in order to use this dialogue.
         public List<Objective> CompletedObjectives; // List of objectives that have to be accomplished in order to
         // make this dialogue available.
+        public List<Quest> CompletedQuests; // List of quests that must be completed to make this dialogue available.
+        public List<Quest> UncompletedQuests; // List of quests that must be not completed to make this dialogue available.
         
         [Header("Consequences of the dialogue")]
         public List<Quest> QuestsToActivate; // List of quests to activate after the dialogue.
@@ -41,7 +43,7 @@ namespace Utility
         {
 
             if (ActiveQuest != null &&
-                !QuestManager.Instance.GetQuest(ActiveQuest.QuestID).Active)
+                !QuestManager.Instance.TodayQuests.Contains(ActiveQuest))
             {
                 return false;
             }
@@ -51,6 +53,16 @@ namespace Utility
                 if (!CompletedObjectives[i].Completed) return false;
             }
 
+            for (int i = 0; i < CompletedQuests.Count; i++)
+            {
+                if (!CompletedQuests[i].Completed) return false;
+            }
+            
+            for (int i = 0; i < UncompletedQuests.Count; i++)
+            {
+                if (UncompletedQuests[i].Completed) return false;
+            }
+            
             return true;
         }
     }

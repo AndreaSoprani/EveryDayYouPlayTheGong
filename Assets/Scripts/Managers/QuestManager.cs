@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Quests;
 using Quests.Objectives;
+using UnityEditor;
 using UnityEngine;
 using UnityScript.Scripting.Pipeline;
+using Utility;
 
 public class QuestManager : MonoBehaviour
 {
@@ -27,9 +29,12 @@ public class QuestManager : MonoBehaviour
 		DontDestroyOnLoad(this.gameObject);
 	}
 
-	public List<Quest> Quests = new List<Quest>();
+	public Settings Settings;
 	
-
+	public List<Quest> Quests = new List<Quest>();
+	public List<Quest> TodayQuests = new List<Quest>();
+	public List<Quest> QuestsOnHold = new List<Quest>();
+	
 	
 	/// <summary>
 	/// Starts listening on all active quests.
@@ -38,7 +43,7 @@ public class QuestManager : MonoBehaviour
 	{
 		for (int i = 0; i < Quests.Count; i++)
 		{
-			if(Quests[i].Active) ListenOnObjectives(Quests[i]);
+			if(TodayQuests.Contains(Quests[i])) ListenOnObjectives(Quests[i]);
 		}
 	}
 
@@ -50,8 +55,6 @@ public class QuestManager : MonoBehaviour
 	public void AddQuest(Quest quest)
 	{
 		Quests.Add(quest);
-		// Listen on events for all objectives.
-		ListenOnObjectives(quest);
 	}
 
 	/// <summary>
@@ -70,57 +73,72 @@ public class QuestManager : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Used to activate a quest given its ID.
+	/// Used to activate a quest.
 	/// </summary>
-	/// <param name="questID">The QuestID of the quest to activate.</param>
-	public void ActivateQuest(string questID)
+	/// <param name="quest">The quest to activate.</param>
+	public void ActivateQuest(Quest quest)
 	{
-		Quest quest = GetQuest(questID);
-
 		if (quest == null) return;
+
+		if (IsDayFull())
+		{
+			QuestsOnHold.Add(quest);
+			return;
+		}
 		
-		quest.Active = true;
+		TodayQuests.Add(quest);
+		
 		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyQuestActivated", quest);
 		ListenOnObjectives(quest);
 	}
 
 	/// <summary>
-	/// Used to deactivate a quest given its ID.
+	/// Used by quests upon completion.
 	/// </summary>
-	/// <param name="questID">The QuestID of the quest to deactivate.</param>
-	public void DeactivateQuest(string questID)
+	/// <param name="quest">The completed quest.</param>
+	public void QuestCompleted(Quest quest)
 	{
-		Quest quest = GetQuest(questID);
-
-		if (quest == null) return;
-		
-		quest.Active = false;
-		StopListeningOnObjectives(quest);
-	}
-
-	/// <summary>
-	/// Used by objectives to check if the quest is completed and de-activate it (and activate possible quests).
-	/// </summary>
-	/// <param name="questID">The id of the quest.</param>
-	public void CheckComplete(string questID)
-	{
-		Quest quest = GetQuest(questID);
 		
 		if (quest == null || !quest.IsComplete()) return;
 		
-		Debug.Log("Quest " + questID + " Completed");
+		DayProgressionManager.Instance.Progress();
+		
 		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyCompletedQuest", quest);
+		
 		// Activate all quests to activate.
 		for (int i = 0; i < quest.ActivateWhenComplete.Count; i++)
 		{
-			ActivateQuest(quest.ActivateWhenComplete[i].QuestID);
+			ActivateQuest(quest.ActivateWhenComplete[i]);
 		}
 		
-		// Deactivate completed quest.
-		DeactivateQuest(questID);
+		// Stop listening on objectives.
+		StopListeningOnObjectives(quest);
 
 	}
 
+	/// <summary>
+	/// Used to activate quests on hold until the day schedule is full or there are no quests on hold.
+	/// </summary>
+	public void PopQuestsOnHold()
+	{
+		while (!IsDayFull() && QuestsOnHold.Count > 0)
+		{
+			Quest quest = QuestsOnHold[0];
+			QuestsOnHold.Remove(quest);
+			ActivateQuest(quest);
+		}
+	}
+
+	/// <summary>
+	/// Used to check if the "day schedule" is full.
+	/// </summary>
+	/// <returns>True if the schedule is full, false otherwise.</returns>
+	public bool IsDayFull()
+	{
+		if (TodayQuests.Count == Settings.QuestsPerDay) return true;
+		return false;
+	}
+	
 	/// <summary>
 	/// Used to listen for the completeness event on all objectives of the quest.
 	/// </summary>
@@ -158,8 +176,6 @@ public class QuestManager : MonoBehaviour
 			{
 				objective.Completed = false;
 			}
-
-			quest.Active = false;
 		}
 	}
 	

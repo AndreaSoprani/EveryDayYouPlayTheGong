@@ -94,7 +94,7 @@ public class TextBoxManager : MonoBehaviour
 		// Activate all quests to activate
 		for (int i = 0; i < _questsToActivate.Count; i++)
 		{
-			QuestManager.Instance.ActivateQuest(_questsToActivate[i].QuestID);
+			QuestManager.Instance.ActivateQuest(_questsToActivate[i]);
 		}
 		
 		// Add all items to add

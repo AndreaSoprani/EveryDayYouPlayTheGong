@@ -23,6 +23,9 @@ namespace Utility
         [Range(0,1)] public float MusicVolume;
         [Range(0,1)] public float SFXVolume;
 
+        [Header("Game Settings")] 
+        public int QuestsPerDay;
+
 
     }
 }

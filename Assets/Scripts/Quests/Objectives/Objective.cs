@@ -29,8 +29,8 @@ namespace Quests.Objectives
         public virtual void Complete()
         {
             this.Completed = true;
-            QuestManager.Instance.CheckComplete(QuestID);
             Debug.Log("Objective " + this.ObjectiveID + " completed.");
+            QuestManager.Instance.GetQuest(QuestID).UpdateCompletion();
         }
     }
 }

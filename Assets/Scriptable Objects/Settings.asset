@@ -21,3 +21,4 @@ MonoBehaviour:
   SFXOn: 1
   MusicVolume: 1
   SFXVolume: 1
+  QuestsPerDay: 3
