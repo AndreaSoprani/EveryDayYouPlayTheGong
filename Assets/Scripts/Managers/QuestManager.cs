@@ -80,6 +80,8 @@ public class QuestManager : MonoBehaviour
 	{
 		if (quest == null) return;
 
+		if (TodayQuests.Contains(quest)) return;
+
 		if (IsDayFull())
 		{
 			QuestsOnHold.Add(quest);

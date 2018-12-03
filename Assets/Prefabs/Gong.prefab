@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114685300243348192}
   - component: {fileID: 68118657560684122}
   m_Layer: 0
-  m_Name: GongLayerSwitcher
+  m_Name: MidGongLayerSwitcher
   m_TagString: LayerSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563cba875933551409e8cd9437882594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: gong
+  ObjectID: midgong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
-  Sound: {fileID: 11400000, guid: 98896a35a4251c8409bd23e3ed8eb890, type: 2}
+  Sound: {fileID: 11400000, guid: 8de4b85d79560dc438b5409bab805c5f, type: 2}
 --- !u!114 &114685300243348192
 MonoBehaviour:
   m_ObjectHideFlags: 1

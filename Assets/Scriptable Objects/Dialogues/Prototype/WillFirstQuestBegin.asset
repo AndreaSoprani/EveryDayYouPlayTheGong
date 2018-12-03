@@ -9,12 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: GongDialogue
+  m_Name: WillFirstQuestBegin
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: e3f3a431de8f40589b42e3c08e0c3827, type: 3}
-  NPCName: Door
+  TextAsset: {fileID: 4900000, guid: 1b3b39fd8441417ab3a436a9cc9f2710, type: 3}
+  NPCName: Will
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
-  QuestsToActivate: []
+  CompletedQuests: []
+  UncompletedQuests: []
+  QuestsToActivate:
+  - {fileID: 11400000, guid: dd62ee965e03fbf4f83c015a3d6922aa, type: 2}
   ItemsToAdd: []
   ItemsToRemove: []
