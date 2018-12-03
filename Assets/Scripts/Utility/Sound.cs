@@ -48,6 +48,7 @@ namespace Utility
             _source.volume = Volume * SFXVolume * (1 + Random.Range(-VolumeRange / 2, VolumeRange / 2));
             _source.pitch = Pitch * (1 + Random.Range(-PitchRange / 2, PitchRange / 2));
             _source.Play();
+            Debug.Log("is source playing? " + _source.isPlaying);
         }
 
     }

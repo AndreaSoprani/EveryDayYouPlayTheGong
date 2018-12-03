@@ -1,8 +1,0 @@
-Hey, welcome to the prototype.
-Feel free to take a look around.
-
-Use the arrows to move around.
-Press CTRL to run.
-Press SPACE to play.
-
-HAVE FUN!
