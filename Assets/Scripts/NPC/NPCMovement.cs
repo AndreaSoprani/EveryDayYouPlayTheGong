@@ -53,7 +53,6 @@ public class NPCMovement : MonoBehaviour
 			{
 				_walk = false;
 				StartCoroutine(Wait());
-				PickNewDestination();
 			}
 		}
 	}
@@ -98,9 +97,15 @@ public class NPCMovement : MonoBehaviour
 
 		_direction = _endPosition - transform.position;
 		_direction.Normalize();
-		
-		
-		float angle = Vector3.SignedAngle(Vector3.right, _direction, Vector3.forward);
+	}
+
+	/// <summary>
+	/// Changes the sprites of the NPC based on the direction
+	/// </summary>
+	/// <param name="direction">Direction the NPC should face</param>
+	private void ChangeFacing(Vector3 direction)
+	{
+		float angle = Vector3.SignedAngle(Vector3.right, direction, Vector3.forward);
 		
 		if (angle > -45f && angle < 45f)
 		{
@@ -118,9 +123,8 @@ public class NPCMovement : MonoBehaviour
 		{
 			_animator.SetInteger("Direction", 2);
 		}
-
 	}
-
+	
 	/// <summary>
 	/// Stops the movement of the NPC before starting to walk again.
 	/// </summary>
@@ -131,6 +135,11 @@ public class NPCMovement : MonoBehaviour
 		
 		yield return new WaitForSeconds(WaitTime);
 
+		while (_inDialogue)
+			yield return null;
+		
+		PickNewDestination();
+		ChangeFacing(_direction);
 		_walk = true;
 		
 		_animator.SetBool("Walking", true);
@@ -143,6 +152,10 @@ public class NPCMovement : MonoBehaviour
 	public void EnterDialogue()
 	{
 		_inDialogue = true;
+		
+		ChangeFacing(Player.Instance.transform.position - transform.position);
+		_animator.SetBool("Walking", false);
+		
 		EventManager.StopListening("EnterDialogue", EnterDialogue);
 		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
@@ -154,6 +167,10 @@ public class NPCMovement : MonoBehaviour
 	public void ExitDialogue()
 	{
 		_inDialogue = false;
+		
+		ChangeFacing(_direction);
+		_animator.SetBool("Walking", _walk);
+		
 		EventManager.StopListening("ExitDialogue", ExitDialogue);
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
