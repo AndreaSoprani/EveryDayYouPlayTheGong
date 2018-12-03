@@ -13,6 +13,9 @@ TagManager:
   - StairsFront
   - StairsRight
   - StairsLeft
+  - Notes
+  - NotesQuestTitle
+  - NotesQuestObjectiveDescription
   layers:
   - Default
   - TransparentFX

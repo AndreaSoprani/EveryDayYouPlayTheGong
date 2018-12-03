@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InventoryController : MonoBehaviour
 {
 
-	public GameObject NotesTab;
+	public NotesListWindow NotesTab;
 	public InventoryListWindow ItemsTab;
 	public GameObject MapTab;
 	
@@ -19,20 +19,21 @@ public class InventoryController : MonoBehaviour
 
 	public void DisplayNotes()
 	{
-		NotesTab.SetActive(true);
+		NotesTab.gameObject.SetActive(true);
 		ItemsTab.gameObject.SetActive(false);
 		MapTab.SetActive(false);
+		NotesTab.UpdateItems();
 	}
 	public void DisplayItems()
 	{
-		NotesTab.SetActive(false);
+		NotesTab.gameObject.SetActive(false);
 		ItemsTab.gameObject.SetActive(true);
 		MapTab.SetActive(false);
 		ItemsTab.UpdateItems();
 	}
 	public void DisplayMap()
 	{
-		NotesTab.SetActive(false);
+		NotesTab.gameObject.SetActive(false);
 		ItemsTab.gameObject.SetActive(false);
 		MapTab.SetActive(true);
 	}
