@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: hotDogQuest
   m_EditorClassIdentifier: 
   QuestID: 01
+  Name: The hot dog quest
   Description: Acquire an item
   Objectives:
   - {fileID: 11400000, guid: b235221276549294db4b11588763d60e, type: 2}
-  Active: 0
+  Completed: 1
   ActivateWhenComplete:
   - {fileID: 11400000, guid: ebe6a8bb9c64dd64783be0ab4efe4d8e, type: 2}

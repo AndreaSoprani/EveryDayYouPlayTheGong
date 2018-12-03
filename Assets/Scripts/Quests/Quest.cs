@@ -13,6 +13,7 @@ namespace Quests
     {
 
         public string QuestID; // Unique ID of the Quest.
+        public string Name;
         public string Description; // Text description of the Quest.
         public List<Objective> Objectives;
         public bool Completed;

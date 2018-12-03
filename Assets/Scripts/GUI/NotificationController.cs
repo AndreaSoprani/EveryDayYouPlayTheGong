@@ -55,18 +55,17 @@ public class NotificationController : MonoBehaviour
 		Textbox.rectTransform.anchorMin = new Vector2(0,0);
 		
 		StringBuilder stringBuilder = new StringBuilder();
-
-		stringBuilder.Append("Quest [");
-		stringBuilder.Append(quest.QuestID);
 		
 		if (op)
 		{
-			stringBuilder.Append("] has been taken");
+			stringBuilder.Append("New quest: ");
 		}
 		else
 		{
-			stringBuilder.Append("] has been completed");
+			stringBuilder.Append("Quest completed: ");
 		}
+
+		stringBuilder.Append(quest.Name);
 		
 		ShowNotification(stringBuilder);
 	}

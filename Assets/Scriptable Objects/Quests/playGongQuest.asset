@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: playGongQuest
   m_EditorClassIdentifier: 
   QuestID: 00
+  Name: "Play that motherf#@\xA7ing gong."
   Description: "Play that motherf#@\xA7ing gong."
   Objectives:
   - {fileID: 11400000, guid: d6f33f55cc5cca946b6a895636fd8964, type: 2}
-  Active: 0
+  Completed: 0
+  ActivateWhenComplete: []
