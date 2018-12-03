@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
 		if (interactable != null && Input.GetKeyDown(Settings.Interact))
 		{
 			Interact(interactable);
-		} else if (Input.GetKeyDown(Settings.Play))
+		} else if (Input.GetKeyDown(Settings.Play) && !_animator.GetBool("Playing"))
 		{
 			Play();
 		}
@@ -149,7 +149,7 @@ public class Player : MonoBehaviour
 		
 		Vector3 movement = new Vector3(deltaHorizontal, deltaVertical, 0);
 		
-		if (movement.Equals(Vector3.zero))
+		if (movement.Equals(Vector3.zero) || _animator.GetBool("Playing"))
 		{
 			_animator.SetBool("Walking", false);
 		}
@@ -263,7 +263,7 @@ public class Player : MonoBehaviour
 	/// </summary>
 	void Play()
 	{
-		_animator.SetTrigger("Playing");
+		StartCoroutine(PlayAnimation());
 		
 		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
 
@@ -281,6 +281,18 @@ public class Player : MonoBehaviour
 			}
 		}
 		
+	}
+
+	private IEnumerator PlayAnimation()
+	{
+		_animator.SetBool("Playing", true);
+		
+		while (!_animator.GetCurrentAnimatorStateInfo(0).IsName("Play"))
+			yield return null;
+		
+		yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
+		
+		_animator.SetBool("Playing", false);
 	}
 
 	/// <summary>
