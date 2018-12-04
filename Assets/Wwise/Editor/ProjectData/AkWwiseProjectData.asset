@@ -472,7 +472,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Every Day You Play the Gong
-  - /Every Day You Play the Gong/SoundBanks
-  - /Every Day You Play the Gong/SoundBanks/Default Work Unit
+  - /Every Day You Play the Gong/Events
+  - /Every Day You Play the Gong/Events/Music
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

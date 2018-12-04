@@ -12,11 +12,7 @@ public class NotesListElementController : MonoBehaviour {
 	
 	public Text NameField;
 
-	private void Start()
-	{
-		
-		NameField.text = _quest.Name;
-	}
+	
 
 	public void SetQuest(Quest quest)
 	{
@@ -31,22 +27,19 @@ public class NotesListElementController : MonoBehaviour {
 		int lastCompleted= 0;
 		foreach (Objective objective in _quest.Objectives)
 		{
+			Debug.Log(objective.Description+"   "+objective.Completed);
 			if (objective.Completed)
 			{
 				obtained.Append(objective.Description);
+				Debug.Log(objective.Description);
 				obtained.Append("\n");
 				lastCompleted++;
 			}
 		}
 
-		if (lastCompleted == 0)
-		{
+		
+		if(lastCompleted < _quest.Objectives.Count)
 			obtained.Append(_quest.Objectives[lastCompleted].Description);
-		}
-		else
-		{
-			obtained.Append(_quest.Objectives[lastCompleted+1].Description);
-		}
 		
 		GameObject.FindGameObjectWithTag("NotesQuestObjectiveDescription").GetComponent<Text>().text = obtained.ToString();
 		

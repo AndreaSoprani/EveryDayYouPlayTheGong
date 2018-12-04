@@ -60,7 +60,6 @@ public class GUIController : MonoBehaviour
 	private void OpenInventory()
 	{
 		Inventory.gameObject.SetActive(true);
-		Inventory.ItemsTab.UpdateItems();
 		Time.timeScale = 0;
 		_isGamePaused = true;
 	}

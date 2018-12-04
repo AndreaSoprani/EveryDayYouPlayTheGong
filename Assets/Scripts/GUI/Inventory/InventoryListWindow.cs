@@ -13,7 +13,10 @@ public class InventoryListWindow : MonoBehaviour
 
 	private InventoryListElementController _firstElement;
 
-	
+	private void OnEnable()
+	{
+		UpdateItems();
+	}
 
 	public void UpdateItems()
 	{
