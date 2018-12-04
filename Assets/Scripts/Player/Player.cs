@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Objects;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
@@ -46,6 +47,8 @@ public class Player : MonoBehaviour
 	private bool _inDialogue;
 
 	private bool _frontInteractable;
+
+	private List<InGameObject> _playableObjectsFound;
 	
 	private Animator _animator;
 	private Canvas _canvas;
@@ -81,6 +84,8 @@ public class Player : MonoBehaviour
 		_onFrontalStairs = false;
 		_onRightStairs = false;
 		_onLeftStairs = false;
+
+		_playableObjectsFound = new List<InGameObject>();
 		
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 
@@ -266,19 +271,12 @@ public class Player : MonoBehaviour
 		StartCoroutine(PlayAnimation());
 		
 		//TODO: change with collider
-		
-		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
-
-		for (int i = 0; i < positions.Count; i++)
+		foreach (InGameObject obj in _playableObjectsFound)
 		{
-			RaycastHit2D hit = Physics2D.Raycast(positions[i], _facing, PlayRadius, ObstacleLayer);
-			if (hit.collider == null) continue;
-			
-			InGameObject pObject = hit.collider.gameObject.GetComponent<InGameObject>();
-			if (pObject != null && pObject.IsPlayable())
+			if (obj != null && obj.IsPlayable())
 			{
-				pObject.Play();
-				EventManager.TriggerEvent("Play" + pObject.ObjectID);
+				obj.Play();
+				EventManager.TriggerEvent("Play" + obj.ObjectID);
 				break;
 			}
 		}
@@ -421,6 +419,18 @@ public class Player : MonoBehaviour
 		_inDialogue = false;
 		EventManager.StopListening("ExitDialogue", ExitDialogue);
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
+	}
+
+	public void SetPlayableFound(InGameObject playable)
+	{
+		if (playable == null) return;
+		_playableObjectsFound.Add(playable);
+	}
+
+	public void RemovePlayableFound(InGameObject playable)
+	{
+		if (playable == null) return;
+		_playableObjectsFound.Remove(playable);
 	}
 
 	/**
