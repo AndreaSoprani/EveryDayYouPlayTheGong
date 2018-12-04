@@ -16,6 +16,7 @@ TagManager:
   - Notes
   - NotesQuestTitle
   - NotesQuestObjectiveDescription
+  - DialogueBox
   layers:
   - Default
   - TransparentFX

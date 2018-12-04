@@ -265,6 +265,8 @@ public class Player : MonoBehaviour
 	{
 		StartCoroutine(PlayAnimation());
 		
+		//TODO: change with collider
+		
 		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
 
 		for (int i = 0; i < positions.Count; i++)

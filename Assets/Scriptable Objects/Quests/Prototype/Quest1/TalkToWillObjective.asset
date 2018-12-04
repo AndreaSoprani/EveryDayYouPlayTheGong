@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TalkToWillObjective
   m_EditorClassIdentifier: 
   ObjectiveID: op01last
-  QuestID: prototype01
+  QuestID: willq1
   Description: Report back to Will
   Completed: 0
   ObjectID: will

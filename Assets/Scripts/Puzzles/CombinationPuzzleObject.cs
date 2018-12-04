@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Objects;
 using UnityEngine;
 
-public class CombinationPuzzleObject : InGameObject
+public class CombinationPuzzleObject : Instrument
 {
 
 	private bool _solved;
@@ -19,6 +19,8 @@ public class CombinationPuzzleObject : InGameObject
 		{
 				GetComponentInParent<CombinationPuzzleManager>().Selection(this);	
 		}
+		
+		base.Play();
 	}
 
 	public void setSolved(bool b)

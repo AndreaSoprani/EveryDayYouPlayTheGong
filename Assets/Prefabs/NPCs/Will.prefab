@@ -171,6 +171,7 @@ MonoBehaviour:
   DayOverDialogue: {fileID: 0}
   Dialogues:
   - {fileID: 11400000, guid: 328588fe5f609764c9ec15719f30f926, type: 2}
+  - {fileID: 11400000, guid: b2d9bdf12f15e3d4cab077f0fb3c5acf, type: 2}
   - {fileID: 11400000, guid: 9d6a7925eea919544be673148d40c642, type: 2}
 --- !u!114 &114304917691745974
 MonoBehaviour:

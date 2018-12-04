@@ -31,14 +31,16 @@ public class CombinationPuzzleManager : MonoBehaviour
 
 	public void Selection(CombinationPuzzleObject guess)
 	{
-		Debug.Log("Guess: "+PuzzlePiece.IndexOf(guess)+" Current: "+_currentIndex+ " Total"+ PuzzlePiece.Count );
+		Debug.Log("Guess: "+PuzzlePiece.IndexOf(guess)+" Current: "+_currentIndex+ " Total: "+ PuzzlePiece.Count );
 		
 		if (PuzzlePiece.IndexOf(guess) == _currentIndex)
 		{
 			if (_currentIndex == 0)
 				_timePassed = 0;
-			Debug.Log("Time Passed: "+_timePassed+ "Timeout: "+TimeoutInSeconds);
+			if(HasTimeout) Debug.Log("Time Passed: "+_timePassed+ "Timeout: "+TimeoutInSeconds);
+			
 			_currentIndex++;
+			
 			if (_currentIndex == PuzzlePiece.Count && _timePassed <= TimeoutInSeconds)
 			{
 				

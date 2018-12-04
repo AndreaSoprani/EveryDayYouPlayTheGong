@@ -25,11 +25,10 @@ public class TextBoxManager : MonoBehaviour
 		DontDestroyOnLoad(this.gameObject);
 	}
 
-	public GameObject TextBox;
+	public GameObject DialogueBox;
 
-	public Text TextBoxText;
-	public Text TextBoxName;
-	
+	private Text _nametext; // The GUI Text element used to display the name of the NPC.
+	private Text _dialoguetext; // The GUI Text element used to display the dialogue.
 	
 	private string[] _textLines;
 
@@ -50,6 +49,14 @@ public class TextBoxManager : MonoBehaviour
 		_itemsToAdd = new List<Item>();
 		_itemsToRemove = new List<Item>();
 
+		Text[] texts = DialogueBox.GetComponentsInChildren<Text>(true);
+
+		foreach (Text text in texts)
+		{
+			if (text.name == "Name") _nametext = text;
+			else if (text.name == "Dialogue") _dialoguetext = text;
+		}
+
 	}
 
 	private void Update()
@@ -58,7 +65,7 @@ public class TextBoxManager : MonoBehaviour
 		if (!IsActive) return;
 		
 		// Visualize text
-		TextBoxText.text = _textLines[_currentLine];
+		_dialoguetext.text = _textLines[_currentLine];
 		
 		// Check for continue
 		if (Input.GetKeyDown(KeyCode.Return))
@@ -77,7 +84,7 @@ public class TextBoxManager : MonoBehaviour
 	public void EnableTextBox()
 	{
 		if (_textLines.Length == 0) return;
-		TextBox.SetActive(true);
+		DialogueBox.SetActive(true);
 		IsActive = true;
 		EventManager.TriggerEvent("EnterDialogue");
 	}
@@ -88,7 +95,7 @@ public class TextBoxManager : MonoBehaviour
 	private void DisableTextBox()
 	{
 		// Disable text box.
-		TextBox.SetActive(false);
+		DialogueBox.SetActive(false);
 		IsActive = false;
 		
 		// Signal dialogue exit
@@ -111,7 +118,7 @@ public class TextBoxManager : MonoBehaviour
 		}
 
 		// Set the NPC name.
-		TextBoxName.text = dialogue.NPCName;
+		_nametext.text = dialogue.NPCName;
 
 		_questsToActivate = dialogue.QuestsToActivate;
 		_itemsToAdd = dialogue.ItemsToAdd;

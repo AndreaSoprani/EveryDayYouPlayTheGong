@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PlayMidGongObjective
   m_EditorClassIdentifier: 
   ObjectiveID: op0101
-  QuestID: prototype01
+  QuestID: willq1
   Description: Play the gong
   Completed: 0
   ObjectID: midgong

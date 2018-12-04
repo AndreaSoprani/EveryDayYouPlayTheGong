@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc980eb188e3bf44aaf97e46372138a8, type: 3}
-  m_Name: Watermelon
+  m_Name: Watermelon slice
   m_EditorClassIdentifier: 
   Id: watermelon
-  Name: Watermelon
-  Description: Just a watermelon slice
+  Name: watermelon slice
+  Description: A juicy watermelon slice.
   PickupArtwork: {fileID: 21300000, guid: 9210d896b61532f42acf36d212973962, type: 3}
   InventoryArtwork: {fileID: 21300000, guid: 9210d896b61532f42acf36d212973962, type: 3}

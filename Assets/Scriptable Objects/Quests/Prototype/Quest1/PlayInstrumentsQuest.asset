@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111c15b9b772c784aa0404581e8192b3, type: 3}
   m_Name: PlayInstrumentsQuest
   m_EditorClassIdentifier: 
-  QuestID: prototype01
+  QuestID: willq1
   Name: Let's make some noise!
   Description: Try some of the instruments in the room.
   Objectives:
   - {fileID: 11400000, guid: 52aaaf334ed9e4741aa6c4ce0d596ea4, type: 2}
   - {fileID: 11400000, guid: c23fb7fc6ef9c92439d87b1f290127cd, type: 2}
-  Completed: 0
+  Completed: 1
   ActivateWhenComplete: []
