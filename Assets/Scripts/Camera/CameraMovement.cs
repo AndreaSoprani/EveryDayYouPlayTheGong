@@ -21,7 +21,8 @@ public class CameraMovement : MonoBehaviour {
     void Start () {
         
         offset = transform.position - Player.Instance.transform.position;
-	}
+       
+    }
 
 
     void LateUpdate()
