@@ -12,7 +12,12 @@ public class NotesListWindow : MonoBehaviour {
 
 	private NotesListElementController _firstElement;
 
-	
+	private void OnEnable()
+	{
+		UpdateItems();
+		
+	}
+
 
 	public void UpdateItems()
 	{
