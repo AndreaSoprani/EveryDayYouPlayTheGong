@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad1a8dd7e064d59a069124ac9e01b54, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
+  Up: 273
+  Right: 275
+  Down: 274
+  Left: 276
   Interact: 120
   Play: 32
   Run: 306

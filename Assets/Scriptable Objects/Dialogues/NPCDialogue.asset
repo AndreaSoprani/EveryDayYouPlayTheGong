@@ -20,5 +20,4 @@ MonoBehaviour:
   QuestsToActivate:
   - {fileID: 11400000, guid: 61590a74ede1aab4090116d9a2544865, type: 2}
   ItemsToAdd: []
-  ItemsToRemove:
-  - {fileID: 0}
+  ItemsToRemove: []
