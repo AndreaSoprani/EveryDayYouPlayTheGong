@@ -43,6 +43,11 @@ public class QuestManager : MonoBehaviour
 	{
 		for (int i = 0; i < Quests.Count; i++)
 		{
+			Quests[i].Completed = false;
+		}
+		
+		for (int i = 0; i < Quests.Count; i++)
+		{
 			if(TodayQuests.Contains(Quests[i])) ListenOnObjectives(Quests[i]);
 		}
 	}
@@ -105,7 +110,7 @@ public class QuestManager : MonoBehaviour
 		
 		DayProgressionManager.Instance.Progress();
 		
-		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyCompletedQuest", quest);
+		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyQuestCompleted", quest);
 		
 		// Activate all quests to activate.
 		for (int i = 0; i < quest.ActivateWhenComplete.Count; i++)

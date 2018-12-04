@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: WillFirstQuestBegin
+  m_Name: WillFirstQuestEnd
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: 1b3b39fd8441417ab3a436a9cc9f2710, type: 3}
+  TextAsset: {fileID: 4900000, guid: a8e05787f2804050bb3d6d5b0545026a, type: 3}
   NPCName: Will
-  ActiveQuest: {fileID: 0}
-  CompletedObjectives: []
+  ActiveQuest: {fileID: 11400000, guid: dd62ee965e03fbf4f83c015a3d6922aa, type: 2}
+  CompletedObjectives:
+  - {fileID: 11400000, guid: 52aaaf334ed9e4741aa6c4ce0d596ea4, type: 2}
   CompletedQuests: []
   UncompletedQuests: []
-  QuestsToActivate:
-  - {fileID: 11400000, guid: dd62ee965e03fbf4f83c015a3d6922aa, type: 2}
+  QuestsToActivate: []
   ItemsToAdd: []
   ItemsToRemove: []

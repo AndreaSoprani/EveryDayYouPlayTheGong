@@ -34,7 +34,11 @@ namespace Quests
             
             for (int i = 0; i < Objectives.Count(); i++)
             {
-                if (!Objectives[i].Completed) Completed = false;
+                if (!Objectives[i].Completed)
+                {
+                    Completed = false;
+                    return;
+                }
             }
 
             Completed = true;

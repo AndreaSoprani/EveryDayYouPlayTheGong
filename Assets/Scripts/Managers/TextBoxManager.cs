@@ -90,27 +90,11 @@ public class TextBoxManager : MonoBehaviour
 		// Disable text box.
 		TextBox.SetActive(false);
 		IsActive = false;
-
-		// Activate all quests to activate
-		for (int i = 0; i < _questsToActivate.Count; i++)
-		{
-			QuestManager.Instance.ActivateQuest(_questsToActivate[i]);
-		}
-		
-		// Add all items to add
-		for (int i = 0; i < _itemsToAdd.Count; i++)
-		{
-			Player.Instance.AddItem(_itemsToAdd[i]);
-		}
-		
-		// Add all items to add
-		for (int i = 0; i < _itemsToRemove.Count; i++)
-		{
-			Player.Instance.RemoveItem(_itemsToRemove[i]);
-		}
 		
 		// Signal dialogue exit
 		EventManager.TriggerEvent("ExitDialogue");
+		
+		EndDialogueActivations();
 	}
 
 	/// <summary>
@@ -135,5 +119,30 @@ public class TextBoxManager : MonoBehaviour
 
 		_currentLine = 0;
 	}
+
+	/// <summary>
+	/// Used to activate all quests, give all items and remove others.
+	/// </summary>
+	private void EndDialogueActivations()
+	{
+		// Activate all quests to activate
+		for (int i = 0; i < _questsToActivate.Count; i++)
+		{
+			QuestManager.Instance.ActivateQuest(_questsToActivate[i]);
+		}
+		
+		// Add all items to add
+		for (int i = 0; i < _itemsToAdd.Count; i++)
+		{
+			Player.Instance.AddItem(_itemsToAdd[i]);
+		}
+		
+		// Add all items to add
+		for (int i = 0; i < _itemsToRemove.Count; i++)
+		{
+			Player.Instance.RemoveItem(_itemsToRemove[i]);
+		}
+	}
+	
 	
 }

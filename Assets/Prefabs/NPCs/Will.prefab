@@ -167,9 +167,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectID: will
-  StandardDialogue: {fileID: 0}
+  StandardDialogue: {fileID: 11400000, guid: 42d231812e4582e4f86760f2912bf1d9, type: 2}
   DayOverDialogue: {fileID: 0}
-  Dialogues: []
+  Dialogues:
+  - {fileID: 11400000, guid: 328588fe5f609764c9ec15719f30f926, type: 2}
+  - {fileID: 11400000, guid: 9d6a7925eea919544be673148d40c642, type: 2}
 --- !u!114 &114304917691745974
 MonoBehaviour:
   m_ObjectHideFlags: 1

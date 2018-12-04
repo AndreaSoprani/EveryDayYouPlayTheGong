@@ -43,7 +43,8 @@ namespace Utility
         {
 
             if (ActiveQuest != null &&
-                !QuestManager.Instance.TodayQuests.Contains(ActiveQuest))
+                (!QuestManager.Instance.TodayQuests.Contains(ActiveQuest) ||
+                 ActiveQuest.Completed))
             {
                 return false;
             }
