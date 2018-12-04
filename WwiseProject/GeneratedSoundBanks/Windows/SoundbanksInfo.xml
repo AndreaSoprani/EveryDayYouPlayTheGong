@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="579523862" Name="Explore" ObjectPath="\Events\Music\Explore"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="29545386" Language="SFX">
+					<ShortName>Pianotema_12_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Pianotema_12_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="36696734" Language="SFX">
+					<ShortName>Dungeon_Bell2_74bpm_L1M.wav</ShortName>
+					<Path>SFX\Dungeon_Bell2_74bpm_L1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="47712567" Language="SFX">
+					<ShortName>Pianotema_2_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Pianotema_2_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="109450178" Language="SFX">
+					<ShortName>Shakuhachi_7_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_7_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="180030060" Language="SFX">
+					<ShortName>Koto_6_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_6_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="184951902" Language="SFX">
+					<ShortName>Pianotema_7_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Pianotema_7_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="217444610" Language="SFX">
+					<ShortName>Koto_7_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_7_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="231054980" Language="SFX">
+					<ShortName>2.wav</ShortName>
+					<Path>SFX\2_F26CE7B0.wem</Path>
+				</File>
+				<File Id="294119337" Language="SFX">
+					<ShortName>Piano_14_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Piano_14_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="306929729" Language="SFX">
+					<ShortName>Dungeon_Waterdrum2_74bpm_L1M.wav</ShortName>
+					<Path>SFX\Dungeon_Waterdrum2_74bpm_L1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="311629409" Language="SFX">
+					<ShortName>Koto_4_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_4_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="312042521" Language="SFX">
+					<ShortName>Dungeon_Taiko2_74bpm_L1M_P1.wav</ShortName>
+					<Path>SFX\Dungeon_Taiko2_74bpm_L1M_P1_F26CE7B0.wem</Path>
+				</File>
+				<File Id="329577373" Language="SFX">
+					<ShortName>Shakuhachi_3_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_3_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="351698428" Language="SFX">
+					<ShortName>Dungeon_Waterdrum_74bpm_L1M.wav</ShortName>
+					<Path>SFX\Dungeon_Waterdrum_74bpm_L1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="374458043" Language="SFX">
+					<ShortName>Shakuhachi_2_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_2_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="407125428" Language="SFX">
+					<ShortName>Piano_11_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Piano_11_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="412505090" Language="SFX">
+					<ShortName>Dungeon_Taiko1_74bpm_L1M_P1.wav</ShortName>
+					<Path>SFX\Dungeon_Taiko1_74bpm_L1M_P1_F26CE7B0.wem</Path>
+				</File>
+				<File Id="424365964" Language="SFX">
+					<ShortName>Dungeon_Waterdrum3_74bpm_L1M_P1.wav</ShortName>
+					<Path>SFX\Dungeon_Waterdrum3_74bpm_L1M_P1_F26CE7B0.wem</Path>
+				</File>
+				<File Id="429949731" Language="SFX">
+					<ShortName>Dungeon_Windichimes_74bpm_L6M.wav</ShortName>
+					<Path>SFX\Dungeon_Windichimes_74bpm_L6M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="435069105" Language="SFX">
+					<ShortName>Shakuhachi_8_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_8_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="437323013" Language="SFX">
+					<ShortName>Koto_2_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_2_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="438831352" Language="SFX">
+					<ShortName>Koto_8_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_8_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="441344333" Language="SFX">
+					<ShortName>Koto_1_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_1_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="463466137" Language="SFX">
+					<ShortName>Piano_1_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Piano_1_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="509055793" Language="SFX">
+					<ShortName>Pianotema_13_74bpm4-4_3M.wav</ShortName>
+					<Path>SFX\Pianotema_13_74bpm4-4_3M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="541996865" Language="SFX">
+					<ShortName>Piano_9_74bpm4-4_1M.wav</ShortName>
+					<Path>SFX\Piano_9_74bpm4-4_1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="576510662" Language="SFX">
+					<ShortName>Shakuhachi_6_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_6_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="588212570" Language="SFX">
+					<ShortName>Shakuhachi_5_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_5_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="595109767" Language="SFX">
+					<ShortName>Koto_10_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_10_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="623729909" Language="SFX">
+					<ShortName>Pianoend_15_74bpm4-4_4M.wav</ShortName>
+					<Path>SFX\Pianoend_15_74bpm4-4_4M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="650144245" Language="SFX">
+					<ShortName>Piano_8_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Piano_8_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="687487299" Language="SFX">
+					<ShortName>Dungeon_Bell_74bpm_L1M.wav</ShortName>
+					<Path>SFX\Dungeon_Bell_74bpm_L1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="694359878" Language="SFX">
+					<ShortName>Cello_1_74bpm4-4_3M_1P.wav</ShortName>
+					<Path>SFX\Cello_1_74bpm4-4_3M_1P_F26CE7B0.wem</Path>
+				</File>
+				<File Id="700400052" Language="SFX">
+					<ShortName>Dungeon_End_74bpm_L2M.wav</ShortName>
+					<Path>SFX\Dungeon_End_74bpm_L2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="725593010" Language="SFX">
+					<ShortName>Koto_9_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_9_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="758582819" Language="SFX">
+					<ShortName>Pianotema_5_74bpm4-4_4M.wav</ShortName>
+					<Path>SFX\Pianotema_5_74bpm4-4_4M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="770004269" Language="SFX">
+					<ShortName>Shakuhachi_4_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_4_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="817648182" Language="SFX">
+					<ShortName>Koto_5_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_5_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="826450589" Language="SFX">
+					<ShortName>Kick_74bpm4-4_1M.wav</ShortName>
+					<Path>SFX\Kick_74bpm4-4_1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="830084640" Language="SFX">
+					<ShortName>Piano_10_74bpm4-4_1M.wav</ShortName>
+					<Path>SFX\Piano_10_74bpm4-4_1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="836061047" Language="SFX">
+					<ShortName>Piano_6_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Piano_6_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="858807340" Language="SFX">
+					<ShortName>Cello_2_74bpm4-4_4M_1P.wav</ShortName>
+					<Path>SFX\Cello_2_74bpm4-4_4M_1P_F26CE7B0.wem</Path>
+				</File>
+				<File Id="875035756" Language="SFX">
+					<ShortName>Koto_3_74bpm4-4.wav</ShortName>
+					<Path>SFX\Koto_3_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="931762688" Language="SFX">
+					<ShortName>Shakuhachi_1_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_1_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="964176968" Language="SFX">
+					<ShortName>Dungeon_Taikoloop_74bpm_L4M.wav</ShortName>
+					<Path>SFX\Dungeon_Taikoloop_74bpm_L4M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="990781458" Language="SFX">
+					<ShortName>Kick_delay_74bpm4-4_1M.wav</ShortName>
+					<Path>SFX\Kick_delay_74bpm4-4_1M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="1007377433" Language="SFX">
+					<ShortName>Pianotema_3_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Pianotema_3_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="1036819257" Language="SFX">
+					<ShortName>Piano_4_74bpm4-4_2M.wav</ShortName>
+					<Path>SFX\Piano_4_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

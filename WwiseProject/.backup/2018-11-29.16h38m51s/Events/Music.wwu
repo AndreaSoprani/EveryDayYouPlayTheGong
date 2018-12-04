@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Music" ID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Explore" ID="{587586C1-D60A-4B3F-A7E6-22CAFBCB2029}">
+					<ChildrenList>
+						<Action Name="" ID="{426B094F-3092-4AAD-94CC-6DE12C7A5B04}" ShortID="746404537">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{9BD4D774-B960-481B-BAE4-E49C0208A8CD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BCB40D34-9AB7-4B3E-80F8-4BA235E3D592}" ShortID="487154025">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{7BB9EB86-EB20-47F6-B450-86DA27F8C72E}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E9CED6B6-08F0-482D-BF6A-39C97025B8E1}" ShortID="15193751">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{F62D3CE6-0B45-42E8-8B2A-7CB5D765A5FD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{304A43AC-9698-49B6-B440-5CA9FBE4525F}" ShortID="247618258">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play" ID="{6BBC97DF-CE78-4FBA-B829-18A49211A505}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4235B85F-D7F8-4317-9A79-A8BF6B82A555}" ShortID="1008810761">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main" ID="{B5A24029-9B4F-4E4B-A33F-E11DF980B0AF}" WorkUnitID="{EB7A4632-DA1C-400C-8520-7190F45E5EEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9DCBF227-C481-4E9B-A06E-389DAE9F280C}" ShortID="497750385">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano_switch" ID="{3BC918A4-AC2E-4E81-95F0-8142B71E46C0}" WorkUnitID="{EB7A4632-DA1C-400C-8520-7190F45E5EEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A3999CC4-AE29-487E-934A-7A37762992EA}" ShortID="485332642">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Koto_switch" ID="{8585E1FA-CF20-442A-A667-E14F3A2DDCE8}" WorkUnitID="{EB7A4632-DA1C-400C-8520-7190F45E5EEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C7624B60-4FBE-42B3-AC92-C85178227735}" ShortID="169720767">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BD4A742A-BAC9-4C90-BFA7-E272C4C6D0B4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shakuhachi_switch" ID="{FCC64102-42A0-4C64-ADAA-C044E24671B4}" WorkUnitID="{EB7A4632-DA1C-400C-8520-7190F45E5EEB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dungeon" ID="{B4F04E4D-731A-4E8B-95C5-4A3FF73F08E7}">
+					<ChildrenList>
+						<Action Name="" ID="{1DF3E6F8-5664-43F4-BFC8-2C9F623DAC20}" ShortID="260969584">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dungeon" ID="{2FEF9170-A5AF-4CFC-87B5-32576E3F1C71}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EAA89A29-1792-4410-B53D-389503AF5CAA}" ShortID="800630162">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dungeon" ID="{92258968-8FBC-467A-8237-1BE4FB6B2261}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C75348D7-0787-43AB-924F-63021854B2C1}" ShortID="589267477">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dungeon" ID="{F23CEDA6-588D-4A7E-8934-1EB1C78542F0}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Silence" ID="{455C012F-6A9D-49C8-8FA8-AD54E638E0AA}">
+					<ChildrenList>
+						<Action Name="" ID="{1EEC8C20-D670-4722-A3A4-F6B60993ED06}" ShortID="4485767">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Silence" ID="{DE735D8B-821E-4698-925C-858D993A685D}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EE33DC51-1A9B-4CA2-9602-45B6707BA22C}" ShortID="260978334">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Silence" ID="{E1A5B050-38E9-49B5-B7F6-D05D0F7B501D}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -20,6 +20,11 @@ public class AudioManager : MonoBehaviour
 		DontDestroyOnLoad(this.gameObject);
 	}
 
+	private void Start()
+	{
+		AkSoundEngine.PostEvent("Explore",GameObject.FindGameObjectWithTag("MainCamera"));
+	}
+
 	public Settings Settings;
 
 	/// <summary>
@@ -40,5 +45,6 @@ public class AudioManager : MonoBehaviour
 		sound.Play(Settings.SFXVolume);
 		
 	}
+	
 	
 }
