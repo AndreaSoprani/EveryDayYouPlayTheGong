@@ -38,4 +38,10 @@ public class InventoryController : MonoBehaviour
 		MapTab.SetActive(true);
 	}
 
+	public void CloseEverything()
+	{
+		NotesTab.gameObject.SetActive(false);
+		ItemsTab.gameObject.SetActive(false);
+		MapTab.SetActive(false);
+	}
 }
