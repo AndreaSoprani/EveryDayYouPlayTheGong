@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Objects;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
@@ -39,6 +40,9 @@ public class Player : MonoBehaviour
 
 	// Direction in which the player is facing.
 	private Vector3 _facing;
+	
+	private Dictionary<Vector3, KeyCode> _directionsKeyCodes;
+	private List<Vector3> _directionsPile;
 
 	// List of all the items possessed by the player.
 	private Collection<Item> _items;
@@ -46,6 +50,8 @@ public class Player : MonoBehaviour
 	private bool _inDialogue;
 
 	private bool _frontInteractable;
+
+	private List<InGameObject> _playableObjectsFound;
 	
 	private Animator _animator;
 	private Canvas _canvas;
@@ -72,6 +78,8 @@ public class Player : MonoBehaviour
 		_canvas = GetComponentInChildren<Canvas>();
 		
 		_facing = Vector3.down;
+		_directionsKeyCodes = Settings.GetDirectionsKeyCodes();
+		_directionsPile = new List<Vector3>();
 		
 		_items = new Collection<Item>();
 		//TODO: initialize as checkpoint.
@@ -81,6 +89,8 @@ public class Player : MonoBehaviour
 		_onFrontalStairs = false;
 		_onRightStairs = false;
 		_onLeftStairs = false;
+
+		_playableObjectsFound = new List<InGameObject>();
 		
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 
@@ -127,29 +137,37 @@ public class Player : MonoBehaviour
 		if (Input.GetKey(Settings.Crawl))
 			movementVelocity *= CrawlDecrement;
 		
-		float deltaHorizontal = Input.GetAxis("Horizontal") * movementVelocity * Time.deltaTime;
-		float deltaVertical = Input.GetAxis("Vertical") * movementVelocity * Time.deltaTime;
+
+		foreach (Vector3 dir in _directionsKeyCodes.Keys)
+		{
+			KeyCode keyCode = _directionsKeyCodes[dir];
+			if (Input.GetKeyDown(keyCode)) _directionsPile.Add(dir);
+			if (Input.GetKeyUp(keyCode)) _directionsPile.Remove(dir);
+		}
+
+		Vector3 delta = Vector3.zero;
+		if (_directionsPile.Count > 0) delta = _directionsPile[_directionsPile.Count-1];
+		delta *= movementVelocity * Time.deltaTime;
+		
 
 		// Stairs checking
 		if (_onFrontalStairs)
 		{
-			if (deltaVertical > 0) deltaVertical = deltaVertical * StairsSpeedModifier;
-			else if (deltaVertical < 0) deltaVertical = deltaVertical / StairsSpeedModifier;
+			if (delta.y > 0) delta *= StairsSpeedModifier;
+			else if (delta.y < 0) delta /= StairsSpeedModifier;
 		}
 		else if (_onRightStairs)
 		{
-			if (deltaHorizontal > 0) deltaVertical = deltaVertical + StairsPositionDisplacement;
-			else if (deltaHorizontal < 0) deltaVertical = deltaVertical - StairsPositionDisplacement;
-		} 
-		else if (_onLeftStairs)
+			if (delta.x > 0) delta.y += StairsPositionDisplacement;
+			else if (delta.x < 0) delta.y -= StairsPositionDisplacement;
+		} else if (_onLeftStairs)
 		{
-			if (deltaHorizontal > 0) deltaVertical = deltaVertical - StairsPositionDisplacement;
-			else if (deltaHorizontal < 0) deltaVertical = deltaVertical + StairsPositionDisplacement;
+			if (delta.x > 0) delta.y -= StairsPositionDisplacement;
+			else if (delta.x < 0) delta.y += StairsPositionDisplacement;
 		}
 		
-		Vector3 movement = new Vector3(deltaHorizontal, deltaVertical, 0);
-		
-		if (movement.Equals(Vector3.zero) || _animator.GetBool("Playing"))
+		// Animation checking and movement performing
+		if (delta.Equals(Vector3.zero) || _animator.GetBool("Playing"))
 		{
 			_animator.SetBool("Walking", false);
 		}
@@ -159,59 +177,26 @@ public class Player : MonoBehaviour
 			
 			_animator.SetBool("Running", run);
 			
-			UpdateFacing(movement);
+			UpdateFacing(delta);
 
-			if (CanMoveHorizontally(deltaHorizontal))
-			{
-				_tr.position += new Vector3(deltaHorizontal, 0, 0);
-			}
-
-			if (CanMoveVertically(deltaVertical))
-			{
-				_tr.position += new Vector3(0, deltaVertical, 0);
-			}
+			if (CanMove(delta)) _tr.position += delta;
 		}
 	}
 
 	/// <summary>
-	/// Checks if the player can move horizontally.
+	/// Checks if the player can move given a movement vector.
 	/// </summary>
-	/// <param name="delta">the quantity of movement intended to perform</param>
-	/// <returns>true if the player can move of delta horizontally, false otherwise.</returns>
-	bool CanMoveHorizontally(float delta)
+	/// <param name="delta">the movement to perform.</param>
+	/// <returns>true if the player can move, false otherwise.</returns>
+	bool CanMove(Vector3 delta)
 	{
-		Collection<Vector3> positions = new Collection<Vector3>();
-
-		if (delta > 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.right); // Going right
-		else if (delta < 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.left); // Going left
-
-		for (int i = 0; i < positions.Count; i++)
+		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(delta);
+		foreach (Vector3 pos in positions)
 		{
-			RaycastHit2D hit = Physics2D.Linecast(positions[i], positions[i] + _tr.right * delta, ObstacleLayer);
+			RaycastHit2D hit = Physics2D.Linecast(pos, pos + delta, ObstacleLayer);
 			if (hit.collider != null) return false;
 		}
-		
-		return true;
-	}
 
-	/// <summary>
-	/// Checks if the player can move vertically.
-	/// </summary>
-	/// <param name="delta">the quantity of movement intended to perform</param>
-	/// <returns>true if the player can move of delta vertically, false otherwise.</returns>
-	bool CanMoveVertically(float delta)
-	{
-		Collection<Vector3> positions = new Collection<Vector3>();
-
-		if (delta > 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.up); // Going up
-		else if (delta < 0) positions = RayCastPositions.Vector3ToRayCastPosition(Vector3.down); // Going down
-
-		for (int i = 0; i < positions.Count; i++)
-		{
-			RaycastHit2D hit = Physics2D.Linecast(positions[i], positions[i] + _tr.up * delta, ObstacleLayer);
-			if (hit.collider != null) return false;
-		}
-		
 		return true;
 	}
 
@@ -266,19 +251,12 @@ public class Player : MonoBehaviour
 		StartCoroutine(PlayAnimation());
 		
 		//TODO: change with collider
-		
-		Collection<Vector3> positions = RayCastPositions.Vector3ToRayCastPosition(_facing);
-
-		for (int i = 0; i < positions.Count; i++)
+		foreach (InGameObject obj in _playableObjectsFound)
 		{
-			RaycastHit2D hit = Physics2D.Raycast(positions[i], _facing, PlayRadius, ObstacleLayer);
-			if (hit.collider == null) continue;
-			
-			InGameObject pObject = hit.collider.gameObject.GetComponent<InGameObject>();
-			if (pObject != null && pObject.IsPlayable())
+			if (obj != null && obj.IsPlayable())
 			{
-				pObject.Play();
-				EventManager.TriggerEvent("Play" + pObject.ObjectID);
+				obj.Play();
+				EventManager.TriggerEvent("Play" + obj.ObjectID);
 				break;
 			}
 		}
@@ -401,10 +379,10 @@ public class Player : MonoBehaviour
 		return _items;
 	}
 	
-	/**
-	 * Used to enter in dialogue mode.
-	 * All control on the player is disabled.
-	 */
+	/// <summary>
+	/// Used to enter in dialogue mode.
+	/// All control on the player is disabled.
+	/// </summary>
 	public void EnterDialogue()
 	{
 		_inDialogue = true;
@@ -412,10 +390,10 @@ public class Player : MonoBehaviour
 		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
 
-	/**
-	 * Used to exit dialogue mode.
-	 * Control on player is re-enabled.
-	 */
+	/// <summary>
+	/// Used to exit dialogue mode.
+	/// Control on player is re-enabled.
+	/// </summary>
 	public void ExitDialogue()
 	{
 		_inDialogue = false;
@@ -423,9 +401,30 @@ public class Player : MonoBehaviour
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 
-	/**
-	 * Used to check if the player is in dialogue.
-	 */
+	/// <summary>
+	/// Adds an InGameObject to the list of playable objects in the player's stick "trajectory"
+	/// </summary>
+	/// <param name="playable">The InGameObject to add.</param>
+	public void SetPlayableFound(InGameObject playable)
+	{
+		if (playable == null) return;
+		_playableObjectsFound.Add(playable);
+	}
+
+	/// <summary>
+	/// Removes an InGameObject from the list of playable objects in the player's stick "trajectory".
+	/// </summary>
+	/// <param name="playable">The InGameObject to remove.</param>
+	public void RemovePlayableFound(InGameObject playable)
+	{
+		if (playable == null) return;
+		_playableObjectsFound.Remove(playable);
+	}
+
+	/// <summary>
+	/// Used to check if the player is in dialogue.
+	/// </summary>
+	/// <returns></returns>
 	public bool IsInDialogue()
 	{
 		return _inDialogue;

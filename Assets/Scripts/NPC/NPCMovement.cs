@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Boo.Lang;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -17,7 +18,6 @@ public class NPCMovement : MonoBehaviour
 	public RayCastPositions RayCastPositions;
 	public LayerMask ObstacleLayer;
 
-	private Vector3 _center;
 	private Vector3 _endPosition;
 	private Vector3 _direction;
 
@@ -29,7 +29,6 @@ public class NPCMovement : MonoBehaviour
 	void Start ()
 	{
 		_animator = GetComponent<Animator>();
-		_center  = transform.position;
 		PickNewDestination();
 
 		_inDialogue = false;
@@ -93,10 +92,13 @@ public class NPCMovement : MonoBehaviour
 	/// </summary>
 	void PickNewDestination()
 	{
-		_endPosition = (Vector3) Random.insideUnitCircle * Radius + _center;
+		float x = Random.Range(-Radius, Radius);
+		float y = Random.Range(-Radius, Radius);
 
-		_direction = _endPosition - transform.position;
-		_direction.Normalize();
+		if (Math.Abs(x) >= Math.Abs(y)) _endPosition = transform.position + new Vector3(x, 0, 0);
+		else _endPosition = transform.position + new Vector3(0, y, 0);
+
+		_direction = (_endPosition - transform.position).normalized;
 	}
 
 	/// <summary>

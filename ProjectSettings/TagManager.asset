@@ -17,6 +17,7 @@ TagManager:
   - NotesQuestTitle
   - NotesQuestObjectiveDescription
   - DialogueBox
+  - PlayingArea
   layers:
   - Default
   - TransparentFX

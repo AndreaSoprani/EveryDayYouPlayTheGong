@@ -7,7 +7,12 @@ namespace Utility
     [CreateAssetMenu(fileName = "Settings", menuName = "Settings")]
     public class Settings : ScriptableObject
     {
-        [Header("Keyboard Settings")]
+        [Header("Keyboard Settings")] 
+        public KeyCode Up;
+        public KeyCode Right;
+        public KeyCode Down;
+        public KeyCode Left;
+        
         public KeyCode Interact;
         public KeyCode Play;
 
@@ -26,6 +31,16 @@ namespace Utility
         [Header("Game Settings")] 
         public int QuestsPerDay;
 
+        public Dictionary<Vector3, KeyCode> GetDirectionsKeyCodes()
+        {
+            return new Dictionary<Vector3, KeyCode>()
+            {
+                {Vector3.up, Up},
+                {Vector3.right, Right},
+                {Vector3.down, Down},
+                {Vector3.left, Left},
+            };
+        }
 
     }
 }
