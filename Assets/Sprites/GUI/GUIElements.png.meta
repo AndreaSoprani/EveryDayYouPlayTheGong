@@ -18,6 +18,7 @@ TextureImporter:
     21300026: MapButton
     21300028: MapButtonPressed
     21300030: DialogueBox
+    21300032: NotificationBox
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -408,13 +409,33 @@ TextureImporter:
         width: 500
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 5544899e8ba955c4392cdca51d3d5895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NotificationBox
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 13
+        width: 300
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5531738236d36254b806e63614117147
       vertices: []
       indices: 
       edges: []
