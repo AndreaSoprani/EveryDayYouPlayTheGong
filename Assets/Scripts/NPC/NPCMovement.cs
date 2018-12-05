@@ -18,6 +18,7 @@ public class NPCMovement : MonoBehaviour
 	public RayCastPositions RayCastPositions;
 	public LayerMask ObstacleLayer;
 
+	private Vector3 _center;
 	private Vector3 _endPosition;
 	private Vector3 _direction;
 
@@ -31,6 +32,7 @@ public class NPCMovement : MonoBehaviour
 		_animator = GetComponent<Animator>();
 		PickNewDestination();
 
+		_center = transform.position;
 		_inDialogue = false;
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
@@ -92,11 +94,16 @@ public class NPCMovement : MonoBehaviour
 	/// </summary>
 	void PickNewDestination()
 	{
-		float x = Random.Range(-Radius, Radius);
-		float y = Random.Range(-Radius, Radius);
+		bool axis = Random.Range(0, 10) < 5;
 
-		if (Math.Abs(x) >= Math.Abs(y)) _endPosition = transform.position + new Vector3(x, 0, 0);
-		else _endPosition = transform.position + new Vector3(0, y, 0);
+		if (axis) // x
+		{
+			_endPosition = new Vector3(_center.x + Random.Range(-Radius, + Radius), transform.position.y, 0);
+		}
+		else // y
+		{
+			_endPosition = new Vector3(transform.position.x, _center.y + Random.Range(-Radius, + Radius), 0);
+		}
 
 		_direction = (_endPosition - transform.position).normalized;
 	}

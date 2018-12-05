@@ -387,6 +387,7 @@ public class Player : MonoBehaviour
 	{
 		_inDialogue = true;
 		_animator.SetBool("Walking", false);
+		_directionsPile.Clear();
 		EventManager.StopListening("EnterDialogue", EnterDialogue);
 		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
