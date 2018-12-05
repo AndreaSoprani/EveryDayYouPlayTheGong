@@ -1,7 +1,9 @@
-Hey it seems that you completed all our quests and it's almost morning. 
+Hey it seems that you completed all our quests and it's almost morning.
 Play the gong, please.
 
-It's our alarm clock, it'll wake up the other monks...
+It's our alarm clock.
+It'll wake up the other monks...
+
 Wait... What am I saying? We are in the prototype, not at the temple, there are no sleeping monks here...
 
 Well... play it anyway, would you? Let's stick to the routine.
