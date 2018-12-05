@@ -386,6 +386,7 @@ public class Player : MonoBehaviour
 	public void EnterDialogue()
 	{
 		_inDialogue = true;
+		_directionsPile.Clear();
 		EventManager.StopListening("EnterDialogue", EnterDialogue);
 		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
