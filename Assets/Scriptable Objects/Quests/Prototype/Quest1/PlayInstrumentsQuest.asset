@@ -16,6 +16,7 @@ MonoBehaviour:
   Description: Try some of the instruments in the room.
   Objectives:
   - {fileID: 11400000, guid: 52aaaf334ed9e4741aa6c4ce0d596ea4, type: 2}
+  - {fileID: 11400000, guid: c06de4b2621528941875e3310031f650, type: 2}
   - {fileID: 11400000, guid: c23fb7fc6ef9c92439d87b1f290127cd, type: 2}
   Completed: 1
   ActivateWhenComplete: []

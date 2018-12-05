@@ -10,10 +10,14 @@ public class NotificationController : MonoBehaviour
 {
 	[Header("Notification")]
 	public GameObject NotificationWindow;
-	public Text Textbox;
+	public Text ItemTextbox;
+	public Text QuestTextbox;
+	public Text ExitText;
 	public Image Img;
 
+
 	private bool _active;
+	private bool _canBeClosed;
 	
 	/// <summary>
 	/// Sets the notification window in order to display the object and a message based on the action
@@ -23,8 +27,6 @@ public class NotificationController : MonoBehaviour
 	public void ShowItemNotification(Item item, bool op)
 	{
 		Img.enabled = true;
-		Debug.Log(Img.rectTransform.anchorMax);
-		Textbox.rectTransform.anchorMin = new Vector2(Img.rectTransform.anchorMax.x, 0);
 		
 		StringBuilder stringBuilder = new StringBuilder();
 
@@ -41,7 +43,9 @@ public class NotificationController : MonoBehaviour
 
 		Img.sprite = item.InventoryArtwork;
 		
-		ShowNotification(stringBuilder);
+		QuestTextbox.enabled = false;
+		
+		ShowNotification(stringBuilder, ItemTextbox);
 	}
 
 	/// <summary>
@@ -52,7 +56,6 @@ public class NotificationController : MonoBehaviour
 	public void ShowQuestNotification(Quest quest, bool op)
 	{
 		Img.enabled = false;
-		Textbox.rectTransform.anchorMin = new Vector2(0,0);
 		
 		StringBuilder stringBuilder = new StringBuilder();
 		
@@ -66,20 +69,36 @@ public class NotificationController : MonoBehaviour
 		}
 
 		stringBuilder.Append(quest.Name);
+
+		ItemTextbox.enabled = false;
 		
-		ShowNotification(stringBuilder);
+		ShowNotification(stringBuilder, QuestTextbox);
 	}
 	
 	/// <summary>
 	/// Displays the message on the notification window
 	/// </summary>
 	/// <param name="stringBuilder">Message to show</param>
-	private void ShowNotification(StringBuilder stringBuilder)
+	/// <param name="textBox">Textbox that is going to be displayed</param>
+	private void ShowNotification(StringBuilder stringBuilder, Text textBox)
 	{
 		Debug.Log(stringBuilder.ToString());
+		_canBeClosed = false;
 		_active = true;
+		textBox.text = stringBuilder.ToString();
+		textBox.enabled = true;
+		
 		NotificationWindow.SetActive(true);
-		Textbox.text = stringBuilder.ToString();
+		//TODO Add music here
+		StartCoroutine(DelayClose());
+
+	}
+
+	private IEnumerator DelayClose()
+	{
+		yield return new WaitForSecondsRealtime(1f);	//TODO Change time based on tune
+		ExitText.enabled = true;
+		_canBeClosed = true;
 	}
 
 	/// <summary>
@@ -89,6 +108,7 @@ public class NotificationController : MonoBehaviour
 	{
 		NotificationWindow.SetActive(false);
 		_active = false;
+		ExitText.enabled = false;
 	}
 	
 	/// <summary>
@@ -98,5 +118,14 @@ public class NotificationController : MonoBehaviour
 	public bool IsNotificationActive()
 	{
 		return _active;
+	}
+	
+	/// <summary>
+	/// Checks whether the notification window can be closed or not
+	/// </summary>
+	/// <returns>True if the notification window can be closed, false otherwise</returns>
+	public bool CanBeClosed()
+	{
+		return _canBeClosed;
 	}
 }

@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4489971264847792}
   - component: {fileID: 212850090298725278}
   - component: {fileID: 114774687430968748}
-  - component: {fileID: 114276717292319240}
   - component: {fileID: 50354387751784014}
   - component: {fileID: 61929735446735532}
   - component: {fileID: 95686553125764402}
@@ -156,29 +155,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114276717292319240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1681017874809390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797c9c440aabd5f4fb8acb0c5f6c109d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: 1
-  Radius: 5
-  WaitTime: 1
-  ArrivalDistance: 1
-  RayCastPositions:
-    UpLeft: {fileID: 0}
-    UpRight: {fileID: 0}
-    DownLeft: {fileID: 0}
-    DownRight: {fileID: 0}
-  ObstacleLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &114774687430968748
 MonoBehaviour:
   m_ObjectHideFlags: 1

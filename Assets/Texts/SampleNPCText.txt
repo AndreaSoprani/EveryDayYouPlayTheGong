@@ -1,5 +1,4 @@
 Hi, stranger!
 This is a sample text 'cuz I'm a sample NPC.
-See you around...
 
-Stranger.
+See you around stranger.
