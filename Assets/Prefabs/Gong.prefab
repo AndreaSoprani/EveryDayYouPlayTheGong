@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61440070154049364}
   - component: {fileID: 50937321267709066}
   - component: {fileID: 114429762248577044}
+  - component: {fileID: 95501191440127654}
   m_Layer: 8
   m_Name: Gong
   m_TagString: Untagged
@@ -106,18 +107,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.21162036}
+  m_Offset: {x: -0.012474179, y: -0.41432643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.6, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.1767593}
+  m_Size: {x: 0.9742265, y: 0.13309956}
   m_EdgeRadius: 0
 --- !u!68 &68118657560684122
 EdgeCollider2D:
@@ -136,6 +137,24 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.3, y: 0.3}
   - {x: 0.3, y: 0.3}
+--- !u!95 &95501191440127654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1194166170195554}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e58e573ef8a94ad47b6c35623a3a49f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114429762248577044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,7 +217,7 @@ SpriteRenderer:
   m_SortingLayerID: 1683700601
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 62f536169a819594aaeec16aa36257fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9b2131f4dbe92b42b12ffb1361a496f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

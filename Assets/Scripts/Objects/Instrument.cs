@@ -24,10 +24,17 @@ public class Instrument : InGameObject
 
 	public override void Play()
 	{
+		StartCoroutine(DelayPlayAnimation());
+		
+		//TODO Check if this call has to be delayed too
 		AudioManager.Instance.PlaySound(Sound);
 	}
 
-	
+	private IEnumerator DelayPlayAnimation()
+	{
+		yield return new WaitForSeconds(0.23f);
+		GetComponent<Animator>().SetTrigger("Playing");
+	}
 	/*
 	 * INTERACT
 	 */

@@ -41,7 +41,7 @@ public class GUIController : MonoBehaviour
 				CloseInventory();
 		}
 		
-		if (NotificationController.IsNotificationActive() && Input.GetKeyDown(KeyCode.Return))
+		if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() && Input.GetKeyDown(KeyCode.Return))
 		{
 			NotificationController.HideNotification();
 			Time.timeScale = 1;
