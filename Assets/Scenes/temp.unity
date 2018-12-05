@@ -842,7 +842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &213617034
 RectTransform:
   m_ObjectHideFlags: 0
@@ -862,7 +862,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 70}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213617035
 MonoBehaviour:
@@ -884,8 +884,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300032, guid: 7af053e98b2ed60479867a9753db874a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1540,6 +1540,7 @@ MonoBehaviour:
   ObjectID: 
   Dialogue: {fileID: 0}
   Sound: {fileID: 0}
+  HasInteraction: 0
 --- !u!212 &478468401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2820,6 +2821,7 @@ MonoBehaviour:
   ObjectID: 
   Dialogue: {fileID: 0}
   Sound: {fileID: 0}
+  HasInteraction: 0
 --- !u!212 &689062030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2936,6 +2938,7 @@ MonoBehaviour:
   ObjectID: 
   Dialogue: {fileID: 0}
   Sound: {fileID: 0}
+  HasInteraction: 0
 --- !u!61 &736143679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5411,7 +5414,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.34500003, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.000015259, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279884814
 MonoBehaviour:
@@ -5773,6 +5776,7 @@ MonoBehaviour:
   ObjectID: 
   Dialogue: {fileID: 0}
   Sound: {fileID: 0}
+  HasInteraction: 0
 --- !u!212 &1352419148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6712,6 +6716,7 @@ MonoBehaviour:
   ObjectID: 
   Dialogue: {fileID: 0}
   Sound: {fileID: 0}
+  HasInteraction: 0
 --- !u!61 &1523155712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7535,6 +7540,7 @@ MonoBehaviour:
   ObjectID: 
   Dialogue: {fileID: 0}
   Sound: {fileID: 0}
+  HasInteraction: 0
 --- !u!61 &1866362062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7911,7 +7917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2030319427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7945,7 +7951,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NotificationWindow: {fileID: 213617033}
-  Textbox: {fileID: 153955753}
+  ItemTextbox: {fileID: 0}
+  QuestTextbox: {fileID: 0}
+  ExitText: {fileID: 0}
   Img: {fileID: 1279884814}
 --- !u!114 &2030319429
 MonoBehaviour:
