@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Objects;
 using Quests;
@@ -12,7 +13,8 @@ public class Instrument : InGameObject
 
 	public Dialogue Dialogue;
 	public Sound Sound;
-
+	public bool HasInteraction;
+	
 	/*
 	 * PLAY
 	 */
@@ -39,6 +41,10 @@ public class Instrument : InGameObject
 	 * INTERACT
 	 */
 
+	public override bool IsInteractable()
+	{
+		return HasInteraction;
+	}
 
 	public override void Interact()
 	{
