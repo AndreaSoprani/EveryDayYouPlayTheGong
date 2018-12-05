@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50463041997711312}
   - component: {fileID: 114164205678162242}
   m_Layer: 8
-  m_Name: PuzzleGong2
+  m_Name: PuzzlePiece2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 50781935906924012}
   - component: {fileID: 114089558828314888}
   m_Layer: 8
-  m_Name: PuzzleGong1
+  m_Name: PuzzlePiece1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 50566160222827792}
   - component: {fileID: 114957694135197240}
   m_Layer: 8
-  m_Name: PuzzleGong3
+  m_Name: PuzzlePiece3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -761,6 +761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleId: puzzle1
   PuzzlePiece:
+  - {fileID: 114164205678162242}
   - {fileID: 114089558828314888}
   - {fileID: 114164205678162242}
   - {fileID: 114957694135197240}
