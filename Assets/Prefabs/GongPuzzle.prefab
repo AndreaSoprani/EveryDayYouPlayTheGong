@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50463041997711312}
   - component: {fileID: 114164205678162242}
   m_Layer: 8
-  m_Name: PuzzleMidGong
+  m_Name: PuzzleGong2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 50781935906924012}
   - component: {fileID: 114089558828314888}
   m_Layer: 8
-  m_Name: PuzzleSmallGong
+  m_Name: PuzzleGong1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 114276694720213584}
   - component: {fileID: 68480515972374108}
   m_Layer: 0
-  m_Name: MidGongLayerSwitcher
+  m_Name: PuzzleGong3LayerSwitcher
   m_TagString: LayerSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 114378150306595702}
   - component: {fileID: 68320644779066722}
   m_Layer: 0
-  m_Name: MidGongLayerSwitcher
+  m_Name: PuzzleGong2LayerSwitcher
   m_TagString: LayerSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 61548473694900492}
   - component: {fileID: 95828888385501668}
   m_Layer: 8
-  m_Name: Neal
+  m_Name: Neil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 114101211626184342}
   - component: {fileID: 68009599225280046}
   m_Layer: 0
-  m_Name: MidGongLayerSwitcher
+  m_Name: PuzzleGong1LayerSwitcher
   m_TagString: LayerSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 50566160222827792}
   - component: {fileID: 114957694135197240}
   m_Layer: 8
-  m_Name: PuzzleBigGong
+  m_Name: PuzzleGong3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,6 +693,7 @@ MonoBehaviour:
   ObjectID: puzzlesmallgong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
   Sound: {fileID: 11400000, guid: 28c7b79d9812f47409cc830c1bbf03f1, type: 2}
+  HasInteraction: 0
 --- !u!114 &114101211626184342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -720,6 +721,7 @@ MonoBehaviour:
   ObjectID: puzzlemidgong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
   Sound: {fileID: 11400000, guid: 8de4b85d79560dc438b5409bab805c5f, type: 2}
+  HasInteraction: 0
 --- !u!114 &114276694720213584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: neal
+  ObjectID: neil
   StandardDialogue: {fileID: 11400000, guid: 0adb3b729baf1e74a82804f26321af02, type: 2}
   DayOverDialogue: {fileID: 0}
   Dialogues: []
@@ -813,6 +815,7 @@ MonoBehaviour:
   ObjectID: puzzlebiggong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
   Sound: {fileID: 11400000, guid: 2d0ee30949e5de64eb2d57e6a740c8b8, type: 2}
+  HasInteraction: 0
 --- !u!212 &212177254071870382
 SpriteRenderer:
   m_ObjectHideFlags: 1
