@@ -8,17 +8,16 @@ public class Pickup : InGameObject
 
 	public Item Item;
 	
-	
 	// Use this for initialization
 	void Start ()
 	{
-		this.GetComponent<SpriteRenderer>().sprite = Item.PickupArtwork;
+		if (Item == null) return;
 		this.name = "Pickup" + Item.Id;
 	}
 
 	public override void Interact()
 	{
-		Player.Instance.AddItem(Item);
+		if (Item != null) Player.Instance.AddItem(Item);
 		Destroy(gameObject);
 	}
 }
