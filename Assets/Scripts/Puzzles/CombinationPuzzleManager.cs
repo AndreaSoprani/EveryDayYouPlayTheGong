@@ -31,9 +31,9 @@ public class CombinationPuzzleManager : MonoBehaviour
 
 	public void Selection(CombinationPuzzleObject guess)
 	{
-		Debug.Log("Guess: "+PuzzlePiece.IndexOf(guess)+" Current: "+_currentIndex+ " Total: "+ PuzzlePiece.Count );
+		Debug.Log("Guess: " + guess.name + " Current: " + PuzzlePiece[_currentIndex].name + " Total: "+ PuzzlePiece.Count );
 		
-		if (PuzzlePiece.IndexOf(guess) == _currentIndex)
+		if (PuzzlePiece[_currentIndex] == guess) // In sequence
 		{
 			if (_currentIndex == 0)
 				_timePassed = 0;
@@ -43,11 +43,22 @@ public class CombinationPuzzleManager : MonoBehaviour
 			
 			if (_currentIndex == PuzzlePiece.Count && _timePassed <= TimeoutInSeconds)
 			{
-				
 				PuzzleSolved();
 			}
-		}
-		else
+		} 
+		else if (guess == PuzzlePiece[0]) // First piece two times (Instead of first and then second)
+		{
+			_currentIndex = 1;
+			_timePassed = 0;
+			
+			if(HasTimeout) Debug.Log("Time Passed: "+_timePassed+ "Timeout: "+TimeoutInSeconds);
+			
+			if (_currentIndex == PuzzlePiece.Count && _timePassed <= TimeoutInSeconds)
+			{
+				PuzzleSolved();
+			}
+		} 
+		else // Wrong piece
 		{
 			_currentIndex = 0;
 		}
@@ -61,7 +72,6 @@ public class CombinationPuzzleManager : MonoBehaviour
 			foreach (CombinationPuzzleObject item in PuzzlePiece)
 			{
 				item.setSolved(true);
-				
 			}
 		}
 		if(TypeOfPuzzle == PuzzleType.ItemReward)

@@ -1,6 +1,6 @@
 Hey, welcome to the prototype. My name is Bill and I exist only to show you how it works around here...
 
-You interacted with me so I assume that you already know what's the key to interact... In case you forgot it's 'X'.
+Let me inform you about the commands: as you already did you can press 'X' to interact.
 
 Then you can use the arrows to move around, press 'CTRL' to run and 'SPACE' to play the instruments.
 
