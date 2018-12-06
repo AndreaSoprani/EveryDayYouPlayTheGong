@@ -169,6 +169,7 @@ MonoBehaviour:
   ObjectID: pNPC
   StandardDialogue: {fileID: 11400000, guid: 15bbc5a01a72c9b49bae89178cee7395, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 615c184a21d043e4aae00ec658fb8495, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: 3601f94664e16df41a8033853eae80a4, type: 2}
   Dialogues: []
 --- !u!114 &114822938434025928
 MonoBehaviour:

@@ -9,6 +9,7 @@ public class NPCInteractable : InGameObject
 
 	public Dialogue StandardDialogue;
 	public Dialogue DayOverDialogue;
+	public Dialogue PlayingDialogue;
 	public List<Dialogue> Dialogues;
 	
 	public override void Interact()
@@ -18,7 +19,6 @@ public class NPCInteractable : InGameObject
 		if(DayProgressionManager.Instance.IsDayOver() && DayOverDialogue != null) DayOverDialogue.StartDialogue();
 		else if (lastAvailable == null && StandardDialogue != null) StandardDialogue.StartDialogue();
 		else if (lastAvailable != null) lastAvailable.StartDialogue();
-
 	}
 
 	public void InstantDialogue(Dialogue dialogue)
@@ -29,5 +29,16 @@ public class NPCInteractable : InGameObject
 	private Dialogue LastAvailableDialogue()
 	{
 		return Dialogues.FindLast(d => d.IsAvailable());
+	}
+
+	public override bool IsPlayable()
+	{
+		if (PlayingDialogue != null) return true;
+		return false;
+	}
+
+	public override void Play()
+	{
+		PlayingDialogue.StartDialogue();
 	}
 }

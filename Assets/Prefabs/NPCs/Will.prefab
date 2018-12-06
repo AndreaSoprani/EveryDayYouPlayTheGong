@@ -169,6 +169,7 @@ MonoBehaviour:
   ObjectID: will
   StandardDialogue: {fileID: 11400000, guid: 42d231812e4582e4f86760f2912bf1d9, type: 2}
   DayOverDialogue: {fileID: 0}
+  PlayingDialogue: {fileID: 11400000, guid: ed3a42449c42e5947b73c1b492c18446, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: 328588fe5f609764c9ec15719f30f926, type: 2}
   - {fileID: 11400000, guid: b2d9bdf12f15e3d4cab077f0fb3c5acf, type: 2}

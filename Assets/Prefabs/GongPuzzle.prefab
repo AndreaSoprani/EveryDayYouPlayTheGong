@@ -801,6 +801,7 @@ MonoBehaviour:
   ObjectID: neil
   StandardDialogue: {fileID: 11400000, guid: 0adb3b729baf1e74a82804f26321af02, type: 2}
   DayOverDialogue: {fileID: 0}
+  PlayingDialogue: {fileID: 11400000, guid: 57e69e015ce3d974f94163c8f563764b, type: 2}
   Dialogues: []
 --- !u!114 &114957694135197240
 MonoBehaviour:
