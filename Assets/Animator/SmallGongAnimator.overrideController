@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SmallGongAnimator
+  m_Controller: {fileID: 9100000, guid: e58e573ef8a94ad47b6c35623a3a49f1, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a2cdbf13f4e28034388e72fefd092479, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6eaf1d65accd6cb45a14d3cf836f2947, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 026459ed48e5b35408741031f1907bc2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d95653836fccace4e8a9fee428f99c84, type: 2}
