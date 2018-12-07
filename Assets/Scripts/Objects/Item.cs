@@ -16,7 +16,6 @@ public class Item : ScriptableObject
 	
 	// IMAGE ATTRIBUTES
 
-	public Sprite PickupArtwork; // Artwork displayed in the item menu.
 	public Sprite InventoryArtwork; // Artwork displayed when the item has to be picked up.
 
 	

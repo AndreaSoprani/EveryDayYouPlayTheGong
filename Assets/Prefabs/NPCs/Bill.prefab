@@ -170,7 +170,8 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: 15bbc5a01a72c9b49bae89178cee7395, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 615c184a21d043e4aae00ec658fb8495, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 3601f94664e16df41a8033853eae80a4, type: 2}
-  Dialogues: []
+  Dialogues:
+  - {fileID: 11400000, guid: ef15cd913da568d47adc86cdc7fa9d10, type: 2}
 --- !u!114 &114822938434025928
 MonoBehaviour:
   m_ObjectHideFlags: 1
