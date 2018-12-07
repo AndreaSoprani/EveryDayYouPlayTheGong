@@ -12,7 +12,7 @@ public class Instrument : InGameObject
 {
 
 	public Dialogue Dialogue;
-	public Sound Sound;
+	public string SoundName;
 	public bool HasInteraction;
 	
 	/*
@@ -27,16 +27,15 @@ public class Instrument : InGameObject
 	public override void Play()
 	{
 		StartCoroutine(DelayPlayAnimation());
-		
-		//TODO Check if this call has to be delayed too
-		AudioManager.Instance.PlaySound(Sound);
+
+
+		AkSoundEngine.PostEvent(SoundName, gameObject);
 	}
 
 	private IEnumerator DelayPlayAnimation()
 	{
 		yield return new WaitForSeconds(0.23f);
-		Animator animator = GetComponent<Animator>();
-		if(animator!=null) animator.SetTrigger("Playing");
+		GetComponent<Animator>().SetTrigger("Playing");
 	}
 	/*
 	 * INTERACT

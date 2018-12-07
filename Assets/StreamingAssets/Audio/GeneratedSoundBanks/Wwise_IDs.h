@@ -13,7 +13,25 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BELL1 = 401578503U;
+        static const AkUniqueID BELL2 = 401578500U;
+        static const AkUniqueID BELL3 = 401578501U;
+        static const AkUniqueID BELL4 = 401578498U;
+        static const AkUniqueID BELL5 = 401578499U;
+        static const AkUniqueID BELL6 = 401578496U;
         static const AkUniqueID EXPLORE = 579523862U;
+        static const AkUniqueID MAINGONG = 1143543361U;
+        static const AkUniqueID PUZZLEGONG_HIGH = 1949314593U;
+        static const AkUniqueID PUZZLEGONG_LOW = 1424533253U;
+        static const AkUniqueID PUZZLEGONG_MID = 2061935817U;
+        static const AkUniqueID XYLOPHONE1_DO = 2016315246U;
+        static const AkUniqueID XYLOPHONE2_RE = 4087751051U;
+        static const AkUniqueID XYLOPHONE3_MI = 2441093981U;
+        static const AkUniqueID XYLOPHONE4_FA = 771121013U;
+        static const AkUniqueID XYLOPHONE5_SOL = 2587593121U;
+        static const AkUniqueID XYLOPHONE6_LA = 678114561U;
+        static const AkUniqueID XYLOPHONE7_SI = 3403877851U;
+        static const AkUniqueID XYLOPHONE8_DO2 = 3383370049U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -82,7 +100,10 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID BELL = 1240512178U;
+        static const AkUniqueID GONG = 685410454U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID XYLOPHONE = 2146896501U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Gong" ID="{B01F14E2-C68A-4F06-84B2-39675269F595}" ShortID="1037981461">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MainGong" ID="{6DC9AA45-B944-4A68-87BA-755DFE782E88}" ShortID="145406631">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainGong" ID="{3B7C0B98-6E82-40BF-85C4-709593669980}" ShortID="433397730">
+									<Language>SFX</Language>
+									<AudioFile>MainGong.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainGong" ID="{3B7C0B98-6E82-40BF-85C4-709593669980}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PuzzleGong_low" ID="{F1155830-9088-4152-B595-0AF15C484A43}" ShortID="453960375">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PuzzleGong_low" ID="{1E30B041-2DB9-4E48-85CC-3A75C90008D6}" ShortID="422617908">
+									<Language>SFX</Language>
+									<AudioFile>PuzzleGong_low.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PuzzleGong_low" ID="{1E30B041-2DB9-4E48-85CC-3A75C90008D6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PuzzleGong_mid" ID="{025A24EF-7D90-4CAA-BD57-DDDF80742FE7}" ShortID="794157889">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PuzzleGong_mid" ID="{AF226184-8A7A-4C16-A7F9-3C3DC7D504AA}" ShortID="86418673">
+									<Language>SFX</Language>
+									<AudioFile>PuzzleGong_mid.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PuzzleGong_mid" ID="{AF226184-8A7A-4C16-A7F9-3C3DC7D504AA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PuzzleGong_high" ID="{D846CF81-D549-42D0-B3F4-E4DB14832D9B}" ShortID="1062964054">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PuzzleGong_high" ID="{12D8C21A-51D2-4046-A0B3-151ADFE3234D}" ShortID="358731419">
+									<Language>SFX</Language>
+									<AudioFile>PuzzleGong_high.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PuzzleGong_high" ID="{12D8C21A-51D2-4046-A0B3-151ADFE3234D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Bells" ID="{81C26309-BC5A-4AF1-9C84-563E4A511B24}" ShortID="447181761">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Bell5" ID="{91309243-CEA8-47A8-AAAF-E48E31964151}" ShortID="869882844">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell5" ID="{4E4A7AB4-80AF-486A-B126-1E90ACE83225}" ShortID="1055529281">
+									<Language>SFX</Language>
+									<AudioFile>Bell5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell5" ID="{4E4A7AB4-80AF-486A-B126-1E90ACE83225}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Bell1" ID="{38F6E6B1-3328-4EAD-81CA-C71335F41D69}" ShortID="1025884864">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell1" ID="{B9F0BE59-A299-492B-BD01-B99517D5B08C}" ShortID="735219554">
+									<Language>SFX</Language>
+									<AudioFile>Bell1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell1" ID="{B9F0BE59-A299-492B-BD01-B99517D5B08C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Bell2" ID="{36D6B278-AB6B-4C06-9D42-62F6686284CD}" ShortID="862595997">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell2" ID="{F2369782-AB5D-45AA-BE8F-169855779713}" ShortID="933487449">
+									<Language>SFX</Language>
+									<AudioFile>Bell2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell2" ID="{F2369782-AB5D-45AA-BE8F-169855779713}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Bell3" ID="{0905EF58-B407-40AA-9F3C-041ECB1F568C}" ShortID="255759316">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell3" ID="{9C98CED4-6E9F-4AED-84A3-BD7B61E107DC}" ShortID="932724835">
+									<Language>SFX</Language>
+									<AudioFile>Bell3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell3" ID="{9C98CED4-6E9F-4AED-84A3-BD7B61E107DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Bell6" ID="{D7989CE7-1834-4D17-B96C-87CF911E914D}" ShortID="960266968">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell6" ID="{A899F45E-5485-4672-9A34-5A8D4573065D}" ShortID="39644574">
+									<Language>SFX</Language>
+									<AudioFile>Bell6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell6" ID="{A899F45E-5485-4672-9A34-5A8D4573065D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Bell4" ID="{AC1001AE-E257-4252-A5DA-503AD489D19B}" ShortID="611183762">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell4" ID="{D508409E-45AA-42DC-BEF0-9E71989724F5}" ShortID="721963773">
+									<Language>SFX</Language>
+									<AudioFile>Bell4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell4" ID="{D508409E-45AA-42DC-BEF0-9E71989724F5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Xylophone" ID="{D8047607-BBCC-49A5-BF47-010F1B311107}" ShortID="609546458">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Xylophone1_do" ID="{FB1214F2-BEE8-407E-9915-E0A771B2EA34}" ShortID="623069666">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone1_do" ID="{8AF6434F-1058-4742-AC3C-1FA595932E5B}" ShortID="579005895">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone1_do.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone1_do" ID="{8AF6434F-1058-4742-AC3C-1FA595932E5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone2_re" ID="{B598EFC8-ADFD-4CB3-85CA-D2D6FD4E85F4}" ShortID="953610070">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone2_re" ID="{CF9B9110-2DBE-4453-A44F-68ADAFCC4FD4}" ShortID="395398279">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone2_re.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone2_re" ID="{CF9B9110-2DBE-4453-A44F-68ADAFCC4FD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone3_mi" ID="{59E9C773-15E0-4568-950F-DA78D4DEA611}" ShortID="823223888">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone3_mi" ID="{18C2CDAC-D465-441A-B3A5-816F88E469A2}" ShortID="917296971">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone3_mi.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone3_mi" ID="{18C2CDAC-D465-441A-B3A5-816F88E469A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone4_fa" ID="{1394ABAC-B62B-4982-9F76-D85FF4185023}" ShortID="1002319964">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone4_fa" ID="{9D65AF1C-D785-4F28-9787-A1CDEB065D60}" ShortID="43710732">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone4_fa.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone4_fa" ID="{9D65AF1C-D785-4F28-9787-A1CDEB065D60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone5_sol" ID="{23683950-0C6D-47DA-A8D9-FD9DB4AE9B35}" ShortID="74399314">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone5_sol" ID="{FC01D3E7-D000-4347-B494-B53BE1781BBA}" ShortID="848060149">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone5_sol.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone5_sol" ID="{FC01D3E7-D000-4347-B494-B53BE1781BBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone6_la" ID="{B257B6C6-1F9A-4694-890A-944FB0233752}" ShortID="772923280">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone6_la" ID="{432F6660-85C3-40F5-8A8E-06D4932F2677}" ShortID="886110465">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone6_la.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone6_la" ID="{432F6660-85C3-40F5-8A8E-06D4932F2677}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone7_si" ID="{2547B051-2D6B-47DF-B775-8255E41A4AAD}" ShortID="534945361">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone7_si" ID="{E687EC76-07A9-4443-84CE-9F1DF08B01DB}" ShortID="584497804">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone7_si.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone7_si" ID="{E687EC76-07A9-4443-84CE-9F1DF08B01DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Xylophone8_do2" ID="{7ADB3267-14C1-4CC8-BFD8-B0ADCF1374EC}" ShortID="291827324">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Xylophone8_do2" ID="{F7A703F0-1BF1-4E4E-BB66-086375F9A3AC}" ShortID="467298901">
+									<Language>SFX</Language>
+									<AudioFile>Xylophone8_do2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Xylophone8_do2" ID="{F7A703F0-1BF1-4E4E-BB66-086375F9A3AC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

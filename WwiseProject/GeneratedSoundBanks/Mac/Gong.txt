@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1143543361	MainGong			\Default Work Unit\Gong\MainGong	
+	1424533253	PuzzleGong_low			\Default Work Unit\Gong\PuzzleGong_low	
+	1949314593	PuzzleGong_high			\Default Work Unit\Gong\PuzzleGong_high	
+	2061935817	PuzzleGong_mid			\Default Work Unit\Gong\PuzzleGong_mid	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	86418673	PuzzleGong_mid	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\PuzzleGong_mid_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gong\PuzzleGong_mid		2097296
+	358731419	PuzzleGong_high	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\PuzzleGong_high_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gong\PuzzleGong_high		1835152
+	422617908	PuzzleGong_low	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\PuzzleGong_low_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gong\PuzzleGong_low		2097296
+	433397730	MainGong	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\MainGong_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gong\MainGong		2359440
+

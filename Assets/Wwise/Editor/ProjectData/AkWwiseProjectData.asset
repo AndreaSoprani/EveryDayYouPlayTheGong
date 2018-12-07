@@ -15,12 +15,12 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c5dd16e92d34e740b8569138e46ee176
-    m_lastTime: -8586581009512226240
+    m_lastTime: -8586573844131271128
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
     ParentPhysicalPath: 
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
-    m_lastTime: -8586581009512346163
+    m_lastTime: -8586573844133160077
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -180,14 +180,32 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6789837cf7132a48a7eebcc8efb19322
-    m_lastTime: -8586581009513815338
+    m_lastTime: -8586573844129391854
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 16271eb29c80434992f5c5998a5d8665
-    m_lastTime: -8586581009511486661
+    m_lastTime: -8586573814564729213
     List:
+    - name: Bell
+      guid: 711ca1218843fe479f4a9c4d525baadf
+      id: 1240512178
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bell
+        ObjectType: 7
+      Path: Default Work Unit\Bell
+    - name: Gong
+      guid: 8c12b1a1add5d14d92db0618e5048dc8
+      id: 685410454
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gong
+        ObjectType: 7
+      Path: Default Work Unit\Gong
     - name: Main
       guid: 716f16a64af64041a9869600932edf01
       id: 3161908922
@@ -197,16 +215,277 @@ MonoBehaviour:
       - ElementName: Main
         ObjectType: 7
       Path: Default Work Unit\Main
+    - name: Xylophone
+      guid: cdd639d79a54a444bf23962770f8fb08
+      id: 2146896501
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 7
+      Path: Default Work Unit\Xylophone
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 76273f77a9fc944fa2780518c1fa60d3
-    m_lastTime: -8586581009514025199
-    List: []
+    m_lastTime: -8586573844129261959
+    List:
+    - name: Bell1
+      guid: 4ed4b648b5297448b4be7a37a425fb5a
+      id: 401578503
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bells
+        ObjectType: 4
+      - ElementName: Bell1
+        ObjectType: 3
+      Path: Default Work Unit\Bells\Bell1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bell2
+      guid: 7eafa0688886c54195064400450f4724
+      id: 401578500
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bells
+        ObjectType: 4
+      - ElementName: Bell2
+        ObjectType: 3
+      Path: Default Work Unit\Bells\Bell2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bell3
+      guid: d732720f768c5244974e159b6aa292a4
+      id: 401578501
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bells
+        ObjectType: 4
+      - ElementName: Bell3
+        ObjectType: 3
+      Path: Default Work Unit\Bells\Bell3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bell4
+      guid: 81248b4a38fb9e4e8092ca3d2e349070
+      id: 401578498
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bells
+        ObjectType: 4
+      - ElementName: Bell4
+        ObjectType: 3
+      Path: Default Work Unit\Bells\Bell4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bell5
+      guid: 98016c0c43803e40bf76d7c18e2dd90d
+      id: 401578499
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bells
+        ObjectType: 4
+      - ElementName: Bell5
+        ObjectType: 3
+      Path: Default Work Unit\Bells\Bell5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bell6
+      guid: 09a2db22e3535f419add918dfc86a472
+      id: 401578496
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bells
+        ObjectType: 4
+      - ElementName: Bell6
+        ObjectType: 3
+      Path: Default Work Unit\Bells\Bell6
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MainGong
+      guid: 0201333924193d47bbc07bb5d59fa092
+      id: 1143543361
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gong
+        ObjectType: 4
+      - ElementName: MainGong
+        ObjectType: 3
+      Path: Default Work Unit\Gong\MainGong
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PuzzleGong_high
+      guid: c585e9a01a197947bb721c9ab6c16ac8
+      id: 1949314593
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gong
+        ObjectType: 4
+      - ElementName: PuzzleGong_high
+        ObjectType: 3
+      Path: Default Work Unit\Gong\PuzzleGong_high
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PuzzleGong_low
+      guid: bd68b125e2f667468b3a51e236df7765
+      id: 1424533253
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gong
+        ObjectType: 4
+      - ElementName: PuzzleGong_low
+        ObjectType: 3
+      Path: Default Work Unit\Gong\PuzzleGong_low
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PuzzleGong_mid
+      guid: 199b37168ee68b4f9a28325730d5e4fc
+      id: 2061935817
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gong
+        ObjectType: 4
+      - ElementName: PuzzleGong_mid
+        ObjectType: 3
+      Path: Default Work Unit\Gong\PuzzleGong_mid
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone1_do
+      guid: 0619efa68d0d5c4287566d68a43743aa
+      id: 2016315246
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone1_do
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone1_do
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone2_re
+      guid: 78ec6e55fc425749aced120fdcec450b
+      id: 4087751051
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone2_re
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone2_re
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone3_mi
+      guid: 3319564f33d45242af81b69946f88127
+      id: 2441093981
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone3_mi
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone3_mi
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone4_fa
+      guid: dea36a6dcd69e04aa040171c5694cb57
+      id: 771121013
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone4_fa
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone4_fa
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone5_sol
+      guid: 9344680967f05d4aa26a1115b2262630
+      id: 2587593121
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone5_sol
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone5_sol
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone6_la
+      guid: 533929691837584595880b864ead75f8
+      id: 678114561
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone6_la
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone6_la
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone7_si
+      guid: b06c06b27661b741bbcfb0b039296376
+      id: 3403877851
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone7_si
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone7_si
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Xylophone8_do2
+      guid: ed10415f73c28f418aa344623b8fecfe
+      id: 3383370049
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xylophone
+        ObjectType: 4
+      - ElementName: Xylophone8_do2
+        ObjectType: 3
+      Path: Default Work Unit\Xylophone\Xylophone8_do2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     guid: 3dc76bda0cc20c41bfca44ae9b98accb
-    m_lastTime: -8586581009511096908
+    m_lastTime: -8586573844129801621
     List:
     - name: Dungeon
       guid: 4d4ef0b41a738b4e95c54a3ff73f08e7
@@ -248,12 +527,12 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 74d20ea988d0ce44a5a1e5ff98378331
-    m_lastTime: -8586581009511276784
+    m_lastTime: -8586573844129451846
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
-    m_lastTime: -8586581009511146837
+    m_lastTime: -8586573844131021297
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -349,18 +628,18 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c79395df3239374aaff7b5f571b7516b
-    m_lastTime: -8586581009511066903
+    m_lastTime: -8586573844131181174
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 9ee0886d5d25ec47b628778387e2e692
-    m_lastTime: -8586581009510936976
+    m_lastTime: -8586573844129721292
     List: []
   - PhysicalPath: Switches\Music.wwu
     ParentPhysicalPath: Switches\Default Work Unit.wwu
     guid: 4efce7c1c6947f4096ebb26b5738ad68
-    m_lastTime: -8586581009511196830
+    m_lastTime: -8586573844130881375
     List:
     - name: Koto
       guid: 2407de52d604f44ca27a62e3a905e5c9
@@ -468,11 +747,12 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 7bc79e359480154897d10c11a07bc0dd
-    m_lastTime: -8586581009512516075
+    m_lastTime: -8586573844131820829
     List: []
   ExpandedItems:
   - /Every Day You Play the Gong
   - /Every Day You Play the Gong/Events
-  - /Every Day You Play the Gong/Events/Music
+  - /Every Day You Play the Gong/SoundBanks
+  - /Every Day You Play the Gong/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

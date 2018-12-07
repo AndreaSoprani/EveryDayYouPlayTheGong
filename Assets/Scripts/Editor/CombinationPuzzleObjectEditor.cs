@@ -9,7 +9,7 @@ public class CombinationPuzzleObjectEditor : UnityEditor.Editor {
         CombinationPuzzleObject myScript = (CombinationPuzzleObject) target;
 
         myScript.ObjectID = EditorGUILayout.TextField("ID", myScript.ObjectID);
-        myScript.Sound = (Sound)  EditorGUILayout.ObjectField("Sound", myScript.Sound, typeof(Sound), true);
+        myScript.SoundName = EditorGUILayout.TextField("Sound Name", myScript.SoundName);
 
         myScript.HasInteraction = EditorGUILayout.Toggle("Has Interaction", myScript.HasInteraction);
         

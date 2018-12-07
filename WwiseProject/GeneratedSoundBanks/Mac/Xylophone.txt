@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	678114561	Xylophone6_la			\Default Work Unit\Xylophone\Xylophone6_la	
+	771121013	Xylophone4_fa			\Default Work Unit\Xylophone\Xylophone4_fa	
+	2016315246	Xylophone1_do			\Default Work Unit\Xylophone\Xylophone1_do	
+	2441093981	Xylophone3_mi			\Default Work Unit\Xylophone\Xylophone3_mi	
+	2587593121	Xylophone5_sol			\Default Work Unit\Xylophone\Xylophone5_sol	
+	3383370049	Xylophone8_do2			\Default Work Unit\Xylophone\Xylophone8_do2	
+	3403877851	Xylophone7_si			\Default Work Unit\Xylophone\Xylophone7_si	
+	4087751051	Xylophone2_re			\Default Work Unit\Xylophone\Xylophone2_re	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	43710732	Xylophone4_fa	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone4_fa_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone4_fa		1048720
+	395398279	Xylophone2_re	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone2_re_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone2_re		1048720
+	467298901	Xylophone8_do2	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone8_do2_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone8_do2		786576
+	579005895	Xylophone1_do	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone1_do_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone1_do		1048720
+	584497804	Xylophone7_si	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone7_si_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone7_si		786576
+	848060149	Xylophone5_sol	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone5_sol_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone5_sol		1048720
+	886110465	Xylophone6_la	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone6_la_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone6_la		786576
+	917296971	Xylophone3_mi	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone3_mi_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Xylophone\Xylophone3_mi		1048720
+

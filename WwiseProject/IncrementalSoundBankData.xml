@@ -3,26 +3,34 @@
 	<Platform GUID="{40926950-9173-467E-B532-9E438F242F39}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1852764092" Timestamp="1543960777"/>
-				<File Name="Main" Hash="3764529511" Timestamp="1543960777"/>
+				<File Name="Bell" Hash="2757206410" Timestamp="1544223370"/>
+				<File Name="Bells" Hash="1038856117" Timestamp="1544222751"/>
+				<File Name="Gong" Hash="1258196062" Timestamp="1544223370"/>
+				<File Name="Init" Hash="1852764092" Timestamp="1544223370"/>
+				<File Name="Main" Hash="706964278" Timestamp="1544224786"/>
+				<File Name="Xylophone" Hash="595603182" Timestamp="1544223370"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="723588493" Timestamp="1543960787"/>
+				<File Name="" Hash="2199876684" Timestamp="1544224786"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{588B7840-B2B8-4F3E-9E3D-0B64ED6A964B}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="4029429218" Timestamp="1543960777"/>
-				<File Name="Main" Hash="3764529511" Timestamp="1543960777"/>
+				<File Name="Bell" Hash="2757206410" Timestamp="1544223371"/>
+				<File Name="Bells" Hash="1038856117" Timestamp="1544222751"/>
+				<File Name="Gong" Hash="1258196062" Timestamp="1544223371"/>
+				<File Name="Init" Hash="4029429218" Timestamp="1544223371"/>
+				<File Name="Main" Hash="706964278" Timestamp="1544224788"/>
+				<File Name="Xylophone" Hash="595603182" Timestamp="1544223370"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="951501853" Timestamp="1543960787"/>
+				<File Name="" Hash="1786743546" Timestamp="1544224788"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

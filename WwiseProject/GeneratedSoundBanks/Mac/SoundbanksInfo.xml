@@ -1,20 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Filippo\Desktop\Game\WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="685410454" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Gong</ObjectPath>
+			<ShortName>Gong</ShortName>
+			<Path>Gong.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1143543361" Name="MainGong" ObjectPath="\Events\Default Work Unit\Gong\MainGong"/>
+				<Event Id="1949314593" Name="PuzzleGong_high" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_high"/>
+				<Event Id="1424533253" Name="PuzzleGong_low" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_low"/>
+				<Event Id="2061935817" Name="PuzzleGong_mid" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_mid"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="86418673" Language="SFX">
+					<ShortName>PuzzleGong_mid.wav</ShortName>
+					<Path>SFX\PuzzleGong_mid_7544BA96.wem</Path>
+				</File>
+				<File Id="358731419" Language="SFX">
+					<ShortName>PuzzleGong_high.wav</ShortName>
+					<Path>SFX\PuzzleGong_high_7544BA96.wem</Path>
+				</File>
+				<File Id="422617908" Language="SFX">
+					<ShortName>PuzzleGong_low.wav</ShortName>
+					<Path>SFX\PuzzleGong_low_7544BA96.wem</Path>
+				</File>
+				<File Id="433397730" Language="SFX">
+					<ShortName>MainGong.wav</ShortName>
+					<Path>SFX\MainGong_7544BA96.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1240512178" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bell</ObjectPath>
+			<ShortName>Bell</ShortName>
+			<Path>Bell.bnk</Path>
+			<IncludedEvents>
+				<Event Id="401578503" Name="Bell1" ObjectPath="\Events\Default Work Unit\Bells\Bell1"/>
+				<Event Id="401578500" Name="Bell2" ObjectPath="\Events\Default Work Unit\Bells\Bell2"/>
+				<Event Id="401578501" Name="Bell3" ObjectPath="\Events\Default Work Unit\Bells\Bell3"/>
+				<Event Id="401578498" Name="Bell4" ObjectPath="\Events\Default Work Unit\Bells\Bell4"/>
+				<Event Id="401578499" Name="Bell5" ObjectPath="\Events\Default Work Unit\Bells\Bell5"/>
+				<Event Id="401578496" Name="Bell6" ObjectPath="\Events\Default Work Unit\Bells\Bell6"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="39644574" Language="SFX">
+					<ShortName>Bell6.wav</ShortName>
+					<Path>SFX\Bell6_7544BA96.wem</Path>
+				</File>
+				<File Id="721963773" Language="SFX">
+					<ShortName>Bell4.wav</ShortName>
+					<Path>SFX\Bell4_7544BA96.wem</Path>
+				</File>
+				<File Id="735219554" Language="SFX">
+					<ShortName>Bell1.wav</ShortName>
+					<Path>SFX\Bell1_7544BA96.wem</Path>
+				</File>
+				<File Id="932724835" Language="SFX">
+					<ShortName>Bell3.wav</ShortName>
+					<Path>SFX\Bell3_7544BA96.wem</Path>
+				</File>
+				<File Id="933487449" Language="SFX">
+					<ShortName>Bell2.wav</ShortName>
+					<Path>SFX\Bell2_7544BA96.wem</Path>
+				</File>
+				<File Id="1055529281" Language="SFX">
+					<ShortName>Bell5.wav</ShortName>
+					<Path>SFX\Bell5_7544BA96.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2146896501" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Xylophone</ObjectPath>
+			<ShortName>Xylophone</ShortName>
+			<Path>Xylophone.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2016315246" Name="Xylophone1_do" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone1_do"/>
+				<Event Id="4087751051" Name="Xylophone2_re" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone2_re"/>
+				<Event Id="2441093981" Name="Xylophone3_mi" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone3_mi"/>
+				<Event Id="771121013" Name="Xylophone4_fa" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone4_fa"/>
+				<Event Id="2587593121" Name="Xylophone5_sol" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone5_sol"/>
+				<Event Id="678114561" Name="Xylophone6_la" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone6_la"/>
+				<Event Id="3403877851" Name="Xylophone7_si" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone7_si"/>
+				<Event Id="3383370049" Name="Xylophone8_do2" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone8_do2"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="43710732" Language="SFX">
+					<ShortName>Xylophone4_fa.wav</ShortName>
+					<Path>SFX\Xylophone4_fa_7544BA96.wem</Path>
+				</File>
+				<File Id="395398279" Language="SFX">
+					<ShortName>Xylophone2_re.wav</ShortName>
+					<Path>SFX\Xylophone2_re_7544BA96.wem</Path>
+				</File>
+				<File Id="467298901" Language="SFX">
+					<ShortName>Xylophone8_do2.wav</ShortName>
+					<Path>SFX\Xylophone8_do2_7544BA96.wem</Path>
+				</File>
+				<File Id="579005895" Language="SFX">
+					<ShortName>Xylophone1_do.wav</ShortName>
+					<Path>SFX\Xylophone1_do_7544BA96.wem</Path>
+				</File>
+				<File Id="584497804" Language="SFX">
+					<ShortName>Xylophone7_si.wav</ShortName>
+					<Path>SFX\Xylophone7_si_7544BA96.wem</Path>
+				</File>
+				<File Id="848060149" Language="SFX">
+					<ShortName>Xylophone5_sol.wav</ShortName>
+					<Path>SFX\Xylophone5_sol_7544BA96.wem</Path>
+				</File>
+				<File Id="886110465" Language="SFX">
+					<ShortName>Xylophone6_la.wav</ShortName>
+					<Path>SFX\Xylophone6_la_7544BA96.wem</Path>
+				</File>
+				<File Id="917296971" Language="SFX">
+					<ShortName>Xylophone3_mi.wav</ShortName>
+					<Path>SFX\Xylophone3_mi_7544BA96.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3161908922" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>

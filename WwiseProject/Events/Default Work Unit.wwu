@@ -1,6 +1,273 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" SchemaVersion="89">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Gong" ID="{520CC457-0888-41EE-AB9B-BBE6DDC8A485}" ShortID="511249996">
+					<ChildrenList>
+						<Event Name="PuzzleGong_high" ID="{A0E985C5-191A-4779-BB72-1C9AB6C16AC8}">
+							<ChildrenList>
+								<Action Name="" ID="{4076EE31-03D0-4E45-A8E6-B5C03E3A68C2}" ShortID="734558587">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PuzzleGong_high" ID="{D846CF81-D549-42D0-B3F4-E4DB14832D9B}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MainGong" ID="{39330102-1924-473D-BBC0-7BB5D59FA092}">
+							<ChildrenList>
+								<Action Name="" ID="{4131A597-CAD7-4CDD-B45A-6D6894A23E61}" ShortID="446694739">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainGong" ID="{6DC9AA45-B944-4A68-87BA-755DFE782E88}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PuzzleGong_mid" ID="{16379B19-E68E-4F8B-9A28-325730D5E4FC}">
+							<ChildrenList>
+								<Action Name="" ID="{D21EED6B-5CD9-42A8-B07F-F650DB80FF3F}" ShortID="885547484">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PuzzleGong_mid" ID="{025A24EF-7D90-4CAA-BD57-DDDF80742FE7}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PuzzleGong_low" ID="{25B168BD-F6E2-4667-8B3A-51E236DF7765}">
+							<ChildrenList>
+								<Action Name="" ID="{E05BD429-03B1-46B7-AB3A-6E5D227897A7}" ShortID="543821405">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PuzzleGong_low" ID="{F1155830-9088-4152-B595-0AF15C484A43}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Bells" ID="{C8948344-D2D6-4512-A3EB-F963970C6A08}" ShortID="737301020">
+					<ChildrenList>
+						<Event Name="Bell3" ID="{0F7232D7-8C76-4452-974E-159B6AA292A4}">
+							<ChildrenList>
+								<Action Name="" ID="{7666B2A7-1F2C-4FB8-8CEA-39EEFA0ACE0A}" ShortID="469871695">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bell3" ID="{0905EF58-B407-40AA-9F3C-041ECB1F568C}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bell4" ID="{4A8B2481-FB38-4E9E-8092-CA3D2E349070}">
+							<ChildrenList>
+								<Action Name="" ID="{703B1D43-9906-4946-8642-ABB46434F870}" ShortID="197107809">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bell4" ID="{AC1001AE-E257-4252-A5DA-503AD489D19B}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bell6" ID="{22DBA209-53E3-415F-9ADD-918DFC86A472}">
+							<ChildrenList>
+								<Action Name="" ID="{39A8C32F-4AA7-4973-B94D-E6CD23F48AF9}" ShortID="344071828">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bell6" ID="{D7989CE7-1834-4D17-B96C-87CF911E914D}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bell1" ID="{48B6D44E-29B5-4874-B4BE-7A37A425FB5A}">
+							<ChildrenList>
+								<Action Name="" ID="{B813F907-7A8E-4DA2-B079-DB3A70C73510}" ShortID="1057962186">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bell1" ID="{38F6E6B1-3328-4EAD-81CA-C71335F41D69}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bell2" ID="{68A0AF7E-8688-41C5-9506-4400450F4724}">
+							<ChildrenList>
+								<Action Name="" ID="{2F3E0995-A1A6-4F32-BF94-F5826D149630}" ShortID="491782668">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bell2" ID="{36D6B278-AB6B-4C06-9D42-62F6686284CD}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bell5" ID="{0C6C0198-8043-403E-BF76-D7C18E2DD90D}">
+							<ChildrenList>
+								<Action Name="" ID="{C187569F-7DD9-4AE6-9025-061C862888B3}" ShortID="551110294">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bell5" ID="{91309243-CEA8-47A8-AAAF-E48E31964151}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Xylophone" ID="{80F8A9DB-9D09-4374-8DC1-E2DCF34EBE82}" ShortID="847076214">
+					<ChildrenList>
+						<Event Name="Xylophone1_do" ID="{A6EF1906-0D8D-425C-8756-6D68A43743AA}">
+							<ChildrenList>
+								<Action Name="" ID="{74389A42-D2E6-4171-A541-0122ED3F771A}" ShortID="303728581">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone1_do" ID="{FB1214F2-BEE8-407E-9915-E0A771B2EA34}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone2_re" ID="{556EEC78-42FC-4957-ACED-120FDCEC450B}">
+							<ChildrenList>
+								<Action Name="" ID="{2C8BBAFD-4DA3-44DF-8D7C-8D9063A4EBC2}" ShortID="135285070">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone2_re" ID="{B598EFC8-ADFD-4CB3-85CA-D2D6FD4E85F4}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone8_do2" ID="{5F4110ED-C273-418F-8AA3-44623B8FECFE}">
+							<ChildrenList>
+								<Action Name="" ID="{78C97A4F-CD92-4138-8EC6-9C9EDFD13248}" ShortID="534554005">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone8_do2" ID="{7ADB3267-14C1-4CC8-BFD8-B0ADCF1374EC}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone4_fa" ID="{6D6AA3DE-69CD-4AE0-A040-171C5694CB57}">
+							<ChildrenList>
+								<Action Name="" ID="{0D98B19F-03DB-4482-AF22-01ABB0C749FA}" ShortID="671131087">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone4_fa" ID="{1394ABAC-B62B-4982-9F76-D85FF4185023}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone6_la" ID="{69293953-3718-4558-9588-0B864EAD75F8}">
+							<ChildrenList>
+								<Action Name="" ID="{6A6FBBA8-7681-44AC-8F41-358C3EB220EB}" ShortID="201553687">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone6_la" ID="{B257B6C6-1F9A-4694-890A-944FB0233752}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone3_mi" ID="{4F561933-D433-4252-AF81-B69946F88127}">
+							<ChildrenList>
+								<Action Name="" ID="{38DF6FFB-2109-40DF-B87E-31DAB8807ADB}" ShortID="968710619">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone3_mi" ID="{59E9C773-15E0-4568-950F-DA78D4DEA611}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone7_si" ID="{B2066CB0-6176-41B7-BBCF-B0B039296376}">
+							<ChildrenList>
+								<Action Name="" ID="{A8DB8EC5-07E7-4E72-8556-8E451CE550C7}" ShortID="701820900">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone7_si" ID="{2547B051-2D6B-47DF-B775-8255E41A4AAD}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Xylophone5_sol" ID="{09684493-F067-4A5D-A26A-1115B2262630}">
+							<ChildrenList>
+								<Action Name="" ID="{CF8FF901-FDFE-440F-A705-249D65EDE6BF}" ShortID="650604855">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xylophone5_sol" ID="{23683950-0C6D-47DA-A8D9-FD9DB4AE9B35}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
