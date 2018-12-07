@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Name: RegularKey
   m_EditorClassIdentifier: 
   Id: regularkey
-  Name: Key
+  Name: A key
   Description: It's just a normal key, probably it opens something useless...
-  PickupArtwork: {fileID: 0}
   InventoryArtwork: {fileID: 21300010, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

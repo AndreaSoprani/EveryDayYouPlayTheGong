@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc980eb188e3bf44aaf97e46372138a8, type: 3}
-  m_Name: RustyKey
+  m_Name: Candy
   m_EditorClassIdentifier: 
-  Id: rustykey
-  Name: A rusty Key
-  Description: It's very old.
-  InventoryArtwork: {fileID: 21300008, guid: f14975d44176b454588e18dfe2e54b98, type: 3}
+  Id: candy
+  Name: A sweet candy
+  Description: For a real seeker.
+  InventoryArtwork: {fileID: 21300022, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

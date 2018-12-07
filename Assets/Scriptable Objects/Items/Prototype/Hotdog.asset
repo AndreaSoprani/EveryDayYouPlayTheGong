@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Name: Hotdog
   m_EditorClassIdentifier: 
   Id: hotdog
-  Name: Hot dog
+  Name: A hot dog
   Description: A tasty hot dog.
-  PickupArtwork: {fileID: 21300000, guid: 896b9e4093176ab428a886986da472b9, type: 3}
   InventoryArtwork: {fileID: 21300000, guid: 896b9e4093176ab428a886986da472b9, type: 3}

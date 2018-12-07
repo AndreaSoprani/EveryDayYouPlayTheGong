@@ -17,6 +17,10 @@ TextureImporter:
     21300024: FloorMusicRoom_12
     21300026: FloorMusicRoom_13
     21300028: FloorMusicRoom_14
+    21300030: FloorMusicRoom_15
+    21300032: FloorMusicRoom_16
+    21300034: FloorMusicRoom_17
+    21300036: FloorMusicRoom_18
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -107,13 +111,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ef992809a279084ba2a0d4ae15dad29
+      spriteID: 66f7055a0757a7246893cd1ea1a66bd3
       vertices: []
       indices: 
       edges: []
@@ -127,13 +131,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4085e9b229f7dbd41931781c4e7bb59a
+      spriteID: f0b405f8a0a5b8c488a41fc4df2e3401
       vertices: []
       indices: 
       edges: []
@@ -147,13 +151,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0dada924492f5344b42229efb5eba5b
+      spriteID: d60ee2ab14c006b438a1fdb276af3398
       vertices: []
       indices: 
       edges: []
@@ -162,18 +166,18 @@ TextureImporter:
       name: FloorMusicRoom_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10daacc6b122dbe4e9adfcd227c73f30
+      spriteID: 6ea0582cdf1c88c42a6874887e8e22d7
       vertices: []
       indices: 
       edges: []
@@ -182,18 +186,18 @@ TextureImporter:
       name: FloorMusicRoom_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f63148766908064d906f967ff0c39dd
+      spriteID: 1d872352577a20a428170007e772d280
       vertices: []
       indices: 
       edges: []
@@ -202,18 +206,18 @@ TextureImporter:
       name: FloorMusicRoom_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06cfe8066797b7841b707bc3b144cade
+      spriteID: a165ca466e19dda468b0e99cb038a9fb
       vertices: []
       indices: 
       edges: []
@@ -222,18 +226,18 @@ TextureImporter:
       name: FloorMusicRoom_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba6a8b7d13c78cf42beb6eb1a0369eb8
+      spriteID: bd2deed6274258644a3e2177f5fb640b
       vertices: []
       indices: 
       edges: []
@@ -242,18 +246,18 @@ TextureImporter:
       name: FloorMusicRoom_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87b745f357493074cb9a286f41ceea4f
+      spriteID: 667cf614483bb92498a5fa4f7cf1d01f
       vertices: []
       indices: 
       edges: []
@@ -262,18 +266,18 @@ TextureImporter:
       name: FloorMusicRoom_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e909dddc77ba784a8107a5286351eb4
+      spriteID: b3d5075369b247e46aa90d19558161d1
       vertices: []
       indices: 
       edges: []
@@ -282,18 +286,18 @@ TextureImporter:
       name: FloorMusicRoom_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae2e409bc78226429f08ae99ffffd08
+      spriteID: 30b57824af4110947a84243d9dab0089
       vertices: []
       indices: 
       edges: []
@@ -302,18 +306,18 @@ TextureImporter:
       name: FloorMusicRoom_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec2d935e703b02540bd1d020cf000c50
+      spriteID: 9b744cbc733c578439b6d7e74f4e97c7
       vertices: []
       indices: 
       edges: []
@@ -322,18 +326,18 @@ TextureImporter:
       name: FloorMusicRoom_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4800e9b97691f74bb835b002e0835e0
+      spriteID: 3ff7bff27a98daf4eb07b20af55a6010
       vertices: []
       indices: 
       edges: []
@@ -342,18 +346,18 @@ TextureImporter:
       name: FloorMusicRoom_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 837794b19b665fd4da4a3dce430090e5
+      spriteID: 81f067c27cb81b849a12653112d342b0
       vertices: []
       indices: 
       edges: []
@@ -362,18 +366,18 @@ TextureImporter:
       name: FloorMusicRoom_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a7c8e787d81e5a4eb7bba1676dd5bff
+      spriteID: f52bcd5f59728fd43a9ba6cc4362cc1c
       vertices: []
       indices: 
       edges: []
@@ -382,18 +386,98 @@ TextureImporter:
       name: FloorMusicRoom_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0786348fbb2765c4188638bc6b717982
+      spriteID: 79f31281ca9f5c043bc97b51135e280f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMusicRoom_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa70d47d74121f4a810c028d9433349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMusicRoom_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ec94c9696661a408a5de149156ca55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMusicRoom_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a645b4f854917f4459d75189568f4020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMusicRoom_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adef7bf4e7ea5b34487165c8234762fc
       vertices: []
       indices: 
       edges: []
