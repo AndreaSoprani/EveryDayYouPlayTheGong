@@ -3,6 +3,7 @@ using Objects;
 using UnityEditor;
 using Utility;
 
+[CustomEditor (typeof(MainGong))]
 public class MainGongEditor : Editor
 {
     public override void OnInspectorGUI()
