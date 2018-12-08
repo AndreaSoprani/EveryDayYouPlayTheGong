@@ -71,5 +71,10 @@ namespace Utility
             
             return true;
         }
+
+        public void ResetReproduced()
+        {
+            _hasBeenReproduced = false;
+        }
     }
 }

@@ -80,7 +80,7 @@ public class CombinationPuzzleManager : MonoBehaviour
 		if(TypeOfPuzzle == PuzzleType.ItemReward)
 			Reward.Interact();
 		else if(TypeOfPuzzle == PuzzleType.OpenDoor)
-			DoorToBeOpened.Interact();
+			DoorToBeOpened.OpenDoor();
 		else if (TypeOfPuzzle == PuzzleType.Dialogue)
 		{
 			if (InstantTrigger)
