@@ -12,7 +12,7 @@ public class GUIController : MonoBehaviour
 	public GameObject PauseMenu;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
-	
+	public Image[] DayProgressionImages;
     private float _timePassed;
 	private bool _isGamePaused;
 
@@ -115,5 +115,22 @@ public class GUIController : MonoBehaviour
 	{
 		Debug.Log("Options");
 	}
+
+	public void UpdateDayProgression()
+	{
+		if (DayProgressionManager.Instance.DayProgress > 0)
+		{
+			for (int i = 0; i < DayProgressionManager.Instance.DayProgress; i++)
+				DayProgressionImages[i].gameObject.SetActive(true);
+			for(int i=DayProgressionManager.Instance.DayProgress;i<DayProgressionImages.Length;i++)
+				DayProgressionImages[i].gameObject.SetActive(false);
+		}
+		else
+		{
+			DayProgressionImages[0].gameObject.SetActive(true);
+			for(int i=1;i<DayProgressionImages.Length;i++)
+				DayProgressionImages[i].gameObject.SetActive(false);
+		}
 	
+	}
 }

@@ -30,7 +30,11 @@ public class DayProgressionManager : MonoBehaviour {
 	/// </summary>
 	public void Progress()
 	{
-		if (DayProgress < Settings.QuestsPerDay) DayProgress++;
+		if (DayProgress < Settings.QuestsPerDay)
+		{
+			DayProgress++;
+			GameObject.FindGameObjectWithTag("GUIController").SendMessage("UpdateDayProgression");
+		}
 	}
 
 	/// <summary>
