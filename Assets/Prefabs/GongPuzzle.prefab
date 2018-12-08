@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4828166668317784}
   - component: {fileID: 114276694720213584}
-  - component: {fileID: 68480515972374108}
+  - component: {fileID: 61025009590776880}
   m_Layer: 0
   m_Name: PuzzleGong3LayerSwitcher
   m_TagString: LayerSwitch
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4684692555384238}
   - component: {fileID: 114378150306595702}
-  - component: {fileID: 68320644779066722}
+  - component: {fileID: 61767641189310000}
   m_Layer: 0
   m_Name: PuzzleGong2LayerSwitcher
   m_TagString: LayerSwitch
@@ -378,7 +378,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1716642148835458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.29385337, y: 0.22872187, z: 0.1920772}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -496,6 +496,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61025009590776880
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559735020811650}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000059604645, y: 0.51684165}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2778717, y: 0.49983072}
+  m_EdgeRadius: 0
 --- !u!61 &61503127443063662
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -545,6 +570,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.28153378, y: 0.17}
+  m_EdgeRadius: 0
+--- !u!61 &61767641189310000
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614361310948978}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00016921759, y: 0.5138755}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0956267, y: 0.2853384}
   m_EdgeRadius: 0
 --- !u!61 &61903499812822324
 BoxCollider2D:
@@ -611,7 +661,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.48690355, y: 0.48918295}
+  - {x: -0.48690367, y: 0.4852848}
   - {x: 0.4869033, y: 0.4846244}
 --- !u!68 &68233602932097072
 EdgeCollider2D:
@@ -630,40 +680,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.2, y: 0}
   - {x: 0.2, y: 0}
---- !u!68 &68320644779066722
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1614361310948978}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5435212, y: 0.56064415}
-  - {x: 0.5435213, y: 0.5606437}
---- !u!68 &68480515972374108
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1559735020811650}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.64245176, y: 0.6386466}
-  - {x: 0.6424514, y: 0.6386466}
 --- !u!95 &95118808175691324
 Animator:
   serializedVersion: 3
@@ -749,7 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: puzzlesmallgong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
-  Sound: {fileID: 11400000, guid: 28c7b79d9812f47409cc830c1bbf03f1, type: 2}
+  SoundName: PuzzleGong_high
   HasInteraction: 0
 --- !u!114 &114101211626184342
 MonoBehaviour:
@@ -777,7 +793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: puzzlemidgong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
-  Sound: {fileID: 11400000, guid: 8de4b85d79560dc438b5409bab805c5f, type: 2}
+  SoundName: PuzzleGong_mid
   HasInteraction: 0
 --- !u!114 &114276694720213584
 MonoBehaviour:
@@ -830,7 +846,7 @@ MonoBehaviour:
   Target: {fileID: 114783609540207842}
   InstantTrigger: 1
   DialogueUnlocked: {fileID: 11400000, guid: 7258d2933a46f6e4cb19662f5d4441d8, type: 2}
-  AlwaysEnable: 1
+  AlwaysEnable: 0
 --- !u!114 &114725225051773760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -873,7 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: puzzlebiggong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
-  Sound: {fileID: 11400000, guid: 2d0ee30949e5de64eb2d57e6a740c8b8, type: 2}
+  SoundName: PuzzleGong_low
   HasInteraction: 0
 --- !u!212 &212177254071870382
 SpriteRenderer:

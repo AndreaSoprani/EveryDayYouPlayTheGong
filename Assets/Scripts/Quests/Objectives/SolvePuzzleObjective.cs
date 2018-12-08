@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Quests.Objectives
@@ -9,6 +10,13 @@ namespace Quests.Objectives
 
         public override void StartListening()
         {
+            CombinationPuzzleManager puzzle = FindObjectsOfType<CombinationPuzzleManager>().ToList()
+                .Find(c => c.PuzzleId == PuzzleId);
+            if (puzzle != null && puzzle.IsSolved())
+            {
+                Complete();
+                return;
+            }
             EventManager.StartListening("PuzzleSolved" + PuzzleId, Complete);
         }
 

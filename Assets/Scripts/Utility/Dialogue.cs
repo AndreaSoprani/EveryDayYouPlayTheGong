@@ -19,12 +19,14 @@ namespace Utility
         // make this dialogue available.
         public List<Quest> CompletedQuests; // List of quests that must be completed to make this dialogue available.
         public List<Quest> UncompletedQuests; // List of quests that must be not completed to make this dialogue available.
+        public bool OneTimeDialogue; // If true the dialogue can be reproduced just one time.
         
         [Header("Consequences of the dialogue")]
         public List<Quest> QuestsToActivate; // List of quests to activate after the dialogue.
         public List<Item> ItemsToAdd; // List of the items to add after the dialogue.
         public List<Item> ItemsToRemove; // List of the items to remove after the dialogue.
-        
+
+        private bool _hasBeenReproduced = false;
 
         /// <summary>
         /// Calls the TextBoxManager and starts the dialogue.
@@ -33,6 +35,7 @@ namespace Utility
         {
             TextBoxManager.Instance.LoadDialogue(this);
             TextBoxManager.Instance.EnableTextBox();
+            _hasBeenReproduced = true;
         }
 
         /// <summary>
@@ -41,6 +44,8 @@ namespace Utility
         /// <returns>True if the dialogue can be performed, false otherwise</returns>
         public bool IsAvailable()
         {
+
+            if (OneTimeDialogue && _hasBeenReproduced) return false;
 
             if (ActiveQuest != null &&
                 (!QuestManager.Instance.TodayQuests.Contains(ActiveQuest) ||

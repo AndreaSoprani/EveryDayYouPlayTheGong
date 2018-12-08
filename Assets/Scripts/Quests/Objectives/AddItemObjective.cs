@@ -14,6 +14,7 @@ namespace Quests.Objectives
             if (Player.Instance.HasItem(ItemId))
             {
                 Complete();
+                return;
             }
             
             EventManager.StartListening("AddItem" + ItemId, Complete);

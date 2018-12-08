@@ -26,16 +26,15 @@ public class Instrument : InGameObject
 
 	public override void Play()
 	{
-		StartCoroutine(DelayPlayAnimation());
-
-
-		AkSoundEngine.PostEvent(SoundName, gameObject);
+		StartCoroutine(DelayPlay());
 	}
 
-	private IEnumerator DelayPlayAnimation()
+	private IEnumerator DelayPlay()
 	{
 		yield return new WaitForSeconds(0.23f);
-		GetComponent<Animator>().SetTrigger("Playing");
+		Animator animator = GetComponent<Animator>();
+		if (animator != null) animator.SetTrigger("Playing");
+		AkSoundEngine.PostEvent(SoundName, gameObject);
 	}
 	/*
 	 * INTERACT

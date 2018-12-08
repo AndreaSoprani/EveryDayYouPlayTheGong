@@ -190,7 +190,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1891597332266198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 34, z: 0}
+  m_LocalPosition: {x: -2.671383, y: 1.2521251, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4146072494237432}
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey3
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: Xylophone3_mi
   HasInteraction: 0
 --- !u!114 &114604441166945202
 MonoBehaviour:
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey4
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: Xylophone4_fa
   HasInteraction: 0
 --- !u!114 &114792855421627536
 MonoBehaviour:
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey1
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: Xylophone1_do
   HasInteraction: 0
 --- !u!114 &114804207684606132
 MonoBehaviour:
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey2
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: Xylophone2_re
   HasInteraction: 0
 --- !u!114 &114921394934535984
 MonoBehaviour:
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey5
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: Xylophone5_sol
   HasInteraction: 0
 --- !u!212 &212107383828206786
 SpriteRenderer:

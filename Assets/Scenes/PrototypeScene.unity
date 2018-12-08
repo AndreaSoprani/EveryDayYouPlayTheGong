@@ -5660,36 +5660,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4630624826415166, guid: 0c598fd221244c94cbbdd0a2ca80e8b2,
     type: 2}
   m_PrefabInternal: {fileID: 1199492516}
---- !u!1 &636849705 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1614361310948978, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-    type: 2}
-  m_PrefabInternal: {fileID: 977668024}
---- !u!61 &636849707
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 636849705}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00016921759, y: 0.5138755}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0956267, y: 0.2853384}
-  m_EdgeRadius: 0
 --- !u!1001 &675983722
 Prefab:
   m_ObjectHideFlags: 0
@@ -5901,7 +5871,7 @@ Transform:
   - {fileID: 2013116967}
   - {fileID: 233591280}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &859000296 stripped
 Transform:
@@ -5957,11 +5927,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 447776988}
     m_Modifications:
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4934229238946684, guid: 3c1b4c5851c5f524b8c3ff2169333fc7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.29385337
@@ -5998,89 +5963,7 @@ Prefab:
       propertyPath: m_Name
       value: Puzzle
       objectReference: {fileID: 0}
-    - target: {fileID: 68009599225280046, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[0].x
-      value: -0.48690367
-      objectReference: {fileID: 0}
-    - target: {fileID: 68009599225280046, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[0].y
-      value: 0.4852848
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[0].x
-      value: -0.54732895
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[0].y
-      value: 0.37816238
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[1].x
-      value: 0.5446503
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[1].y
-      value: 0.37750196
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[2].x
-      value: 0.54343
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[2].y
-      value: 0.4846244
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[3].x
-      value: 0.54343
-      objectReference: {fileID: 0}
-    - target: {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[3].y
-      value: 0.4846244
-      objectReference: {fileID: 0}
-    - target: {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[2].x
-      value: 0.6424514
-      objectReference: {fileID: 0}
-    - target: {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[2].y
-      value: 0.6386466
-      objectReference: {fileID: 0}
-    - target: {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[0].x
-      value: -0.63977355
-      objectReference: {fileID: 0}
-    - target: {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[0].y
-      value: 0.26639605
-      objectReference: {fileID: 0}
-    - target: {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[1].y
-      value: 0.26639605
-      objectReference: {fileID: 0}
-    - target: {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-        type: 2}
-      propertyPath: m_Points.Array.data[1].x
-      value: 0.6424514
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 68480515972374108, guid: 3c1b4c5851c5f524b8c3ff2169333fc7, type: 2}
-    - {fileID: 68320644779066722, guid: 3c1b4c5851c5f524b8c3ff2169333fc7, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c1b4c5851c5f524b8c3ff2169333fc7, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1125768005
@@ -6237,36 +6120,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98eaac2ec994cf34b8ebbf3005f5f770, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1249215996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1559735020811650, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,
-    type: 2}
-  m_PrefabInternal: {fileID: 977668024}
---- !u!61 &1249216000
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1249215996}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.000000059604645, y: 0.51684165}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.2778717, y: 0.49983072}
-  m_EdgeRadius: 0
 --- !u!4 &1324917542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4139996584767152, guid: 82ac93a66617f334b883642eebe4a16f,
@@ -6381,7 +6234,7 @@ Prefab:
     - target: {fileID: 114025827118490368, guid: c90c86f1b4863fa4a9d0e436f55b2560,
         type: 2}
       propertyPath: Dialogues.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4049966961486744, guid: c90c86f1b4863fa4a9d0e436f55b2560, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6428,13 +6281,14 @@ Prefab:
         type: 2}
       propertyPath: StandardDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 72b19d7c2fe76fd4eab9b0c3e1aea10e,
+      objectReference: {fileID: 11400000, guid: 9917a6cad6663ec44a28b710c2934890,
         type: 2}
     - target: {fileID: 114025827118490368, guid: c90c86f1b4863fa4a9d0e436f55b2560,
         type: 2}
       propertyPath: Dialogues.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 72b19d7c2fe76fd4eab9b0c3e1aea10e,
+        type: 2}
     - target: {fileID: 114025827118490368, guid: c90c86f1b4863fa4a9d0e436f55b2560,
         type: 2}
       propertyPath: PlayingDialogue
@@ -12909,7 +12763,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4770021134030080, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 61225239350137754, guid: 9d1f7e6df2f87f64aa1bdccb70c01839,
         type: 2}

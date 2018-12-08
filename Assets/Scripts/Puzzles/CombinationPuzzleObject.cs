@@ -10,7 +10,7 @@ public class CombinationPuzzleObject : Instrument
 
 	public override bool IsPlayable()
 	{
-		return !_solved;
+		return true;
 	}
 
 	public override void Play()

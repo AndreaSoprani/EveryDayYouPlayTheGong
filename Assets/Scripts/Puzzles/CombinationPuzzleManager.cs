@@ -21,6 +21,7 @@ public class CombinationPuzzleManager : MonoBehaviour
 
 	private int _currentIndex;
 	private float _timePassed;
+	private bool _solved = false;
 	
 
 	private void Update()
@@ -67,6 +68,8 @@ public class CombinationPuzzleManager : MonoBehaviour
 
 	private void PuzzleSolved()
 	{
+		_solved = true;
+		
 		if(!AlwaysEnable)
 		{
 			foreach (CombinationPuzzleObject item in PuzzlePiece)
@@ -95,7 +98,13 @@ public class CombinationPuzzleManager : MonoBehaviour
 		EventManager.TriggerEvent("PuzzleSolved" + PuzzleId);
 
 	}
+
+	public bool IsSolved()
+	{
+		return _solved;
+	}
 }
+
 public enum PuzzleType
    
 {
