@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4549761553440534}
   - component: {fileID: 114265170173475920}
-  - component: {fileID: 68017424784460796}
+  - component: {fileID: 61375154639289850}
   m_Layer: 0
   m_Name: PuzzleGong2LayerSwitcher
   m_TagString: LayerSwitch
@@ -95,6 +95,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61375154639289850
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435099543558416}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00016921759, y: 0.5138755}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0956267, y: 0.2853384}
+  m_EdgeRadius: 0
 --- !u!61 &61757081810156136
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -120,23 +145,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.151596, y: 0.17999983}
   m_EdgeRadius: 0
---- !u!68 &68017424784460796
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1435099543558416}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5435212, y: 0.56064415}
-  - {x: 0.5435213, y: 0.5606437}
 --- !u!95 &95186249439744352
 Animator:
   serializedVersion: 3
@@ -168,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: mediumgong
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: PuzzleGong_mid
   HasInteraction: 0
 --- !u!114 &114265170173475920
 MonoBehaviour:

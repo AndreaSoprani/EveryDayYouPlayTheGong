@@ -291,7 +291,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3, y: 0.1145976}
+  m_Offset: {x: 0.3, y: 0.24435434}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -302,7 +302,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.2103315}
+  m_Size: {x: 0.13, y: 0.2652735}
   m_EdgeRadius: 0
 --- !u!61 &61623727361685844
 BoxCollider2D:
@@ -502,8 +502,7 @@ MonoBehaviour:
   enableActionOnEvent: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 80b7db4990b71874bbd240d8f82c1c02,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}

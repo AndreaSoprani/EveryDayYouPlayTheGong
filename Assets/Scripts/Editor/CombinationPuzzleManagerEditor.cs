@@ -3,7 +3,7 @@ using UnityEngine;
 using Utility;
 
 [CustomEditor(typeof(CombinationPuzzleManager))]
-public class CombinationPuzzleManagerEditor: Editor
+public class CombinationPuzzleManagerEditor: UnityEditor.Editor
 {
     public override void OnInspectorGUI()
     {
