@@ -9,6 +9,7 @@ public class Door : InGameObject
 
 	public bool IsOpen;
 	public Item ItemNeeded;
+	public bool PuzzleDoor;
 	public Dialogue ClosedDoorDialogue;
 
 	private void Start()
@@ -26,14 +27,8 @@ public class Door : InGameObject
 	public override void Interact()
 	{
 		// If no item is needed open the door.
-		if (ItemNeeded == null)
-		{
-			OpenDoor();
-			return;
-		}
-		
-		// Check if the player has the item, otherwise start the dialogue.
-		if (Player.Instance.HasItem(ItemNeeded))
+		if (!PuzzleDoor && ItemNeeded == null) OpenDoor();
+		else if (!PuzzleDoor && Player.Instance.HasItem(ItemNeeded)) // Check if the player has the item, otherwise start the dialogue.
 		{
 			Player.Instance.RemoveItem(ItemNeeded);
 			ItemNeeded = null;

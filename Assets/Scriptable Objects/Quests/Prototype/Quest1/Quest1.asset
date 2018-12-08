@@ -9,13 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 111c15b9b772c784aa0404581e8192b3, type: 3}
-  m_Name: PuzzleQuest
+  m_Name: Quest1
   m_EditorClassIdentifier: 
-  QuestID: willq2
-  Name: Solve the puzzle
-  Description: Gotta solve that puzzle
+  QuestID: willq1
+  Name: Let's make some noise!
+  Description: Try some of the instruments in the room.
   Objectives:
-  - {fileID: 11400000, guid: da273d8657f1ca143af99a0699f463ce, type: 2}
-  - {fileID: 11400000, guid: 13ab26d796bebbf4ebe8e9b1296cf99c, type: 2}
+  - {fileID: 11400000, guid: 52aaaf334ed9e4741aa6c4ce0d596ea4, type: 2}
+  - {fileID: 11400000, guid: c06de4b2621528941875e3310031f650, type: 2}
+  - {fileID: 11400000, guid: c23fb7fc6ef9c92439d87b1f290127cd, type: 2}
   Completed: 0
   ActivateWhenComplete: []

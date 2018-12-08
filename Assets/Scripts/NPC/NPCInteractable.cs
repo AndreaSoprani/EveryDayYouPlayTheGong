@@ -11,6 +11,14 @@ public class NPCInteractable : InGameObject
 	public Dialogue DayOverDialogue;
 	public Dialogue PlayingDialogue;
 	public List<Dialogue> Dialogues;
+
+	public void Start()
+	{
+		if(StandardDialogue != null) StandardDialogue.ResetReproduced();
+		if(DayOverDialogue != null) DayOverDialogue.ResetReproduced();
+		if(PlayingDialogue != null) PlayingDialogue.ResetReproduced();
+		foreach (Dialogue d in Dialogues) d.ResetReproduced();
+	}
 	
 	public override void Interact()
 	{
