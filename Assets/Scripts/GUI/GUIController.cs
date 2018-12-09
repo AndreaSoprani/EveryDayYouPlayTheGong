@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using GUI.Inventory;
 using Quests;
+using Quests.Objectives;
 using UnityEngine;
 using UnityEngine.UI;
 using Utility;
@@ -12,6 +15,7 @@ public class GUIController : MonoBehaviour
 	public GameObject PauseMenu;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
+	public ObjectiveNotificationController ObjectiveNotificationController;
 	public Image[] DayProgressionImages;
     private float _timePassed;
 	private bool _isGamePaused;
@@ -100,6 +104,11 @@ public class GUIController : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		NotificationController.ShowQuestNotification(quest, false);
+	}
+
+	public void NotifyNewObjective(string objectiveDescription)
+	{
+		ObjectiveNotificationController.ShowNewObjective(objectiveDescription);
 	}
 
 	public void QuitGame()

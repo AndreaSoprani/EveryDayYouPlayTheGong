@@ -153,8 +153,10 @@ public class QuestManager : MonoBehaviour
 	private void ListenOnObjectives(Quest quest)
 	{
 		List<Objective> objectives = quest.Objectives;
+		
 		for (int i = 0; i < objectives.Count; i++)
 		{
+			if(i == 0) GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyNewObjective", objectives[i].Description);
 			objectives[i].StartListening();
 		}
 	}
