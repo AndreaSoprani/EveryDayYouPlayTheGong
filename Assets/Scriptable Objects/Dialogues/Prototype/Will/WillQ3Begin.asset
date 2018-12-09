@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
   m_Name: WillQ3Begin
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 0}
+  TextAsset: {fileID: 4900000, guid: 1f6d2fb408834bef9eb56f9678b742eb, type: 3}
   NPCName: Will
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
@@ -21,7 +21,8 @@ MonoBehaviour:
   UncompletedQuests:
   - {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019, type: 2}
   OneTimeDialogue: 0
-  QuestsToActivate: []
+  QuestsToActivate:
+  - {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019, type: 2}
   ItemsToAdd:
   - {fileID: 11400000, guid: 6b756121c057444469cdbe975b612688, type: 2}
   ItemsToRemove: []

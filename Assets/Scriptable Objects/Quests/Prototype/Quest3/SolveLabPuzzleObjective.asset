@@ -15,4 +15,4 @@ MonoBehaviour:
   QuestID: willq3
   Description: Solve the Xylophone puzzle.
   Completed: 0
-  PuzzleId: 
+  PuzzleId: puzzle2

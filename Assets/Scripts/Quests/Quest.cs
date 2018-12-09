@@ -37,6 +37,7 @@ namespace Quests
                 if (!Objectives[i].Completed)
                 {
                     Completed = false;
+                    GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyNewObjective", Objectives[i].Description);
                     return;
                 }
             }

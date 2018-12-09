@@ -24,7 +24,7 @@ public class LayerSwitcher : MonoBehaviour
     {
         if(other.CompareTag("LayerSwitch"))
         {
-            other.GetComponentInParent<SpriteRenderer>().sortingLayerName = "CharacterBehind";
+            Player.Instance.ChangeLayer("CharacterBehind");
             ChangeAlpha(Alpha);
         }
     }
@@ -33,7 +33,8 @@ public class LayerSwitcher : MonoBehaviour
     {
         if (other.CompareTag("LayerSwitch"))
         {
-            other.GetComponentInParent<SpriteRenderer>().sortingLayerName = "CharacterFront";
+            Player.Instance.ChangeLayer("CharacterFront");
+            
             ChangeAlpha(1f);
         }
     }

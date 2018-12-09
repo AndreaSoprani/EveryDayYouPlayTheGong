@@ -30,9 +30,8 @@ public class NPCMovement : MonoBehaviour
 	void Start ()
 	{
 		_animator = GetComponent<Animator>();
-		PickNewDestination();
-
-		_center = transform.position;
+		_endPosition = _center = transform.position;
+		
 		_inDialogue = false;
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}

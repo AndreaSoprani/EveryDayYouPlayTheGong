@@ -9,15 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: WillQ3Mid
+  m_Name: MainGongDialogue
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: f54632276c2d4a30818de59e3fcd55f0, type: 3}
-  NPCName: Will
-  ActiveQuest: {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019, type: 2}
+  TextAsset: {fileID: 4900000, guid: 7310b81d76324cacb5774d11857977e5, type: 3}
+  NPCName: "Great Gong\u2122"
+  ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
-  UncompletedQuests:
-  - {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019, type: 2}
+  UncompletedQuests: []
   OneTimeDialogue: 0
   QuestsToActivate: []
   ItemsToAdd: []

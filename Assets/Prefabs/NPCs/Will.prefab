@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 50569515935612702}
   - component: {fileID: 61488600117887584}
   - component: {fileID: 95985147834593670}
+  - component: {fileID: 114327919807432758}
   m_Layer: 8
   m_Name: Will
   m_TagString: Untagged
@@ -177,6 +178,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4c29f49a6aba9b94ca38763d59fe9e5b, type: 2}
   - {fileID: 11400000, guid: 69c9290c4295df84bbf1ccd627f1c71f, type: 2}
   - {fileID: 11400000, guid: fdc804da465df1041bb49586425163d9, type: 2}
+  - {fileID: 11400000, guid: 27a06c6b6c162a74097fecc2d7fd005a, type: 2}
+  - {fileID: 11400000, guid: 3450383e851f02647bccb6d9f357808e, type: 2}
 --- !u!114 &114304917691745974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,6 +193,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Alpha: 0.7
   TransitionTime: 1
+--- !u!114 &114327919807432758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1292916945827906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!212 &212637086172232832
 SpriteRenderer:
   m_ObjectHideFlags: 1

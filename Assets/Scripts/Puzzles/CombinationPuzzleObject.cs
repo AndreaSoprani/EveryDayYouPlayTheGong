@@ -6,7 +6,7 @@ using UnityEngine;
 public class CombinationPuzzleObject : Instrument
 {
 
-	private bool _solved;
+	private bool _solved = false;
 
 	public override bool IsPlayable()
 	{
