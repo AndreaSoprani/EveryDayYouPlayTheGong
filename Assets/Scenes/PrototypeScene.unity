@@ -6462,6 +6462,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382eefb8537995f45ba56a639adf8949, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &936583063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1875950883525934, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
+    type: 2}
+  m_PrefabInternal: {fileID: 112144445}
 --- !u!1001 &977668024
 Prefab:
   m_ObjectHideFlags: 0
@@ -6761,7 +6766,7 @@ Prefab:
         type: 2}
       propertyPath: DialogueBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 936583063}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8730667e070e93547a77a8c2ce001b87, type: 2}
   m_IsPrefabAsset: 0
