@@ -19,11 +19,13 @@ namespace AK
         static const AkUniqueID BELL4 = 401578498U;
         static const AkUniqueID BELL5 = 401578499U;
         static const AkUniqueID BELL6 = 401578496U;
+        static const AkUniqueID DUNGEON = 608898761U;
         static const AkUniqueID EXPLORE = 579523862U;
         static const AkUniqueID MAINGONG = 1143543361U;
         static const AkUniqueID PUZZLEGONG_HIGH = 1949314593U;
         static const AkUniqueID PUZZLEGONG_LOW = 1424533253U;
         static const AkUniqueID PUZZLEGONG_MID = 2061935817U;
+        static const AkUniqueID SILENCE = 3041563226U;
         static const AkUniqueID XYLOPHONE1_DO = 2016315246U;
         static const AkUniqueID XYLOPHONE2_RE = 4087751051U;
         static const AkUniqueID XYLOPHONE3_MI = 2441093981U;

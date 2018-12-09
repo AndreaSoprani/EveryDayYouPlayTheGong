@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	579523862	Explore			\Music\Explore	
+	608898761	Dungeon			\Music\Dungeon	
+	3041563226	Silence			\Music\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	29545386	Pianotema_12_74bpm4-4_2M	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Pianotema_12_74bpm4-4_2M_F26CE7B0.wem		\Interactive Music Hierarchy\Music\Piano_switch\Koto-Piano\Pianotema_12_74bpm4-4_2M\Pianotema_12_74bpm4-4_2M		1555016

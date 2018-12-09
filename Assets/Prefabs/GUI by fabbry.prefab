@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 4809891951561794}
   - component: {fileID: 114527325469478430}
   m_Layer: 0
-  m_Name: GUI
+  m_Name: GUI by fabbry
   m_TagString: GUIController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

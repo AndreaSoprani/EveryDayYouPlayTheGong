@@ -138,7 +138,9 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="608898761" Name="Dungeon" ObjectPath="\Events\Music\Dungeon" MaxAttenuation="0.000000"/>
 				<Event Id="579523862" Name="Explore" ObjectPath="\Events\Music\Explore"/>
+				<Event Id="3041563226" Name="Silence" ObjectPath="\Events\Music\Silence" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="29545386" Language="SFX">

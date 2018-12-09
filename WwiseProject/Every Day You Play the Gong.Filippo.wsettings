@@ -29,7 +29,7 @@
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="UGmSQHORfka1Mp5DjyQvOUB4i1i4sj5Pnj0LZO1qlks="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="cW8Wpkr2QEGphpYAky7fAc3WOdeaVKREvyOWJ3D4+wiMErGhrdXRTZLbBhjlBI3IcRyhIYhD/kefSpxNUluq3w=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="cRyhIYhD/kefSpxNUluq34wSsaGt1dFNktsGGOUEjchxbxamSvZAQamGlgCTLt8BzdY515pUpES/I5YncPj7CA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>

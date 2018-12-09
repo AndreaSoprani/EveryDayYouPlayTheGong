@@ -29,6 +29,7 @@ public class AudioManager : MonoBehaviour
 		AkSoundEngine.LoadBank("Gong", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDGong);
 		AkSoundEngine.LoadBank("Bell", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDBells);
 		AkSoundEngine.LoadBank("Xylophone", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDXylophone);
+		AkSoundEngine.PostEvent("Explore", gameObject);
 	}
 
 	public Settings Settings;
@@ -76,18 +77,14 @@ public class AudioManager : MonoBehaviour
 	//HERE JUST FOR TEST!!!!!!!!!!!!!!!!!!!!! PLEASE DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	private void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.J))
-			PlayEvent("Explore");
-		if(Input.GetKeyDown(KeyCode.K))
-			StopEvent("Explore",1);
-		if (Input.GetKeyDown(KeyCode.L))
-		{
-			ResumeEvent("Explore",1);
-		}
 		if(Input.GetKeyDown(KeyCode.H))
-		
-			PauseEvent("Explore",1);
-		if(Input.GetKeyDown(KeyCode.P))
 			PlayEvent("Dungeon");
+		if(Input.GetKeyDown(KeyCode.J))
+			StopEvent("Dungeon",1);
+		if(Input.GetKeyDown(KeyCode.K))
+			PlayEvent("Explore");
+		if(Input.GetKeyDown(KeyCode.L))
+			StopEvent("Explore",1);
+		
 	}
 }

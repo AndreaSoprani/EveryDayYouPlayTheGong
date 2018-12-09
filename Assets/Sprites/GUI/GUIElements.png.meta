@@ -30,6 +30,9 @@ TextureImporter:
     21300050: PausePanel
     21300052: DayNightIndicator
     21300054: DayNightBar
+    21300056: Dawn
+    21300058: Noon
+    21300060: Dusk
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -640,7 +643,7 @@ TextureImporter:
         width: 82
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -660,13 +663,73 @@ TextureImporter:
         width: 64
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b5f22a71fcc827840a832fc372a8daa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dawn
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 449
+        width: 22
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5772994, y: 0.49999797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518aa4a3c249a3840be959e08402f638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noon
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 449
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15661c36d96be3419a79e02afbdaef0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dusk
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 449
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6c8d18d76691047981b1c4d59d46d3
       vertices: []
       indices: 
       edges: []
