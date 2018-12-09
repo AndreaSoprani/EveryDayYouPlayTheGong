@@ -118,11 +118,14 @@ public class GUIController : MonoBehaviour
 
 	public void UpdateDayProgression()
 	{
+		Debug.Log("Inside Day Progression Update");
 		if (DayProgressionManager.Instance.DayProgress > 0)
 		{
-			for (int i = 0; i < DayProgressionManager.Instance.DayProgress; i++)
+			for (int i = 0; i < DayProgressionManager.Instance.DayProgress + 1; i++)
+			{
 				DayProgressionImages[i].gameObject.SetActive(true);
-			for(int i=DayProgressionManager.Instance.DayProgress;i<DayProgressionImages.Length;i++)
+			}
+			for(int i=DayProgressionManager.Instance.DayProgress+1;i<DayProgressionImages.Length;i++)
 				DayProgressionImages[i].gameObject.SetActive(false);
 		}
 		else
