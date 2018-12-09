@@ -50,6 +50,7 @@ public class DayProgressionManager : MonoBehaviour {
 			Day++;
 			QuestManager.Instance.TodayQuests.Clear();
 			QuestManager.Instance.PopQuestsOnHold();
+			GameObject.FindGameObjectWithTag("GUIController").SendMessage("UpdateDayProgression");
 		}
 	}
 
