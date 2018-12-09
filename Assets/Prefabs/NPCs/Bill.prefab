@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50354387751784014}
   - component: {fileID: 61929735446735532}
   - component: {fileID: 95686553125764402}
+  - component: {fileID: 114131680051956204}
   m_Layer: 8
   m_Name: Bill
   m_TagString: Untagged
@@ -155,6 +156,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114131680051956204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1681017874809390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!114 &114774687430968748
 MonoBehaviour:
   m_ObjectHideFlags: 1

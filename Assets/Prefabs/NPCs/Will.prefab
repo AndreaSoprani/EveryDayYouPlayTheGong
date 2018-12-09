@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 50569515935612702}
   - component: {fileID: 61488600117887584}
   - component: {fileID: 95985147834593670}
+  - component: {fileID: 114327919807432758}
   m_Layer: 8
   m_Name: Will
   m_TagString: Untagged
@@ -192,6 +193,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Alpha: 0.7
   TransitionTime: 1
+--- !u!114 &114327919807432758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1292916945827906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!212 &212637086172232832
 SpriteRenderer:
   m_ObjectHideFlags: 1

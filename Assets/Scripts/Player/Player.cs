@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
 	
 	private Animator _animator;
 	private Canvas _canvas;
+	private SpriteRenderer _spriteRenderer;
 	
 	private void Awake()
 	{
@@ -76,6 +77,7 @@ public class Player : MonoBehaviour
 
 		_animator = GetComponent<Animator>();
 		_canvas = GetComponentInChildren<Canvas>();
+		_spriteRenderer = GetComponent<SpriteRenderer>();
 		
 		_facing = Vector3.down;
 		_directionsKeyCodes = Settings.GetDirectionsKeyCodes();
@@ -432,6 +434,12 @@ public class Player : MonoBehaviour
 		return _inDialogue;
 	}
 
+	public void ChangeLayer(string layer)
+	{
+		_spriteRenderer.sortingLayerName = layer;
+		_canvas.sortingLayerName = layer;
+	}
+	
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag("StairsFront"))

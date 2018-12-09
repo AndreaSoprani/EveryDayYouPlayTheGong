@@ -186,7 +186,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 16271eb29c80434992f5c5998a5d8665
-    m_lastTime: -8586573452643579994
+    m_lastTime: -8586573232965297533
     List:
     - name: Bell
       guid: 711ca1218843fe479f4a9c4d525baadf
@@ -228,7 +228,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 76273f77a9fc944fa2780518c1fa60d3
-    m_lastTime: -8586573452656276915
+    m_lastTime: -8586573232972545174
     List:
     - name: Bell1
       guid: 4ed4b648b5297448b4be7a37a425fb5a
@@ -749,12 +749,6 @@ MonoBehaviour:
     guid: 7bc79e359480154897d10c11a07bc0dd
     m_lastTime: -8586573844131820829
     List: []
-  ExpandedItems:
-  - /Every Day You Play the Gong
-  - /Every Day You Play the Gong/Events
-  - /Every Day You Play the Gong/Events/Default Work Unit
-  - /Every Day You Play the Gong/Events/Default Work Unit/Gong
-  - /Every Day You Play the Gong/SoundBanks
-  - /Every Day You Play the Gong/SoundBanks/Default Work Unit
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

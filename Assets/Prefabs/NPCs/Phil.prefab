@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50533046297611588}
   - component: {fileID: 61044307815315298}
   - component: {fileID: 95344426792553254}
+  - component: {fileID: 114411116177140162}
   m_Layer: 8
   m_Name: Phil
   m_TagString: Untagged
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030423591986100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 12.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4010906939075460}
@@ -155,6 +156,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114411116177140162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030423591986100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!114 &114658618494852670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: phil
-  StandardDialogue: {fileID: 0}
+  ObjectID: phil1
+  StandardDialogue: {fileID: 11400000, guid: 726df135c1605dc4cb190b24af75dc63, type: 2}
   DayOverDialogue: {fileID: 0}
   PlayingDialogue: {fileID: 0}
   Dialogues: []

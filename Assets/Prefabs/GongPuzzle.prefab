@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 50586584382727544}
   - component: {fileID: 61548473694900492}
   - component: {fileID: 95828888385501668}
+  - component: {fileID: 114881385399517004}
   m_Layer: 8
   m_Name: Neil
   m_TagString: Untagged
@@ -876,6 +877,18 @@ MonoBehaviour:
   DayOverDialogue: {fileID: 0}
   PlayingDialogue: {fileID: 11400000, guid: 57e69e015ce3d974f94163c8f563764b, type: 2}
   Dialogues: []
+--- !u!114 &114881385399517004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707005294039756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!114 &114957694135197240
 MonoBehaviour:
   m_ObjectHideFlags: 1
