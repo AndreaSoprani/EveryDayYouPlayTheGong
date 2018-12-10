@@ -27,7 +27,7 @@ public class GUIController : MonoBehaviour
 	{
 		if (Settings.StartupText != null)
 		{
-			NotifyDisplayText(Settings.StartupText.text);
+			DisplayText(Settings.StartupText.text);
 		}
 	}
 
@@ -56,14 +56,21 @@ public class GUIController : MonoBehaviour
 				CloseInventory();
 		}
 		
-		if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() && Input.GetKeyDown(KeyCode.Return))
+		NotificationController.DisplayNotification();
+		
+		if (NotificationController.IsNotificationActive() && 
+		    NotificationController.CanBeClosed() && 
+		    !_isGamePaused && 
+		    Input.GetKeyDown(KeyCode.Return))
 		{
 			NotificationController.HideNotification();
 			Time.timeScale = 1;
 			_isGamePaused = false;
 		}
 
-		if (DisplayTextScreen.IsActive() && Input.GetKeyDown(KeyCode.Return))
+		if (DisplayTextScreen.IsActive() && 
+		    !_isGamePaused && 
+		    Input.GetKeyDown(KeyCode.Return))
 		{
 			DisplayTextScreen.Close();
 			Time.timeScale = 1;
@@ -103,26 +110,22 @@ public class GUIController : MonoBehaviour
 
 	public void NotifyGetItem(Item item)
 	{
-		Time.timeScale = 0;
-		NotificationController.ShowItemNotification(item, true);
+		NotificationController.InsertNotification(new ItemNotification(item, true));
 	}
 
 	public void NotifyRemoveItem(Item item)
 	{
-		Time.timeScale = 0;
-		NotificationController.ShowItemNotification(item, false);
+		NotificationController.InsertNotification(new ItemNotification(item, false));
 	}
 	
 	public void NotifyQuestActivated(Quest quest)
 	{
-		Time.timeScale = 0;
-		NotificationController.ShowQuestNotification(quest, true);
+		NotificationController.InsertNotification(new QuestNotification(quest, true));
 	}
 
 	public void NotifyQuestCompleted(Quest quest)
 	{
-		Time.timeScale = 0;
-		NotificationController.ShowQuestNotification(quest, false);
+		NotificationController.InsertNotification(new QuestNotification(quest, false));
 	}
 
 	public void NotifyNewObjective(string objectiveDescription)
@@ -130,7 +133,7 @@ public class GUIController : MonoBehaviour
 		ObjectiveNotificationController.ShowNewObjective(objectiveDescription);
 	}
 
-	public void NotifyDisplayText(string text)
+	public void DisplayText(string text)
 	{
 		Time.timeScale = 0;
 		DisplayTextScreen.Display(text);

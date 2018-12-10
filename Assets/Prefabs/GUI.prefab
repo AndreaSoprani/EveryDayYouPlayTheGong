@@ -3543,6 +3543,13 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NotificationWindow: {fileID: 1614028663368412}
+  ItemTextbox: {fileID: 114675589215176046}
+  QuestTextbox: {fileID: 114906263328991360}
+  ExitText: {fileID: 114601538830237242}
+  Img: {fileID: 114310731047858922}
+  Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
+--- !u!114 &114829701486376232
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1

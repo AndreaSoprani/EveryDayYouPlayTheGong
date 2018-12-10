@@ -169,16 +169,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: will
   StandardDialogue: {fileID: 11400000, guid: 42d231812e4582e4f86760f2912bf1d9, type: 2}
-  DayOverDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 37f26704be0b49149bf9fb2845614dc3, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: ed3a42449c42e5947b73c1b492c18446, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: 328588fe5f609764c9ec15719f30f926, type: 2}
   - {fileID: 11400000, guid: b2d9bdf12f15e3d4cab077f0fb3c5acf, type: 2}
   - {fileID: 11400000, guid: 9d6a7925eea919544be673148d40c642, type: 2}
-  - {fileID: 11400000, guid: 4c29f49a6aba9b94ca38763d59fe9e5b, type: 2}
   - {fileID: 11400000, guid: 69c9290c4295df84bbf1ccd627f1c71f, type: 2}
   - {fileID: 11400000, guid: fdc804da465df1041bb49586425163d9, type: 2}
-  - {fileID: 11400000, guid: 27a06c6b6c162a74097fecc2d7fd005a, type: 2}
   - {fileID: 11400000, guid: 3450383e851f02647bccb6d9f357808e, type: 2}
 --- !u!114 &114304917691745974
 MonoBehaviour:

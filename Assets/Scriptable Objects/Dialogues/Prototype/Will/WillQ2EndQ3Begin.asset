@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: WillQ2End
+  m_Name: WillQ2EndQ3Begin
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: e8e70d690cda09e4e98ba854be01ca1b, type: 3}
   NPCName: Will
@@ -19,7 +19,11 @@ MonoBehaviour:
   CompletedQuests: []
   UncompletedQuests:
   - {fileID: 11400000, guid: 0d0720f7425702b49b80690b65e7fe2e, type: 2}
-  QuestsToActivate: []
-  ItemsToAdd: []
+  - {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019, type: 2}
+  OneTimeDialogue: 0
+  QuestsToActivate:
+  - {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019, type: 2}
+  ItemsToAdd:
+  - {fileID: 11400000, guid: 6b756121c057444469cdbe975b612688, type: 2}
   ItemsToRemove:
   - {fileID: 11400000, guid: ca2d6048740f25d40a77f0c417c0181a, type: 2}

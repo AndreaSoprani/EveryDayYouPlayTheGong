@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: note1
   Name: A written note
-  Description: 'There''s a weird sequence of numbers on it: it''s 2-1-2-3'
+  Description: 'There''s a weird sequence of numbers on it: it''s 2 1 2 3'
   InventoryArtwork: {fileID: 21300026, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

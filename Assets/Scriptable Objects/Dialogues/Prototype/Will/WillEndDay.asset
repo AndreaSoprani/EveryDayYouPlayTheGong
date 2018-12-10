@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
   m_Name: WillEndDay
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 0}
+  TextAsset: {fileID: 4900000, guid: 49ff3eade204455588452ed559e8fdd1, type: 3}
   NPCName: Will
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []

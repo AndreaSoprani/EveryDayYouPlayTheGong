@@ -45,5 +45,9 @@ namespace Utility
             };
         }
 
+        [Header("GUI Settings")] 
+        public float NotificationsDelayTime;
+
+
     }
 }
