@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Utility;
 
@@ -6,16 +8,23 @@ public class AudioManager : MonoBehaviour
 {
 
 	private static AudioManager _instance;
-	public static AudioManager Instance { get { return _instance; } }
-	[Range(0,100)]
-	public int MusicVolume;
-	[Range(0,100)]
-	public int EffectVolume;
+
+	public static AudioManager Instance
+	{
+		get { return _instance; }
+	}
+
+	[Range(0, 100)] public int MusicVolume;
+	[Range(0, 100)] public int EffectVolume;
 	private uint _bankIDMain;
 	private uint _bankIDGong;
 	private uint _bankIDBells;
 	private uint _bankIDXylophone;
-	
+
+	private string _currentlyPlaying;
+	private bool _isMusicMuted;
+	private Dictionary<string, bool> _isAlreadyPlayed;
+
 	private void Awake()
 	{
 		if (_instance != null && _instance != this)
@@ -23,9 +32,15 @@ public class AudioManager : MonoBehaviour
 			Destroy(this.gameObject);
 			return;
 		}
-		
+
 		_instance = this;
 		DontDestroyOnLoad(this.gameObject);
+		_isAlreadyPlayed = new Dictionary<string, bool>()
+		{
+			{"Explore", false},
+			{"Dungeon", false},
+			{"Silence", false}
+		};
 	}
 
 	private void Start()
@@ -37,7 +52,8 @@ public class AudioManager : MonoBehaviour
 		/*AkSoundEngine.SetRTPCValue("MusicVolume", MusicVolume);
 		AkSoundEngine.SetRTPCValue("EffectVolume", EffectVolume);*/
 		AkSoundEngine.PostEvent("Explore", gameObject);
-		
+		_currentlyPlaying = "Explore";
+
 	}
 
 	public Settings Settings;
@@ -56,15 +72,55 @@ public class AudioManager : MonoBehaviour
 			go.transform.SetParent(this.transform);
 			sound.SetSource(go.AddComponent<AudioSource>());
 		}
-		
+
 		sound.Play(Settings.SFXVolume);
-		
+
 	}
 
 	public void PlayEvent(string sound)
 	{
 		AkSoundEngine.PostEvent(sound, gameObject);
 	}
+
+	public void PlayMusic(string sound)
+	{
+		/*Debug.Log("Explore "+_isAlreadyPlayed["Explore"]+" Dungeon "+_isAlreadyPlayed["Dungeon"]+ " Silence "+_isAlreadyPlayed["Silence"]);
+		if (sound == "Explore" && _currentlyPlaying!="Explore")
+		{
+			PauseEvent(_currentlyPlaying, 1);
+			
+		}
+
+		if (_isAlreadyPlayed[sound])
+		{
+			ResumeEvent(sound, 1);
+		
+		}
+		else
+		{
+			_isAlreadyPlayed[sound] = true;
+			PlayEvent(sound);
+		}
+
+		_currentlyPlaying = sound;
+		Debug.Log(_currentlyPlaying);*/
+		if (!_isMusicMuted)
+		{
+			if (sound == "Explore")
+			{
+				StopEvent(_currentlyPlaying, 0);
+
+			}
+
+			PlayEvent(sound);
+		}
+
+		_currentlyPlaying = sound;
+		Debug.Log(_currentlyPlaying);
+
+	}
+
+	
 
 	public void StopEvent(string eventName,int fadeout)
 	{
@@ -82,13 +138,21 @@ public class AudioManager : MonoBehaviour
 		AkSoundEngine.ExecuteActionOnEvent(eventId, AkActionOnEventType.AkActionOnEventType_Resume, gameObject,fadeout*1000,AkCurveInterpolation.AkCurveInterpolation_Sine);
 	}
 
-	//HERE JUST FOR TEST!!!!!!!!!!!!!!!!!!!!! PLEASE DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.M))
 		{
-			PauseEvent("Explore",1);
-			PauseEvent("Dungeon",1);
+			if (_isMusicMuted)
+			{
+				ResumeEvent("Explore",0);
+				if(_currentlyPlaying!="Explore") PlayEvent(_currentlyPlaying);
+				
+			}
+			else
+			{
+				PauseEvent("Explore",0);
+			}
+			_isMusicMuted = !_isMusicMuted;
 		}
 		
 		

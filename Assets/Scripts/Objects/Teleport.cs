@@ -32,7 +32,7 @@ public class Teleport : MonoBehaviour
             if(_needDeactivation)
                 Destination.StopTeleport();
             if(CanChangeMusic)
-                AudioManager.Instance.PlayEvent(MusicId);
+                AudioManager.Instance.PlayMusic(MusicId);
             //other.gameObject.transform.position = Destination.transform.position + Offset;
             //GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
             
