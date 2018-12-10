@@ -10,7 +10,7 @@ public class CameraMovement : MonoBehaviour {
     public float marginX;
     public float marginY;
     [Range(0,1)]
-    public float smoothTime = 0.3F;
+    public float smoothTime = 0.7f;
 
     private Vector3 offset;
     private Vector2 _dynamicOffset;
