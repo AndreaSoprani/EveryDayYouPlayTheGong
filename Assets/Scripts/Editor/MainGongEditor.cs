@@ -1,6 +1,7 @@
 using System.Configuration;
 using Objects;
 using UnityEditor;
+using UnityEngine;
 using Utility;
 
 [CustomEditor (typeof(MainGong))]
@@ -23,5 +24,6 @@ public class MainGongEditor : Editor
         myScript.WrongTimeToPlayDialogue = (Dialogue) EditorGUILayout.ObjectField("Wrong time to play dialogue",
             myScript.WrongTimeToPlayDialogue, typeof(Dialogue), true);
 
+        myScript.NewDayText = (TextAsset) EditorGUILayout.ObjectField("New day text", myScript.NewDayText, typeof(TextAsset), true);
     }
 }
