@@ -7,10 +7,15 @@ public class AudioManager : MonoBehaviour
 
 	private static AudioManager _instance;
 	public static AudioManager Instance { get { return _instance; } }
+	[Range(0,100)]
+	public int MusicVolume;
+	[Range(0,100)]
+	public int EffectVolume;
 	private uint _bankIDMain;
 	private uint _bankIDGong;
 	private uint _bankIDBells;
 	private uint _bankIDXylophone;
+	
 	private void Awake()
 	{
 		if (_instance != null && _instance != this)
@@ -29,7 +34,10 @@ public class AudioManager : MonoBehaviour
 		AkSoundEngine.LoadBank("Gong", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDGong);
 		AkSoundEngine.LoadBank("Bell", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDBells);
 		AkSoundEngine.LoadBank("Xylophone", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDXylophone);
+		/*AkSoundEngine.SetRTPCValue("MusicVolume", MusicVolume);
+		AkSoundEngine.SetRTPCValue("EffectVolume", EffectVolume);*/
 		AkSoundEngine.PostEvent("Explore", gameObject);
+		
 	}
 
 	public Settings Settings;

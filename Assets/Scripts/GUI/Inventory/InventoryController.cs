@@ -11,9 +11,9 @@ public class InventoryController : MonoBehaviour
 	public NotesListWindow NotesTab;
 	public InventoryListWindow ItemsTab;
 	public GameObject MapTab;
-	public Toggle NotesButton;
-	public Button ItemsButton;
-	public Button MapButton;
+	public GUIButton NotesButton;
+	public GUIButton ItemsButton;
+	public GUIButton MapButton;
 	
 	
 
@@ -28,6 +28,10 @@ public class InventoryController : MonoBehaviour
 		ItemsTab.gameObject.SetActive(false);
 		MapTab.SetActive(false);
 		NotesTab.UpdateItems();
+		ItemsButton.UpdateImage(false);
+		NotesButton.UpdateImage(true);
+		MapButton.UpdateImage(false);
+		
 		
 	}
 	public void DisplayItems()
@@ -36,12 +40,20 @@ public class InventoryController : MonoBehaviour
 		ItemsTab.gameObject.SetActive(true);
 		MapTab.SetActive(false);
 		ItemsTab.UpdateItems();
+		ItemsButton.UpdateImage(true);
+		NotesButton.UpdateImage(false);
+		MapButton.UpdateImage(false);
+		
 	}
 	public void DisplayMap()
 	{
 		NotesTab.gameObject.SetActive(false);
 		ItemsTab.gameObject.SetActive(false);
 		MapTab.SetActive(true);
+		ItemsButton.UpdateImage(false);
+		NotesButton.UpdateImage(false);
+		MapButton.UpdateImage(true);
+		
 		
 	}
 
@@ -60,15 +72,18 @@ public class InventoryController : MonoBehaviour
 			{	if (NotesTab.isActiveAndEnabled)
 				{
 					DisplayItems();
+					
 				}
 				else if (ItemsTab.isActiveAndEnabled)
 				{
 					DisplayMap();
+					
 				}
 				else
 				{
 					
 					DisplayNotes();
+					
 				}
 				
 			}
@@ -78,14 +93,17 @@ public class InventoryController : MonoBehaviour
 				if (NotesTab.isActiveAndEnabled)
 				{
 					DisplayMap();
+					
 				}
 				else if (ItemsTab.isActiveAndEnabled)
 				{
 					DisplayNotes();
+					
 				}
 				else
 				{
 					DisplayItems();
+					
 				}
 			}
 		}
