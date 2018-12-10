@@ -3803,6 +3803,7 @@ MonoBehaviour:
   QuestTextbox: {fileID: 114906263328991360}
   ExitText: {fileID: 114601538830237242}
   Img: {fileID: 114310731047858922}
+  Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
 --- !u!114 &114829701486376232
 MonoBehaviour:
   m_ObjectHideFlags: 1

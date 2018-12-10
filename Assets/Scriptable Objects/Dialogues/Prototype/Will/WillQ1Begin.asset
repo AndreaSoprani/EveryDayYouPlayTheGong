@@ -18,6 +18,7 @@ MonoBehaviour:
   CompletedQuests: []
   UncompletedQuests:
   - {fileID: 11400000, guid: dd62ee965e03fbf4f83c015a3d6922aa, type: 2}
+  OneTimeDialogue: 0
   QuestsToActivate:
   - {fileID: 11400000, guid: dd62ee965e03fbf4f83c015a3d6922aa, type: 2}
   ItemsToAdd: []

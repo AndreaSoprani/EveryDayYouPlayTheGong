@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using JetBrains.Annotations;
 using Quests;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityScript.Steps;
+using Utility;
 
 public class NotificationController : MonoBehaviour
 {
@@ -14,10 +18,40 @@ public class NotificationController : MonoBehaviour
 	public Text QuestTextbox;
 	public Text ExitText;
 	public Image Img;
+	public Settings Settings;
 
 
 	private bool _active;
 	private bool _canBeClosed;
+	private List<Notification> _notificationsBuffer = new List<Notification>();
+
+
+	public void InsertNotification(Notification notification)
+	{
+		if(notification != null) _notificationsBuffer.Add(notification);
+	}
+
+	public void DisplayNotification()
+	{
+		if (_active || _notificationsBuffer.Count == 0) return;
+
+		Notification notification = _notificationsBuffer[0];
+		_notificationsBuffer.Remove(notification);
+
+		Time.timeScale = 0;
+
+		if (notification.GetType() == typeof(QuestNotification))
+		{
+			QuestNotification questNotification = (QuestNotification) notification;
+			ShowQuestNotification(questNotification.Quest, questNotification.Op);
+		}
+		else if (notification.GetType() == typeof(ItemNotification))
+		{
+			ItemNotification itemNotification = (ItemNotification) notification;
+			ShowItemNotification(itemNotification.Item, itemNotification.Op);
+		}
+
+	}
 	
 	/// <summary>
 	/// Sets the notification window in order to display the object and a message based on the action
@@ -96,7 +130,7 @@ public class NotificationController : MonoBehaviour
 
 	private IEnumerator DelayClose()
 	{
-		yield return new WaitForSecondsRealtime(1f);	//TODO Change time based on tune
+		yield return new WaitForSecondsRealtime(Settings.NotificationsDelayTime);
 		ExitText.enabled = true;
 		_canBeClosed = true;
 	}
@@ -127,5 +161,31 @@ public class NotificationController : MonoBehaviour
 	public bool CanBeClosed()
 	{
 		return _canBeClosed;
+	}
+}
+
+public abstract class Notification{}
+
+public class QuestNotification : Notification
+{
+	public Quest Quest;
+	public bool Op; // true = new, false = completed
+
+	public QuestNotification(Quest quest, bool op)
+	{
+		Quest = quest;
+		Op = op;
+	}
+}
+
+public class ItemNotification : Notification
+{
+	public Item Item;
+	public bool Op; // true = retrieved, false = removed
+
+	public ItemNotification(Item item, bool op)
+	{
+		Item = item;
+		Op = op;
 	}
 }
