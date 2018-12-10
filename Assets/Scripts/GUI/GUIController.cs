@@ -16,9 +16,18 @@ public class GUIController : MonoBehaviour
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
 	public ObjectiveNotificationController ObjectiveNotificationController;
+	public DisplayTextScreen DisplayTextScreen;
 	public Image[] DayProgressionImages;
     private float _timePassed;
 	private bool _isGamePaused;
+
+	private void Start()
+	{
+		if (Settings.StartupText != null)
+		{
+			NotifyDisplayText(Settings.StartupText.text);
+		}
+	}
 
 	// Update is called once per frame
 	void Update ()
@@ -50,7 +59,13 @@ public class GUIController : MonoBehaviour
 			NotificationController.HideNotification();
 			Time.timeScale = 1;
 			_isGamePaused = false;
-		}	
+		}
+
+		if (DisplayTextScreen.IsActive() && Input.GetKeyDown(KeyCode.Return))
+		{
+			DisplayTextScreen.Close();
+			Time.timeScale = 1;
+		}
 		
 	}
 
@@ -109,6 +124,12 @@ public class GUIController : MonoBehaviour
 	public void NotifyNewObjective(string objectiveDescription)
 	{
 		ObjectiveNotificationController.ShowNewObjective(objectiveDescription);
+	}
+
+	public void NotifyDisplayText(string text)
+	{
+		Time.timeScale = 0;
+		DisplayTextScreen.Display(text);
 	}
 
 	public void QuitGame()

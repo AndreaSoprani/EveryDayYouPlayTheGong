@@ -31,6 +31,9 @@ namespace Utility
         [Header("Game Settings")] 
         public int QuestsPerDay;
 
+        [Header("Text displayed on startup")] 
+        public TextAsset StartupText;
+
         public Dictionary<Vector3, KeyCode> GetDirectionsKeyCodes()
         {
             return new Dictionary<Vector3, KeyCode>()

@@ -1,0 +1,14 @@
+Welcome to the prototype!
+
+Before we begin, here's a brief list of keys that you might wanna use:
+ARROWS: Move around.
+X: Interact.
+SPACE: Play.
+CTRL: Run.
+I: Open items and quest menu.
+ESC: Pause game.
+M: Mute music.
+
+Also, you'll notice a little progression bar on the top-left corner of your screen. That marks the day progression, at the end of the day you'll have to play the Great Gong™ to conclude your experience in the prototype.
+
+HAVE FUN!

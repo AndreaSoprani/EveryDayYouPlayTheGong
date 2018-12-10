@@ -1,15 +1,11 @@
-Hey, welcome to the prototype. My name is Bill and I exist only to show you how it works around here...
+Hey, welcome to the prototype. Let me introduce myself: my name is Bill.
 
-Let me inform you about the commands: as you already did you can press 'X' to interact.
-
-Then you can use the arrows to move around, press 'CTRL' to run and 'SPACE' to play the instruments.
-
-To check what items you have and what quests you gotta complete you can press 'I'
-
-Feel free to lurk around, I wouldn't recommend it in our temple but this is the prototype, so do what you want.
+You see, with this little prototype we'd like to show you how it works at the temple.
 
 Do you see that monk on your right? He's Will, feel free to talk to him to get some quests. 
 
 Don't worry they are not particularly demanding, it's just to show you how we treat the interns at the temple.
 
-HAVE FUN!
+Feel free to lurk around, I wouldn't recommend it in our temple but this is the prototype, so do what you want.
+
+See you around!

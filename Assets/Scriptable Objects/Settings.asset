@@ -26,3 +26,4 @@ MonoBehaviour:
   MusicVolume: 1
   SFXVolume: 1
   QuestsPerDay: 3
+  StartupText: {fileID: 4900000, guid: f2e6131bcbf84cbe8f7d9ee762355cf0, type: 3}
