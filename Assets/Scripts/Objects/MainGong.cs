@@ -1,3 +1,6 @@
+using System.Collections;
+using GUI.Inventory;
+using UnityEngine;
 using Utility;
 
 namespace Objects
@@ -6,6 +9,7 @@ namespace Objects
     {
 
         public Dialogue WrongTimeToPlayDialogue;
+        public TextAsset NewDayText;
         
         /*
 	    * PLAY
@@ -14,10 +18,19 @@ namespace Objects
         public override void Play()
         {
             base.Play();
-            if(DayProgressionManager.Instance.IsDayOver())
+            if (DayProgressionManager.Instance.IsDayOver())
+            {
                 DayProgressionManager.Instance.NextDay();
+                if(NewDayText != null) StartCoroutine(DisplayText());
+            }
             else if (WrongTimeToPlayDialogue != null)
                 WrongTimeToPlayDialogue.StartDialogue();
+        }
+
+        private IEnumerator DisplayText()
+        {
+            yield return new WaitForSeconds(2);
+            GameObject.FindGameObjectWithTag("GUIController").SendMessage("DisplayText", NewDayText.text);
         }
     }
 }
