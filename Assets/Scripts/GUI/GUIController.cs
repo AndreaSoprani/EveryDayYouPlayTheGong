@@ -113,7 +113,7 @@ public class GUIController : MonoBehaviour
 
 	public void QuitGame()
 	{
-		Debug.Log("NOPEEEE");
+		Application.Quit();
 	}
 	
 	public void LoadGame()
