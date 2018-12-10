@@ -5,6 +5,7 @@ using GUI.Inventory;
 using Quests;
 using Quests.Objectives;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Utility;
 
@@ -13,6 +14,7 @@ public class GUIController : MonoBehaviour
 
 	public Settings Settings;
 	public GameObject PauseMenu;
+	public Button FirstPauseButton;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
 	public ObjectiveNotificationController ObjectiveNotificationController;
@@ -88,6 +90,8 @@ public class GUIController : MonoBehaviour
 		Time.timeScale = 0;
 		_isGamePaused = true;
 		PauseMenu.SetActive(true);
+		EventSystem.current.SetSelectedGameObject(FirstPauseButton.gameObject);
+		
 	}
 
 	public void Resume()
@@ -132,20 +136,7 @@ public class GUIController : MonoBehaviour
 		DisplayTextScreen.Display(text);
 	}
 
-	public void QuitGame()
-	{
-		Application.Quit();
-	}
 	
-	public void LoadGame()
-	{
-		Debug.Log("Load");
-	}
-	public void Options()
-	{
-		Debug.Log("Options");
-	}
-
 	public void UpdateDayProgression()
 	{
 		Debug.Log("Inside Day Progression Update");
@@ -156,5 +147,20 @@ public class GUIController : MonoBehaviour
 			else DayProgressionImages[i].gameObject.SetActive(false);
 		}
 	
+	}
+
+	public void LoadGame()
+	{
+		
+	}
+
+	public void Options()
+	{
+		
+	}
+
+	public void Quit()
+	{
+		Application.Quit();
 	}
 }

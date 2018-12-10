@@ -85,14 +85,12 @@ public class AudioManager : MonoBehaviour
 	//HERE JUST FOR TEST!!!!!!!!!!!!!!!!!!!!! PLEASE DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	private void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.H))
-			PlayEvent("Dungeon");
-		if(Input.GetKeyDown(KeyCode.J))
-			StopEvent("Dungeon",1);
-		if(Input.GetKeyDown(KeyCode.K))
-			PlayEvent("Explore");
-		if(Input.GetKeyDown(KeyCode.L))
-			StopEvent("Explore",1);
+		if (Input.GetKeyDown(KeyCode.M))
+		{
+			PauseEvent("Explore",1);
+			PauseEvent("Dungeon",1);
+		}
+		
 		
 	}
 }

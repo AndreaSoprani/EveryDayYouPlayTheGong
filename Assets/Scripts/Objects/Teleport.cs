@@ -7,6 +7,8 @@ public class Teleport : MonoBehaviour
 {
     public Teleport Destination;
     public Vector3 Offset;
+    public bool CanChangeMusic;
+    public string MusicId;
 
     [Header("Fade")]
     public float TimeIn = 0.4f;
@@ -29,7 +31,8 @@ public class Teleport : MonoBehaviour
             StartCoroutine(ApplyTeleport(other));
             if(_needDeactivation)
                 Destination.StopTeleport();
-            
+            if(CanChangeMusic)
+                AudioManager.Instance.PlayEvent(MusicId);
             //other.gameObject.transform.position = Destination.transform.position + Offset;
             //GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
             
