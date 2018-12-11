@@ -34,7 +34,7 @@ public class Instrument : InGameObject
 		yield return new WaitForSeconds(0.12f);
 		Animator animator = GetComponent<Animator>();
 		if (animator != null) animator.SetTrigger("Playing");
-		AkSoundEngine.PostEvent(SoundName, gameObject);
+		if (SoundName != null) AkSoundEngine.PostEvent(SoundName, gameObject);
 	}
 	/*
 	 * INTERACT

@@ -8,8 +8,9 @@ public class Door : InGameObject
 {
 
 	public bool IsOpen;
-	public Item ItemNeeded;
+	public bool Secret;
 	public bool PuzzleDoor;
+	public Item ItemNeeded;
 	public Dialogue ClosedDoorDialogue;
 
 	private void Start()
@@ -21,7 +22,7 @@ public class Door : InGameObject
 	public override bool IsInteractable()
 	{
 		//For now doors are interactable only if they are closed.
-		return !IsOpen;
+		return !IsOpen || Secret;
 	}
 
 	public override void Interact()

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114965333254109522}
   - component: {fileID: 68417731245164292}
   m_Layer: 0
-  m_Name: PuzzleGong1LayerSwitcher
+  m_Name: SmallGongLayerSwitcher
   m_TagString: LayerSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1140952894025386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7061467, y: 4.228722, z: 0.1920772}
+  m_LocalPosition: {x: -1.85, y: 1.85, z: 0.1920772}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4227886634047466}
@@ -111,7 +111,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.03125, y: 1.09375}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.6, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: smallgong
   Dialogue: {fileID: 0}
-  Sound: {fileID: 0}
+  SoundName: PuzzleGong_high
   HasInteraction: 0
 --- !u!114 &114965333254109522
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alpha: 0.7
+  Alpha: 1
   TransitionTime: 1
 --- !u!212 &212619864941143578
 SpriteRenderer:
