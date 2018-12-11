@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Mime;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ namespace GUI.Inventory
 {
     public class ObjectiveNotificationController : MonoBehaviour
     {
-        public Text NewObjectiveText;
+        public TextMeshProUGUI NewObjectiveText;
         [Range(0f,10f)] public float OnScreenTime;
 
         private Coroutine _currentCoroutine;

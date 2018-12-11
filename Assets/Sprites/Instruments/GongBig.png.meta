@@ -68,9 +68,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -83,7 +83,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -94,9 +94,9 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -143,10 +143,10 @@ TextureImporter:
       name: GongBig_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 8
-        width: 43
-        height: 49
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf7f350ebd11d3d4894f54c51e1611c4
+      spriteID: 6264c487f1e632a4c883b50091460cdc
       vertices: []
       indices: 
       edges: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: GongBig_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 8
-        width: 43
-        height: 49
+        x: 256
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8467538af368d56449463207af741251
+      spriteID: 0394be7e20b74b44382eca8942ecda91
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: GongBig_2
       rect:
         serializedVersion: 2
-        x: 138
-        y: 8
-        width: 43
-        height: 49
+        x: 512
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92701e4124c28234184c97cfaa676e99
+      spriteID: 546949328371a44468aadc8d3c623022
       vertices: []
       indices: 
       edges: []
@@ -203,10 +203,10 @@ TextureImporter:
       name: GongBig_3
       rect:
         serializedVersion: 2
-        x: 202
-        y: 8
-        width: 43
-        height: 49
+        x: 768
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b72be32034f5bbc47b480dd04ba018af
+      spriteID: 5d39c27f6d11f7b44874b1fc13ba21e2
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
       name: GongBig_4
       rect:
         serializedVersion: 2
-        x: 266
-        y: 8
-        width: 43
-        height: 49
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7f1617331233c4e96d2d9bb289c0ba
+      spriteID: 66ae27fd3b41e3a4b861c1ad775100e7
       vertices: []
       indices: 
       edges: []
@@ -243,10 +243,10 @@ TextureImporter:
       name: GongBig_5
       rect:
         serializedVersion: 2
-        x: 330
-        y: 8
-        width: 43
-        height: 49
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a318e3e8d66cb3548ab0c55941c65c6d
+      spriteID: 4d689604f293d81459e2a515c8a509c1
       vertices: []
       indices: 
       edges: []
@@ -263,10 +263,10 @@ TextureImporter:
       name: GongBig_6
       rect:
         serializedVersion: 2
-        x: 394
-        y: 8
-        width: 43
-        height: 49
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcabb04d81dde9d4daeb374e2415180f
+      spriteID: 96d24ce0f7cc6c94d8902d3a439d0e37
       vertices: []
       indices: 
       edges: []
@@ -283,10 +283,10 @@ TextureImporter:
       name: GongBig_7
       rect:
         serializedVersion: 2
-        x: 458
-        y: 8
-        width: 43
-        height: 49
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,7 +294,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03bce8237e788c5449deaf9a35a2ef88
+      spriteID: 0da13364e28ec8e4381c36ba56d98256
       vertices: []
       indices: 
       edges: []
@@ -303,10 +303,10 @@ TextureImporter:
       name: GongBig_8
       rect:
         serializedVersion: 2
-        x: 522
-        y: 8
-        width: 43
-        height: 49
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,7 +314,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c41f3afb1a154c54b905bd6bad1e1134
+      spriteID: 3a9e22bfaeb272940aaa713f38d49539
       vertices: []
       indices: 
       edges: []
@@ -323,10 +323,10 @@ TextureImporter:
       name: GongBig_9
       rect:
         serializedVersion: 2
-        x: 586
-        y: 8
-        width: 43
-        height: 49
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08d3aa5e43c115b4c9aab5e51b4cef51
+      spriteID: f6c099d1480b91b4dabd70cccb74baac
       vertices: []
       indices: 
       edges: []
@@ -343,10 +343,10 @@ TextureImporter:
       name: GongBig_10
       rect:
         serializedVersion: 2
-        x: 650
-        y: 8
-        width: 43
-        height: 49
+        x: 2560
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,7 +354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad915f89f6581654db155f368f13cf03
+      spriteID: 52540d656434fc04b8ac6264d038034c
       vertices: []
       indices: 
       edges: []
@@ -363,10 +363,10 @@ TextureImporter:
       name: GongBig_11
       rect:
         serializedVersion: 2
-        x: 714
-        y: 8
-        width: 43
-        height: 49
+        x: 2816
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9118148a94d7a0a42968fddbc21dba9b
+      spriteID: 5eda552d57504694ebdb5f87baf34b62
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: GongBig_12
       rect:
         serializedVersion: 2
-        x: 778
-        y: 8
-        width: 43
-        height: 49
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,7 +394,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd9e9ff2f94302c45abd3eb5b0b0001d
+      spriteID: 5c3c9d15fc8a5ca4a86afad57c34689f
       vertices: []
       indices: 
       edges: []
@@ -403,10 +403,10 @@ TextureImporter:
       name: GongBig_13
       rect:
         serializedVersion: 2
-        x: 842
-        y: 8
-        width: 43
-        height: 49
+        x: 3328
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,7 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb818fe6c54126648bb1f3025ce9ff6f
+      spriteID: 5a21fb4659ccae24692f0621b9991e07
       vertices: []
       indices: 
       edges: []
@@ -423,10 +423,10 @@ TextureImporter:
       name: GongBig_14
       rect:
         serializedVersion: 2
-        x: 906
-        y: 8
-        width: 43
-        height: 49
+        x: 3584
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,7 +434,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a5a0237f79c027428ee6f7d09cb8415
+      spriteID: 4e43c2aedaf434b418bca5e6d3dd954c
       vertices: []
       indices: 
       edges: []
@@ -443,10 +443,10 @@ TextureImporter:
       name: GongBig_15
       rect:
         serializedVersion: 2
-        x: 970
-        y: 8
-        width: 43
-        height: 49
+        x: 3840
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,7 +454,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff5a5b5f9e1a3e4db3257b2d66542a3
+      spriteID: dd899c79f404de849987851d07be4621
       vertices: []
       indices: 
       edges: []
@@ -463,10 +463,10 @@ TextureImporter:
       name: GongBig_16
       rect:
         serializedVersion: 2
-        x: 1034
-        y: 8
-        width: 43
-        height: 49
+        x: 4096
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,7 +474,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08e2a6ce5531b54e8496a918f86dfc0
+      spriteID: da38e2bfb6fa4e94e856e2712cf1a1ec
       vertices: []
       indices: 
       edges: []
@@ -483,10 +483,10 @@ TextureImporter:
       name: GongBig_17
       rect:
         serializedVersion: 2
-        x: 1098
-        y: 8
-        width: 43
-        height: 49
+        x: 4352
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,7 +494,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1de20d73d7d590149a8083631f78c3b8
+      spriteID: 3ef3f933a98b5e846b887899c3686bde
       vertices: []
       indices: 
       edges: []
@@ -503,10 +503,10 @@ TextureImporter:
       name: GongBig_18
       rect:
         serializedVersion: 2
-        x: 1161
-        y: 8
-        width: 43
-        height: 49
+        x: 4608
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,7 +514,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d98281d67a2fd4294dbd3d18beaa2f
+      spriteID: 9be4e0ed1cae28d419705143273584f5
       vertices: []
       indices: 
       edges: []
@@ -523,10 +523,10 @@ TextureImporter:
       name: GongBig_19
       rect:
         serializedVersion: 2
-        x: 1226
-        y: 8
-        width: 43
-        height: 49
+        x: 4864
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,7 +534,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c86d41d9b0c026b4d8732d41cf376085
+      spriteID: 177bbbd327bcac947a4faefda6b86453
       vertices: []
       indices: 
       edges: []
@@ -543,10 +543,10 @@ TextureImporter:
       name: GongBig_20
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 8
-        width: 43
-        height: 49
+        x: 5120
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,7 +554,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a57ee06dd3de52d42a3148aab85830f9
+      spriteID: e794dec7ae3cbb040903a3ed88699fc4
       vertices: []
       indices: 
       edges: []
@@ -563,10 +563,10 @@ TextureImporter:
       name: GongBig_21
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 8
-        width: 43
-        height: 49
+        x: 5376
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -574,7 +574,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42d30651950a7ca46a8d8444156bf74c
+      spriteID: 0b4866d996f58b4489ecc230f9db6aea
       vertices: []
       indices: 
       edges: []
@@ -583,10 +583,10 @@ TextureImporter:
       name: GongBig_22
       rect:
         serializedVersion: 2
-        x: 1418
-        y: 8
-        width: 43
-        height: 49
+        x: 5632
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,7 +594,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e76678494315c4d9ff70df4e1f61d3
+      spriteID: e1e49f0df2f593448b4faa40359f2169
       vertices: []
       indices: 
       edges: []

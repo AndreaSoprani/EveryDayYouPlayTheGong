@@ -11,4 +11,6 @@ M: Mute music.
 
 Also, you'll notice a little progression bar on the top-left corner of your screen. That marks the day progression, at the end of the day you'll have to play the Great Gong™ to conclude your experience in the prototype.
 
+This is a narrative game, we suggest to pay attention to the dialogues.
+
 HAVE FUN!

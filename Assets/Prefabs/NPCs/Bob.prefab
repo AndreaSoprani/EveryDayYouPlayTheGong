@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 50316230800550604}
   - component: {fileID: 61917366261380686}
   - component: {fileID: 95731967214734152}
+  - component: {fileID: 114410607103078738}
   m_Layer: 8
   m_Name: Bob
   m_TagString: Untagged
@@ -282,8 +283,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alpha: 0.7
+  Alpha: 1
   TransitionTime: 1
+--- !u!114 &114410607103078738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1314167865040910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!114 &114783265003949628
 MonoBehaviour:
   m_ObjectHideFlags: 1

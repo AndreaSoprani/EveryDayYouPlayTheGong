@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using JetBrains.Annotations;
 using Quests;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -14,9 +15,9 @@ public class NotificationController : MonoBehaviour
 {
 	[Header("Notification")]
 	public GameObject NotificationWindow;
-	public Text ItemTextbox;
-	public Text QuestTextbox;
-	public Text ExitText;
+	public TextMeshProUGUI ItemTextbox;
+	public TextMeshProUGUI QuestTextbox;
+	public TextMeshProUGUI ExitText;
 	public Image Img;
 	public Settings Settings;
 
@@ -114,7 +115,7 @@ public class NotificationController : MonoBehaviour
 	/// </summary>
 	/// <param name="stringBuilder">Message to show</param>
 	/// <param name="textBox">Textbox that is going to be displayed</param>
-	private void ShowNotification(StringBuilder stringBuilder, Text textBox)
+	private void ShowNotification(StringBuilder stringBuilder, TextMeshProUGUI textBox)
 	{
 		Debug.Log(stringBuilder.ToString());
 		_canBeClosed = false;

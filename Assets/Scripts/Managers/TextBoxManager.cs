@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Quests;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
@@ -27,8 +28,8 @@ public class TextBoxManager : MonoBehaviour
 
 	public GameObject DialogueBox;
 
-	private Text _nametext; // The GUI Text element used to display the name of the NPC.
-	private Text _dialoguetext; // The GUI Text element used to display the dialogue.
+	private TextMeshProUGUI _nametext; // The GUI Text element used to display the name of the NPC.
+	private TextMeshProUGUI _dialoguetext; // The GUI Text element used to display the dialogue.
 	
 	private string[] _textLines;
 
@@ -49,9 +50,9 @@ public class TextBoxManager : MonoBehaviour
 		_itemsToAdd = new List<Item>();
 		_itemsToRemove = new List<Item>();
 
-		Text[] texts = DialogueBox.GetComponentsInChildren<Text>(true);
+		TextMeshProUGUI[] texts = DialogueBox.GetComponentsInChildren<TextMeshProUGUI>(true);
 
-		foreach (Text text in texts)
+		foreach (TextMeshProUGUI text in texts)
 		{
 			if (text.name == "Name") _nametext = text;
 			else if (text.name == "Dialogue") _dialoguetext = text;

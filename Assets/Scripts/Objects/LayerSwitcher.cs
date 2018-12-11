@@ -7,7 +7,7 @@ public class LayerSwitcher : MonoBehaviour
 {
     [Header("Alpha value")]
     [Range(0f, 1f)]
-    public float Alpha = 0.7f;
+    public float Alpha = 1f;
 
     [Header("Time")]
     public float TransitionTime = 1f;

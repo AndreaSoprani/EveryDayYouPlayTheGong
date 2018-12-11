@@ -21,6 +21,7 @@ TextureImporter:
     21300032: FloorMusicRoom_16
     21300034: FloorMusicRoom_17
     21300036: FloorMusicRoom_18
+    21300038: FloorMusicRoom_19
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -64,7 +65,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -140,9 +141,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 32
-        height: 32
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66f7055a0757a7246893cd1ea1a66bd3
+      spriteID: 43a766bbb388f9b4293272dbe572f647
       vertices: []
       indices: 
       edges: []
@@ -159,10 +160,10 @@ TextureImporter:
       name: FloorMusicRoom_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 128
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,7 +171,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b405f8a0a5b8c488a41fc4df2e3401
+      spriteID: b6b326b2caf58064ba46d7883e005e74
       vertices: []
       indices: 
       edges: []
@@ -179,10 +180,10 @@ TextureImporter:
       name: FloorMusicRoom_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
+        x: 256
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +191,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d60ee2ab14c006b438a1fdb276af3398
+      spriteID: 3def1ec34a2c004459c56704d45d99a0
       vertices: []
       indices: 
       edges: []
@@ -199,10 +200,10 @@ TextureImporter:
       name: FloorMusicRoom_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
+        x: 384
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ea0582cdf1c88c42a6874887e8e22d7
+      spriteID: df0bb444f1804b745825a729013f8ba6
       vertices: []
       indices: 
       edges: []
@@ -219,10 +220,10 @@ TextureImporter:
       name: FloorMusicRoom_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 512
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,7 +231,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d872352577a20a428170007e772d280
+      spriteID: 696528ad1f3d1124f88834d28b98e1cc
       vertices: []
       indices: 
       edges: []
@@ -240,9 +241,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +251,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a165ca466e19dda468b0e99cb038a9fb
+      spriteID: 08f76031d2f4dd54b90d47935c3768f2
       vertices: []
       indices: 
       edges: []
@@ -259,10 +260,10 @@ TextureImporter:
       name: FloorMusicRoom_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,7 +271,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2deed6274258644a3e2177f5fb640b
+      spriteID: 7c48fb86a5706c941b508f941ae1f4db
       vertices: []
       indices: 
       edges: []
@@ -279,10 +280,10 @@ TextureImporter:
       name: FloorMusicRoom_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,7 +291,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 667cf614483bb92498a5fa4f7cf1d01f
+      spriteID: 9f701034ece5de546a2ffaf968eac08a
       vertices: []
       indices: 
       edges: []
@@ -299,10 +300,10 @@ TextureImporter:
       name: FloorMusicRoom_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,7 +311,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3d5075369b247e46aa90d19558161d1
+      spriteID: e0718d67f94c78042a490d0ea37f1584
       vertices: []
       indices: 
       edges: []
@@ -319,10 +320,10 @@ TextureImporter:
       name: FloorMusicRoom_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,7 +331,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30b57824af4110947a84243d9dab0089
+      spriteID: 81e2423920c4aa14c9d5beadf6243d23
       vertices: []
       indices: 
       edges: []
@@ -340,9 +341,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,7 +351,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b744cbc733c578439b6d7e74f4e97c7
+      spriteID: 5696d79e29ad33a4f892d31db21aeaaf
       vertices: []
       indices: 
       edges: []
@@ -359,10 +360,10 @@ TextureImporter:
       name: FloorMusicRoom_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,7 +371,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ff7bff27a98daf4eb07b20af55a6010
+      spriteID: 9275728f0af5e8f4cae16ae1b4f5ec5a
       vertices: []
       indices: 
       edges: []
@@ -379,10 +380,10 @@ TextureImporter:
       name: FloorMusicRoom_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,7 +391,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f067c27cb81b849a12653112d342b0
+      spriteID: 5879ef2c39f1f2c4e8d9fbc26842bfe0
       vertices: []
       indices: 
       edges: []
@@ -400,9 +401,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,7 +411,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52bcd5f59728fd43a9ba6cc4362cc1c
+      spriteID: 66ab91910eb15574fa1bee99ee8ad9af
       vertices: []
       indices: 
       edges: []
@@ -419,10 +420,10 @@ TextureImporter:
       name: FloorMusicRoom_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,7 +431,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79f31281ca9f5c043bc97b51135e280f
+      spriteID: c2cce203e5e454941bdabb4735b44386
       vertices: []
       indices: 
       edges: []
@@ -439,10 +440,10 @@ TextureImporter:
       name: FloorMusicRoom_15
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,7 +451,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fa70d47d74121f4a810c028d9433349
+      spriteID: 08b060cf6cd0f4344b51a4841f372b77
       vertices: []
       indices: 
       edges: []
@@ -461,8 +462,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,7 +471,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ec94c9696661a408a5de149156ca55
+      spriteID: 71aaaa3d758e6924789c543bfc3aa1ad
       vertices: []
       indices: 
       edges: []
@@ -479,10 +480,10 @@ TextureImporter:
       name: FloorMusicRoom_17
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,7 +491,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a645b4f854917f4459d75189568f4020
+      spriteID: 54ce37db5865d9546bb50e22d82b6109
       vertices: []
       indices: 
       edges: []
@@ -499,10 +500,10 @@ TextureImporter:
       name: FloorMusicRoom_18
       rect:
         serializedVersion: 2
-        x: 64
+        x: 256
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,7 +511,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adef7bf4e7ea5b34487165c8234762fc
+      spriteID: cfa8f4a48c1ed9741a3b87e027e536e4
       vertices: []
       indices: 
       edges: []

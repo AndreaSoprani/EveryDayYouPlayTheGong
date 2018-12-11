@@ -31,7 +31,7 @@ public class Instrument : InGameObject
 
 	private IEnumerator DelayPlay()
 	{
-		yield return new WaitForSeconds(0.23f);
+		yield return new WaitForSeconds(0.12f);
 		Animator animator = GetComponent<Animator>();
 		if (animator != null) animator.SetTrigger("Playing");
 		AkSoundEngine.PostEvent(SoundName, gameObject);
