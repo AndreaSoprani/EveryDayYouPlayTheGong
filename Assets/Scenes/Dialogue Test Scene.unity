@@ -315,7 +315,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1428905505}
-  - component: {fileID: 1428905504}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -323,33 +322,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1428905504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1428905503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be50026b59c82d2438dad6e51cb45777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: c95804cd4521f8a4095d118888b7a540,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  preparePoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  diffractionFlags: 0
-  engineLogging: 0
 --- !u!4 &1428905505
 Transform:
   m_ObjectHideFlags: 0
@@ -363,62 +335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1586099478
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908368232267328, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1290991940816600, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114802488228420168, guid: 9079fc641c3c8ed488561fba7133652f,
-        type: 2}
-      propertyPath: m_FontData.m_Alignment
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9079fc641c3c8ed488561fba7133652f, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1 &1586099479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1290991940816600, guid: 9079fc641c3c8ed488561fba7133652f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1586099478}
 --- !u!1001 &1705870450
 Prefab:
   m_ObjectHideFlags: 0
@@ -456,7 +372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4770021134030080, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d1f7e6df2f87f64aa1bdccb70c01839, type: 2}
@@ -505,8 +421,7 @@ MonoBehaviour:
   enableActionOnEvent: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 80b7db4990b71874bbd240d8f82c1c02,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
@@ -557,7 +472,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4169421197325162, guid: b904ea46ba68f704897054591f2b4856, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114908075731733014, guid: b904ea46ba68f704897054591f2b4856,
         type: 2}
@@ -658,7 +573,7 @@ Prefab:
         type: 2}
       propertyPath: DialogueBox
       value: 
-      objectReference: {fileID: 1586099479}
+      objectReference: {fileID: 0}
     - target: {fileID: 114767018207234036, guid: 8730667e070e93547a77a8c2ce001b87,
         type: 2}
       propertyPath: IsActive
