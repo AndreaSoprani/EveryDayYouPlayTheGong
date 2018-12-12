@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad1a8dd7e064d59a069124ac9e01b54, type: 3}
+  m_Name: PrototypeSettings
+  m_EditorClassIdentifier: 
+  Up: 273
+  Right: 275
+  Down: 274
+  Left: 276
+  Interact: 120
+  Play: 32
+  Run: 306
+  Crawl: 304
+  ItemsMenu: 105
+  Menu: 27
+  MusicOn: 1
+  SFXOn: 1
+  MusicVolume: 1
+  SFXVolume: 1
+  QuestsPerDay: 3
+  StartupText: {fileID: 4900000, guid: f2e6131bcbf84cbe8f7d9ee762355cf0, type: 3}
+  NotificationsDelayTime: 0.5

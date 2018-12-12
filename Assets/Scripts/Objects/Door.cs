@@ -9,7 +9,7 @@ public class Door : InGameObject
 
 	public bool IsOpen;
 	public bool Secret;
-	public bool PuzzleDoor;
+	public bool OpenByScript;
 	public Item ItemNeeded;
 	public Dialogue ClosedDoorDialogue;
 
@@ -28,8 +28,8 @@ public class Door : InGameObject
 	public override void Interact()
 	{
 		// If no item is needed open the door.
-		if (!PuzzleDoor && ItemNeeded == null) OpenDoor();
-		else if (!PuzzleDoor && Player.Instance.HasItem(ItemNeeded)) // Check if the player has the item, otherwise start the dialogue.
+		if (!OpenByScript && ItemNeeded == null) OpenDoor();
+		else if (!OpenByScript && Player.Instance.HasItem(ItemNeeded)) // Check if the player has the item, otherwise start the dialogue.
 		{
 			Player.Instance.RemoveItem(ItemNeeded);
 			ItemNeeded = null;

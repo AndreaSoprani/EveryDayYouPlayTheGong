@@ -6026,6 +6026,8 @@ MonoBehaviour:
   Offset: {x: 0, y: -1, z: 0}
   CanChangeMusic: 1
   MusicId: Dungeon
+  OpenDoor: 0
+  DoorToOpen: {fileID: 0}
   TimeIn: 0.4
   Pause: 0.3
   TimeOut: 0.5
@@ -13671,6 +13673,8 @@ MonoBehaviour:
   Offset: {x: 0, y: -1, z: 0}
   CanChangeMusic: 1
   MusicId: Explore
+  OpenDoor: 0
+  DoorToOpen: {fileID: 0}
   TimeIn: 0.4
   Pause: 0.3
   TimeOut: 0.5

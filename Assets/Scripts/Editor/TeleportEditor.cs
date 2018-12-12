@@ -21,14 +21,13 @@ using Utility;
    myScript.MusicId =EditorGUILayout.TextField("Event name",myScript.MusicId);
   }
   
-  EditorGUILayout.LabelField("Close door after incoming teleport", EditorStyles.boldLabel);
+  EditorGUILayout.LabelField("Open door after teleport", EditorStyles.boldLabel);
 
-  myScript.CloseDoor = EditorGUILayout.Toggle("Close door", myScript.CloseDoor);
+  myScript.OpenDoor = EditorGUILayout.Toggle("Open door", myScript.OpenDoor);
   
-  if (myScript.CloseDoor)
+  if (myScript.OpenDoor)
   {
-   myScript.DoorToClose = (Door) EditorGUILayout.ObjectField("Door", myScript.DoorToClose, typeof(Door), true);
-   myScript.CloseOnlyOnce = EditorGUILayout.Toggle("Close only once", myScript.CloseOnlyOnce);
+   myScript.DoorToOpen = (Door) EditorGUILayout.ObjectField("Door", myScript.DoorToOpen, typeof(Door), true);
   }
   
   EditorGUILayout.LabelField("Fade",EditorStyles.boldLabel);
