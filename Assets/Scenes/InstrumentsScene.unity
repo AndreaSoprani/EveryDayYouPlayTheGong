@@ -670,6 +670,12 @@ Prefab:
       propertyPath: m_Name
       value: GUI
       objectReference: {fileID: 0}
+    - target: {fileID: 114151922784987342, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
+        type: 2}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 11400000, guid: 58925e081488a27429338e0877d58552,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930db1ac0bd5a9f41ac6c2542da2302a, type: 2}
   m_IsPrefabAsset: 0

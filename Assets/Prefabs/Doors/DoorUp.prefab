@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 61927413899972430}
   - component: {fileID: 114897844389163910}
   m_Layer: 0
-  m_Name: DoorUpTeleport
+  m_Name: Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,10 +155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b14602e9dab0844bda61b232e1fb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: door1
+  ObjectID: 
   IsOpen: 0
   Secret: 0
-  PuzzleDoor: 0
+  OpenByScript: 0
   ItemNeeded: {fileID: 0}
   ClosedDoorDialogue: {fileID: 11400000, guid: 7fd771aa163ff3f4d9e2607eeb835cce, type: 2}
 --- !u!114 &114897844389163910
@@ -173,12 +173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destination: {fileID: 0}
-  Offset: {x: 0, y: 0.2, z: 0}
+  Offset: {x: 0, y: 0.25, z: 0}
   CanChangeMusic: 0
   MusicId: 
-  CloseDoor: 0
-  DoorToClose: {fileID: 0}
-  CloseOnlyOnce: 0
+  OpenDoor: 0
+  DoorToOpen: {fileID: 0}
   TimeIn: 0.1
   Pause: 0
   TimeOut: 0.1

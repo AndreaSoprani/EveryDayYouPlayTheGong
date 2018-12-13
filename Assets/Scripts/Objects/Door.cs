@@ -46,7 +46,8 @@ public class Door : InGameObject
 	/// </summary>
 	public void OpenDoor()
 	{
-		GetComponent<SpriteRenderer>().enabled = false;
+		SpriteRenderer sr = GetComponent<SpriteRenderer>();
+		if(sr != null) sr.enabled = false;
 		GetComponent<BoxCollider2D>().enabled = false;
 		IsOpen = true;
 	}
@@ -56,7 +57,8 @@ public class Door : InGameObject
 	/// </summary>
 	public void CloseDoor()
 	{
-		GetComponent<SpriteRenderer>().enabled = true;
+		SpriteRenderer sr = GetComponent<SpriteRenderer>();
+		if(sr != null) sr.enabled = true;
 		GetComponent<BoxCollider2D>().enabled = true;
 		IsOpen = false;
 	}
