@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 	private Collection<Item> _items;
 
 	private bool _inDialogue;
-
+	private bool _blocked;
 	private bool _frontInteractable;
 
 	private List<InGameObject> _playableObjectsFound;
@@ -56,6 +56,9 @@ public class Player : MonoBehaviour
 	private Animator _animator;
 	private Canvas _canvas;
 	private SpriteRenderer _spriteRenderer;
+	private BoxCollider2D _playingArea;
+
+	private Vector2 _offsetValue;
 	
 	private void Awake()
 	{
@@ -78,6 +81,9 @@ public class Player : MonoBehaviour
 		_animator = GetComponent<Animator>();
 		_canvas = GetComponentInChildren<Canvas>();
 		_spriteRenderer = GetComponent<SpriteRenderer>();
+		_playingArea = transform.Find("PlayingArea").GetComponent<BoxCollider2D>();
+		
+		_offsetValue = new Vector2(1.2f, 0);
 		
 		_facing = Vector3.down;
 		_directionsKeyCodes = Settings.GetDirectionsKeyCodes();
@@ -102,7 +108,7 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 
-		if (_inDialogue) return;
+		if (_inDialogue || _blocked) return;
 		
 		Move();
 
@@ -149,9 +155,20 @@ public class Player : MonoBehaviour
 
 		Vector3 delta = Vector3.zero;
 		if (_directionsPile.Count > 0) delta = _directionsPile[_directionsPile.Count-1];
+
+		if (delta.x > 0 && _playingArea.offset.x < 0f)
+		{
+			_playingArea.offset = _playingArea.offset + _offsetValue;
+			_animator.SetInteger("PlayingDirection", 0);
+		}
+		else if (delta.x < 0 && _playingArea.offset.x > 0f)
+		{
+			_playingArea.offset = _playingArea.offset - _offsetValue;
+			_animator.SetInteger("PlayingDirection", 1);
+		}
+
 		delta *= movementVelocity * Time.deltaTime;
 		
-
 		// Stairs checking
 		if (_onFrontalStairs)
 		{
@@ -267,14 +284,16 @@ public class Player : MonoBehaviour
 
 	private IEnumerator PlayAnimation()
 	{
+		BlockMovement(true);
 		_animator.SetBool("Playing", true);
 		
-		while (!_animator.GetCurrentAnimatorStateInfo(0).IsName("Play"))
+		while (!_animator.GetCurrentAnimatorStateInfo(0).IsName("PlayRight") && !_animator.GetCurrentAnimatorStateInfo(0).IsName("PlayLeft"))
 			yield return null;
 		
 		yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
 		
 		_animator.SetBool("Playing", false);
+		BlockMovement(false);
 	}
 
 	/// <summary>
@@ -470,6 +489,30 @@ public class Player : MonoBehaviour
 		else if (other.CompareTag("StairsLeft"))
 		{
 			_onLeftStairs = false;
+		}
+	}
+
+	/// <summary>
+	/// Controls whether the player can or cannot move
+	/// </summary>
+	/// <param name="blockedMovement">Whether the player can move or not</param>
+	public void BlockMovement(bool blockedMovement)
+	{
+		_blocked = blockedMovement;
+		
+		if (blockedMovement)
+		{
+			_animator.SetBool("Walking", false);
+			_directionsPile.Clear();
+		}
+		else
+		{
+			foreach (Vector3 dir in _directionsKeyCodes.Keys)
+			{
+				KeyCode keyCode = _directionsKeyCodes[dir];
+				if (Input.GetKey(keyCode))
+					_directionsPile.Add(dir);
+			}
 		}
 	}
 }

@@ -59,7 +59,8 @@ public class Teleport : MonoBehaviour
 
     private IEnumerator ApplyTeleport(Collider2D other)
     {
-        //TODO Stop player movement
+        Player.Instance.BlockMovement(true);
+        
         yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeIn, 1f));
         
 
@@ -70,6 +71,6 @@ public class Teleport : MonoBehaviour
         
         yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeOut, 0f));
         
-        //TODO Restart player movement
+        Player.Instance.BlockMovement(false);
     }
 }
