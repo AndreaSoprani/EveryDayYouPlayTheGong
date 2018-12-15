@@ -61,7 +61,7 @@ public class GUIController : MonoBehaviour
 		if (NotificationController.IsNotificationActive() && 
 		    NotificationController.CanBeClosed() && 
 		    !_isGamePaused && 
-		    Input.GetKeyDown(KeyCode.Return))
+		    Input.GetKeyDown(KeyCode.X))
 		{
 			NotificationController.HideNotification();
 			Time.timeScale = 1;

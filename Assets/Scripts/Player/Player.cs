@@ -136,8 +136,8 @@ public class Player : MonoBehaviour
 			movementVelocity *= RunIncrement;
 			run = true;
 		}
-		if (Input.GetKey(Settings.Crawl))
-			movementVelocity *= CrawlDecrement;
+		/*if (Input.GetKey(Settings.Crawl))
+			movementVelocity *= CrawlDecrement;*/
 		
 
 		foreach (Vector3 dir in _directionsKeyCodes.Keys)
@@ -283,6 +283,7 @@ public class Player : MonoBehaviour
 	/// <param name="obj">InGameObject to interact with.</param>
 	void Interact(InGameObject obj)
 	{
+		if (FindObjectOfType<NotificationController>().IsNotificationActive()) return;
 		obj.Interact();
 		EventManager.TriggerEvent("Interact" + obj.ObjectID);
 		

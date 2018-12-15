@@ -69,7 +69,7 @@ public class TextBoxManager : MonoBehaviour
 		_dialoguetext.text = _textLines[_currentLine];
 		
 		// Check for continue
-		if (Input.GetKeyDown(KeyCode.Return))
+		if (Input.GetKeyDown(KeyCode.X))
 		{
 			_currentLine++;
 		}
@@ -140,15 +140,15 @@ public class TextBoxManager : MonoBehaviour
 		}
 		
 		// Add all items to add
-		for (int i = 0; i < _itemsToAdd.Count; i++)
-		{
-			Player.Instance.AddItem(_itemsToAdd[i]);
-		}
-		
-		// Add all items to add
 		for (int i = 0; i < _itemsToRemove.Count; i++)
 		{
 			Player.Instance.RemoveItem(_itemsToRemove[i]);
+		}
+		
+		// Add all items to add
+		for (int i = 0; i < _itemsToAdd.Count; i++)
+		{
+			Player.Instance.AddItem(_itemsToAdd[i]);
 		}
 	}
 	

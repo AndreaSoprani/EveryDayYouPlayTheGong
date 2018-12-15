@@ -11,6 +11,7 @@ namespace GUI.Inventory
     public class ObjectiveNotificationController : MonoBehaviour
     {
         public TextMeshProUGUI NewObjectiveText;
+        public Image Background;
         [Range(0f,10f)] public float OnScreenTime;
 
         private Coroutine _currentCoroutine;
@@ -22,9 +23,11 @@ namespace GUI.Inventory
                 StopCoroutine(_currentCoroutine);
                 NewObjectiveText.enabled = false;
             }
-            
+
+            Background.enabled = true;
             NewObjectiveText.text = "You have a new objective: " + description;
             NewObjectiveText.enabled = true;
+            
             
             _currentCoroutine = StartCoroutine(WaitAndClose());
         }
@@ -33,6 +36,7 @@ namespace GUI.Inventory
         {
             yield return new WaitForSeconds(OnScreenTime);
             NewObjectiveText.enabled = false;
+            Background.enabled = false;
         }
     }
 }
