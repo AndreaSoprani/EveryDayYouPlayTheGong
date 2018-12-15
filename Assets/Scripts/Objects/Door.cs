@@ -21,8 +21,7 @@ public class Door : InGameObject
 
 	public override bool IsInteractable()
 	{
-		//For now doors are interactable only if they are closed.
-		return !IsOpen || Secret;
+		return !IsOpen && !Secret;
 	}
 
 	public override void Interact()

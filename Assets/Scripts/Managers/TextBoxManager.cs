@@ -39,6 +39,8 @@ public class TextBoxManager : MonoBehaviour
 	private List<Item> _itemsToAdd;
 	private List<Item> _itemsToRemove;
 
+	private bool _progressionEnabled;
+	
 	public bool IsActive;
 
 	// Use this for initialization
@@ -69,7 +71,7 @@ public class TextBoxManager : MonoBehaviour
 		_dialoguetext.text = _textLines[_currentLine];
 		
 		// Check for continue
-		if (Input.GetKeyDown(KeyCode.X))
+		if (Input.GetKeyDown(KeyCode.X) && _progressionEnabled)
 		{
 			_currentLine++;
 		}
@@ -86,6 +88,7 @@ public class TextBoxManager : MonoBehaviour
 	{
 		if (_textLines.Length == 0) return;
 		DialogueBox.SetActive(true);
+		StartCoroutine(DisableProgression());
 		IsActive = true;
 		EventManager.TriggerEvent("EnterDialogue");
 	}
@@ -151,6 +154,12 @@ public class TextBoxManager : MonoBehaviour
 			Player.Instance.AddItem(_itemsToAdd[i]);
 		}
 	}
-	
+
+	private IEnumerator DisableProgression()
+	{
+		_progressionEnabled = false;
+		yield return new WaitForSeconds(Time.deltaTime);
+		_progressionEnabled = true;
+	}
 	
 }
