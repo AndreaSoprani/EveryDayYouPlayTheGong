@@ -9,16 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: Dialogue_LibrarianReturnBook
+  m_Name: StandardLibrarian
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: 5f161422c452e3541b2362529260c13e, type: 3}
+  TextAsset: {fileID: 4900000, guid: d9109f62c86847359f9da042176b7e23, type: 3}
   NPCName: Librarian
-  ActiveQuest: {fileID: 11400000, guid: 79a3bbb5611889c4e847a024eeff74b9, type: 2}
+  ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
   OneTimeDialogue: 0
   QuestsToActivate: []
   ItemsToAdd: []
-  ItemsToRemove:
-  - {fileID: 11400000, guid: e06563ffca7babe488a7b3558075354f, type: 2}
+  ItemsToRemove: []
