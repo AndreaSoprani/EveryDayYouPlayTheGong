@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
+  m_Name: LockedDoorDialogue
+  m_EditorClassIdentifier: 
+  TextAsset: {fileID: 4900000, guid: 1127a9d2ab814a2eb67fb23f9bc05229, type: 3}
+  NPCName: Door
+  ActiveQuest: {fileID: 0}
+  CompletedObjectives: []
+  CompletedQuests: []
+  UncompletedQuests: []
+  OneTimeDialogue: 0
+  QuestsToActivate: []
+  ItemsToAdd: []
+  ItemsToRemove: []

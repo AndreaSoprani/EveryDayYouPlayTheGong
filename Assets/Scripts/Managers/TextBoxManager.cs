@@ -62,7 +62,7 @@ public class TextBoxManager : MonoBehaviour
 
 	}
 
-	private void Update()
+	private void LateUpdate()
 	{
 
 		if (!IsActive) return;
@@ -136,12 +136,6 @@ public class TextBoxManager : MonoBehaviour
 	/// </summary>
 	private void EndDialogueActivations()
 	{
-		// Activate all quests to activate
-		for (int i = 0; i < _questsToActivate.Count; i++)
-		{
-			QuestManager.Instance.ActivateQuest(_questsToActivate[i]);
-		}
-		
 		// Add all items to add
 		for (int i = 0; i < _itemsToRemove.Count; i++)
 		{
@@ -152,6 +146,12 @@ public class TextBoxManager : MonoBehaviour
 		for (int i = 0; i < _itemsToAdd.Count; i++)
 		{
 			Player.Instance.AddItem(_itemsToAdd[i]);
+		}
+		
+		// Activate all quests to activate
+		for (int i = 0; i < _questsToActivate.Count; i++)
+		{
+			QuestManager.Instance.ActivateQuest(_questsToActivate[i]);
 		}
 	}
 
