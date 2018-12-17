@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4553bafb48d4f3e8522e7db9639d5bf, type: 3}
   m_Name: Obj_ReturnBook
   m_EditorClassIdentifier: 
-  ObjectiveID: return_book_quest_02
-  QuestID: return_book_quest
+  ObjectiveID: find_book_quest_02
+  QuestID: find_book_quest
   Description: Return the book to the librarian
   Completed: 0
   ItemId: book2

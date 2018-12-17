@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7c7734cb6b4e2983a95fa56ea72824, type: 3}
   m_Name: Obj_FindBook
   m_EditorClassIdentifier: 
-  ObjectiveID: return_book_quest_01
-  QuestID: return_book_quest
+  ObjectiveID: find_book_quest_01
+  QuestID: find_book_quest
   Description: Find the book
   Completed: 0
   ItemId: book2
