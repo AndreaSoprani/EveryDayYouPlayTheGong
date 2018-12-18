@@ -58,16 +58,16 @@ TextureImporter:
     21300106: ProtagonistRunRight_3
     21300108: ProtagonistRunRight_4
     21300110: ProtagonistRunRight_5
-    21300112: ProtagonistGong_0
-    21300114: ProtagonistGong_1
-    21300116: ProtagonistGong_2
-    21300118: ProtagonistGong_3
-    21300120: ProtagonistGong_4
-    21300122: ProtagonistGong_5
-    21300124: ProtagonistGong_6
-    21300126: ProtagonistGong_7
-    21300128: ProtagonistGong_8
-    21300130: ProtagonistGong_9
+    21300112: ProtagonistGongRight_0
+    21300114: ProtagonistGongRight_1
+    21300116: ProtagonistGongRight_2
+    21300118: ProtagonistGongRight_3
+    21300120: ProtagonistGongRight_4
+    21300122: ProtagonistGongRight_5
+    21300124: ProtagonistGongRight_6
+    21300126: ProtagonistGongRight_7
+    21300128: ProtagonistGongRight_8
+    21300130: ProtagonistGongRight_9
     21300132: ProtagonistSprites_2
   externalObjects: {}
   serializedVersion: 7
@@ -1304,7 +1304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_0
+      name: ProtagonistGongRight_0
       rect:
         serializedVersion: 2
         x: 0
@@ -1324,7 +1324,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_1
+      name: ProtagonistGongRight_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1344,7 +1344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_2
+      name: ProtagonistGongRight_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1364,7 +1364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_3
+      name: ProtagonistGongRight_3
       rect:
         serializedVersion: 2
         x: 96
@@ -1384,7 +1384,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_4
+      name: ProtagonistGongRight_4
       rect:
         serializedVersion: 2
         x: 128
@@ -1404,7 +1404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_5
+      name: ProtagonistGongRight_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1424,7 +1424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_6
+      name: ProtagonistGongRight_6
       rect:
         serializedVersion: 2
         x: 192
@@ -1444,7 +1444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_7
+      name: ProtagonistGongRight_7
       rect:
         serializedVersion: 2
         x: 224
@@ -1464,7 +1464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_8
+      name: ProtagonistGongRight_8
       rect:
         serializedVersion: 2
         x: 256
@@ -1484,7 +1484,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagonistGong_9
+      name: ProtagonistGongRight_9
       rect:
         serializedVersion: 2
         x: 288

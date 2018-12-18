@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
 	private bool _inDialogue;
 	private bool _blocked;
 	private bool _frontInteractable;
+	private bool _running;
 
 	private List<InGameObject> _playableObjectsFound;
 	
@@ -93,6 +94,7 @@ public class Player : MonoBehaviour
 		//TODO: initialize as checkpoint.
 
 		_inDialogue = false;
+		_running = false;
 
 		_onFrontalStairs = false;
 		_onRightStairs = false;
@@ -135,15 +137,16 @@ public class Player : MonoBehaviour
 	void Move()
 	{
 		float movementVelocity = Velocity;
-		bool run = false;
 
-		if (Input.GetKey(Settings.Run) && !Input.GetKey(Settings.Crawl))
+		if (Input.GetKey(Settings.Run))
 		{
 			movementVelocity *= RunIncrement;
-			run = true;
+			_running = true;
 		}
-		/*if (Input.GetKey(Settings.Crawl))
-			movementVelocity *= CrawlDecrement;*/
+		else
+		{
+			_running = false;
+		}
 		
 
 		foreach (Vector3 dir in _directionsKeyCodes.Keys)
@@ -194,7 +197,7 @@ public class Player : MonoBehaviour
 		{
 			_animator.SetBool("Walking", true);
 			
-			_animator.SetBool("Running", run);
+			_animator.SetBool("Running", _running);
 			
 			UpdateFacing(delta);
 
@@ -514,5 +517,10 @@ public class Player : MonoBehaviour
 					_directionsPile.Add(dir);
 			}
 		}
+	}
+	
+	public bool IsRunning()
+	{
+		return _running;
 	}
 }
