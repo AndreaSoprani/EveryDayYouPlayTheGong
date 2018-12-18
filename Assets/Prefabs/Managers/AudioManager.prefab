@@ -51,4 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea1647618d53cb4980c1298c65710f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicVolume: 80
+  EffectVolume: 57
   Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}

@@ -150,11 +150,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114518498619404188, guid: 6b37d6998a91a4648a236931f712383f,
-        type: 2}
-      propertyPath: Sounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4970710081982726, guid: 6b37d6998a91a4648a236931f712383f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -187,12 +182,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114518498619404188, guid: 6b37d6998a91a4648a236931f712383f,
-        type: 2}
-      propertyPath: Sounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 98896a35a4251c8409bd23e3ed8eb890,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b37d6998a91a4648a236931f712383f, type: 2}
   m_IsPrefabAsset: 0
@@ -6370,8 +6359,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey3
   Dialogue: {fileID: 0}
-  SoundName: Xylophone3_mi
+  SoundName:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   HasInteraction: 0
+  PauseTime: 0
 --- !u!4 &859000296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4735297601848206, guid: 329c9d06420a18a409a5adc90955ea38,
@@ -6436,6 +6439,16 @@ Prefab:
         type: 2}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61440070154049364, guid: 382eefb8537995f45ba56a639adf8949,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61440070154049364, guid: 382eefb8537995f45ba56a639adf8949,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382eefb8537995f45ba56a639adf8949, type: 2}
@@ -6595,6 +6608,7 @@ Prefab:
     - {fileID: 114792855421627536, guid: 0c598fd221244c94cbbdd0a2ca80e8b2, type: 2}
     - {fileID: 114385776145643342, guid: 0c598fd221244c94cbbdd0a2ca80e8b2, type: 2}
     - {fileID: 114921394934535984, guid: 0c598fd221244c94cbbdd0a2ca80e8b2, type: 2}
+    - {fileID: 114804207684606132, guid: 0c598fd221244c94cbbdd0a2ca80e8b2, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0c598fd221244c94cbbdd0a2ca80e8b2, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1239301900
@@ -6911,8 +6925,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey1
   Dialogue: {fileID: 0}
-  SoundName: Xylophone1_do
+  SoundName:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   HasInteraction: 0
+  PauseTime: 0
 --- !u!1001 &1769302984
 Prefab:
   m_ObjectHideFlags: 0
@@ -7182,8 +7210,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: xylkey5
   Dialogue: {fileID: 0}
-  SoundName: Xylophone5_sol
+  SoundName:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   HasInteraction: 0
+  PauseTime: 0
 --- !u!1 &2013116966
 GameObject:
   m_ObjectHideFlags: 0
@@ -13843,6 +13886,27 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 749893121}
   m_Script: {fileID: 11500000, guid: 71407a3f6493e8e42bb813c2de8ee591, type: 3}
+--- !u!1 &2082981185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1177601345585624, guid: 0c598fd221244c94cbbdd0a2ca80e8b2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1199492516}
+--- !u!114 &2082981187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082981185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563cba875933551409e8cd9437882594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 
+  Dialogue: {fileID: 0}
+  SoundName: []
+  HasInteraction: 0
+  PauseTime: 0
 --- !u!4 &2095895285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4934229238946684, guid: 3c1b4c5851c5f524b8c3ff2169333fc7,

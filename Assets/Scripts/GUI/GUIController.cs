@@ -13,8 +13,7 @@ public class GUIController : MonoBehaviour
 {
 
 	public Settings Settings;
-	public GameObject PauseMenu;
-	public Button FirstPauseButton;
+	public MainPauseMenuController PauseMenu;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
 	public ObjectiveNotificationController ObjectiveNotificationController;
@@ -48,7 +47,7 @@ public class GUIController : MonoBehaviour
 					Pause();
 			}
 		}
-		if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.activeInHierarchy)
+		if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.gameObject.activeInHierarchy)
 		{
 			if (!Inventory.gameObject.activeInHierarchy)
 				OpenInventory();
@@ -96,8 +95,8 @@ public class GUIController : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		_isGamePaused = true;
-		PauseMenu.SetActive(true);
-		EventSystem.current.SetSelectedGameObject(FirstPauseButton.gameObject);
+		PauseMenu.gameObject.SetActive(true);
+		
 		
 	}
 
@@ -105,7 +104,7 @@ public class GUIController : MonoBehaviour
 	{
 		Time.timeScale = 1;
 		_isGamePaused = false;
-		PauseMenu.SetActive(false);
+		PauseMenu.gameObject.SetActive(false);
 	}
 
 	public void NotifyGetItem(Item item)
@@ -152,18 +151,5 @@ public class GUIController : MonoBehaviour
 	
 	}
 
-	public void LoadGame()
-	{
-		
-	}
-
-	public void Options()
-	{
-		
-	}
-
-	public void Quit()
-	{
-		Application.Quit();
-	}
+	
 }
