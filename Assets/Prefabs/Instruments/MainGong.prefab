@@ -111,7 +111,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.34375, y: 1.53125}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.6, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -176,8 +176,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: greatgong
   Dialogue: {fileID: 11400000, guid: cb3a94d53d015f54bbcadb7032172dab, type: 2}
-  SoundName: MainGong
+  SoundName:
+  - MainGong
   HasInteraction: 1
+  PauseTime: 0
   WrongTimeToPlayDialogue: {fileID: 11400000, guid: db657ebc29a4e394c8d15fd10a20a424,
     type: 2}
   NewDayText: {fileID: 4900000, guid: 9c9db180e7964dff89fd18faf96f15e4, type: 3}

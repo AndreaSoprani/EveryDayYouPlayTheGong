@@ -168,8 +168,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: smallgong
   Dialogue: {fileID: 0}
-  SoundName: PuzzleGong_high
+  SoundName:
+  - PuzzleGong_high
   HasInteraction: 0
+  PauseTime: 0
 --- !u!114 &114965333254109522
 MonoBehaviour:
   m_ObjectHideFlags: 1

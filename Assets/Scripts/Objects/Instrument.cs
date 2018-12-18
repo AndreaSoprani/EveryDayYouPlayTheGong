@@ -12,8 +12,9 @@ public class Instrument : InGameObject
 {
 
 	public Dialogue Dialogue;
-	public string SoundName;
+	public List<string> SoundName;
 	public bool HasInteraction;
+	public float PauseTime;
 	
 	/*
 	 * PLAY
@@ -34,7 +35,12 @@ public class Instrument : InGameObject
 		yield return new WaitForSeconds(0.12f);
 		Animator animator = GetComponent<Animator>();
 		if (animator != null) animator.SetTrigger("Playing");
-		if (SoundName != null) AkSoundEngine.PostEvent(SoundName, gameObject);
+		foreach (string s in SoundName)
+		{
+				AudioManager.Instance.PlayEvent(s);
+				yield return new WaitForSeconds(PauseTime);
+		}
+		
 	}
 	/*
 	 * INTERACT

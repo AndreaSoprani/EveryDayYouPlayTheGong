@@ -176,8 +176,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: mediumgong
   Dialogue: {fileID: 0}
-  SoundName: PuzzleGong_mid
+  SoundName:
+  - PuzzleGong_mid
   HasInteraction: 0
+  PauseTime: 0
 --- !u!114 &114265170173475920
 MonoBehaviour:
   m_ObjectHideFlags: 1

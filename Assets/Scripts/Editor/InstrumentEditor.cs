@@ -9,7 +9,7 @@ public class InstrumentEditor : UnityEditor.Editor {
         Instrument myScript = (Instrument) target;
 
         myScript.ObjectID = EditorGUILayout.TextField("ID", myScript.ObjectID);
-        myScript.SoundName = EditorGUILayout.TextField("Sound Name", myScript.SoundName);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("SoundName"), true);
 
         myScript.HasInteraction = EditorGUILayout.Toggle("Has Interaction", myScript.HasInteraction);
         
@@ -18,5 +18,8 @@ public class InstrumentEditor : UnityEditor.Editor {
             myScript.Dialogue = (Dialogue) EditorGUILayout.ObjectField("Dialogue", myScript.Dialogue, typeof(Dialogue), true);
         }
 
+        if (myScript.SoundName.Count > 1)
+            myScript.PauseTime = EditorGUILayout.FloatField("Pause time", myScript.PauseTime);
+        serializedObject.ApplyModifiedProperties();
     }
 }

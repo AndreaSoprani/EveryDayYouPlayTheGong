@@ -12,7 +12,8 @@ public class MainGongEditor : Editor
         MainGong myScript = (MainGong) target;
 
         myScript.ObjectID = EditorGUILayout.TextField("ID", myScript.ObjectID);
-        myScript.SoundName = EditorGUILayout.TextField("Sound Name", myScript.SoundName);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("SoundName"), true);
+        
 
         myScript.HasInteraction = EditorGUILayout.Toggle("Has Interaction", myScript.HasInteraction);
         
@@ -25,5 +26,6 @@ public class MainGongEditor : Editor
             myScript.WrongTimeToPlayDialogue, typeof(Dialogue), true);
 
         myScript.NewDayText = (TextAsset) EditorGUILayout.ObjectField("New day text", myScript.NewDayText, typeof(TextAsset), true);
+        serializedObject.ApplyModifiedProperties();
     }
 }

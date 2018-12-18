@@ -168,8 +168,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: midgong
   Dialogue: {fileID: 11400000, guid: 0d5d51ce6b8ff4743b6168180b872aae, type: 2}
-  SoundName: PuzzleGong_mid
+  SoundName:
+  - PuzzleGong_mid
   HasInteraction: 0
+  PauseTime: 0
 --- !u!114 &114685300243348192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +228,6 @@ SpriteRenderer:
   m_Size: {x: 0.6, y: 0.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

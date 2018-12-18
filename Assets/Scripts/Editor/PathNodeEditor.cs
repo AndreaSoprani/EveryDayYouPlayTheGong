@@ -14,6 +14,6 @@ public class PathNodeEditor : UnityEditor.Editor {
         {
             myScript.Text =(Dialogue) EditorGUILayout.ObjectField("Dialogue to be displayed", myScript.Text, typeof(Dialogue),true);
         }
-
+        
     }
 }

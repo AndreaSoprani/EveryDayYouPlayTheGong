@@ -3,11 +3,13 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{B21B049E-99C2-4B62-975E-E3228216790D}">
 			<PropertyList>
+				<Property Name="Event Action List\{25B168BD-F6E2-4667-8B3A-51E236DF7765}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{39330102-1924-473D-BBC0-7BB5D59FA092}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{455C012F-6A9D-49C8-8FA8-AD54E638E0AA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{48B6D44E-29B5-4874-B4BE-7A37A425FB5A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{556EEC78-42FC-4957-ACED-120FDCEC450B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{587586C1-D60A-4B3F-A7E6-22CAFBCB2029}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{68A0AF7E-8688-41C5-9506-4400450F4724}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A6EF1906-0D8D-425C-8756-6D68A43743AA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B2066CB0-6176-41B7-BBCF-B0B039296376}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B4F04E4D-731A-4E8B-95C5-4A3FF73F08E7}\x64_Expand States" Type="string" Value=""/>
@@ -44,7 +46,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
-				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{48B6D44E-29B5-4874-B4BE-7A37A425FB5A}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{C8948344-D2D6-4512-A3EB-F963970C6A08}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
