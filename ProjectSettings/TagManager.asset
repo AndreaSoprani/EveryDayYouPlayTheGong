@@ -64,6 +64,9 @@ TagManager:
   - name: CharacterFront
     uniqueID: 667477397
     locked: 0
+  - name: AlwaysOnTop
+    uniqueID: 446177867
+    locked: 0
   - name: gongGUI
     uniqueID: 4235606345
     locked: 0

@@ -187,10 +187,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392d81108bc88dc44ac1b2372faeb9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: biggongpuzzle3
+  ObjectID: BigGongPuzzle
   Dialogue: {fileID: 0}
-  SoundName: PuzzleGong_low
+  SoundName:
+  - PuzzleGong_low
   HasInteraction: 0
+  PauseTime: 0
 --- !u!212 &212936543555319196
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,7 +1,30 @@
 fileFormatVersion: 2
 guid: 0d1d63405894d7a41a81836803d62c77
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TempleFrontBottom
+    21300002: RoofFrontRight
+    21300004: RoofFrontLeft
+    21300006: PorchRight
+    21300008: PorchLeft
+    21300010: ShadowFloorTile
+    21300012: Lamp
+    21300014: BigDoor
+    21300016: Gate
+    21300018: RoofLeft
+    21300020: RoofTop
+    21300022: DoorRoof
+    21300024: RoofRight
+    21300026: DoorColumn
+    21300028: SideRoof
+    21300030: BottomRightRoofTop
+    21300032: BottomRightRoofMid
+    21300034: BottomRightRoofBottom
+    21300036: BottomLeftRoof
+    21300038: Wall
+    21300040: FrontSideLeft
+    21300042: FrontSideRight
+    21300044: TempleFrontTop
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -47,7 +70,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -82,7 +105,510 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TempleFrontBottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1956
+        width: 1152
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -448, y: 192}
+        - {x: -448, y: -63}
+        - {x: -127, y: -63}
+        - {x: -127, y: 128}
+        - {x: 124, y: 129}
+        - {x: 124, y: -64}
+        - {x: 447, y: -63}
+        - {x: 447, y: 192}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa5f745ab107b049b7787e62cccd91b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoofFrontRight
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3092
+        width: 896
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8261c8ba92ddf5c4281da34d3e33bc1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoofFrontLeft
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2641
+        width: 896
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12b0f0b0f7042d4b8b80574c7c68c64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorchRight
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2755
+        width: 896
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -448, y: 2}
+        - {x: -448, y: -130.93758}
+        - {x: -192, y: -131}
+        - {x: -192, y: 2}
+      - - {x: -64, y: 1}
+        - {x: -64, y: -131}
+        - {x: 448, y: -130.93758}
+        - {x: 448, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1995812d5c551344b94515ccc6450505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorchLeft
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2307
+        width: 896
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -448, y: 6}
+        - {x: -448, y: -131}
+        - {x: 65, y: -131}
+        - {x: 65, y: 6}
+      - - {x: 448, y: 6}
+        - {x: 193, y: 6}
+        - {x: 193, y: -130}
+        - {x: 448, y: -131}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0048aaeb5a514040ae585f187d5d892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowFloorTile
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3008
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c45cdaec4953b4592e18eb0370a2bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 2927
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf4d3c2c178da74eb1559d113774624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigDoor
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1756
+        width: 252
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6f93e3ae1d26247aadfe76f58490d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2800
+        width: 784
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -323, y: -105}
+        - {x: -325, y: -196}
+        - {x: 327, y: -196}
+        - {x: 328, y: -108}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847f53105211e9543a452455568715d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoofLeft
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 516
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -258, y: 439}
+        - {x: -258, y: -442}
+        - {x: 254, y: -442}
+        - {x: 254, y: 439}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3882feafb48ff404084072ed27fbf062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoofTop
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1508
+        width: 316
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e2bad5798984c46be64a7cf3ea0638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorRoof
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 1808
+        width: 542
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c98f6a1af762e4f940c1c3f9fc4e04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoofRight
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 624
+        width: 516
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -254, y: 438}
+        - {x: -254, y: -442}
+        - {x: 258, y: -442}
+        - {x: 257, y: 437}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44c220ac58fb98408175299753a375d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorColumn
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 1608
+        width: 90
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 24, y: -68}
+        - {x: -25, y: -68}
+        - {x: -25, y: -96}
+        - {x: 24, y: -96}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b398ebc61d145145a185bb4a897f17e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideRoof
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 492
+        width: 510
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -254, y: 64}
+        - {x: -254, y: -63}
+        - {x: 254, y: -64}
+        - {x: 254, y: 64}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb8b58df58b3354f839a6291dfa4f63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BottomRightRoofTop
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1915
+        width: 1566
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -508, y: 192.5}
+        - {x: -507, y: -62.5}
+        - {x: -762, y: -61.5}
+        - {x: -762, y: -192.5}
+        - {x: 709.1875, y: -192.0313}
+        - {x: 783, y: -92.03129}
+        - {x: 783, y: 65.78121}
+        - {x: 771.6875, y: 192.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7610740c1d785874ba5988430cb00612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BottomRightRoofMid
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1726
+        width: 1017
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 508.5, y: -94.31248}
+        - {x: 508.5, y: 94.5}
+        - {x: -508.5, y: 94.5}
+        - {x: -508.5, y: -94.31248}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89c8144c410fbb4da83bd97f662e63a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BottomRightRoofBottom
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1276
+        width: 1166
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -450, y: 225}
+        - {x: -450, y: 159}
+        - {x: -574, y: 159}
+        - {x: -574, y: -225}
+        - {x: 515.1563, y: -224.78133}
+        - {x: 583, y: -137.28133}
+        - {x: 583, y: 76.78118}
+        - {x: 568.2813, y: 225}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f81e96fc55d89a45b7fc4f5eb1d9114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BottomLeftRoof
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 244
+        width: 1682
+        height: 1025
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -824.9688, y: 512.5}
+        - {x: -840.5938, y: 382.28125}
+        - {x: -840.5938, y: 241.65627}
+        - {x: -778.0938, y: 115.09376}
+        - {x: -262.4688, y: -512.5}
+        - {x: 831, y: -512.5}
+        - {x: 832, y: -128.5}
+        - {x: 703, y: -128.5}
+        - {x: 703, y: 252.5}
+        - {x: 458, y: 251.5}
+        - {x: 459, y: 512.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9488154587e736040b30291a690f7056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3024
+        width: 896
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -448, y: 34}
+        - {x: -448, y: -33.812523}
+        - {x: 448, y: -33.812523}
+        - {x: 448, y: 34}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eed20ac982eff64aa595e609cd84f61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempleFrontTop
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2340
+        width: 1152
+        height: 860
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -447, y: 131}
+        - {x: -448, y: -430}
+        - {x: 448, y: -430}
+        - {x: 449, y: 129}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fefc68f72999a54c9adb8cd7f392098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
