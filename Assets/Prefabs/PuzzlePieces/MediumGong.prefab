@@ -174,10 +174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392d81108bc88dc44ac1b2372faeb9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: mediumgongpuzzle3
+  ObjectID: MediumGongPuzzle
   Dialogue: {fileID: 0}
-  SoundName: PuzzleGong_mid
+  SoundName:
+  - PuzzleGong_mid
   HasInteraction: 0
+  PauseTime: 0
 --- !u!114 &114748174032889822
 MonoBehaviour:
   m_ObjectHideFlags: 1
