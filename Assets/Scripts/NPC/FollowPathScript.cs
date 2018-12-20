@@ -110,7 +110,7 @@ public class FollowPathScript : InGameObject
 
 	private void EndOfPath()
 	{
-		Destroy(PathToFollow);
+		Destroy(PathToFollow.gameObject);
 		_animator.SetBool("Walking", false);
 		if (GetComponent<NPCInteractable>() != null)
 		{
@@ -118,7 +118,7 @@ public class FollowPathScript : InGameObject
 		}
 
 		
-		enabled = false;
+		Destroy(this);
 	}
 
 	public override void Interact()
