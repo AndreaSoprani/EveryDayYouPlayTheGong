@@ -285,6 +285,7 @@ MonoBehaviour:
   ObjectID: neal
   StandardDialogue: {fileID: 0}
   DayOverDialogue: {fileID: 0}
+  PlayingDialogue: {fileID: 0}
   Dialogues: []
 --- !u!114 &114903864243719812
 MonoBehaviour:
