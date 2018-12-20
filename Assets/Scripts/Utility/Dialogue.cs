@@ -25,7 +25,8 @@ namespace Utility
         public List<Quest> QuestsToActivate; // List of quests to activate after the dialogue.
         public List<Item> ItemsToAdd; // List of the items to add after the dialogue.
         public List<Item> ItemsToRemove; // List of the items to remove after the dialogue.
-
+        public List<GameObject> GameObjectsToDestroy;
+        
         private bool _hasBeenReproduced = false;
 
         /// <summary>
@@ -75,6 +76,15 @@ namespace Utility
         public void ResetReproduced()
         {
             _hasBeenReproduced = false;
+        }
+
+        /// <summary>
+        /// Checks whether a dialogue can start a new quest.
+        /// </summary>
+        /// <returns>True if a new quest can be activated, false otherwise</returns>
+        public bool CanStartQuest()
+        {
+            return QuestsToActivate.Count > 0;
         }
     }
 }

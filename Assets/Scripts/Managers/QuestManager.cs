@@ -120,6 +120,7 @@ public class QuestManager : MonoBehaviour
 		
 		// Stop listening on objectives.
 		StopListeningOnObjectives(quest);
+		EventManager.TriggerEvent("CheckQuestMark");
 
 	}
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCFollowController : MonoBehaviour
 {
 
-	
+	/*
 	public FollowPathScript FollowPath;
 	public float LagSeconds =  0.5f;
 	public bool FollowOnce;
@@ -58,8 +58,11 @@ public class NPCFollowController : MonoBehaviour
 			{
 				progress = (targetTime - _timeBuffer[_oldestIndex]) / span;
 			}
+			Debug.Log(_positionBuffer[_oldestIndex]);
+			Vector3 movement = Vector3.MoveTowards(_positionBuffer[_oldestIndex], _positionBuffer[nextIndex], progress);
+			
+			Player.Instance.transform.position = movement;
 
-			Player.Instance.transform.position = Vector3.MoveTowards(_positionBuffer[_oldestIndex], _positionBuffer[nextIndex], progress);
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D other)
@@ -85,4 +88,6 @@ public class NPCFollowController : MonoBehaviour
 			
 		}
 	}
+*/
+	
 }
