@@ -77,5 +77,14 @@ namespace Utility
         {
             _hasBeenReproduced = false;
         }
+
+        /// <summary>
+        /// Checks whether a dialogue can start a new quest.
+        /// </summary>
+        /// <returns>True if a new quest can be activated, false otherwise</returns>
+        public bool CanStartQuest()
+        {
+            return QuestsToActivate.Count > 0;
+        }
     }
 }
