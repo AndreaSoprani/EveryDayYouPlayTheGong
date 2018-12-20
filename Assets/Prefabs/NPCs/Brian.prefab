@@ -57,8 +57,9 @@ GameObject:
   - component: {fileID: 95985147834593670}
   - component: {fileID: 114327919807432758}
   - component: {fileID: 114288638213935262}
+  - component: {fileID: 114884771704170748}
   m_Layer: 8
-  m_Name: FollowMonk
+  m_Name: Brian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292916945827906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.49936903, y: -1.9588236, z: 0}
+  m_LocalPosition: {x: 0.49936903, y: -13.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389240227891802}
@@ -294,7 +295,6 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  NewDialogue: {fileID: 0}
 --- !u!114 &114304917691745974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,6 +320,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 2
+--- !u!114 &114884771704170748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1292916945827906}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 
+  StandardDialogue: {fileID: 11400000, guid: a01f03074e82f5546915e27e1469c186, type: 2}
+  DayOverDialogue: {fileID: 0}
+  PlayingDialogue: {fileID: 11400000, guid: 19e7131c20674f44ba251e1c0bd034ae, type: 2}
+  Dialogues: []
 --- !u!212 &212637086172232832
 SpriteRenderer:
   m_ObjectHideFlags: 1

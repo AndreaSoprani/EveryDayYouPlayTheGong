@@ -28,7 +28,7 @@ public class FollowPathScript : InGameObject
 	private bool _isWaiting;
 	private bool _isFollowingPath;
 	private int _position;
-	public Dialogue NewDialogue;
+	private Dialogue _newDialogue;
 	private bool hasFinished=false;
 	
 	
@@ -38,9 +38,9 @@ public class FollowPathScript : InGameObject
 		_animator = GetComponent<Animator>();
 		
 		
-		_isWaiting = NewDialogue!=null;
+		_isWaiting = _newDialogue!=null;
 		_dialogueFinished = false;
-		Debug.Log(_isWaiting+"   "+ (NewDialogue==null));
+		Debug.Log(_isWaiting+"   "+ (_newDialogue==null));
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 	
@@ -67,7 +67,7 @@ public class FollowPathScript : InGameObject
 					{
 						_isWaiting = true;
 						_animator.SetBool("Walking", false);
-						NewDialogue = PathToFollow.WayPoints[_position].Text;
+						_newDialogue = PathToFollow.WayPoints[_position].Text;
 					}
 					else
 					{
@@ -84,7 +84,7 @@ public class FollowPathScript : InGameObject
 
 				if (_position == PathToFollow.WayPoints.Count )
 				{
-					if (NewDialogue == null)
+					if (_newDialogue == null)
 					{
 						EndOfPath();
 						
@@ -101,7 +101,7 @@ public class FollowPathScript : InGameObject
 			
 		}
 
-		if (hasFinished && NewDialogue==null)
+		if (hasFinished && _newDialogue==null)
 		{
 			EndOfPath();
 		}
@@ -123,8 +123,8 @@ public class FollowPathScript : InGameObject
 
 	public override void Interact()
 	{
-		if(_isWaiting && NewDialogue!=null)
-			NewDialogue.StartDialogue();
+		if(_isWaiting && _newDialogue!=null)
+			_newDialogue.StartDialogue();
 	}
 
 	/// <summary>
@@ -200,7 +200,7 @@ public class FollowPathScript : InGameObject
 		_isWaiting = false;
 		_dialogueFinished = true;
 		Debug.Log("Exit Dialogue");
-		NewDialogue = null;
+		_newDialogue = null;
 		ChangeFacing(_direction);
 		_animator.SetBool("Walking", _walk);
 		
@@ -208,7 +208,7 @@ public class FollowPathScript : InGameObject
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 
-	public override bool IsPlayable()
+	public override bool IsInteractable()
 	{
 		return _isWaiting;
 	}
