@@ -49,4 +49,5 @@ public class NPCInteractable : InGameObject
 	{
 		PlayingDialogue.StartDialogue();
 	}
+	
 }

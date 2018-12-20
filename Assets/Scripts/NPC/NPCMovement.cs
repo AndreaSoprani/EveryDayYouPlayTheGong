@@ -13,6 +13,8 @@ public class NPCMovement : MonoBehaviour
 	public float Radius = 5f;
 	public float WaitTime = 1f;
 	public float ArrivalDistance = 1f;
+
+	public Path path;
 	
 	[Header("Collisions")] 
 	public RayCastPositions RayCastPositions;
@@ -25,6 +27,7 @@ public class NPCMovement : MonoBehaviour
 	private Animator _animator;
 	private bool _walk = true;
 	private bool _inDialogue;
+	private bool _isFollowingPath;
 	
 	// Use this for initialization
 	void Start ()

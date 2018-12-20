@@ -38,6 +38,7 @@ public class TextBoxManager : MonoBehaviour
 	private List<Quest> _questsToActivate;
 	private List<Item> _itemsToAdd;
 	private List<Item> _itemsToRemove;
+	private List<GameObject> _gameObjectToDestroy;
 
 	private bool _progressionEnabled;
 	
@@ -51,6 +52,7 @@ public class TextBoxManager : MonoBehaviour
 		_questsToActivate = new List<Quest>();
 		_itemsToAdd = new List<Item>();
 		_itemsToRemove = new List<Item>();
+		_gameObjectToDestroy=new List<GameObject>();
 
 		TextMeshProUGUI[] texts = DialogueBox.GetComponentsInChildren<TextMeshProUGUI>(true);
 
@@ -152,6 +154,11 @@ public class TextBoxManager : MonoBehaviour
 		for (int i = 0; i < _questsToActivate.Count; i++)
 		{
 			QuestManager.Instance.ActivateQuest(_questsToActivate[i]);
+		}
+
+		foreach (GameObject g in _gameObjectToDestroy)
+		{
+			Destroy(g);
 		}
 	}
 
