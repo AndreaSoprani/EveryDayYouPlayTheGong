@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: ReturnBookLibrarian
+  m_Name: ReturnBook
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: 5f161422c452e3541b2362529260c13e, type: 3}
   NPCName: Librarian
@@ -18,8 +18,8 @@ MonoBehaviour:
   CompletedQuests: []
   UncompletedQuests: []
   OneTimeDialogue: 0
-  QuestsToActivate:
-  - {fileID: 11400000, guid: ed0ad52836cda9042a12ff8397d0f0a9, type: 2}
+  QuestsToActivate: []
   ItemsToAdd: []
   ItemsToRemove:
   - {fileID: 11400000, guid: e06563ffca7babe488a7b3558075354f, type: 2}
+  GameObjectsToDestroy: []
