@@ -22,8 +22,10 @@ namespace Quests.Objectives
             Quest quest = QuestManager.Instance.GetQuest(QuestID);
             if (quest == null) return; 
             if (quest.NextObjective() != this) return;
+            if (EventManager.IsBlocked("Play" + ObjectID)) return;
             
             EventManager.StopListening("Play" + ObjectID, Complete);
+            EventManager.BlockEvent("Play" + ObjectID);
             base.Complete();
         }
     }

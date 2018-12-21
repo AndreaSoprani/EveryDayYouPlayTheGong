@@ -182,7 +182,7 @@ MonoBehaviour:
   PauseTime: 0
   WrongTimeToPlayDialogue: {fileID: 11400000, guid: db657ebc29a4e394c8d15fd10a20a424,
     type: 2}
-  NewDayText: {fileID: 4900000, guid: 9c9db180e7964dff89fd18faf96f15e4, type: 3}
+  NewDayText: {fileID: 0}
 --- !u!114 &114985602131550756
 MonoBehaviour:
   m_ObjectHideFlags: 1
