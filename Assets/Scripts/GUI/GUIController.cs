@@ -57,13 +57,10 @@ public class GUIController : MonoBehaviour
 		
 		NotificationController.DisplayNotification();
 		
-		if (NotificationController.IsNotificationActive() && 
-		    NotificationController.CanBeClosed() && 
-		    !_isGamePaused && 
-		    Input.GetKeyDown(KeyCode.X))
+		if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() && Input.GetKeyDown(Settings.Interact))
 		{
 			NotificationController.HideNotification();
-			Time.timeScale = 1;
+			Player.Instance.BlockMovement(false);
 			_isGamePaused = false;
 		}
 

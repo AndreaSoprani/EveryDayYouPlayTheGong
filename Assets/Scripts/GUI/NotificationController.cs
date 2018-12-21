@@ -36,10 +36,11 @@ public class NotificationController : MonoBehaviour
 	{
 		if (_active || _notificationsBuffer.Count == 0) return;
 
+		if(!Player.Instance.IsBlocked())
+			Player.Instance.BlockMovement(true);
+		
 		Notification notification = _notificationsBuffer[0];
 		_notificationsBuffer.Remove(notification);
-
-		Time.timeScale = 0;
 
 		if (notification.GetType() == typeof(QuestNotification))
 		{
