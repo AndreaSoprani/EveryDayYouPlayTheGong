@@ -10,6 +10,6 @@ This is my favourite part of our garden. I like to come here to clear my mind...
 
 Oh! Sorry, I was enchanted by the water. The temple tour is over. 
 
-The Evil monk [TO SUBSTITUTE] is waiting you in the music room, he wants to train you. 
+The [TODO CHANGE] Evil monk is waiting you in the music room, he wants to train you. 
 
 If you want to have a chat you'll find me here.

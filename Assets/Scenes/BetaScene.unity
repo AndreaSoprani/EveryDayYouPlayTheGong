@@ -20299,8 +20299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: librarian
   StandardDialogue: {fileID: 11400000, guid: bc1fce51af9e3844a8a56354cf343c12, type: 2}
-  DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 04106eb4e8551124389b9b46a3877c3f, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: e8995ab4937007b40b6cc753280731f0, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: dd5fe22c667e34a41860ec5b6af8dabe, type: 2}
   - {fileID: 11400000, guid: dd7baaf54e02773419da6f94215da314, type: 2}
@@ -24008,32 +24008,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114718871629195756, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114718871629195756, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224605013611372524, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224605013611372524, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000015258789
-      objectReference: {fileID: 0}
-    - target: {fileID: 114151922784987342, guid: 930db1ac0bd5a9f41ac6c2542da2302a,
-        type: 2}
-      propertyPath: Settings
-      value: 
-      objectReference: {fileID: 11400000, guid: 58925e081488a27429338e0877d58552,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930db1ac0bd5a9f41ac6c2542da2302a, type: 2}
   m_IsPrefabAsset: 0
@@ -28990,7 +28964,7 @@ Prefab:
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
       propertyPath: Quests.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4236905694574462, guid: 5c4d48ac8f102ae4384e98cd0215562d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -29040,12 +29014,18 @@ Prefab:
         type: 2}
       propertyPath: Quests.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 3585f30cd99efd34f9bd9c9be905f019,
+      objectReference: {fileID: 11400000, guid: 4155549057dbe874c8a51468b2c819aa,
         type: 2}
     - target: {fileID: 1496351433151026, guid: 5c4d48ac8f102ae4384e98cd0215562d, type: 2}
       propertyPath: m_Name
       value: QuestManager
       objectReference: {fileID: 0}
+    - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
+        type: 2}
+      propertyPath: Quests.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 250026336953fdd409e21f9c965b45e2,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4d48ac8f102ae4384e98cd0215562d, type: 2}
   m_IsPrefabAsset: 0
@@ -30689,7 +30669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alpha: 0.7
+  Alpha: 1
   TransitionTime: 1
 --- !u!68 &1391810754
 EdgeCollider2D:
@@ -32485,7 +32465,8 @@ MonoBehaviour:
   Items:
   - {fileID: 11400000, guid: d3da97b5aa3186849a50cc15384ebc04, type: 2}
   - {fileID: 11400000, guid: c1f99a587715aea478e0a21fe28df16c, type: 2}
-  QuestsToActivate: []
+  QuestsToActivate:
+  - {fileID: 11400000, guid: 250026336953fdd409e21f9c965b45e2, type: 2}
 --- !u!50 &1530087944
 Rigidbody2D:
   serializedVersion: 4
@@ -32624,7 +32605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alpha: 0.7
+  Alpha: 1
   TransitionTime: 1
 --- !u!68 &1531076100
 EdgeCollider2D:
@@ -32755,11 +32736,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 223113116363740836, guid: ed7c0a27c4f0d8d429feb0f7eef1e238,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed7c0a27c4f0d8d429feb0f7eef1e238, type: 2}
@@ -33067,7 +33043,7 @@ GameObject:
   - component: {fileID: 1603061130}
   - component: {fileID: 1603061129}
   m_Layer: 8
-  m_Name: HeadOfTheTemple
+  m_Name: Old Ben
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33183,12 +33159,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: head
-  StandardDialogue: {fileID: 0}
-  DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  ObjectID: OldBen
+  StandardDialogue: {fileID: 11400000, guid: 22f6c2cac046165488797d196e3446d3, type: 2}
+  DayOverDialogue: {fileID: 11400000, guid: 0f94628b17b30644cafc378a0a6ee722, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: 1da9c0b807107dc4ebb49493080118e7, type: 2}
   Dialogues:
-  - {fileID: 11400000, guid: 9f258ddf261a9794faac2c459c8dd44a, type: 2}
+  - {fileID: 11400000, guid: 56b922d5c917f8144a5e1174ded3c654, type: 2}
 --- !u!212 &1603061134
 SpriteRenderer:
   m_ObjectHideFlags: 0

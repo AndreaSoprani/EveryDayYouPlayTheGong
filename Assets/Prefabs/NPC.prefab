@@ -287,6 +287,7 @@ MonoBehaviour:
   Radius: 2
   WaitTime: 1
   ArrivalDistance: 0.2
+  path: {fileID: 0}
   RayCastPositions:
     UpLeft: {fileID: 4708812560051674}
     UpRight: {fileID: 4518410374984380}
@@ -306,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alpha: 0.7
+  Alpha: 1
   TransitionTime: 1
 --- !u!114 &114908075731733014
 MonoBehaviour:
@@ -322,6 +323,7 @@ MonoBehaviour:
   ObjectID: npc
   StandardDialogue: {fileID: 0}
   DayOverDialogue: {fileID: 0}
+  PlayingDialogue: {fileID: 0}
   Dialogues:
   - {fileID: 11400000, guid: 9f258ddf261a9794faac2c459c8dd44a, type: 2}
 --- !u!212 &212060353291323350

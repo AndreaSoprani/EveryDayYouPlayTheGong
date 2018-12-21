@@ -8,10 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc980eb188e3bf44aaf97e46372138a8, type: 3}
-  m_Name: KeyDungeons
+  m_Script: {fileID: 11500000, guid: 6ea28fc737ef42a495cba42943b2fbc6, type: 3}
+  m_Name: Obj_Interact
   m_EditorClassIdentifier: 
-  Id: keydungeons
-  Name: A rusty key
-  Description: It seems very old.
-  InventoryArtwork: {fileID: 21300008, guid: f14975d44176b454588e18dfe2e54b98, type: 3}
+  ObjectiveID: painting_quest_01
+  QuestID: painting_quest
+  Description: Take a look
+  Completed: 0
+  ObjectID: GongPainting
