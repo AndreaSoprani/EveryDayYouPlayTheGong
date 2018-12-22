@@ -8,6 +8,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Utility;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using GUI.Inventory;
+using Quests;
+using Quests.Objectives;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using Utility;
 
 public class GUIController : MonoBehaviour
 {
@@ -57,13 +67,10 @@ public class GUIController : MonoBehaviour
 		
 		NotificationController.DisplayNotification();
 		
-		if (NotificationController.IsNotificationActive() && 
-		    NotificationController.CanBeClosed() && 
-		    !_isGamePaused && 
-		    Input.GetKeyDown(KeyCode.X))
+		if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() && Input.GetKeyDown(Settings.Interact))
 		{
 			NotificationController.HideNotification();
-			Time.timeScale = 1;
+			Player.Instance.BlockMovement(false);
 			_isGamePaused = false;
 		}
 
@@ -141,7 +148,6 @@ public class GUIController : MonoBehaviour
 	
 	public void UpdateDayProgression()
 	{
-		Debug.Log("Inside Day Progression Update");
 
 		for(int i = 0; i < DayProgressionImages.Length; i++)
 		{

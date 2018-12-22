@@ -27,7 +27,15 @@ public class CombinationPuzzleManager : MonoBehaviour
 	private void Update()
 	{
 		if (HasTimeout)
+		{
 			_timePassed += Time.deltaTime;
+			if (_timePassed > TimeoutInSeconds && _currentIndex != 0 && !_solved)
+			{
+				_currentIndex = 0;
+				AudioManager.Instance.PlayEvent("StartClock");
+			}
+		}
+		
 	}
 
 	public void Selection(CombinationPuzzleObject guess)
@@ -36,13 +44,17 @@ public class CombinationPuzzleManager : MonoBehaviour
 		
 		if (PuzzlePiece[_currentIndex] == guess) // In sequence
 		{
-			if (_currentIndex == 0)
+			Debug.Log("OK");
+			if (_currentIndex == 0 && HasTimeout)
+			{
 				_timePassed = 0;
+				AudioManager.Instance.PlayEvent("StartClock");
+			}
 			if(HasTimeout) Debug.Log("Time Passed: "+_timePassed+ "Timeout: "+TimeoutInSeconds);
 			
 			_currentIndex++;
 			
-			if (_currentIndex == PuzzlePiece.Count && _timePassed <= TimeoutInSeconds)
+			if (_currentIndex == PuzzlePiece.Count)
 			{
 				PuzzleSolved();
 			}
@@ -95,6 +107,7 @@ public class CombinationPuzzleManager : MonoBehaviour
 		}
 		
 		_currentIndex = 0;
+		AudioManager.Instance.PlayEvent("PuzzleFinish");
 		EventManager.TriggerEvent("PuzzleSolved" + PuzzleId);
 
 	}

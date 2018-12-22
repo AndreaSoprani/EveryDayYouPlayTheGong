@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Explore" ID="{587586C1-D60A-4B3F-A7E6-22CAFBCB2029}">
+				<Event Name="PlayMusic" ID="{587586C1-D60A-4B3F-A7E6-22CAFBCB2029}">
 					<ChildrenList>
 						<Action Name="" ID="{426B094F-3092-4AAD-94CC-6DE12C7A5B04}" ShortID="746404537">
 							<PropertyList>
@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Explore" ID="{9BD4D774-B960-481B-BAE4-E49C0208A8CD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="MusicExplore" ID="{9BD4D774-B960-481B-BAE4-E49C0208A8CD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -21,7 +21,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Explore" ID="{7BB9EB86-EB20-47F6-B450-86DA27F8C72E}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="KotoExplore" ID="{7BB9EB86-EB20-47F6-B450-86DA27F8C72E}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -31,7 +31,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Explore" ID="{F62D3CE6-0B45-42E8-8B2A-7CB5D765A5FD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="PianoExplore" ID="{F62D3CE6-0B45-42E8-8B2A-7CB5D765A5FD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -41,7 +41,17 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Play" ID="{6BBC97DF-CE78-4FBA-B829-18A49211A505}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="ShakuhachiExplore" ID="{6BBC97DF-CE78-4FBA-B829-18A49211A505}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2E218E4C-64E6-4445-ACC5-41856AB0B0E7}" ShortID="93683260">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{D3ADCDF1-AF5E-4A06-8B58-6F00FB067280}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -107,7 +117,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Dungeon" ID="{2FEF9170-A5AF-4CFC-87B5-32576E3F1C71}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="KotoDungeon" ID="{2FEF9170-A5AF-4CFC-87B5-32576E3F1C71}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -117,7 +127,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Dungeon" ID="{92258968-8FBC-467A-8237-1BE4FB6B2261}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="MusicDungeon" ID="{92258968-8FBC-467A-8237-1BE4FB6B2261}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -127,7 +137,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Dungeon" ID="{F23CEDA6-588D-4A7E-8934-1EB1C78542F0}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="PianoDungeon" ID="{F23CEDA6-588D-4A7E-8934-1EB1C78542F0}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -141,7 +151,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Silence" ID="{DE735D8B-821E-4698-925C-858D993A685D}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="MusicSilence" ID="{DE735D8B-821E-4698-925C-858D993A685D}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -151,7 +161,99 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Silence" ID="{E1A5B050-38E9-49B5-B7F6-D05D0F7B501D}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+									<ObjectRef Name="ShakuhachiSilence" ID="{E1A5B050-38E9-49B5-B7F6-D05D0F7B501D}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Explore" ID="{E05E7927-BA35-4813-A54E-B958B8EA45C8}">
+					<ChildrenList>
+						<Action Name="" ID="{B9D0C6D5-4924-4717-A93B-739FD6208AC1}" ShortID="159105908">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KotoExplore" ID="{7BB9EB86-EB20-47F6-B450-86DA27F8C72E}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0E53A117-C261-4CAD-BF2C-A8FBBD0B4AF8}" ShortID="1071183718">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicExplore" ID="{9BD4D774-B960-481B-BAE4-E49C0208A8CD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E3C5543D-60A7-4C1D-B1B1-C11E488222C7}" ShortID="214987349">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PianoExplore" ID="{F62D3CE6-0B45-42E8-8B2A-7CB5D765A5FD}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{83A5A77A-2C7A-4BCA-83F9-15E437509B2F}" ShortID="210804271">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ShakuhachiExplore" ID="{6BBC97DF-CE78-4FBA-B829-18A49211A505}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FC0E5314-22A1-4C19-8F28-322D9BDBAADC}" ShortID="784469721">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{D3ADCDF1-AF5E-4A06-8B58-6F00FB067280}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Library" ID="{09352154-0D8B-4D5A-B5C5-5228C2A7BD71}">
+					<ChildrenList>
+						<Action Name="" ID="{7C9803F2-85CC-4215-B358-00DE14569869}" ShortID="705145471">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Library" ID="{D0B613F8-B56A-4A6D-B346-A0654B2CF38F}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Head" ID="{22EB335E-CA66-4EAE-83B6-5C4105B80A11}">
+					<ChildrenList>
+						<Action Name="" ID="{CCDEAC84-AE09-410B-AE93-68D95C64A7C1}" ShortID="544173143">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OM_Chanting" ID="{2B1B54AE-A81E-4E7C-B576-F1CFFE0355AB}" WorkUnitID="{C1E7FC4E-94C6-407F-96EB-B26B5738AD68}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B14B8F31-CD7D-474A-A68F-EC166758E7A4}" ShortID="429440532">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Library" ID="{D0B613F8-B56A-4A6D-B346-A0654B2CF38F}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

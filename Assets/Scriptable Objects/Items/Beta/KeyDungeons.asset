@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: keydungeons
   Name: A rusty key
-  Description: It seems very old
+  Description: It seems very old.
   InventoryArtwork: {fileID: 21300008, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

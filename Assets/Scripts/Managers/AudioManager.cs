@@ -14,16 +14,14 @@ public class AudioManager : MonoBehaviour
 		get { return _instance; }
 	}
 
-	[Range(0, 100)] public int MusicVolume;
-	[Range(0, 100)] public int EffectVolume;
+	
 	private uint _bankIDMain;
-	private uint _bankIDGong;
-	private uint _bankIDBells;
-	private uint _bankIDXylophone;
+	private uint _bankIDFX;
+	
 
 	private string _currentlyPlaying;
-	private bool _isMusicMuted;
-	private Dictionary<string, bool> _isAlreadyPlayed;
+
+	
 
 	private void Awake()
 	{
@@ -35,50 +33,44 @@ public class AudioManager : MonoBehaviour
 
 		_instance = this;
 		DontDestroyOnLoad(this.gameObject);
-		_isAlreadyPlayed = new Dictionary<string, bool>()
-		{
-			{"Explore", false},
-			{"Dungeon", false},
-			{"Silence", false}
-		};
+		
 	}
 
 	private void Start()
 	{
 		AkSoundEngine.LoadBank("Main", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDMain);
-		AkSoundEngine.LoadBank("Gong", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDGong);
-		AkSoundEngine.LoadBank("Bell", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDBells);
-		AkSoundEngine.LoadBank("Xylophone", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDXylophone);
-		/*AkSoundEngine.SetRTPCValue("MusicVolume", MusicVolume);
-		AkSoundEngine.SetRTPCValue("EffectVolume", EffectVolume);*/
-		AkSoundEngine.PostEvent("Explore", gameObject);
+		AkSoundEngine.LoadBank("Effects", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDFX);
+		
+		AkSoundEngine.SetRTPCValue("MusicVolume", Settings.MusicVolume);
+		AkSoundEngine.SetRTPCValue("FXVolume", Settings.SFXVolume);
+		AkSoundEngine.PostEvent("PlayMusic", gameObject);
 		_currentlyPlaying = "Explore";
 
 	}
 
+    public void ChangeVolume(SoundType  type,int volume)
+    {
+	    if (type == SoundType.Music)
+	    {
+		    AkSoundEngine.SetRTPCValue("MusicVolume", volume);
+		    Settings.MusicVolume = volume;
+	    }
+	    else
+	    {
+		    AkSoundEngine.SetRTPCValue("FXVolume", volume);
+		    Settings.SFXVolume = volume;
+	    }
+	    
+	    
+    }
+    
 	public Settings Settings;
 
-	/// <summary>
-	/// Method used to play a specific sound.
-	/// </summary>
-	/// <param name="sound">The sound to be played.</param>
-	public void PlaySound(Sound sound)
-	{
-		if (!Settings.SFXOn || sound == null) return;
-
-		if (!sound.HasSource())
-		{
-			GameObject go = new GameObject("AudioSource_" + sound.Name);
-			go.transform.SetParent(this.transform);
-			sound.SetSource(go.AddComponent<AudioSource>());
-		}
-
-		sound.Play(Settings.SFXVolume);
-
-	}
+	
 
 	public void PlayEvent(string sound)
 	{
+		Debug.Log(sound);
 		AkSoundEngine.PostEvent(sound, gameObject);
 	}
 
@@ -104,16 +96,7 @@ public class AudioManager : MonoBehaviour
 
 		_currentlyPlaying = sound;
 		Debug.Log(_currentlyPlaying);*/
-		if (!_isMusicMuted)
-		{
-			if (sound == "Explore")
-			{
-				StopEvent(_currentlyPlaying, 0);
-
-			}
-
-			PlayEvent(sound);
-		}
+		
 
 		_currentlyPlaying = sound;
 		Debug.Log(_currentlyPlaying);
@@ -140,21 +123,31 @@ public class AudioManager : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.M))
+		if(Input.GetKeyDown(KeyCode.H))
+			PlayEvent("Explore");
+		else if(Input.GetKeyDown(KeyCode.J))
 		{
-			if (_isMusicMuted)
-			{
-				ResumeEvent("Explore",0);
-				if(_currentlyPlaying!="Explore") PlayEvent(_currentlyPlaying);
-				
-			}
-			else
-			{
-				PauseEvent("Explore",0);
-			}
-			_isMusicMuted = !_isMusicMuted;
+			PlayEvent("Dungeon");
+		}
+		else if(Input.GetKeyDown(KeyCode.K))
+		{
+			PlayEvent("Silence");
+		}
+		else if(Input.GetKeyDown(KeyCode.L))
+		{
+			PlayEvent("Library");
+		}
+		else if(Input.GetKeyDown(KeyCode.M))
+		{
+			PlayEvent("Head");
 		}
 		
 		
+		
 	}
+}
+
+public enum SoundType
+{
+    Music, Effects 
 }

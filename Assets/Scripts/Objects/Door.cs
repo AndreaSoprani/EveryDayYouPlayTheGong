@@ -15,7 +15,13 @@ public class Door : InGameObject
 
 	private void Start()
 	{
-		if(IsOpen) OpenDoor();
+		if (IsOpen)
+		{
+			SpriteRenderer sr = GetComponent<SpriteRenderer>();
+			if(sr != null) sr.enabled = false;
+			GetComponent<BoxCollider2D>().enabled = false;
+			
+		}
 		else CloseDoor();
 	}
 
@@ -47,8 +53,9 @@ public class Door : InGameObject
 	{
 		SpriteRenderer sr = GetComponent<SpriteRenderer>();
 		if(sr != null) sr.enabled = false;
-		GetComponent<BoxCollider2D>().enabled = false;
+		GetComponent<Collider2D>().enabled = false;
 		IsOpen = true;
+		AudioManager.Instance.PlayEvent("DoorOpen");
 	}
 	
 	/// <summary>
@@ -58,7 +65,7 @@ public class Door : InGameObject
 	{
 		SpriteRenderer sr = GetComponent<SpriteRenderer>();
 		if(sr != null) sr.enabled = true;
-		GetComponent<BoxCollider2D>().enabled = true;
+		GetComponent<Collider2D>().enabled = true;
 		IsOpen = false;
 	}
 }

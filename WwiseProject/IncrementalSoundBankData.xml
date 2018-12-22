@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<IncrementalBankBuild Version="6" Flags="878078161">
+<IncrementalBankBuild Version="6" Flags="601859981">
 	<Platform GUID="{40926950-9173-467E-B532-9E438F242F39}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Bell" Hash="2065913620" Timestamp="1544457789"/>
-				<File Name="Bells" Hash="1038856117" Timestamp="1544222751"/>
-				<File Name="Gong" Hash="320004705" Timestamp="1544457789"/>
-				<File Name="Init" Hash="1852764092" Timestamp="1544457795"/>
-				<File Name="Main" Hash="1024919958" Timestamp="1544457795"/>
-				<File Name="Xylophone" Hash="3206200838" Timestamp="1544457789"/>
+				<File Name="Effects" Hash="2335918188" Timestamp="1545411551"/>
+				<File Name="Init" Hash="3448522884" Timestamp="1545411553"/>
+				<File Name="Main" Hash="1190745973" Timestamp="1545411553"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1589597009" Timestamp="1544457795"/>
+				<File Name="" Hash="737784503" Timestamp="1545411553"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{588B7840-B2B8-4F3E-9E3D-0B64ED6A964B}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Bell" Hash="2065913620" Timestamp="1544457812"/>
-				<File Name="Bells" Hash="1038856117" Timestamp="1544222751"/>
-				<File Name="Gong" Hash="320004705" Timestamp="1544457812"/>
-				<File Name="Init" Hash="4029429218" Timestamp="1544457812"/>
-				<File Name="Main" Hash="1024919958" Timestamp="1544457812"/>
-				<File Name="Xylophone" Hash="3206200838" Timestamp="1544457812"/>
+				<File Name="Effects" Hash="2335918188" Timestamp="1545411557"/>
+				<File Name="Init" Hash="3296606250" Timestamp="1545411557"/>
+				<File Name="Main" Hash="1190745973" Timestamp="1545411557"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="896357151" Timestamp="1544457812"/>
+				<File Name="" Hash="3306470013" Timestamp="1545411557"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

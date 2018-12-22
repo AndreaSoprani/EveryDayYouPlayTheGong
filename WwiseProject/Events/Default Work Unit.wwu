@@ -267,6 +267,106 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="StartClock" ID="{FEAB0247-BFD3-4A37-BAE1-DE7B73174B3B}">
+					<ChildrenList>
+						<Action Name="" ID="{7DCAE049-AF9C-4556-A5F6-56C35A358054}" ShortID="799804650">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StartClock" ID="{78230CAA-A9D1-4862-A5A6-1A6CF089486C}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9A0BB300-638E-4163-9339-1164EE7DC4AA}" ShortID="737283086">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clock" ID="{B228B104-6CDC-4D5D-8CA9-1B7FDE5818F8}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EndClock" ID="{DF233FCB-9034-4BB0-B9A5-052B92FA7BF0}">
+					<ChildrenList>
+						<Action Name="" ID="{F70CE771-8A66-4A10-B26B-135C8B5152FD}" ShortID="845425893">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EndClock" ID="{FED9054A-CD06-4855-A8DB-1BFB6DB9356D}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4391BB07-767E-4A34-9EB2-48AD0C53E029}" ShortID="780179899">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NoClock" ID="{10E7A522-39CE-4458-873C-7F3DA3DA90AE}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DoorOpen" ID="{9FD34884-839E-422B-8FE3-F989627AC129}">
+					<ChildrenList>
+						<Action Name="" ID="{0402C848-DD82-47BD-B444-E48602781B15}" ShortID="949982702">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorOpen" ID="{5F3F6511-F236-46A4-9DF8-9C4F5B6346BA}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NewQuest" ID="{9BE3A667-D94A-4897-9166-AC2F0B0648E6}">
+					<ChildrenList>
+						<Action Name="" ID="{C3D42D2D-D808-496C-BE13-11AB0F825D37}" ShortID="795940010">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NewQuestJingle" ID="{2061AC9D-3ADF-4E35-846E-809CB388CFE8}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PuzzleFinish" ID="{1899C2A1-55D8-48DA-8039-EDD59F4E1B12}">
+					<ChildrenList>
+						<Action Name="" ID="{3514C810-CADA-4D55-9457-B3B70B5074DF}" ShortID="816795912">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PuzzleFinish" ID="{80596C74-8189-40D0-83DB-9EFC30F3C1E7}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4DE6E33F-143E-48C9-8BFF-0E42D05FAFF8}" ShortID="387588291">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NoClock" ID="{10E7A522-39CE-4458-873C-7F3DA3DA90AE}" WorkUnitID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

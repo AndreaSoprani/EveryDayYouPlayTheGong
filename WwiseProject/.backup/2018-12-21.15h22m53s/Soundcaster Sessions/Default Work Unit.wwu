@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{53AF34ED-9AA5-4844-AD63-7C26B5103AF0}" SchemaVersion="85">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{53AF34ED-9AA5-4844-AD63-7C26B5103AF0}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Prova" ID="{7088D8A5-B3CB-4087-ADA7-D881F09835BF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMusic" ID="{587586C1-D60A-4B3F-A7E6-22CAFBCB2029}" WorkUnitID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MainGong" ID="{39330102-1924-473D-BBC0-7BB5D59FA092}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="NewQuest" ID="{9BE3A667-D94A-4897-9166-AC2F0B0648E6}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Library" ID="{09352154-0D8B-4D5A-B5C5-5228C2A7BD71}" WorkUnitID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Bell1" ID="{48B6D44E-29B5-4874-B4BE-7A37A425FB5A}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PuzzleFinish" ID="{1899C2A1-55D8-48DA-8039-EDD59F4E1B12}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Explore" ID="{E05E7927-BA35-4813-A54E-B958B8EA45C8}" WorkUnitID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Xylophone1_do" ID="{A6EF1906-0D8D-425C-8756-6D68A43743AA}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Head" ID="{22EB335E-CA66-4EAE-83B6-5C4105B80A11}" WorkUnitID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="DoorOpen" ID="{9FD34884-839E-422B-8FE3-F989627AC129}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Dungeon" ID="{B4F04E4D-731A-4E8B-95C5-4A3FF73F08E7}" WorkUnitID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartClock" ID="{FEAB0247-BFD3-4A37-BAE1-DE7B73174B3B}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Silence" ID="{455C012F-6A9D-49C8-8FA8-AD54E638E0AA}" WorkUnitID="{DA6BC73D-C20C-410C-BFCA-44AE9B98ACCB}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="EndClock" ID="{DF233FCB-9034-4BB0-B9A5-052B92FA7BF0}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{513FC5AD-6040-45F3-8333-FB3911EDC215}"/>
+							<Value>60</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="FXVolume" ID="{528056A0-7581-4703-8272-9736D7DDBA9C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Sidechain" ID="{9AEB1ED9-1486-4765-80BE-BE3EA87C1DA7}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="NoClock" ID="{10E7A522-39CE-4458-873C-7F3DA3DA90AE}"/>
+						<CurrentStateRef Name="Explore" ID="{D3ADCDF1-AF5E-4A06-8B58-6F00FB067280}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="MusicExplore" ID="{9BD4D774-B960-481B-BAE4-E49C0208A8CD}"/>
+						<CurrentSwitchRef Name="KotoExplore" ID="{7BB9EB86-EB20-47F6-B450-86DA27F8C72E}"/>
+						<CurrentSwitchRef Name="PianoExplore" ID="{F62D3CE6-0B45-42E8-8B2A-7CB5D765A5FD}"/>
+						<CurrentSwitchRef Name="ShakuhachiExplore" ID="{6BBC97DF-CE78-4FBA-B829-18A49211A505}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

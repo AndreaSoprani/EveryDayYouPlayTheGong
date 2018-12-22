@@ -518,6 +518,11 @@ public class Player : MonoBehaviour
 			}
 		}
 	}
+
+	public bool IsBlocked()
+	{
+		return _blocked;
+	}
 	
 	public bool IsRunning()
 	{

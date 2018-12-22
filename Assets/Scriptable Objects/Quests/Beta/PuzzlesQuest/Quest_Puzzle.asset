@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111c15b9b772c784aa0404581e8192b3, type: 3}
+  m_Name: Quest_Puzzle
+  m_EditorClassIdentifier: 
+  QuestID: puzzles_quest
+  Name: A rusty key
+  Description: You found a rusty key
+  Objectives:
+  - {fileID: 11400000, guid: faa4d2518a750244f82b1fe8e8f37777, type: 2}
+  - {fileID: 11400000, guid: e6a3ef7e4befa4540ba1d26bb9170547, type: 2}
+  - {fileID: 11400000, guid: d40b02cee9fde7a4ea94330ed0c524aa, type: 2}
+  - {fileID: 11400000, guid: 48f241b651676f048a1a1a135b9cadb0, type: 2}
+  Completed: 0
+  ActivateWhenComplete: []
