@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4235197503884936}
   - component: {fileID: 212073678131955238}
+  - component: {fileID: 114615348836418182}
   - component: {fileID: 114911479012305754}
   - component: {fileID: 50955132525455922}
   - component: {fileID: 61171908064017170}
@@ -212,6 +213,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114615348836418182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890747294632712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!114 &114776787537447146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,12 +294,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: FrancisTutorial
   StandardDialogue: {fileID: 0}
-  DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 5b3c1e5c3ad12934884d15c9986388db, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: 9e9f686cc992b86498f873e52a18f0c3, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: 54ca3340b4db02340a45e00a4a06af54, type: 2}
   - {fileID: 11400000, guid: 0d013b7e7241cdf469fba1c18cbf238f, type: 2}
   - {fileID: 11400000, guid: a90157860e201f1498858953c743f4ec, type: 2}
+  DestroyAfterLastDialogue: 1
 --- !u!212 &212073678131955238
 SpriteRenderer:
   m_ObjectHideFlags: 1
