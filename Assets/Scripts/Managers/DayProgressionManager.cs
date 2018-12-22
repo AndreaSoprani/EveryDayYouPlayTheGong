@@ -25,6 +25,11 @@ public class DayProgressionManager : MonoBehaviour {
 	public int Day = 0;
 	public int DayProgress = 0;
 
+	private void Start()
+	{
+		GameObject.FindGameObjectWithTag("GUIController").SendMessage("UpdateDayProgression");
+	}
+
 	/// <summary>
 	/// To call upon quest completion, it makes the day progress but only if the day is not over.
 	/// </summary>

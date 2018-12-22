@@ -1,6 +1,6 @@
-Hi! You have to be the new intern. I'm Brian, glad to meet you.
+Hi! You must be the new intern. I'm Brian, glad to meet you.
 
-The head of the temple sent me here to receive you and to show you around.
+The head of the temple sent me here to receive you and show you around.
 
 First of all, do you see the two doors on our sides? 
 
@@ -8,10 +8,10 @@ On the right you can find the library, there are plenty of books inside.
 
 Geez... I've just recalled that I should have returned a book about 2 years ago!
 
-Now it's clear why the librarian hates me...
+Now I get why the librarian hates me...
 
-Returning to serious things.. The left door instead leads to the music room.
+Back to the important stuff... The left door instead leads to the music room.
 
 You can go there to practice playing with various instruments.
 
-Now follow me, I'll show you the rest of the temple
+Now follow me, I'll show you the rest of the temple, if you fall behind you can run by pressing CTRL.

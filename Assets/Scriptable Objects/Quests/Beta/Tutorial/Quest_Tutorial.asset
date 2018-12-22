@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111c15b9b772c784aa0404581e8192b3, type: 3}
+  m_Name: Quest_Tutorial
+  m_EditorClassIdentifier: 
+  QuestID: Tutorial
+  Name: Tutorial
+  Description: Tutorial
+  Objectives:
+  - {fileID: 11400000, guid: d7ed45ced5996a040903ad7b0b51a0b4, type: 2}
+  - {fileID: 11400000, guid: f1029f928c464454c93f6d692480e20e, type: 2}
+  - {fileID: 11400000, guid: ab8d6596986a97346a81a0a45bed2874, type: 2}
+  - {fileID: 11400000, guid: f9391dab6ba977745ab292a993647886, type: 2}
+  - {fileID: 11400000, guid: d3bdf3a8fc7dee24fb58e3c9051cd7ec, type: 2}
+  - {fileID: 11400000, guid: 5cf5c25a22bb28e44a4f539cb1ce0199, type: 2}
+  - {fileID: 11400000, guid: d8613f994f694dd4989eb7b5cfa1b14e, type: 2}
+  Completed: 1
+  ActivateWhenComplete: []

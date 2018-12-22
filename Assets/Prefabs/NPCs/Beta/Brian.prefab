@@ -55,7 +55,6 @@ GameObject:
   - component: {fileID: 50569515935612702}
   - component: {fileID: 61488600117887584}
   - component: {fileID: 95985147834593670}
-  - component: {fileID: 114327919807432758}
   - component: {fileID: 114288638213935262}
   - component: {fileID: 114884771704170748}
   m_Layer: 8
@@ -284,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0cae0876f5c894da52533aee438cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
+  ObjectID: brian
   Speed: 1
   PathToFollow: {fileID: 0}
   RayCastPositions:
@@ -308,18 +307,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Alpha: 1
   TransitionTime: 1
---- !u!114 &114327919807432758
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1292916945827906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultFacingDirection: 2
 --- !u!114 &114884771704170748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,9 +318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
+  ObjectID: brian
   StandardDialogue: {fileID: 11400000, guid: a01f03074e82f5546915e27e1469c186, type: 2}
-  DayOverDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 67f6253709b66ac4bb1e4df3dc0661c2, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 19e7131c20674f44ba251e1c0bd034ae, type: 2}
   Dialogues: []
 --- !u!212 &212637086172232832
