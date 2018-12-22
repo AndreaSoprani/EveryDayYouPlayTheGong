@@ -24463,6 +24463,23 @@ Transform:
   m_Father: {fileID: 793855655}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &651882423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1292916945827906, guid: 17bc56b83641db1419979d318af02afe,
+    type: 2}
+  m_PrefabInternal: {fileID: 925728675}
+--- !u!114 &651882430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651882423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3adfc84f745054b8d6ccdfe1323b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultFacingDirection: 2
 --- !u!1 &654140727
 GameObject:
   m_ObjectHideFlags: 0
@@ -30520,7 +30537,7 @@ Prefab:
     - target: {fileID: 114518498619404188, guid: 6b37d6998a91a4648a236931f712383f,
         type: 2}
       propertyPath: MusicVolume
-      value: 68
+      value: 63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b37d6998a91a4648a236931f712383f, type: 2}

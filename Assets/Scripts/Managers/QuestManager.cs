@@ -60,7 +60,7 @@ public class QuestManager : MonoBehaviour
 	public void AddQuest(Quest quest)
 	{
 		Quests.Add(quest);
-		AudioManager.Instance.PlayEvent("NewQuest");
+		
 	}
 
 	/// <summary>
@@ -97,6 +97,7 @@ public class QuestManager : MonoBehaviour
 		TodayQuests.Add(quest);
 		
 		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyQuestActivated", quest);
+		AudioManager.Instance.PlayEvent("NewQuest");
 		ListenOnObjectives(quest);
 	}
 

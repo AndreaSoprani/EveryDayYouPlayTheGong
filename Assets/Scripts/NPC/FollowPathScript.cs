@@ -30,6 +30,7 @@ public class FollowPathScript : InGameObject
 	private int _position;
 	private Dialogue _newDialogue;
 	private bool hasFinished=false;
+	private bool _inDialogue = false;
 	
 	
 	// Use this for initialization
@@ -41,7 +42,7 @@ public class FollowPathScript : InGameObject
 		_isWaiting = _newDialogue!=null;
 		_dialogueFinished = false;
 		
-		EventManager.StartListening("EnterDialogue", EnterDialogue);
+		
 	}
 	
 	
@@ -60,7 +61,7 @@ public class FollowPathScript : InGameObject
 			
 			if (transform.position == PathToFollow.WayPoints[_position].transform.position)
 			{
-				
+				_animator.SetInteger("Direction", 2);
 				if (PathToFollow.WayPoints[_position].Type == PathNodeType.Dialogue)
 				{
 					if (!_dialogueFinished)
@@ -101,6 +102,16 @@ public class FollowPathScript : InGameObject
 			
 		}
 
+		if (_inDialogue && !TextBoxManager.Instance.IsActive)
+		{
+			_isWaiting = false;
+			_inDialogue = false;
+			_dialogueFinished = true;
+			Debug.Log("Exit Dialogue");
+			_newDialogue = null;
+			ChangeFacing(_direction);
+			_animator.SetBool("Walking", _walk);
+		}
 		if (hasFinished && _newDialogue==null)
 		{
 			EndOfPath();
@@ -123,8 +134,15 @@ public class FollowPathScript : InGameObject
 
 	public override void Interact()
 	{
-		if(_isWaiting && _newDialogue!=null)
+		if (_isWaiting && _newDialogue != null)
+		{
+			_inDialogue = true;
+			_dialogueFinished = false;
+			Debug.Log("Start Dialogue");
+			ChangeFacing(Player.Instance.transform.position - transform.position);
+			_animator.SetBool("Walking", false);
 			_newDialogue.StartDialogue();
+		}
 	}
 
 	/// <summary>
@@ -176,37 +194,7 @@ public class FollowPathScript : InGameObject
 	}
 	
 	
-	/**
-	 * Used to enter in dialogue mode.
-	 * Movement is disabled.
-	 */
-	public void EnterDialogue()
-	{
-		_dialogueFinished = true;
-		Debug.Log("Start Dialogue");
-		ChangeFacing(Player.Instance.transform.position - transform.position);
-		_animator.SetBool("Walking", false);
-		
-		EventManager.StopListening("EnterDialogue", EnterDialogue);
-		EventManager.StartListening("ExitDialogue", ExitDialogue);
-	}
-
-	/**
-	 * Used to exit dialogue mode.
-	 * Movement is re-enabled.
-	 */
-	public void ExitDialogue()
-	{
-		_isWaiting = false;
-		_dialogueFinished = true;
-		Debug.Log("Exit Dialogue");
-		_newDialogue = null;
-		ChangeFacing(_direction);
-		_animator.SetBool("Walking", _walk);
-		
-		EventManager.StopListening("ExitDialogue", ExitDialogue);
-		EventManager.StartListening("EnterDialogue", EnterDialogue);
-	}
+	
 
 	public override bool IsInteractable()
 	{
