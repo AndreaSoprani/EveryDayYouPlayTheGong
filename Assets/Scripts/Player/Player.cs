@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
 	private Canvas _canvas;
 	private SpriteRenderer _spriteRenderer;
 	private BoxCollider2D _playingArea;
+	private Collider2D _playerCollider;
 
 	private Vector2 _offsetValue;
 	
@@ -83,6 +84,7 @@ public class Player : MonoBehaviour
 		_canvas = GetComponentInChildren<Canvas>();
 		_spriteRenderer = GetComponent<SpriteRenderer>();
 		_playingArea = transform.Find("PlayingArea").GetComponent<BoxCollider2D>();
+		_playerCollider = GetComponent<Collider2D>();
 		
 		_offsetValue = new Vector2(1.2f, 0);
 		
@@ -465,6 +467,8 @@ public class Player : MonoBehaviour
 	
 	private void OnTriggerEnter2D(Collider2D other)
 	{
+		if (!other.IsTouching(_playerCollider)) return;
+		
 		if (other.CompareTag("StairsFront"))
 		{
 			_onFrontalStairs = true;
@@ -481,6 +485,8 @@ public class Player : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
+		if (other.IsTouching(_playerCollider)) return;
+		
 		if (other.CompareTag("StairsFront"))
 		{
 			_onFrontalStairs = false;

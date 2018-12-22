@@ -24693,12 +24693,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: FrancisTutorial
   StandardDialogue: {fileID: 0}
-  DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 5b3c1e5c3ad12934884d15c9986388db, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: 9e9f686cc992b86498f873e52a18f0c3, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: 54ca3340b4db02340a45e00a4a06af54, type: 2}
   - {fileID: 11400000, guid: 0d013b7e7241cdf469fba1c18cbf238f, type: 2}
   - {fileID: 11400000, guid: a90157860e201f1498858953c743f4ec, type: 2}
+  DestroyAfterLastDialogue: 1
 --- !u!212 &660294364
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31816,6 +31817,7 @@ MonoBehaviour:
   PlayingDialogue: {fileID: 0}
   Dialogues:
   - {fileID: 11400000, guid: 6730f45c3ed000d439f028966ff172fe, type: 2}
+  DestroyAfterLastDialogue: 0
 --- !u!60 &1462372366
 PolygonCollider2D:
   m_ObjectHideFlags: 0

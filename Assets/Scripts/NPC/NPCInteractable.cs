@@ -12,6 +12,8 @@ public class NPCInteractable : InGameObject
 	public Dialogue PlayingDialogue;
 	public List<Dialogue> Dialogues;
 
+	public bool DestroyAfterLastDialogue;
+
 	private Canvas _questMarkCanvas;
 	private int _questCounter;
 	
@@ -60,6 +62,11 @@ public class NPCInteractable : InGameObject
 					EventManager.StopListening("CheckQuestMark", ShowQuestMark);
 
 			}
+
+			if (DestroyAfterLastDialogue && Dialogues[Dialogues.Count - 1] == lastAvailable)
+			{
+				EventManager.StartListening("Teleport", DestroyAfterTeleport);
+			}
 		}
 	}
 
@@ -93,6 +100,11 @@ public class NPCInteractable : InGameObject
 
 		if (lastAvailable != null && lastAvailable.CanStartQuest())
 			_questMarkCanvas.enabled = true;
+	}
+
+	private void DestroyAfterTeleport()
+	{
+		Destroy(gameObject);
 	}
 	
 }

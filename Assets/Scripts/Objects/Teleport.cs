@@ -63,9 +63,10 @@ public class Teleport : MonoBehaviour
         
         yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeIn, 1f));
         
-
         other.gameObject.transform.position = Destination.transform.position + Offset;
         GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
+        
+        EventManager.TriggerEvent("Teleport");
         
         yield return new WaitForSeconds(Pause);
         
