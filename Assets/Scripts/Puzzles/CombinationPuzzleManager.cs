@@ -95,6 +95,7 @@ public class CombinationPuzzleManager : MonoBehaviour
 		}
 		
 		_currentIndex = 0;
+		AudioManager.Instance.PlayEvent("PuzzleFinish");
 		EventManager.TriggerEvent("PuzzleSolved" + PuzzleId);
 
 	}

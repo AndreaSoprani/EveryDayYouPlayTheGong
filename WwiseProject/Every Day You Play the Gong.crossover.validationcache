@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="85">
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1544003159" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1545389775" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1528472680" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1528472680" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Attenuations\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
@@ -20,25 +20,25 @@
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1528472680" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1528472680" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Effects\Factory McDSP Effects.wwu" DateLow="1528472680" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Events\Default Work Unit.wwu" DateLow="1544003159" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Events\Music.wwu" DateLow="1543072477" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Every Day You Play the Gong.crossover.wsettings" DateLow="1544004635" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Events\Default Work Unit.wwu" DateLow="1545231674" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Events\Music.wwu" DateLow="1545224074" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Every Day You Play the Gong.crossover.wsettings" DateLow="1545395179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Every Day You Play the Gong.wproj" DateLow="1540917792" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Game Parameters\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Game Parameters\Default Work Unit.wwu" DateLow="1545389775" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1528472680" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Interactive Music Hierarchy\Music.wwu" DateLow="1543073930" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Interactive Music Hierarchy\Music.wwu" DateLow="1545395171" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1545145842" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Mixing Sessions\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Modulators\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Presets\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Queries\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Queries\Factory Queries.wwu" DateLow="1528472680" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\SoundBanks\Default Work Unit.wwu" DateLow="1543500864" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1544003159" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\States\Default Work Unit.wwu" DateLow="1543072477" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\SoundBanks\Default Work Unit.wwu" DateLow="1545146818" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1545395171" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\States\Default Work Unit.wwu" DateLow="1545221173" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Switches\Default Work Unit.wwu" DateLow="1543072477" DateHigh="0"/>
-	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Switches\Music.wwu" DateLow="1543072477" DateHigh="0"/>
+	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Switches\Music.wwu" DateLow="1545224074" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Triggers\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Virtual Acoustics\Default Work Unit.wwu" DateLow="1540917792" DateHigh="0"/>
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\Every Day You Play the Gong\Virtual Acoustics\Factory Reflect Acoustic Textures.wwu" DateLow="1528472680" DateHigh="0"/>

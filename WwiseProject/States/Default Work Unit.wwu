@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}" SchemaVersion="89">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DF9593C7-3932-4A37-AFF7-B5F571B7516B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Clock" ID="{0D89C709-AFB2-4765-AE20-152D4DC425D7}">
+					<ChildrenList>
+						<State Name="None" ID="{63F58EE6-340F-4B85-901D-4A155EE76B08}"/>
+						<State Name="Clock" ID="{B228B104-6CDC-4D5D-8CA9-1B7FDE5818F8}"/>
+						<State Name="NoClock" ID="{10E7A522-39CE-4458-873C-7F3DA3DA90AE}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Library" ID="{C548E62D-596D-4EDC-91DC-272F44D52D69}">
+					<ChildrenList>
+						<State Name="None" ID="{BEE5BC8C-43B0-4616-B106-74DF417431EE}"/>
+						<State Name="Library" ID="{D0B613F8-B56A-4A6D-B346-A0654B2CF38F}"/>
+						<State Name="Explore" ID="{D3ADCDF1-AF5E-4A06-8B58-6F00FB067280}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

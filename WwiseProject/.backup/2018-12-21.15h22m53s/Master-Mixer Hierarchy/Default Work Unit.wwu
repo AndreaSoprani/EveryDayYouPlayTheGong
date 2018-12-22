@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}" SchemaVersion="85">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{E054FB72-4875-42EC-B4FD-4130407B8652}" WorkUnitID="{38D97366-81DA-4225-9B1F-EE23E74F0775}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{32E513CF-D837-4940-8A6F-F38DFD1D40F9}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{0DC8B251-4A33-4C8D-BD82-BB8C6EEB1EEC}" ShortID="269011628">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Sidechain" ID="{9AEB1ED9-1486-4765-80BE-BE3EA87C1DA7}" WorkUnitID="{A90ED274-D088-44CE-A5A1-E5FF98378331}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A542B421-7641-4DA2-8608-999718B66BDA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>6</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-0.02127</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>6</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SoundFX" ID="{42731AD9-20F8-4EBE-AC09-4404D2F283DE}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{D714A190-D24B-49F6-AB36-2D63AAFE442C}" ShortID="820654044" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.2"/>
+												<Property Name="Max" Type="Real32" Value="6"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Sidechain" ID="{9AEB1ED9-1486-4765-80BE-BE3EA87C1DA7}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

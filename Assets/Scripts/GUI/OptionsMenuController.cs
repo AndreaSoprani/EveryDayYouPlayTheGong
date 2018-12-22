@@ -24,12 +24,12 @@ public class OptionsMenuController : MonoBehaviour
 	public void ChangeMusicVolume()
 	{
 		
-		Debug.Log("Music "+MusicVolume.value);
+		AudioManager.Instance.ChangeVolume(SoundType.Music,(int) MusicVolume.value);
 	}
 	public void ChangeEffectsVolume()
 	{
 		
-		Debug.Log("Effects "+EffectsVolume.value);
+		AudioManager.Instance.ChangeVolume(SoundType.Effects,(int) EffectsVolume.value);
 	}
 
 	public void HideOptions()

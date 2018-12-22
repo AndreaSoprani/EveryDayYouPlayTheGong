@@ -40,7 +40,7 @@ public class FollowPathScript : InGameObject
 		
 		_isWaiting = _newDialogue!=null;
 		_dialogueFinished = false;
-		Debug.Log(_isWaiting+"   "+ (_newDialogue==null));
+		
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
 	}
 	
@@ -52,7 +52,7 @@ public class FollowPathScript : InGameObject
 		
 		if (!_isWaiting)
 		{
-			Debug.Log("Start journey");
+			
 			transform.position = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].transform.position, Speed*Time.deltaTime);
 			_direction = (PathToFollow.WayPoints[_position].transform.position - transform.position).normalized;
 			ChangeFacing(_direction);
@@ -60,7 +60,7 @@ public class FollowPathScript : InGameObject
 			
 			if (transform.position == PathToFollow.WayPoints[_position].transform.position)
 			{
-				Debug.Log("Node Reached");
+				
 				if (PathToFollow.WayPoints[_position].Type == PathNodeType.Dialogue)
 				{
 					if (!_dialogueFinished)

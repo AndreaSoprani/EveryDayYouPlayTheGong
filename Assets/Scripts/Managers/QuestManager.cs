@@ -60,6 +60,7 @@ public class QuestManager : MonoBehaviour
 	public void AddQuest(Quest quest)
 	{
 		Quests.Add(quest);
+		AudioManager.Instance.PlayEvent("NewQuest");
 	}
 
 	/// <summary>

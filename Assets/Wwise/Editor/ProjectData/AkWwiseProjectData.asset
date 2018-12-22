@@ -15,12 +15,12 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c5dd16e92d34e740b8569138e46ee176
-    m_lastTime: -8586571512409305094
+    m_lastTime: -8586562047041388229
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
     ParentPhysicalPath: 
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
-    m_lastTime: -8586571512409295103
+    m_lastTime: -8586562047041348263
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -180,32 +180,23 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6789837cf7132a48a7eebcc8efb19322
-    m_lastTime: -8586571512512154821
+    m_lastTime: -8586562047043507030
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 16271eb29c80434992f5c5998a5d8665
-    m_lastTime: -8586571512435617920
+    m_lastTime: -8586561953775880891
     List:
-    - name: Bell
-      guid: 711ca1218843fe479f4a9c4d525baadf
-      id: 1240512178
+    - name: Effects
+      guid: 51155da5fbca7144b63952d6d53058f0
+      id: 1942696649
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Bell
+      - ElementName: Effects
         ObjectType: 7
-      Path: Default Work Unit\Bell
-    - name: Gong
-      guid: 8c12b1a1add5d14d92db0618e5048dc8
-      id: 685410454
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Gong
-        ObjectType: 7
-      Path: Default Work Unit\Gong
+      Path: Default Work Unit\Effects
     - name: Main
       guid: 716f16a64af64041a9869600932edf01
       id: 3161908922
@@ -215,20 +206,11 @@ MonoBehaviour:
       - ElementName: Main
         ObjectType: 7
       Path: Default Work Unit\Main
-    - name: Xylophone
-      guid: cdd639d79a54a444bf23962770f8fb08
-      id: 2146896501
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Xylophone
-        ObjectType: 7
-      Path: Default Work Unit\Xylophone
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 76273f77a9fc944fa2780518c1fa60d3
-    m_lastTime: -8586571512548674776
+    m_lastTime: -8586562047042957349
     List:
     - name: Bell1
       guid: 4ed4b648b5297448b4be7a37a425fb5a
@@ -314,6 +296,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: DoorOpen
+      guid: 8448d39f9e832b428fe3f989627ac129
+      id: 1404805401
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DoorOpen
+        ObjectType: 3
+      Path: Default Work Unit\DoorOpen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: EndClock
+      guid: cb3f23df3490b04bb9a5052b92fa7bf0
+      id: 3731896910
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: EndClock
+        ObjectType: 3
+      Path: Default Work Unit\EndClock
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: MainGong
       guid: 0201333924193d47bbc07bb5d59fa092
       id: 1143543361
@@ -325,6 +331,30 @@ MonoBehaviour:
       - ElementName: MainGong
         ObjectType: 3
       Path: Default Work Unit\Gong\MainGong
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: NewQuest
+      guid: 67a6e39b4ad997489166ac2f0b0648e6
+      id: 3982073893
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NewQuest
+        ObjectType: 3
+      Path: Default Work Unit\NewQuest
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PuzzleFinish
+      guid: a1c29918d855da488039edd59f4e1b12
+      id: 4238353680
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PuzzleFinish
+        ObjectType: 3
+      Path: Default Work Unit\PuzzleFinish
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -367,6 +397,18 @@ MonoBehaviour:
       - ElementName: PuzzleGong_mid
         ObjectType: 3
       Path: Default Work Unit\Gong\PuzzleGong_mid
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StartClock
+      guid: 4702abfed3bf374abae1de7b73174b3b
+      id: 3764788319
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartClock
+        ObjectType: 3
+      Path: Default Work Unit\StartClock
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -485,7 +527,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     guid: 3dc76bda0cc20c41bfca44ae9b98accb
-    m_lastTime: -8586571512548664777
+    m_lastTime: -8586562047043447070
     List:
     - name: Dungeon
       guid: 4d4ef0b41a738b4e95c54a3ff73f08e7
@@ -500,7 +542,7 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Explore
-      guid: c18675580ad63f4ba7e622cafbcb2029
+      guid: 27795ee035ba1348a54eb958b8ea45c8
       id: 579523862
       PathAndIcons:
       - ElementName: Music
@@ -508,6 +550,42 @@ MonoBehaviour:
       - ElementName: Explore
         ObjectType: 3
       Path: Music\Explore
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Head
+      guid: 5e33eb2266caae4e83b65c4105b80a11
+      id: 3448274439
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Head
+        ObjectType: 3
+      Path: Music\Head
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Library
+      guid: 542135098b0d5a4db5c55228c2a7bd71
+      id: 2823359158
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Library
+        ObjectType: 3
+      Path: Music\Library
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PlayMusic
+      guid: c18675580ad63f4ba7e622cafbcb2029
+      id: 417627684
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: PlayMusic
+        ObjectType: 3
+      Path: Music\PlayMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -527,12 +605,39 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 74d20ea988d0ce44a5a1e5ff98378331
-    m_lastTime: -8586571512548604837
-    List: []
+    m_lastTime: -8586562047043317135
+    List:
+    - name: FXVolume
+      guid: a05680528175034782729736d7ddba9c
+      id: 3328840097
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FXVolume
+        ObjectType: 13
+      Path: Default Work Unit\FXVolume
+    - name: MusicVolume
+      guid: adc53f514060f3458333fb3911edc215
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicVolume
+        ObjectType: 13
+      Path: Default Work Unit\MusicVolume
+    - name: Sidechain
+      guid: d91eeb9a8614654780bebe3ea87c1da7
+      id: 1883033791
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sidechain
+        ObjectType: 13
+      Path: Default Work Unit\Sidechain
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
-    m_lastTime: -8586571512548594846
+    m_lastTime: -8586562047043077284
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -628,18 +733,74 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c79395df3239374aaff7b5f571b7516b
-    m_lastTime: -8586571512409335005
-    List: []
+    m_lastTime: -8586562047043377095
+    List:
+    - name: Clock
+      guid: 09c7890db2af6547ae20152d4dc425d7
+      id: 1182830809
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Clock
+        ObjectType: 9
+      Path: Default Work Unit\Clock
+      values:
+      - name: Clock
+        guid: 04b128b2dc6c5d4d8ca91b7fde5818f8
+        id: 1182830809
+        PathAndIcons:
+        - ElementName: Clock
+          ObjectType: 8
+      - name: NoClock
+        guid: 22a5e710ce395844873c7f3da3da90ae
+        id: 3783604150
+        PathAndIcons:
+        - ElementName: NoClock
+          ObjectType: 8
+      - name: None
+        guid: e68ef5630f34854b901d4a155ee76b08
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+    - name: Library
+      guid: 2de648c56d59dc4e91dc272f44d52d69
+      id: 2823359158
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Library
+        ObjectType: 9
+      Path: Default Work Unit\Library
+      values:
+      - name: Explore
+        guid: f1cdadd35eaf064a8b586f00fb067280
+        id: 579523862
+        PathAndIcons:
+        - ElementName: Explore
+          ObjectType: 8
+      - name: Library
+        guid: f813b6d06ab56d4ab346a0654b2cf38f
+        id: 2823359158
+        PathAndIcons:
+        - ElementName: Library
+          ObjectType: 8
+      - name: None
+        guid: 8cbce5beb0431646b10674df417431ee
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 9ee0886d5d25ec47b628778387e2e692
-    m_lastTime: -8586571512409325085
+    m_lastTime: -8586562047043576996
     List: []
   - PhysicalPath: Switches\Music.wwu
     ParentPhysicalPath: Switches\Default Work Unit.wwu
     guid: 4efce7c1c6947f4096ebb26b5738ad68
-    m_lastTime: -8586571512409315093
+    m_lastTime: -8586562047044336547
     List:
     - name: Koto
       guid: 2407de52d604f44ca27a62e3a905e5c9
@@ -653,17 +814,17 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\Music\Koto
       values:
-      - name: Dungeon
+      - name: KotoDungeon
         guid: 7091ef2fafa5fc4c87b532576e3f1c71
-        id: 608898761
+        id: 1283313886
         PathAndIcons:
-        - ElementName: Dungeon
+        - ElementName: KotoDungeon
           ObjectType: 10
-      - name: Explore
+      - name: KotoExplore
         guid: 86ebb97b20ebf647b45086da27f8c72e
-        id: 579523862
+        id: 2202001405
         PathAndIcons:
-        - ElementName: Explore
+        - ElementName: KotoExplore
           ObjectType: 10
     - name: Music_switch
       guid: 47029633566a2a46bf6a338b46616355
@@ -677,23 +838,23 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\Music\Music_switch
       values:
-      - name: Dungeon
+      - name: MusicDungeon
         guid: 68892592bc8f7a4682371be4fb6b2261
-        id: 608898761
+        id: 225672176
         PathAndIcons:
-        - ElementName: Dungeon
+        - ElementName: MusicDungeon
           ObjectType: 10
-      - name: Explore
+      - name: MusicExplore
         guid: 74d7d49b60b91b48bae4e49c0208a8cd
-        id: 579523862
+        id: 2373801199
         PathAndIcons:
-        - ElementName: Explore
+        - ElementName: MusicExplore
           ObjectType: 10
-      - name: Silence
+      - name: MusicSilence
         guid: 8b5d73de1e829846925c858d993a685d
-        id: 3041563226
+        id: 1562004599
         PathAndIcons:
-        - ElementName: Silence
+        - ElementName: MusicSilence
           ObjectType: 10
     - name: Piano
       guid: 9ec52ccf7e91054dbf3473a44cd0b8c2
@@ -707,17 +868,17 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\Music\Piano
       values:
-      - name: Dungeon
+      - name: PianoDungeon
         guid: a6ed3cf28d587e4a89341eb1c78542f0
-        id: 608898761
+        id: 3084967914
         PathAndIcons:
-        - ElementName: Dungeon
+        - ElementName: PianoDungeon
           ObjectType: 10
-      - name: Explore
+      - name: PianoExplore
         guid: e63c2df6450be8428b2a7cb5d765a5fd
-        id: 579523862
+        id: 533859953
         PathAndIcons:
-        - ElementName: Explore
+        - ElementName: PianoExplore
           ObjectType: 10
     - name: Shakuhachi
       guid: 8aaa2e5e19254c4facca101cf48d8e68
@@ -731,23 +892,29 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\Music\Shakuhachi
       values:
-      - name: Play
-        guid: df97bc6b78ceba4fb82918a49211a505
-        id: 1256202815
+      - name: OM_Chanting
+        guid: ae541b2b1ea87c4eb576f1cffe0355ab
+        id: 283513172
         PathAndIcons:
-        - ElementName: Play
+        - ElementName: OM_Chanting
           ObjectType: 10
-      - name: Silence
-        guid: 50b0a5e1e938b549b7f6d05d0f7b501d
-        id: 3041563226
+      - name: ShakuhachiExplore
+        guid: df97bc6b78ceba4fb82918a49211a505
+        id: 3911745091
         PathAndIcons:
-        - ElementName: Silence
+        - ElementName: ShakuhachiExplore
+          ObjectType: 10
+      - name: ShakuhachiSilence
+        guid: 50b0a5e1e938b549b7f6d05d0f7b501d
+        id: 1724976763
+        PathAndIcons:
+        - ElementName: ShakuhachiSilence
           ObjectType: 10
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 7bc79e359480154897d10c11a07bc0dd
-    m_lastTime: -8586571512409315093
+    m_lastTime: -8586562047041518167
     List: []
   ExpandedItems:
   - /Every Day You Play the Gong
