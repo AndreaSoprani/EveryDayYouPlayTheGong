@@ -41,14 +41,10 @@ public class QuestManager : MonoBehaviour
 	/// </summary>
 	private void Start()
 	{
-		for (int i = 0; i < Quests.Count; i++)
+		foreach (Quest quest in Quests)
 		{
-			Quests[i].Completed = false;
-		}
-		
-		for (int i = 0; i < Quests.Count; i++)
-		{
-			if(TodayQuests.Contains(Quests[i])) ListenOnObjectives(Quests[i]);
+			quest.Completed = false;
+			if (TodayQuests.Contains(quest)) ListenOnObjectives(quest);
 		}
 	}
 
@@ -145,8 +141,13 @@ public class QuestManager : MonoBehaviour
 	/// <returns>True if the schedule is full, false otherwise.</returns>
 	public bool IsDayFull()
 	{
-		if (TodayQuests.Count == Settings.QuestsPerDay) return true;
-		return false;
+		int progress = DayProgressionManager.Instance.DayProgress;
+		foreach (Quest quest in TodayQuests)
+		{
+			if (!quest.Completed) progress++;
+		}
+		
+		return progress == Settings.QuestsPerDay;
 	}
 	
 	/// <summary>

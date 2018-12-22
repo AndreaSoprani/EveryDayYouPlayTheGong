@@ -271,6 +271,10 @@ MonoBehaviour:
   PlayingDialogue: {fileID: 11400000, guid: 1da9c0b807107dc4ebb49493080118e7, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: 56b922d5c917f8144a5e1174ded3c654, type: 2}
+  - {fileID: 11400000, guid: 21753cda553e5a34ca998f4ae8a31071, type: 2}
+  - {fileID: 11400000, guid: 7919aacbd192cfc4aa97941a35f3e27d, type: 2}
+  - {fileID: 11400000, guid: 6d212699dae17d14e83fd32f7aeb6d8c, type: 2}
+  DestroyAfterLastDialogue: 0
 --- !u!114 &114841825011563482
 MonoBehaviour:
   m_ObjectHideFlags: 1

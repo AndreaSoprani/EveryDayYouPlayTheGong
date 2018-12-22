@@ -9,17 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: WelcomeFirstQuest
+  m_Name: Snacks
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: 79b4a6a70aad4184ebdaefa3f1e70759, type: 3}
-  NPCName: Old Ben
+  TextAsset: {fileID: 4900000, guid: 33c9c0e71ba74a5d9eaf4e4653bb7dd1, type: 3}
+  NPCName: Snacks
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
   OneTimeDialogue: 0
   QuestsToActivate:
-  - {fileID: 11400000, guid: 4155549057dbe874c8a51468b2c819aa, type: 2}
+  - {fileID: 11400000, guid: 71cb29d78291b154e92a2fb627dec7a0, type: 2}
   ItemsToAdd: []
   ItemsToRemove: []
   GameObjectsToDestroy: []
