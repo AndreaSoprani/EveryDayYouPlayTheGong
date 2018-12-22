@@ -14,8 +14,7 @@ public class AudioManager : MonoBehaviour
 		get { return _instance; }
 	}
 
-	[Range(0, 100)] public int MusicVolume;
-	[Range(0, 100)] public int EffectVolume;
+	
 	private uint _bankIDMain;
 	private uint _bankIDFX;
 	
@@ -42,8 +41,8 @@ public class AudioManager : MonoBehaviour
 		AkSoundEngine.LoadBank("Main", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDMain);
 		AkSoundEngine.LoadBank("Effects", AkSoundEngine.AK_DEFAULT_POOL_ID, out _bankIDFX);
 		
-		AkSoundEngine.SetRTPCValue("MusicVolume", MusicVolume);
-		AkSoundEngine.SetRTPCValue("FXVolume", EffectVolume);
+		AkSoundEngine.SetRTPCValue("MusicVolume", Settings.MusicVolume);
+		AkSoundEngine.SetRTPCValue("FXVolume", Settings.SFXVolume);
 		AkSoundEngine.PostEvent("PlayMusic", gameObject);
 		_currentlyPlaying = "Explore";
 
@@ -54,12 +53,12 @@ public class AudioManager : MonoBehaviour
 	    if (type == SoundType.Music)
 	    {
 		    AkSoundEngine.SetRTPCValue("MusicVolume", volume);
-		    MusicVolume = volume;
+		    Settings.MusicVolume = volume;
 	    }
 	    else
 	    {
 		    AkSoundEngine.SetRTPCValue("FXVolume", volume);
-		    EffectVolume = volume;
+		    Settings.SFXVolume = volume;
 	    }
 	    
 	    
@@ -67,24 +66,7 @@ public class AudioManager : MonoBehaviour
     
 	public Settings Settings;
 
-	/// <summary>
-	/// Method used to play a specific sound.
-	/// </summary>
-	/// <param name="sound">The sound to be played.</param>
-	public void PlaySound(Sound sound)
-	{
-		if (!Settings.SFXOn || sound == null) return;
-
-		if (!sound.HasSource())
-		{
-			GameObject go = new GameObject("AudioSource_" + sound.Name);
-			go.transform.SetParent(this.transform);
-			sound.SetSource(go.AddComponent<AudioSource>());
-		}
-
-		sound.Play(Settings.SFXVolume);
-
-	}
+	
 
 	public void PlayEvent(string sound)
 	{
