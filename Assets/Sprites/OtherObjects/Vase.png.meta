@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: d8508e607bc9f3341b86297a3745b811
+guid: 24b9d155fb2bd224f85043353e42ab20
 TextureImporter:
   fileIDToRecycleName:
-    21300000: jar_0
-    21300002: jar_1
+    21300000: Vase_0
+    21300002: Vase_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -73,7 +73,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -86,41 +86,41 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jar_0
+      name: Vase_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 128
+        x: 20
+        y: 32
+        width: 28
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 733bbd449fdea6a4abaf816f8a01e72f
+      spriteID: 820a71efa54e37a4a92fc59117fc3b0c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jar_1
+      name: Vase_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 128
+        x: 80
+        y: 32
+        width: 28
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 744469144c70a9e41aa9f33fd5c5262d
+      spriteID: a15b742d3d7a2fe469d32195a8be836d
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 30192982549c2e3479c04b8b63e4b99c
+    spriteID: ee6ab89880a655340ad239375f33b429
     vertices: []
     indices: 
     edges: []
