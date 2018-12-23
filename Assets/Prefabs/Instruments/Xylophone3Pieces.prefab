@@ -341,7 +341,7 @@ MonoBehaviour:
   ObjectID: xylkey1
   Dialogue: {fileID: 0}
   SoundName:
-  - Xylophone5_sol
+  - Xylophone1_do
   HasInteraction: 0
   PauseTime: 0
 --- !u!114 &114844356329786472
@@ -375,7 +375,7 @@ MonoBehaviour:
   ObjectID: xylkey2
   Dialogue: {fileID: 0}
   SoundName:
-  - Xylophone4_fa
+  - Xylophone2_re
   HasInteraction: 0
   PauseTime: 0
 --- !u!212 &212665224005953974
