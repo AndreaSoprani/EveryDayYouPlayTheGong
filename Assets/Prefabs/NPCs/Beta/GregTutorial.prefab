@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 61171908064017170}
   - component: {fileID: 95203342804717520}
   m_Layer: 8
-  m_Name: FrancisTutorial
+  m_Name: GregTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: FrancisTutorial
+  ObjectID: GregTutorial
   StandardDialogue: {fileID: 11400000, guid: 09bf198a3658c0843b3a448fa0c63470, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 5b3c1e5c3ad12934884d15c9986388db, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 9e9f686cc992b86498f873e52a18f0c3, type: 2}

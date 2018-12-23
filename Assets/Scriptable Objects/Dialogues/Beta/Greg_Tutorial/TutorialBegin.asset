@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TutorialBegin
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: 4425dd7843eab2247a5c2052054b0f2f, type: 3}
-  NPCName: Francis
+  NPCName: Greg
   ActiveQuest: {fileID: 11400000, guid: 5adf4a7f85814114a8e0632cbb04d312, type: 2}
   CompletedObjectives:
   - {fileID: 11400000, guid: d7ed45ced5996a040903ad7b0b51a0b4, type: 2}

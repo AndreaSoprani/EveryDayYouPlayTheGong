@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Standard
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: b7ee60834f324af5aa1bdde9cd5b29b9, type: 3}
-  NPCName: Francis
+  NPCName: Greg
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []

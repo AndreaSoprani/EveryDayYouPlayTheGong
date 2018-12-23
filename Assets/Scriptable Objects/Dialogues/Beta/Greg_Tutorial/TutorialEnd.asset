@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: TutorialMid
+  m_Name: TutorialEnd
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: 2aa0a13ffe2c4add8d40e8f8b2aff066, type: 3}
-  NPCName: Francis
+  TextAsset: {fileID: 4900000, guid: b573ce825be64db2829f2167d7c74773, type: 3}
+  NPCName: Greg
   ActiveQuest: {fileID: 11400000, guid: 5adf4a7f85814114a8e0632cbb04d312, type: 2}
   CompletedObjectives:
   - {fileID: 11400000, guid: d7ed45ced5996a040903ad7b0b51a0b4, type: 2}
@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ab8d6596986a97346a81a0a45bed2874, type: 2}
   - {fileID: 11400000, guid: f9391dab6ba977745ab292a993647886, type: 2}
   - {fileID: 11400000, guid: d3bdf3a8fc7dee24fb58e3c9051cd7ec, type: 2}
+  - {fileID: 11400000, guid: 5cf5c25a22bb28e44a4f539cb1ce0199, type: 2}
   CompletedQuests: []
   UncompletedQuests: []
   OneTimeDialogue: 0
