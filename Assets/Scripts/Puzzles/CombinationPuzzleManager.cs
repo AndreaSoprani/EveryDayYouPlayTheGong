@@ -17,6 +17,7 @@ public class CombinationPuzzleManager : MonoBehaviour
 	public bool InstantTrigger;
 	public Dialogue DialogueUnlocked;
 	public bool AlwaysEnable;
+	public bool Silent;
 	
 
 	private int _currentIndex;
@@ -107,7 +108,7 @@ public class CombinationPuzzleManager : MonoBehaviour
 		}
 		
 		_currentIndex = 0;
-		AudioManager.Instance.PlayEvent("PuzzleFinish");
+		if(!Silent) AudioManager.Instance.PlayEvent("PuzzleFinish");
 		EventManager.TriggerEvent("PuzzleSolved" + PuzzleId);
 
 	}
