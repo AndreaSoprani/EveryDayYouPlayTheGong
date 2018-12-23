@@ -37,6 +37,15 @@ public class LayerSwitcher : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("LayerSwitch") && Player.Instance.GetLayer() == "CharacterFront")
+        {
+            Player.Instance.ChangeLayer("CharacterBehind");
+            ChangeAlpha(Alpha);
+        }
+    }
+
     /// <summary>
     /// Starts the coroutine to change the alpha value of the sprite associated with this trigger
     /// </summary>

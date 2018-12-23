@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292916945827906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7716751, y: -1.263628, z: 0}
+  m_LocalPosition: {x: 2, y: -1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389240227891802}
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
+  ObjectID: Zeder
   StandardDialogue: {fileID: 11400000, guid: e3f70b32ea4e45046b6b7b4957f14b17, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 997e22aac79870545ae7d0214bec946e, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 2739ef4b060ac9241bfc20c868946825, type: 2}
