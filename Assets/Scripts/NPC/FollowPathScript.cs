@@ -53,8 +53,9 @@ public class FollowPathScript : InGameObject
 		
 		if (!_isWaiting)
 		{
-			
-			transform.position = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].transform.position, Speed*Time.deltaTime);
+			Vector3 nextPosition = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].transform.position, Speed*Time.deltaTime);
+			//if (CanMove(nextPosition-transform.position)) 
+				transform.position = nextPosition; 
 			_direction = (PathToFollow.WayPoints[_position].transform.position - transform.position).normalized;
 			ChangeFacing(_direction);
 			_animator.SetBool("Walking", true);
