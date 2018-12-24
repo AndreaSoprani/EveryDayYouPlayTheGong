@@ -66,7 +66,6 @@ public class NPCMovement : MonoBehaviour
 			
 			if (!HasArrived() && CanMove(deltaMovement))
 			{
-				Debug.Log("Direction: " + _direction + "\nFacing: " + _facing);
 				if(_facing != _direction) ChangeFacing(_direction);
 				transform.position = transform.position + deltaMovement;
 			}

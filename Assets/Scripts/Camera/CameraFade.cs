@@ -40,5 +40,17 @@ public class CameraFade: MonoBehaviour
             gameObject.GetComponent<Canvas>().enabled = false;
     }
 
+    public void InstantChange(float alpha)
+    {
+        gameObject.GetComponent<Canvas>().enabled = true;
+
+        Color tmp = Img.color;
+        tmp.a = alpha;
+        Img.color = tmp;
+        
+        if (alpha == 0f)
+            gameObject.GetComponent<Canvas>().enabled = false;
+    }
+
     //TODO Look if it's possible to use delegate to create a function that fade in and out but also perform a custom function
 }
