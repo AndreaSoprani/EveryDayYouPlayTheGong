@@ -464,6 +464,11 @@ public class Player : MonoBehaviour
 		_spriteRenderer.sortingLayerName = layer;
 		_canvas.sortingLayerName = layer;
 	}
+
+	public string GetLayer()
+	{
+		return _spriteRenderer.sortingLayerName;
+	}
 	
 	private void OnTriggerEnter2D(Collider2D other)
 	{

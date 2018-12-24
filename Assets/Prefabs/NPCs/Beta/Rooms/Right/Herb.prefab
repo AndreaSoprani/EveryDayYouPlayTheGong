@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
+  ObjectID: Herb
   StandardDialogue: {fileID: 11400000, guid: 9c0426cb0c1995044936f727e66997b7, type: 2}
   DayOverDialogue: {fileID: 0}
   PlayingDialogue: {fileID: 0}

@@ -33,6 +33,7 @@ public class CombinationPuzzleManagerEditor: UnityEditor.Editor
             }
         }
 
+        myScript.Silent = EditorGUILayout.Toggle("Silent", myScript.Silent);
        
         serializedObject.ApplyModifiedProperties();
     }
