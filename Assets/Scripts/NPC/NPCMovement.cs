@@ -11,8 +11,8 @@ public class NPCMovement : MonoBehaviour
 	[Header("Movement")] 
 	public float Velocity = 1f;
 	public float Radius = 5f;
-	public float WaitTime = 1f;
-	public float ArrivalDistance = 1f;
+	public float WaitTime = 2f;
+	public float ArrivalDistance = 0.1f;
 
 	public Path path;
 	
@@ -26,6 +26,7 @@ public class NPCMovement : MonoBehaviour
 
 	private Animator _animator;
 	private bool _walk = true;
+	private Vector3 _facing;
 	private bool _inDialogue;
 	private bool _isFollowingPath;
 	
@@ -34,6 +35,21 @@ public class NPCMovement : MonoBehaviour
 	{
 		_animator = GetComponent<Animator>();
 		_endPosition = _center = transform.position;
+		switch (_animator.GetInteger("Direction"))
+		{
+			case 0: 
+				_facing = Vector3.up;
+				break;
+			case 1:
+				_facing = Vector3.right;
+				break;
+			case 3:
+				_facing = Vector3.left;
+				break;
+			default:
+				_facing = Vector3.down;
+				break;
+		}
 		
 		_inDialogue = false;
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
@@ -50,6 +66,8 @@ public class NPCMovement : MonoBehaviour
 			
 			if (!HasArrived() && CanMove(deltaMovement))
 			{
+				Debug.Log("Direction: " + _direction + "\nFacing: " + _facing);
+				if(_facing != _direction) ChangeFacing(_direction);
 				transform.position = transform.position + deltaMovement;
 			}
 			else
@@ -134,6 +152,8 @@ public class NPCMovement : MonoBehaviour
 		{
 			_animator.SetInteger("Direction", 2);
 		}
+
+		_facing = direction;
 	}
 	
 	/// <summary>
@@ -150,7 +170,6 @@ public class NPCMovement : MonoBehaviour
 			yield return null;
 		
 		PickNewDestination();
-		ChangeFacing(_direction);
 		_walk = true;
 		
 		_animator.SetBool("Walking", true);
