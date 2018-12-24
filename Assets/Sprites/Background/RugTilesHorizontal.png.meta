@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 7bce0e151ee2bc042aa14f8d779f6ca2
+guid: f83e275c47fe1c943a259fbd9f525cfe
 TextureImporter:
   fileIDToRecycleName:
-    21300000: RugTile_0
-    21300002: RugTiles_1
-    21300004: RugTiles_2
-    21300006: RugTiles_3
-    21300008: RugTiles_4
-    21300010: RugTiles_5
+    21300000: RugTilesHorizontal_0
+    21300002: RugTilesHorizontal_1
+    21300004: RugTilesHorizontal_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -53,7 +50,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -90,67 +87,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RugTile_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4229edde5a2a54d48a35c449c352bf28
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RugTiles_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e6eec2807860aa49bcb243d1624d045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RugTiles_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 120daa51fab17e6489efed4bb2d24842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RugTiles_3
+      name: RugTilesHorizontal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -158,19 +95,19 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 142c81cf185475e46b8cfc2790db61d9
+      spriteID: 9ad00cec98532bc4c9f3367b2266756f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RugTiles_4
+      name: RugTilesHorizontal_1
       rect:
         serializedVersion: 2
         x: 128
@@ -178,19 +115,19 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f82c5b7fc6b86847a79371b5622e16a
+      spriteID: 4ecf80046e46dfe418392468845ca9bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RugTiles_5
+      name: RugTilesHorizontal_2
       rect:
         serializedVersion: 2
         x: 256
@@ -198,13 +135,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f945b4cff511b8458de507703d28758
+      spriteID: 1a0a497d2ef364a449db8024ca56f480
       vertices: []
       indices: 
       edges: []
@@ -212,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 58b22512b5610734b974b95de03fb3c2
+    spriteID: 09a8cbc5144ff0648b664abd72aade1b
     vertices: []
     indices: 
     edges: []
