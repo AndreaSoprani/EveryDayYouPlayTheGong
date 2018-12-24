@@ -29,6 +29,8 @@ public class GUIController : MonoBehaviour
 	public ObjectiveNotificationController ObjectiveNotificationController;
 	public DisplayTextScreen DisplayTextScreen;
 	public Image[] DayProgressionImages;
+	public GameObject DayProgressionGUI;
+	public Button FirstPauseButton;
     private float _timePassed;
 	private bool _isGamePaused;
 
@@ -103,7 +105,9 @@ public class GUIController : MonoBehaviour
 		Time.timeScale = 0;
 		_isGamePaused = true;
 		PauseMenu.gameObject.SetActive(true);
-		
+		DayProgressionGUI.SetActive(false);
+		EventSystem.current.SetSelectedGameObject(FirstPauseButton.gameObject);
+
 		
 	}
 
@@ -112,6 +116,7 @@ public class GUIController : MonoBehaviour
 		Time.timeScale = 1;
 		_isGamePaused = false;
 		PauseMenu.gameObject.SetActive(false);
+		DayProgressionGUI.SetActive(true);
 	}
 
 	public void NotifyGetItem(Item item)

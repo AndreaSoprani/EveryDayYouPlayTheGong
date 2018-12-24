@@ -6,14 +6,18 @@ using UnityEngine.UI;
 
 public class MainPauseMenuController : MonoBehaviour
 {
-	public OptionsMenuController OptionsMenu;
+	public GameObject OptionsMenu;
+	public GameObject MainMenu;
 	public Button FirstPauseButton;
+	
 	private void OnEnable()
 	{
 		EventSystem.current.SetSelectedGameObject(FirstPauseButton.gameObject);
 		
+		
 	}
 
+	
 	public void LoadGame()
 	{
 		
@@ -21,8 +25,9 @@ public class MainPauseMenuController : MonoBehaviour
 
 	public void ShowOptions()
 	{
+		MainMenu.SetActive(false);
+		OptionsMenu.SetActive(true);
 		
-		OptionsMenu.gameObject.SetActive(true);
 		
 		
 	}
@@ -32,4 +37,6 @@ public class MainPauseMenuController : MonoBehaviour
 	{
 		Application.Quit();
 	}
+
+	
 }

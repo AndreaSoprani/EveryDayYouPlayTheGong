@@ -534,4 +534,9 @@ public class Player : MonoBehaviour
 	{
 		return _running;
 	}
+
+	public void RefreshCommand()
+	{
+		_directionsKeyCodes = Settings.GetDirectionsKeyCodes();
+	}
 }

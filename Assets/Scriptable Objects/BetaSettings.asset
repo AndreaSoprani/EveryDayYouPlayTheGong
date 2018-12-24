@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad1a8dd7e064d59a069124ac9e01b54, type: 3}
   m_Name: BetaSettings
   m_EditorClassIdentifier: 
-  Up: 273
+  Up: 119
   Right: 275
   Down: 274
   Left: 276
@@ -21,10 +21,8 @@ MonoBehaviour:
   Crawl: 304
   ItemsMenu: 105
   Menu: 27
-  MusicOn: 1
-  SFXOn: 1
-  MusicVolume: 1
-  SFXVolume: 1
+  MusicVolume: 60
+  SFXVolume: 100
   QuestsPerDay: 3
   StartupText: {fileID: 0}
   NotificationsDelayTime: 0.5
