@@ -14,6 +14,13 @@ public class PathNodeEditor : UnityEditor.Editor {
         {
             myScript.Text =(Dialogue) EditorGUILayout.ObjectField("Dialogue to be displayed", myScript.Text, typeof(Dialogue),true);
         }
+
+        if (myScript.Type == PathNodeType.Waiting)
+        {
+            myScript.TimeToWait = EditorGUILayout.FloatField("Time to wait", myScript.TimeToWait);
+            myScript.Text =(Dialogue) EditorGUILayout.ObjectField("Dialogue to be displayed when waiting", myScript.Text, typeof(Dialogue),true);
+
+        }
         
     }
 }

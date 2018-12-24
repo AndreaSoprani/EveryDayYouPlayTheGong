@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using DefaultNamespace;
 using Objects;
+using TMPro.Examples;
 using UnityEngine;
 using Utility;
 using Random = UnityEngine.Random;
@@ -51,11 +52,11 @@ public class FollowPathScript : InGameObject
 	{
 		
 		
-		if (!_isWaiting)
+		if (!_isWaiting && !_inDialogue)
 		{
 			Vector3 nextPosition = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].transform.position, Speed*Time.deltaTime);
 			//if (CanMove(nextPosition-transform.position)) 
-				transform.position = nextPosition; 
+			transform.position = nextPosition; 
 			_direction = (PathToFollow.WayPoints[_position].transform.position - transform.position).normalized;
 			ChangeFacing(_direction);
 			_animator.SetBool("Walking", true);
@@ -78,24 +79,43 @@ public class FollowPathScript : InGameObject
 					}
 					
 				}
+				else if (PathToFollow.WayPoints[_position].Type == PathNodeType.Waiting)
+				{
+					_isWaiting = true;
+					_animator.SetBool("Walking", false);
+					_newDialogue = PathToFollow.WayPoints[_position].Text;
+					StartCoroutine(WaitForTime(PathToFollow.WayPoints[_position].TimeToWait));
+				}
+				
 				else
 				{
 					_position++;	
 				}
 				
 
-				if (_position == PathToFollow.WayPoints.Count )
+				if (_position == PathToFollow.WayPoints.Count)
 				{
-					if (_newDialogue == null)
+					if(PathToFollow.Type!=PathType.Loop)
 					{
-						EndOfPath();
+						if (_newDialogue == null)
+						{
+							EndOfPath();
+							
+						}
+						else
+						{
+							hasFinished = true;
+						}
 						
 					}
 					else
 					{
-						hasFinished = true;
+						_position = 0;
+						
 					}
 				}
+
+				
 			
 			}
 			
@@ -118,6 +138,36 @@ public class FollowPathScript : InGameObject
 			EndOfPath();
 		}
 
+	}
+
+	private IEnumerator WaitForTime(float Time)
+	{
+		
+		yield return new WaitForSeconds(Time);
+		_isWaiting = false;
+		_position++;
+		
+		if (_position == PathToFollow.WayPoints.Count)
+		{
+			if(PathToFollow.Type!=PathType.Loop)
+			{
+				if (_newDialogue == null)
+				{
+					EndOfPath();
+							
+				}
+				else
+				{
+					hasFinished = true;
+				}
+						
+			}
+			else
+			{
+				_position = 0;
+				Debug.Log(_position);
+			}
+		}
 	}
 
 	private void EndOfPath()

@@ -8,8 +8,9 @@ public class PathNode : MonoBehaviour
 
 	public PathNodeType Type;
 	public Dialogue Text;
+	public float TimeToWait;
 }
 public enum PathNodeType
 {
-	Waypoint, Dialogue
+	Waypoint, Dialogue,Waiting
 }
