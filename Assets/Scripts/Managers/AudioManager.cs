@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
 		AkSoundEngine.SetRTPCValue("MusicVolume", Settings.MusicVolume);
 		AkSoundEngine.SetRTPCValue("FXVolume", Settings.SFXVolume);
 		AkSoundEngine.PostEvent("PlayMusic", gameObject);
-		_currentlyPlaying = "Explore";
+		_currentlyPlaying = "PlayMusic";
 
 	}
 
@@ -76,28 +76,18 @@ public class AudioManager : MonoBehaviour
 
 	public void PlayMusic(string sound)
 	{
-		/*Debug.Log("Explore "+_isAlreadyPlayed["Explore"]+" Dungeon "+_isAlreadyPlayed["Dungeon"]+ " Silence "+_isAlreadyPlayed["Silence"]);
-		if (sound == "Explore" && _currentlyPlaying!="Explore")
-		{
-			PauseEvent(_currentlyPlaying, 1);
-			
-		}
-
-		if (_isAlreadyPlayed[sound])
-		{
-			ResumeEvent(sound, 1);
 		
-		}
-		else
+
+		if (_currentlyPlaying != "Explore" && sound!= "Explore")
 		{
-			_isAlreadyPlayed[sound] = true;
+			PlayEvent("Explore");
 			PlayEvent(sound);
 		}
-
-		_currentlyPlaying = sound;
-		Debug.Log(_currentlyPlaying);*/
 		
-
+		else
+		{
+			PlayEvent(sound);
+		}
 		_currentlyPlaying = sound;
 		Debug.Log(_currentlyPlaying);
 
@@ -124,22 +114,22 @@ public class AudioManager : MonoBehaviour
 	private void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.H))
-			PlayEvent("Explore");
+			PlayMusic("Explore");
 		else if(Input.GetKeyDown(KeyCode.J))
 		{
-			PlayEvent("Dungeon");
+			PlayMusic("Dungeon");
 		}
 		else if(Input.GetKeyDown(KeyCode.K))
 		{
-			PlayEvent("Silence");
+			PlayMusic("Silence");
 		}
 		else if(Input.GetKeyDown(KeyCode.L))
 		{
-			PlayEvent("Library");
+			PlayMusic("Library");
 		}
 		else if(Input.GetKeyDown(KeyCode.M))
 		{
-			PlayEvent("Head");
+			PlayMusic("Head");
 		}
 		
 		
