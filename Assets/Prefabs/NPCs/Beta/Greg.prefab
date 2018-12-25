@@ -156,9 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectID: Greg
-  StandardDialogue: {fileID: 0}
-  DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  StandardDialogue: {fileID: 11400000, guid: ce2bb4aeb901af742aa1e9e9b8c7fd3b, type: 2}
+  DayOverDialogue: {fileID: 11400000, guid: 44b3a6a51d9cdeb41aa41804d2dbff28, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: 35aaca6dbd241de4d877e629ae0181f7, type: 2}
   Dialogues: []
   DestroyAfterLastDialogue: 0
 --- !u!114 &114366921316399868

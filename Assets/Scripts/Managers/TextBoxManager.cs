@@ -35,6 +35,8 @@ public class TextBoxManager : MonoBehaviour
 
 	private int _currentLine;
 
+	private bool _dontChangeNPCFacing;
+	
 	private List<Quest> _questsToActivate;
 	private List<Item> _itemsToAdd;
 	private List<Item> _itemsToRemove;
@@ -93,6 +95,7 @@ public class TextBoxManager : MonoBehaviour
 		StartCoroutine(DisableProgression());
 		IsActive = true;
 		EventManager.TriggerEvent("EnterDialogue");
+		if(!_dontChangeNPCFacing) EventManager.TriggerEvent("NPCEnterDialogue");
 	}
 
 	/// <summary>
@@ -106,6 +109,7 @@ public class TextBoxManager : MonoBehaviour
 		
 		// Signal dialogue exit
 		EventManager.TriggerEvent("ExitDialogue");
+		if(!_dontChangeNPCFacing) EventManager.TriggerEvent("NPCExitDialogue");
 		
 		EndDialogueActivations();
 	}
@@ -125,6 +129,8 @@ public class TextBoxManager : MonoBehaviour
 
 		// Set the NPC name.
 		_nametext.text = dialogue.NPCName;
+
+		_dontChangeNPCFacing = dialogue.DontChangeNPCFacing;
 
 		_questsToActivate = dialogue.QuestsToActivate;
 		_itemsToAdd = dialogue.ItemsToAdd;

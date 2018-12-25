@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Collections.ObjectModel;
 using DefaultNamespace;
 using Objects;
-using TMPro.Examples;
 using UnityEngine;
 using Utility;
-using Random = UnityEngine.Random;
 
 public class FollowPathScript : InGameObject
 {

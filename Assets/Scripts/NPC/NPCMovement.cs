@@ -52,7 +52,7 @@ public class NPCMovement : MonoBehaviour
 		}
 		
 		_inDialogue = false;
-		EventManager.StartListening("EnterDialogue", EnterDialogue);
+		EventManager.StartListening("NPCEnterDialogue", EnterDialogue);
 	}
 	
 	// Update is called once per frame
@@ -185,8 +185,8 @@ public class NPCMovement : MonoBehaviour
 		ChangeFacing(Player.Instance.transform.position - transform.position);
 		_animator.SetBool("Walking", false);
 		
-		EventManager.StopListening("EnterDialogue", EnterDialogue);
-		EventManager.StartListening("ExitDialogue", ExitDialogue);
+		EventManager.StopListening("NPCEnterDialogue", EnterDialogue);
+		EventManager.StartListening("NPCExitDialogue", ExitDialogue);
 	}
 
 	/**
@@ -200,7 +200,7 @@ public class NPCMovement : MonoBehaviour
 		ChangeFacing(_direction);
 		_animator.SetBool("Walking", _walk);
 		
-		EventManager.StopListening("ExitDialogue", ExitDialogue);
-		EventManager.StartListening("EnterDialogue", EnterDialogue);
+		EventManager.StopListening("NPCExitDialogue", ExitDialogue);
+		EventManager.StartListening("NPCEnterDialogue", EnterDialogue);
 	}
 }

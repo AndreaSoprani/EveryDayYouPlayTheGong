@@ -12,6 +12,10 @@ namespace Utility
         [Header("Text info and asset")]
         public TextAsset TextAsset; // The text to display.
         public string NPCName; // The name of the NPC to display.
+
+        [Header("Dialogue settings")] 
+        public bool DontChangeNPCFacing; // If true the NPCs will not face the player when the dialogue starts.
+        public bool OneTimeDialogue; // If true the dialogue can be reproduced just one time.
         
         [Header("Condition on quest and objectives")]
         public Quest ActiveQuest; // The quest that must be active in order to use this dialogue.
@@ -19,7 +23,6 @@ namespace Utility
         // make this dialogue available.
         public List<Quest> CompletedQuests; // List of quests that must be completed to make this dialogue available.
         public List<Quest> UncompletedQuests; // List of quests that must be not completed to make this dialogue available.
-        public bool OneTimeDialogue; // If true the dialogue can be reproduced just one time.
         
         [Header("Consequences of the dialogue")]
         public List<Quest> QuestsToActivate; // List of quests to activate after the dialogue.
