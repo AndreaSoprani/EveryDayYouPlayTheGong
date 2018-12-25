@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: 8769d2eb63b743b9ae1feba1de0ac7f0, type: 3}
   NPCName: Greg
+  DontChangeNPCFacing: 1
+  OneTimeDialogue: 0
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
-  OneTimeDialogue: 0
   QuestsToActivate: []
   ItemsToAdd: []
   ItemsToRemove: []

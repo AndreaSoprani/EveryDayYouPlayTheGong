@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1541212283210724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5, y: 1.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ MonoBehaviour:
   BrokenDialogue: {fileID: 11400000, guid: b365bc02df253e44a8b7467d41a45dcb, type: 2}
   CurrentBackOnDialogue: {fileID: 11400000, guid: 4a049df8cd620f74d8a9390ed16d5fb3,
     type: 2}
-  BlackOutTime: 3
+  BlackOutTime: 5
   Broken: 0
 --- !u!212 &212028058433546128
 SpriteRenderer:

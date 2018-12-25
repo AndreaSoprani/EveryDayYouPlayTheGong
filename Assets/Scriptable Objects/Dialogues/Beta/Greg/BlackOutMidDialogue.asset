@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: Standard
+  m_Name: BlackOutMidDialogue
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: b7ee60834f324af5aa1bdde9cd5b29b9, type: 3}
+  TextAsset: {fileID: 4900000, guid: 5a30b6c9294240ab8441b93dfc0ebdc8, type: 3}
   NPCName: Greg
-  DontChangeNPCFacing: 1
+  DontChangeNPCFacing: 0
   OneTimeDialogue: 0
-  ActiveQuest: {fileID: 0}
+  ActiveQuest: {fileID: 11400000, guid: bbc7537d6193c0745a51d6f9f0e95a01, type: 2}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []

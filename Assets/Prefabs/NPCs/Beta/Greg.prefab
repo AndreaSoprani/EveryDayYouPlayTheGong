@@ -159,7 +159,10 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: ce2bb4aeb901af742aa1e9e9b8c7fd3b, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 44b3a6a51d9cdeb41aa41804d2dbff28, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 35aaca6dbd241de4d877e629ae0181f7, type: 2}
-  Dialogues: []
+  Dialogues:
+  - {fileID: 11400000, guid: df3473d5535ee584e8651d3d8e270423, type: 2}
+  - {fileID: 11400000, guid: a163eea143ac0104ab6c67c543038168, type: 2}
+  - {fileID: 11400000, guid: abcd025eba744bd4a8b24551fdd09abb, type: 2}
   DestroyAfterLastDialogue: 0
 --- !u!114 &114366921316399868
 MonoBehaviour:
@@ -271,7 +274,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1683700601
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 502ba1971f111f64ba8f7726dec17132, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
