@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114599478142613688}
   - component: {fileID: 114173967495032366}
   m_Layer: 8
-  m_Name: GardenMonk2
+  m_Name: Barney
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
