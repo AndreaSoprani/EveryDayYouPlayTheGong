@@ -25,7 +25,7 @@ public class NPCFacing : MonoBehaviour
 	/// Changes the sprites of the NPC based on the direction
 	/// </summary>
 	/// <param name="direction">Direction the NPC should face</param>
-	protected void ChangeFacing(Vector3 direction)
+	public void ChangeFacing(Vector3 direction)
 	{
 		float angle = Vector3.SignedAngle(Vector3.right, direction, Vector3.forward);
 		
