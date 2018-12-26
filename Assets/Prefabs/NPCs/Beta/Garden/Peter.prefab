@@ -117,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292916945827906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.79, y: -2.17, z: 0}
+  m_LocalPosition: {x: 4.129876, y: -7.490815, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389240227891802}
@@ -286,13 +286,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: Peter
   Velocity: 1
-  MaximumRadiusX: 4.84
+  MaximumRadiusX: 3
   MaximumRadiusY: 3.38
   Step: 1
-  WaitTime: 1
+  WaitTime: 2
   ArrivalDistance: 1
   GizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  path: {fileID: 0}
   RayCastPositions:
     UpLeft: {fileID: 4420773584509904}
     UpRight: {fileID: 4858405189364520}

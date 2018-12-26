@@ -117,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292916945827906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.42, y: 4.66, z: 0}
+  m_LocalPosition: {x: -8.5, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389240227891802}
@@ -287,12 +287,11 @@ MonoBehaviour:
   Id: Barney
   Velocity: 1
   MaximumRadiusX: 3.18
-  MaximumRadiusY: 1.5
+  MaximumRadiusY: 1.2
   Step: 1
   WaitTime: 1
   ArrivalDistance: 1
   GizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  path: {fileID: 0}
   RayCastPositions:
     UpLeft: {fileID: 4420773584509904}
     UpRight: {fileID: 4858405189364520}

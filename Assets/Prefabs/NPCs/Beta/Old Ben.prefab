@@ -172,8 +172,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0.73}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.2, y: 0}
-  - {x: 0.2, y: 0}
+  - {x: -0.031728238, y: -0.00000047683716}
+  - {x: 0.047308907, y: -0.00000047683716}
 --- !u!95 &95873589341851828
 Animator:
   serializedVersion: 3
@@ -337,7 +337,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1683700601
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 819b9edc901cc5b4ca682eea19567fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
