@@ -34,17 +34,14 @@ public class NotesListWindow : MonoBehaviour {
 		bool first = true;
 		foreach (Quest todayQuest in QuestManager.Instance.TodayQuests)
 		{
-			for (int i = 0; i < 6; i++)
+			NotesListElementController newItem = Instantiate(ItemSlotPrefab);
+			newItem.transform.SetParent(Content.transform);
+			newItem.SetQuest(todayQuest, Top.position.y, Bottom.position.y, Scrollbar);
+			if (first)
 			{
-				NotesListElementController newItem = Instantiate(ItemSlotPrefab);
-				newItem.transform.SetParent(Content.transform);
-				newItem.SetQuest(todayQuest, Top.position.y, Bottom.position.y, Scrollbar);
-				if (first)
-				{
-					_firstElement = newItem;
-					_firstElement.GetComponent<Toggle>().Select();
-					first = false;
-				}
+				_firstElement = newItem;
+				_firstElement.GetComponent<Toggle>().Select();
+				first = false;
 			}
 		}
 		
