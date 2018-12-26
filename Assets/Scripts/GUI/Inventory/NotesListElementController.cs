@@ -12,17 +12,38 @@ public class NotesListElementController : MonoBehaviour {
 	private Quest _quest;
 	
 	public TextMeshProUGUI NameField;
-
+	
+	private float _top;
+	private float _bottom;
+	
+	private Scrollbar _scrollbar;
 	
 
-	public void SetQuest(Quest quest)
+	public void SetQuest(Quest quest, float top, float bottom, Scrollbar scrollbar)
 	{
 		_quest = quest;
 		NameField.text = _quest.Name;
+
+		_top = top;
+		_bottom = bottom;
+		_scrollbar = scrollbar;
 	}
 
 	public void ShowInfo()
 	{
+		if (transform.position.y > _top)
+		{
+			Debug.Log("Higher");
+			_scrollbar.value += 0.28f;
+		}
+
+		if (transform.position.y < _bottom)
+		{
+			Debug.Log("Lower");
+			_scrollbar.value -= 0.28f;
+		}
+
+		
 		GameObject.FindGameObjectWithTag("NotesQuestTitle").GetComponent<TextMeshProUGUI>().text = _quest.Name;
 		StringBuilder obtained = new StringBuilder();
 		int lastCompleted= 0;
