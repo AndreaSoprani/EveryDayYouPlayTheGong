@@ -117,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292916945827906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9110565, y: -0.44, z: 0}
+  m_LocalPosition: {x: 2, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389240227891802}
@@ -312,10 +312,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: Willy
   StandardDialogue: {fileID: 11400000, guid: fa35a5d077d02334da599f9bdebc2de1, type: 2}
-  DayOverDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: e3395b0d5e5c90947b5baceb45a1808c, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: df7f13b741fb17149b1fb8603a191df7, type: 2}
   Dialogues:
   - {fileID: 11400000, guid: 98f80dd267ce1f940843c1c4c2101e6e, type: 2}
+  - {fileID: 11400000, guid: 6021ce18c4c05f6448d6b6a189e35b5e, type: 2}
+  - {fileID: 11400000, guid: fc461dc217a361546a3206f13e54b06e, type: 2}
   DestroyAfterLastDialogue: 0
 --- !u!114 &114959710126467722
 MonoBehaviour:
@@ -331,7 +333,7 @@ MonoBehaviour:
   Id: Willy
   Velocity: 1
   MaximumRadiusX: 1.2
-  MaximumRadiusY: 0.76
+  MaximumRadiusY: 0.3
   Step: 1
   WaitTime: 2
   ArrivalDistance: 0.1

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: ChocolateBar
   m_EditorClassIdentifier: 
   Id: chocolateBar
-  Name: Chocolate Bar
-  Description: chocolate bar made with the finest local ingredients
+  Name: A chocolate bar
+  Description: chocolate bar made with the finest local ingredients.
   InventoryArtwork: {fileID: 21300018, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

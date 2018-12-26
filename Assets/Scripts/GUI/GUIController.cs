@@ -43,7 +43,7 @@ public class GUIController : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update ()
+	void LateUpdate ()
 	{
 		if (Input.GetKeyDown(Settings.Menu))
 		{
@@ -67,14 +67,14 @@ public class GUIController : MonoBehaviour
 				CloseInventory();
 		}
 		
-		NotificationController.DisplayNotification();
-		
 		if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() && Input.GetKeyDown(Settings.Interact))
 		{
 			NotificationController.HideNotification();
 			Player.Instance.BlockMovement(false);
 			_isGamePaused = false;
 		}
+		
+		NotificationController.DisplayNotification();
 
 		if (DisplayTextScreen.IsActive() && 
 		    !_isGamePaused && 

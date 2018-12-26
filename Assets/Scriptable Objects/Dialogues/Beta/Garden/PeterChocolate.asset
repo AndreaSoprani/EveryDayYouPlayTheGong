@@ -14,7 +14,7 @@ MonoBehaviour:
   TextAsset: {fileID: 4900000, guid: 05c7063d425b4cf19c52e6148137ecfd, type: 3}
   NPCName: Peter
   DontChangeNPCFacing: 0
-  OneTimeDialogue: 0
+  OneTimeDialogue: 1
   ActiveQuest: {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
   CompletedObjectives:
   - {fileID: 11400000, guid: 6038394b51033e6459226725f9d66b19, type: 2}
