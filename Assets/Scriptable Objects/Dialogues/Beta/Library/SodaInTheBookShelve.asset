@@ -9,19 +9,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: CandyVase
+  m_Name: SodaInTheBookShelve
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: 436c91e427f042dfbcf5adbbe49c9092, type: 3}
+  TextAsset: {fileID: 4900000, guid: f93f70f2b8f74abc88f0d6d783041437, type: 3}
   NPCName: 
   DontChangeNPCFacing: 0
   OneTimeDialogue: 1
-  ActiveQuest: {fileID: 0}
-  CompletedObjectives: []
+  ActiveQuest: {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
+  CompletedObjectives:
+  - {fileID: 11400000, guid: 6038394b51033e6459226725f9d66b19, type: 2}
+  - {fileID: 11400000, guid: 19b401b7625cb4e43a9af4fd260db14f, type: 2}
   CompletedQuests: []
   UncompletedQuests: []
-  QuestsToActivate:
-  - {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
+  QuestsToActivate: []
   ItemsToAdd:
-  - {fileID: 11400000, guid: 327237187af03074d99b673cf61a1711, type: 2}
+  - {fileID: 11400000, guid: f26402f5c1c44894896ea821f9a597cb, type: 2}
   ItemsToRemove: []
   GameObjectsToDestroy: []

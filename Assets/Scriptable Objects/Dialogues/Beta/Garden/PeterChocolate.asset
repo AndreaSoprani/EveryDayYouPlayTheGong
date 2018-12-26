@@ -9,16 +9,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: BobPlaying
+  m_Name: PeterChocolate
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: f88e638ba06f4d0c9fb09847321d2c50, type: 3}
-  NPCName: Bob
-  ActiveQuest: {fileID: 0}
-  CompletedObjectives: []
+  TextAsset: {fileID: 4900000, guid: 05c7063d425b4cf19c52e6148137ecfd, type: 3}
+  NPCName: Peter
+  DontChangeNPCFacing: 0
+  OneTimeDialogue: 0
+  ActiveQuest: {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
+  CompletedObjectives:
+  - {fileID: 11400000, guid: 6038394b51033e6459226725f9d66b19, type: 2}
   CompletedQuests: []
   UncompletedQuests: []
-  OneTimeDialogue: 0
   QuestsToActivate: []
-  ItemsToAdd: []
+  ItemsToAdd:
+  - {fileID: 11400000, guid: e0c2579d288e946479c14bfac72119f2, type: 2}
   ItemsToRemove: []
   GameObjectsToDestroy: []

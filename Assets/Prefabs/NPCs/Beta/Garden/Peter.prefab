@@ -117,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292916945827906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9110565, y: -0.1331501, z: 0}
+  m_LocalPosition: {x: 4.129876, y: -7.490815, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389240227891802}
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 1
-  Radius: 2
+  Radius: 5
   WaitTime: 1
   ArrivalDistance: 1
   path: {fileID: 0}
@@ -333,11 +333,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
-  StandardDialogue: {fileID: 0}
+  ObjectID: Peter
+  StandardDialogue: {fileID: 11400000, guid: ded196228a6f6414387a162484644d8b, type: 2}
   DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
-  Dialogues: []
+  PlayingDialogue: {fileID: 11400000, guid: ea27a972c02d4094db77185c98b0b60f, type: 2}
+  Dialogues:
+  - {fileID: 11400000, guid: 146ceda06bda3f04f9cab3e7314c3bdb, type: 2}
   DestroyAfterLastDialogue: 0
 --- !u!212 &212637086172232832
 SpriteRenderer:

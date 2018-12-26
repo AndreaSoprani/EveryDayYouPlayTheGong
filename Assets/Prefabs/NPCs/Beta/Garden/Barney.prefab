@@ -333,10 +333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f5a681f07f394c95c604233dcc49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
-  StandardDialogue: {fileID: 0}
+  ObjectID: Barney
+  StandardDialogue: {fileID: 11400000, guid: 43e5ed590403f1a4e8ebbbb0c96eacbb, type: 2}
   DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  PlayingDialogue: {fileID: 11400000, guid: a90fd0fd35578234a9df4b44ff902879, type: 2}
   Dialogues: []
   DestroyAfterLastDialogue: 0
 --- !u!212 &212637086172232832

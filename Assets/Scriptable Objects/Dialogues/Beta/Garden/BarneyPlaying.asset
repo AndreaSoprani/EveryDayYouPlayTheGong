@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
   m_Name: BarneyPlaying
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 0}
-  NPCName: 
+  TextAsset: {fileID: 4900000, guid: 25eff26c1dc543d9b5880c1bf6814128, type: 3}
+  NPCName: Barney
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []

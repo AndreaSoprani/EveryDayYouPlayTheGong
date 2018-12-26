@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
   m_Name: BobStandard
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 0}
-  NPCName: 
+  TextAsset: {fileID: 4900000, guid: 3f82c16b40054281b62a0c861e13df7d, type: 3}
+  NPCName: Bob
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
