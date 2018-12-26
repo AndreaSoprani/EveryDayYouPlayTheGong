@@ -41,6 +41,16 @@ namespace Utility
             TextBoxManager.Instance.EnableTextBox();
             _hasBeenReproduced = true;
         }
+        /// <summary>
+        /// Calls the TextBoxManager and starts the dialogue from NPC.
+        /// </summary>
+        public void StartDialogue(string NPCid)
+        {
+            TextBoxManager.Instance.LoadDialogue(this);
+            TextBoxManager.Instance.EnableTextBox(NPCid);
+            _hasBeenReproduced = true;
+        }
+        
 
         /// <summary>
         /// Method used to check if a dialogue is available based on the objectives conditions.

@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0cae0876f5c894da52533aee438cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
+  ObjectID: PatrolMonk
   Speed: 1
   PathToFollow: {fileID: 0}
   RayCastPositions:
@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 3
+  ID: PatrolMonk
 --- !u!212 &212637086172232832
 SpriteRenderer:
   m_ObjectHideFlags: 1

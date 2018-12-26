@@ -7,7 +7,7 @@ public class NPCFacing : MonoBehaviour
 	public int DefaultFacingDirection = 2;
 	
 	private Animator _animator;
-	
+	public string ID;
 	private void OnValidate()
 	{
 		if (DefaultFacingDirection < 0 || DefaultFacingDirection > 3)
@@ -18,7 +18,7 @@ public class NPCFacing : MonoBehaviour
 	{
 		_animator = GetComponent<Animator>();
 		_animator.SetInteger("Direction", DefaultFacingDirection);
-		EventManager.StartListening("NPCEnterDialogue", EnterDialogue);
+		EventManager.StartListening("NPCEnterDialogue"+ID, EnterDialogue);
 	}
 	
 	/// <summary>
@@ -55,8 +55,8 @@ public class NPCFacing : MonoBehaviour
 	{
 		ChangeFacing(Player.Instance.transform.position - transform.position);
 		
-		EventManager.StopListening("NPCEnterDialogue", EnterDialogue);
-		EventManager.StartListening("NPCExitDialogue", ExitDialogue);
+		EventManager.StopListening("NPCEnterDialogue"+ID, EnterDialogue);
+		EventManager.StartListening("NPCExitDialogue"+ID, ExitDialogue);
 	}
 	
 	/**
@@ -67,7 +67,7 @@ public class NPCFacing : MonoBehaviour
 	{
 		_animator.SetInteger("Direction", DefaultFacingDirection);
 		
-		EventManager.StopListening("NPCExitDialogue", ExitDialogue);
-		EventManager.StartListening("NPCEnterDialogue", EnterDialogue);
+		EventManager.StopListening("NPCExitDialogue"+ID, ExitDialogue);
+		EventManager.StartListening("NPCEnterDialogue"+ID, EnterDialogue);
 	}
 }

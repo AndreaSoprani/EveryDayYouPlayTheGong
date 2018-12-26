@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc980eb188e3bf44aaf97e46372138a8, type: 3}
   m_Name: ChocolateBar
   m_EditorClassIdentifier: 
-  Id: ChocolateBar
+  Id: chocolateBar
   Name: Chocolate Bar
   Description: chocolate bar made with the finest local ingredients
   InventoryArtwork: {fileID: 21300018, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

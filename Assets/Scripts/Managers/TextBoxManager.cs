@@ -46,6 +46,8 @@ public class TextBoxManager : MonoBehaviour
 	
 	public bool IsActive;
 
+	private string _NPCid;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -97,6 +99,23 @@ public class TextBoxManager : MonoBehaviour
 		EventManager.TriggerEvent("EnterDialogue");
 		if(!_dontChangeNPCFacing) EventManager.TriggerEvent("NPCEnterDialogue");
 	}
+	/// <summary>
+	/// Enables the text box and starts the dialogue triggered by id at the current position.
+	/// TextBox can only be enabled if a text file is loaded.
+	/// </summary>
+	public void EnableTextBox(string NPCid)
+	{
+		if (_textLines.Length == 0) return;
+		DialogueBox.SetActive(true);
+		StartCoroutine(DisableProgression());
+		IsActive = true;
+		EventManager.TriggerEvent("EnterDialogue");
+		if (!_dontChangeNPCFacing)
+		{
+			EventManager.TriggerEvent("NPCEnterDialogue"+NPCid);
+			_NPCid = NPCid;
+		}
+	}
 
 	/// <summary>
 	/// Disables text box and stops the dialogue at the current position.
@@ -109,10 +128,15 @@ public class TextBoxManager : MonoBehaviour
 		
 		// Signal dialogue exit
 		EventManager.TriggerEvent("ExitDialogue");
-		if(!_dontChangeNPCFacing) EventManager.TriggerEvent("NPCExitDialogue");
+		if (!_dontChangeNPCFacing && _NPCid != null)
+		{
+			EventManager.TriggerEvent("NPCExitDialogue"+_NPCid);
+			_NPCid = null;
+		}
 		
 		EndDialogueActivations();
 	}
+	
 
 	/// <summary>
 	/// Used to load a dialogue.
