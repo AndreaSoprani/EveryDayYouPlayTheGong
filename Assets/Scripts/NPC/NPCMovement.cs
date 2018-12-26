@@ -8,19 +8,23 @@ using Random = UnityEngine.Random;
 
 public class NPCMovement : MonoBehaviour
 {
+	public string Id;
 	[Header("Movement")] 
 	public float Velocity = 1f;
-	public float Radius = 5f;
+	public float MaximumRadiusX = 5f;
+	public float MaximumRadiusY = 5f;
+	public float Step = 1;
+	private Vector3 _center;
 	public float WaitTime = 2f;
 	public float ArrivalDistance = 0.1f;
+	public Color GizmoColor=Color.red;
 
-	public Path path;
 	
 	[Header("Collisions")] 
 	public RayCastPositions RayCastPositions;
 	public LayerMask ObstacleLayer;
 
-	private Vector3 _center;
+	
 	private Vector3 _endPosition;
 	private Vector3 _direction;
 
@@ -30,6 +34,17 @@ public class NPCMovement : MonoBehaviour
 	private bool _inDialogue;
 	private bool _isFollowingPath;
 	
+
+	private void OnDrawGizmos()
+	{
+		
+		Gizmos.color=GizmoColor;
+		Gizmos.DrawLine(new Vector3(transform.position.x-MaximumRadiusX,transform.position.y+MaximumRadiusY),new Vector3(transform.position.x+MaximumRadiusX,transform.position.y+MaximumRadiusY));
+		Gizmos.DrawLine(new Vector3(transform.position.x+MaximumRadiusX,transform.position.y+MaximumRadiusY),new Vector3(transform.position.x+MaximumRadiusX,transform.position.y-MaximumRadiusY));
+		Gizmos.DrawLine(new Vector3(transform.position.x+MaximumRadiusX,transform.position.y-MaximumRadiusY),new Vector3(transform.position.x-MaximumRadiusX,transform.position.y-MaximumRadiusY));
+		Gizmos.DrawLine(new Vector3(transform.position.x-MaximumRadiusX,transform.position.y-MaximumRadiusY),new Vector3(transform.position.x-MaximumRadiusX,transform.position.y+MaximumRadiusY));
+	}
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -52,7 +67,9 @@ public class NPCMovement : MonoBehaviour
 		}
 		
 		_inDialogue = false;
-		EventManager.StartListening("NPCEnterDialogue", EnterDialogue);
+		EventManager.StartListening("NPCEnterDialogue"+Id, EnterDialogue);
+		
+		
 	}
 	
 	// Update is called once per frame
@@ -62,11 +79,13 @@ public class NPCMovement : MonoBehaviour
 		
 		if (_walk)
 		{
+			
 			Vector3 deltaMovement = _direction * Velocity * Time.deltaTime;
 			
 			if (!HasArrived() && CanMove(deltaMovement))
 			{
-				if(_facing != _direction) ChangeFacing(_direction);
+				
+				ChangeFacing(_direction);
 				transform.position = transform.position + deltaMovement;
 			}
 			else
@@ -104,7 +123,12 @@ public class NPCMovement : MonoBehaviour
 			if (hit.collider != null) return false;
 		}
 
-		return true;
+		Vector3 finalPosition = transform.position + delta;
+		
+		return !(finalPosition.x > _center.x + MaximumRadiusX || finalPosition.x < _center.x - MaximumRadiusX ||
+		       finalPosition.y > _center.y + MaximumRadiusY ||
+		       finalPosition.y < _center.y - MaximumRadiusY);
+
 
 	}
 	
@@ -117,15 +141,19 @@ public class NPCMovement : MonoBehaviour
 
 		if (axis) // x
 		{
-			_endPosition = new Vector3(_center.x + Random.Range(-Radius, + Radius), transform.position.y, 0);
+			_endPosition = new Vector3(_center.x + Random.Range(-MaximumRadiusX, + MaximumRadiusX), transform.position.y, 0);
 		}
 		else // y
 		{
-			_endPosition = new Vector3(transform.position.x, _center.y + Random.Range(-Radius, + Radius), 0);
+			_endPosition = new Vector3(transform.position.x, _center.y + Random.Range(-MaximumRadiusY, + MaximumRadiusY), 0);
 		}
 
 		_direction = (_endPosition - transform.position).normalized;
+		
+		
 	}
+
+	
 
 	/// <summary>
 	/// Changes the sprites of the NPC based on the direction
@@ -138,21 +166,27 @@ public class NPCMovement : MonoBehaviour
 		if (angle > -45f && angle < 45f)
 		{
 			_animator.SetInteger("Direction", 1);
+			
 		}
 		else if (angle >= 45f && angle <= 135f)
 		{
 			_animator.SetInteger("Direction", 0);
+			
 		}
 		else if (angle > 135f || angle < -135f)
 		{
 			_animator.SetInteger("Direction", 3);
+			
 		}
 		else
 		{
 			_animator.SetInteger("Direction", 2);
+			
 		}
 
 		_facing = direction;
+		
+		
 	}
 	
 	/// <summary>
@@ -169,6 +203,7 @@ public class NPCMovement : MonoBehaviour
 			yield return null;
 		
 		PickNewDestination();
+		
 		_walk = true;
 		
 		_animator.SetBool("Walking", true);
@@ -182,11 +217,11 @@ public class NPCMovement : MonoBehaviour
 	{
 		_inDialogue = true;
 		
-		ChangeFacing(Player.Instance.transform.position - transform.position);
+		//ChangeFacing(Player.Instance.transform.position - transform.position);
 		_animator.SetBool("Walking", false);
 		
-		EventManager.StopListening("NPCEnterDialogue", EnterDialogue);
-		EventManager.StartListening("NPCExitDialogue", ExitDialogue);
+		EventManager.StopListening("NPCEnterDialogue"+Id, EnterDialogue);
+		EventManager.StartListening("NPCExitDialogue"+Id, ExitDialogue);
 	}
 
 	/**
@@ -197,10 +232,10 @@ public class NPCMovement : MonoBehaviour
 	{
 		_inDialogue = false;
 		
-		ChangeFacing(_direction);
+		//ChangeFacing(_direction);
 		_animator.SetBool("Walking", _walk);
 		
-		EventManager.StopListening("NPCExitDialogue", ExitDialogue);
-		EventManager.StartListening("NPCEnterDialogue", EnterDialogue);
+		EventManager.StopListening("NPCExitDialogue"+Id, ExitDialogue);
+		EventManager.StartListening("NPCEnterDialogue"+Id, EnterDialogue);
 	}
 }

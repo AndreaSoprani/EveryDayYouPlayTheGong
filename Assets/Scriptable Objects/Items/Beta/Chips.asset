@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc980eb188e3bf44aaf97e46372138a8, type: 3}
   m_Name: Chips
   m_EditorClassIdentifier: 
-  Id: Chips
+  Id: chips
   Name: Chips
   Description: Potato chips in a beatiful package
   InventoryArtwork: {fileID: 21300020, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

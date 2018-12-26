@@ -15,4 +15,4 @@ MonoBehaviour:
   QuestID: helpWilly_quest
   Description: Inspect the bonsai
   Completed: 0
-  ItemId: Chips
+  ItemId: chips

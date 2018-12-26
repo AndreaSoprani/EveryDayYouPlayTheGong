@@ -57,7 +57,6 @@ GameObject:
   - component: {fileID: 95985147834593670}
   - component: {fileID: 114884771704170748}
   - component: {fileID: 114599478142613688}
-  - component: {fileID: 114173967495032366}
   m_Layer: 8
   m_Name: Herb
   m_TagString: Untagged
@@ -273,30 +272,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114173967495032366
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1292916945827906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797c9c440aabd5f4fb8acb0c5f6c109d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: 1
-  Radius: 1
-  WaitTime: 1
-  ArrivalDistance: 1
-  path: {fileID: 0}
-  RayCastPositions:
-    UpLeft: {fileID: 4420773584509904}
-    UpRight: {fileID: 4858405189364520}
-    DownLeft: {fileID: 4723910087763658}
-    DownRight: {fileID: 4858405189364520}
-  ObstacleLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &114304917691745974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 2
+  ID: Herb
 --- !u!114 &114884771704170748
 MonoBehaviour:
   m_ObjectHideFlags: 1

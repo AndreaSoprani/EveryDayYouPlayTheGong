@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 2
+  ID: GregTutorial
 --- !u!114 &114776787537447146
 MonoBehaviour:
   m_ObjectHideFlags: 1

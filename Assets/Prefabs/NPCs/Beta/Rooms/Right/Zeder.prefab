@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 3
+  ID: Zeder
 --- !u!114 &114884771704170748
 MonoBehaviour:
   m_ObjectHideFlags: 1

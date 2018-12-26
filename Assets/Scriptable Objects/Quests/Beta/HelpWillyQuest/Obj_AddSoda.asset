@@ -15,4 +15,4 @@ MonoBehaviour:
   QuestID: helpWilly_quest
   Description: Search in the library
   Completed: 0
-  ItemId: Soda
+  ItemId: soda

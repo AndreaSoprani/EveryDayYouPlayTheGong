@@ -15,4 +15,4 @@ MonoBehaviour:
   QuestID: helpWilly_quest
   Description: Search in the garden
   Completed: 0
-  ItemId: ChocolateBar
+  ItemId: chocolateBar

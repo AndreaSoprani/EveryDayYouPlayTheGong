@@ -47,11 +47,11 @@ public class NPCInteractable : InGameObject
 	{
 		Dialogue lastAvailable = LastAvailableDialogue();
 		
-		if(DayProgressionManager.Instance.IsDayOver() && DayOverDialogue != null) DayOverDialogue.StartDialogue();
-		else if (lastAvailable == null && StandardDialogue != null) StandardDialogue.StartDialogue();
+		if(DayProgressionManager.Instance.IsDayOver() && DayOverDialogue != null) DayOverDialogue.StartDialogue(ObjectID);
+		else if (lastAvailable == null && StandardDialogue != null) StandardDialogue.StartDialogue(ObjectID);
 		else if (lastAvailable != null)
 		{
-			lastAvailable.StartDialogue();
+			lastAvailable.StartDialogue(ObjectID);
 
 			if (lastAvailable.CanStartQuest())
 			{
@@ -72,7 +72,7 @@ public class NPCInteractable : InGameObject
 
 	public void InstantDialogue(Dialogue dialogue)
 	{
-		dialogue.StartDialogue();
+		dialogue.StartDialogue(ObjectID);
 	}
 
 	private Dialogue LastAvailableDialogue()

@@ -91,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1522254491215470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 4, z: 0}
+  m_LocalPosition: {x: -5.5, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4811606714153102}
@@ -183,7 +183,7 @@ Animator:
   m_GameObject: {fileID: 1522254491215470}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4b2e0d95ddb64534d8da922ba7dec384, type: 2}
+  m_Controller: {fileID: 9100000, guid: 69b9c755383c7fe4b9bc1a2ee07a9fa3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -289,6 +289,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dd7baaf54e02773419da6f94215da314, type: 2}
   - {fileID: 11400000, guid: c38e30c9e84801e418beee76ff4e77f6, type: 2}
   - {fileID: 11400000, guid: b6514625a454b0141854deec31ab39d0, type: 2}
+  DestroyAfterLastDialogue: 0
 --- !u!114 &114963464731469800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 2
+  ID: librarian
 --- !u!212 &212743251621327952
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -336,7 +338,7 @@ SpriteRenderer:
   m_SortingLayerID: 1683700601
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81e28005c2cc63449bae4e2f4f6a6cdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0da732a9c0f738e4cb2eac6e51e5b42e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
