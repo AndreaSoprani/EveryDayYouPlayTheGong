@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 5fd8c44a7d6dee1459cda6f883065e05
+guid: 17c4843e277fd1b44a3e87bc5d97d618
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Window_0
-    21300002: Window_1
-    21300004: Window_2
-    21300006: Window_3
-    21300008: Window_4
-    21300010: Window_5
-    21300012: Window_6
-    21300014: Window_7
-    21300016: Window_8
-    21300018: Window_9
-    21300020: Window_10
-    21300022: Window_11
+    21300000: MuralesDoor_4
+    21300002: MuralesDoor_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -58,11 +48,11 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 128, y: 0, z: 128, w: 128}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -96,97 +86,25 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Window_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -64, y: 64}
-        - {x: -64, y: -64}
-        - {x: 64, y: -64}
-        - {x: 64, y: 64}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e65cdb10abe54e4c922e6be3ff30f9a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Window_6
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -64, y: 64}
-        - {x: -64, y: -64}
-        - {x: 64, y: -64}
-        - {x: 64, y: 64}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4db030614144184db4b81b9403e2f2c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Window_9
+      name: MuralesDoor_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 128
-        height: 128
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -64, y: 64}
-        - {x: -64, y: -64}
-        - {x: 64, y: -64}
-        - {x: 64, y: 64}
+      - - {x: -64, y: 128}
+        - {x: -64, y: -128}
+        - {x: 64, y: -128}
+        - {x: 64, y: 128}
       tessellationDetail: 0
       bones: []
-      spriteID: 4d0719a2f715f2a49ba6c0b8fdd09ece
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Window_10
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -64, y: 64}
-        - {x: -64, y: -64}
-        - {x: 64, y: -64}
-        - {x: 64, y: 64}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6464c52730c444d478411798aae55856
+      spriteID: 773d10b381760074aa11606622ac2c75
       vertices: []
       indices: 
       edges: []
@@ -194,7 +112,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 56b0c80eff3814e4d9cf580d3be5b176
+    spriteID: 020b9ed028cb8bf4e8867bcd9cedd219
     vertices: []
     indices: 
     edges: []
