@@ -2,7 +2,7 @@ using UnityEditor;
 using Utility;
 
 [CustomEditor (typeof(Instrument))]
-public class InstrumentEditor : UnityEditor.Editor {
+public class InstrumentEditor : Editor {
 
     public override void OnInspectorGUI()
     {

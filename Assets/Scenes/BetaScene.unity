@@ -24815,7 +24815,7 @@ MonoBehaviour:
   Y: 1.48
   AreaColor: {r: 0, g: 0, b: 1, a: 1}
   Offset: {x: 0.93, y: 1.17, z: 0}
-  SoundName: 
+  SoundName: OraEsattaRemix
   SoundDelay: 0.12
 --- !u!1001 &218450893
 Prefab:
@@ -34424,6 +34424,7 @@ Transform:
   - {fileID: 312854514}
   - {fileID: 1483973616}
   - {fileID: 1155178994}
+  - {fileID: 1854668033}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44716,6 +44717,7 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: 8676e8e3a76514c48a810f744ab72323, type: 2}
   DayOverDialogue: {fileID: 0}
   PlayingDialogue: {fileID: 0}
+  Sound: {fileID: 0}
   Dialogues:
   - {fileID: 11400000, guid: 6730f45c3ed000d439f028966ff172fe, type: 2}
   DestroyAfterLastDialogue: 0
@@ -48126,6 +48128,7 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: bc1fce51af9e3844a8a56354cf343c12, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 04106eb4e8551124389b9b46a3877c3f, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: e8995ab4937007b40b6cc753280731f0, type: 2}
+  Sound: {fileID: 0}
   Dialogues:
   - {fileID: 11400000, guid: dd5fe22c667e34a41860ec5b6af8dabe, type: 2}
   - {fileID: 11400000, guid: dd7baaf54e02773419da6f94215da314, type: 2}
@@ -51567,6 +51570,34 @@ PolygonCollider2D:
       - {x: -2.5390625, y: -1.5312499}
       - {x: 2.5546875, y: -1.5312499}
       - {x: 2.5625, y: -0.84374994}
+--- !u!1 &1854668032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854668033}
+  m_Layer: 0
+  m_Name: Limit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854668033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854668032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 793855655}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864163046
 GameObject:
   m_ObjectHideFlags: 0

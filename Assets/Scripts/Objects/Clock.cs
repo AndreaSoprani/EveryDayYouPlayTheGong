@@ -6,7 +6,7 @@ namespace Objects
     public class Clock : InGameObject
     {
         public string DefaultString;
-        public string AudioEvent;
+        public AreaInstrument Instrument;
         
         public override void Interact()
         {
@@ -20,11 +20,9 @@ namespace Objects
                 TextBoxManager.Instance.LoadString(output.ToString());
                 TextBoxManager.Instance.EnableTextBox();
             }
+            Instrument.Interact();
 
-            if (AudioEvent != null)
-            {
-                AudioManager.Instance.PlayEvent(AudioEvent);
-            }
+           
         }
     }
 }

@@ -17,6 +17,7 @@ public class AreaInstrument : InGameObject
 	
 
 	private bool _isPlaying=false;
+	private uint _id;
 	
 	private void OnDrawGizmos()
 	{
@@ -38,13 +39,14 @@ public class AreaInstrument : InGameObject
 	{
 		_isPlaying = true;
 		yield return new WaitForSeconds(SoundDelay);
-		AkSoundEngine.PostEvent(SoundName, gameObject,(uint) AkCallbackType.AK_EndOfEvent, callback, null);
+		AkSoundEngine.PostEvent(SoundName, gameObject,(uint) AkCallbackType.AK_EndOfEvent | (uint)AkCallbackType.AK_AudioInterruption, callback, null);
 		
 	}
 
 	private void callback(object o,AkCallbackType t,AkCallbackInfo i)
 	{
 
+		
 		_isPlaying = false;
 	}
 	private void Update()
@@ -53,7 +55,8 @@ public class AreaInstrument : InGameObject
 		{
 			if(!PlayerInArea())
 			{
-				AudioManager.Instance.StopEvent(SoundName,1);
+				uint eventId = AkSoundEngine.GetIDFromString(SoundName);
+				AkSoundEngine.ExecuteActionOnEvent(eventId, AkActionOnEventType.AkActionOnEventType_Stop, gameObject,0,AkCurveInterpolation.AkCurveInterpolation_Sine);
 
 				_isPlaying = false;
 			}
@@ -63,6 +66,7 @@ public class AreaInstrument : InGameObject
 
 	private bool PlayerInArea()
 	{
+		
 		return !(Player.Instance.transform.position.x > transform.position.x +Offset.x + X ||
 		       Player.Instance.transform.position.x < transform.position.x +Offset.x - X ||
 		       Player.Instance.transform.position.y > transform.position.y +Offset.y + Y ||

@@ -28,6 +28,7 @@
 						<ObjectRef Name="Bell3" ID="{0F7232D7-8C76-4452-974E-159B6AA292A4}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Xylophone6_la" ID="{69293953-3718-4558-9588-0B864EAD75F8}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PuzzleGong_low" ID="{25B168BD-F6E2-4667-8B3A-51E236DF7765}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="OraEsatta" ID="{D260B357-0176-473C-8A18-41F0B147584F}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MainGong" ID="{39330102-1924-473D-BBC0-7BB5D59FA092}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PuzzleGong_high" ID="{A0E985C5-191A-4779-BB72-1C9AB6C16AC8}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Bell1" ID="{48B6D44E-29B5-4874-B4BE-7A37A425FB5A}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>

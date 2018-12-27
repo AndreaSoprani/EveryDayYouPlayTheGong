@@ -630,6 +630,25 @@
 										<ActiveSource Name="oraEsattaRemix" ID="{9A2410B3-8C53-416A-8FC1-B61F3EF83A48}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="oraEsatta" ID="{060F8149-1726-4C3C-8437-CBA0AC1A5DB5}" ShortID="461828791">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="oraEsatta" ID="{63E1A723-B68A-49EF-BAC4-BB8BD1380857}" ShortID="299700375">
+											<Language>SFX</Language>
+											<AudioFile>oraEsatta.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="oraEsatta" ID="{63E1A723-B68A-49EF-BAC4-BB8BD1380857}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

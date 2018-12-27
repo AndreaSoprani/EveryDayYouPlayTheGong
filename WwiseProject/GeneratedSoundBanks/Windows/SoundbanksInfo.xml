@@ -33,6 +33,7 @@
 				<Event Id="3731896910" Name="EndClock" ObjectPath="\Events\Default Work Unit\EndClock"/>
 				<Event Id="1143543361" Name="MainGong" ObjectPath="\Events\Default Work Unit\Gong\MainGong"/>
 				<Event Id="3982073893" Name="NewQuest" ObjectPath="\Events\Default Work Unit\NewQuest"/>
+				<Event Id="1921840209" Name="OraEsatta" ObjectPath="\Events\Default Work Unit\OraEsatta"/>
 				<Event Id="4250769236" Name="OraEsattaRemix" ObjectPath="\Events\Default Work Unit\OraEsattaRemix"/>
 				<Event Id="4238353680" Name="PuzzleFinish" ObjectPath="\Events\Default Work Unit\PuzzleFinish"/>
 				<Event Id="1949314593" Name="PuzzleGong_high" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_high"/>
@@ -72,6 +73,10 @@
 				<File Id="281106014" Language="SFX">
 					<ShortName>oraEsattaRemix.wav</ShortName>
 					<Path>SFX\oraEsattaRemix_7544BA96.wem</Path>
+				</File>
+				<File Id="299700375" Language="SFX">
+					<ShortName>oraEsatta.wav</ShortName>
+					<Path>SFX\oraEsatta_7544BA96.wem</Path>
 				</File>
 				<File Id="339085452" Language="SFX">
 					<ShortName>EndClock.wav</ShortName>

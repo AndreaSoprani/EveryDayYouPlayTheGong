@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1143543361	MainGong			\Default Work Unit\Gong\MainGong	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
 	1424533253	PuzzleGong_low			\Default Work Unit\Gong\PuzzleGong_low	
+	1921840209	OraEsatta			\Default Work Unit\OraEsatta	
 	1949314593	PuzzleGong_high			\Default Work Unit\Gong\PuzzleGong_high	
 	2016315246	Xylophone1_do			\Default Work Unit\Xylophone\Xylophone1_do	
 	2061935817	PuzzleGong_mid			\Default Work Unit\Gong\PuzzleGong_mid	
@@ -36,6 +37,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	43710732	Xylophone4_fa	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\Xylophone4_fa_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone4_fa		1048720
 	86418673	PuzzleGong_mid	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\PuzzleGong_mid_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Gong\PuzzleGong_mid		2097296
 	281106014	oraEsattaRemix	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\oraEsattaRemix_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\EasterEgg\oraEsattaRemix		1352708
+	299700375	oraEsatta	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\oraEsatta_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\EasterEgg\oraEsatta		2744432
 	339085452	EndClock	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\EndClock_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Clock\EndClock		524432
 	358731419	PuzzleGong_high	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\PuzzleGong_high_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Gong\PuzzleGong_high		1835152
 	395398279	Xylophone2_re	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\Xylophone2_re_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone2_re		1048720

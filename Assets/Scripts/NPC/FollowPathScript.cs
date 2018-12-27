@@ -64,7 +64,7 @@ public class FollowPathScript : InGameObject
 			}
 
 			if (transform.position == PathToFollow.WayPoints[_position].transform.position)
-			{Debug.Log("waypoint");
+			{//Debug.Log("waypoint");
 				_animator.SetInteger("Direction", 2);
 				if (PathToFollow.WayPoints[_position].Type == PathNodeType.Dialogue)
 				{
@@ -131,7 +131,7 @@ public class FollowPathScript : InGameObject
 			_isWaiting = false;
 			_inDialogue = false;
 			_dialogueFinished = true;
-			Debug.Log("Exit Dialogue");
+			//Debug.Log("Exit Dialogue");
 			_newDialogue = null;
 			ChangeFacing(_direction);
 			_animator.SetBool("Walking", _walk);
@@ -168,7 +168,7 @@ public class FollowPathScript : InGameObject
 			else
 			{
 				_position = 0;
-				Debug.Log(_position);
+				
 			}
 		}
 	}
@@ -192,7 +192,7 @@ public class FollowPathScript : InGameObject
 		{
 			_inDialogue = true;
 			_dialogueFinished = false;
-			Debug.Log("Start Dialogue");
+			//Debug.Log("Start Dialogue");
 			ChangeFacing(Player.Instance.transform.position - transform.position);
 			_animator.SetBool("Walking", false);
 			_newDialogue.StartDialogue();

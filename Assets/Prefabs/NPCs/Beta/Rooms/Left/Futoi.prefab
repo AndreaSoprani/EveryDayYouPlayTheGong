@@ -26,6 +26,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1316159662928880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4168423522170540}
+  - component: {fileID: 114640796664648624}
+  m_Layer: 8
+  m_Name: Playable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1702327177823258
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,8 +119,6 @@ GameObject:
   - component: {fileID: 114910552856966072}
   - component: {fileID: 114135427255949384}
   - component: {fileID: 114651967886110918}
-  - component: {fileID: 61314126555407624}
-  - component: {fileID: 114062680216536712}
   m_Layer: 8
   m_Name: Futoi
   m_TagString: Untagged
@@ -124,6 +138,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4412247146283882}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4168423522170540
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316159662928880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4412247146283882}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4285560057394636
 Transform:
@@ -166,6 +193,7 @@ Transform:
   - {fileID: 4354376209916724}
   - {fileID: 4285560057394636}
   - {fileID: 4754151384484050}
+  - {fileID: 4168423522170540}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -215,31 +243,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61314126555407624
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987535376811294}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.005094528, y: 0.2562151}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.485, y: 0.15}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.2, y: 0.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.26311874, y: 0.3033142}
-  m_EdgeRadius: 0
 --- !u!61 &61967223557051508
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -300,23 +303,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114062680216536712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987535376811294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 563cba875933551409e8cd9437882594, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectID: 
-  Dialogue: {fileID: 0}
-  SoundName:
-  - Drum1
-  HasInteraction: 0
-  PauseTime: 0
 --- !u!114 &114135427255949384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -330,6 +316,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 3
   ID: Futoi
+--- !u!114 &114640796664648624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316159662928880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563cba875933551409e8cd9437882594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 
+  Dialogue: {fileID: 0}
+  SoundName:
+  - Drum1
+  AnimationDelay: 0.12
+  SoundDelay: 0.12
+  HasInteraction: 0
+  PauseTime: 0
 --- !u!114 &114651967886110918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -372,6 +377,7 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: b9aab7afd8b45bf4c8c8197822702034, type: 2}
   DayOverDialogue: {fileID: 0}
   PlayingDialogue: {fileID: 11400000, guid: b36636d41897b5348a7439d3d31eaf96, type: 2}
+  Sound: {fileID: 114640796664648624}
   Dialogues: []
   DestroyAfterLastDialogue: 0
 --- !u!114 &114996764870562448

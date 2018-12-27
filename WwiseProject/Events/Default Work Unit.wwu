@@ -413,6 +413,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="OraEsatta" ID="{D260B357-0176-473C-8A18-41F0B147584F}">
+					<ChildrenList>
+						<Action Name="" ID="{106CDC65-87FB-41DE-A753-FE86AE2B88B6}" ShortID="340838567">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="oraEsatta" ID="{060F8149-1726-4C3C-8437-CBA0AC1A5DB5}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

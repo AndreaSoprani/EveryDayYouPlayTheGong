@@ -10,6 +10,7 @@ public class NPCInteractable : InGameObject
 	public Dialogue StandardDialogue;
 	public Dialogue DayOverDialogue;
 	public Dialogue PlayingDialogue;
+	public Instrument Sound;
 	public List<Dialogue> Dialogues;
 
 	public bool DestroyAfterLastDialogue;
@@ -90,6 +91,7 @@ public class NPCInteractable : InGameObject
 	public override void Play()
 	{
 		PlayingDialogue.StartDialogue();
+		if(Sound!=null) Sound.Play();
 	}
 
 	/// <summary>

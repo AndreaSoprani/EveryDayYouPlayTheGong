@@ -46,6 +46,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1832892840371010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4894566318278752}
+  - component: {fileID: 114746267574912048}
+  m_Layer: 8
+  m_Name: Playable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4332119969457166
 Transform:
   m_ObjectHideFlags: 1
@@ -53,10 +69,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1679044737250686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4639549702209574}
+  - {fileID: 4894566318278752}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72,6 +89,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4332119969457166}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4894566318278752
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832892840371010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4332119969457166}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &60938665810905980
 PolygonCollider2D:
@@ -144,7 +174,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: Clock
   DefaultString: 'It''s '
-  AudioEvent: 
+  Instrument: {fileID: 114746267574912048}
+--- !u!114 &114746267574912048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832892840371010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d265ad2e61545c42b60c313cda61005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 
+  X: 1.96
+  Y: 1.49
+  AreaColor: {r: 0, g: 0, b: 1, a: 1}
+  Offset: {x: 0, y: -0.27, z: 0}
+  SoundName: OraEsatta
+  SoundDelay: 0.12
 --- !u!212 &212058083376831414
 SpriteRenderer:
   m_ObjectHideFlags: 1
