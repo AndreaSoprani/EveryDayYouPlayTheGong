@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Name: StandardVendingMachine
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: 0cf1e248611a13647ac80ceec1aecdcc, type: 3}
-  NPCName: Vending Machine
+  NPCName: 
+  DontChangeNPCFacing: 0
+  OneTimeDialogue: 0
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
-  OneTimeDialogue: 0
   QuestsToActivate: []
   ItemsToAdd: []
   ItemsToRemove: []
