@@ -38355,7 +38355,7 @@ Prefab:
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
       propertyPath: Quests.Array.size
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
@@ -38410,7 +38410,7 @@ Prefab:
         type: 2}
       propertyPath: Quests.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 79a3bbb5611889c4e847a024eeff74b9,
+      objectReference: {fileID: 11400000, guid: ed0ad52836cda9042a12ff8397d0f0a9,
         type: 2}
     - target: {fileID: 1496351433151026, guid: 5c4d48ac8f102ae4384e98cd0215562d, type: 2}
       propertyPath: m_Name
@@ -38420,13 +38420,13 @@ Prefab:
         type: 2}
       propertyPath: Quests.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: ed0ad52836cda9042a12ff8397d0f0a9,
+      objectReference: {fileID: 11400000, guid: 250026336953fdd409e21f9c965b45e2,
         type: 2}
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
       propertyPath: Quests.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 250026336953fdd409e21f9c965b45e2,
+      objectReference: {fileID: 11400000, guid: 71cb29d78291b154e92a2fb627dec7a0,
         type: 2}
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
@@ -38438,13 +38438,13 @@ Prefab:
         type: 2}
       propertyPath: Quests.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 71cb29d78291b154e92a2fb627dec7a0,
+      objectReference: {fileID: 11400000, guid: bbc7537d6193c0745a51d6f9f0e95a01,
         type: 2}
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
       propertyPath: Quests.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: bbc7537d6193c0745a51d6f9f0e95a01,
+      objectReference: {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070,
         type: 2}
     - target: {fileID: 114336617419208950, guid: 5c4d48ac8f102ae4384e98cd0215562d,
         type: 2}
@@ -48130,7 +48130,6 @@ MonoBehaviour:
   PlayingDialogue: {fileID: 11400000, guid: e8995ab4937007b40b6cc753280731f0, type: 2}
   Sound: {fileID: 0}
   Dialogues:
-  - {fileID: 11400000, guid: dd5fe22c667e34a41860ec5b6af8dabe, type: 2}
   - {fileID: 11400000, guid: dd7baaf54e02773419da6f94215da314, type: 2}
   - {fileID: 11400000, guid: c38e30c9e84801e418beee76ff4e77f6, type: 2}
   - {fileID: 11400000, guid: b6514625a454b0141854deec31ab39d0, type: 2}
@@ -62730,8 +62729,7 @@ MonoBehaviour:
   ObjectID: pickup
   Items:
   - {fileID: 11400000, guid: e06563ffca7babe488a7b3558075354f, type: 2}
-  QuestsToActivate:
-  - {fileID: 11400000, guid: 79a3bbb5611889c4e847a024eeff74b9, type: 2}
+  QuestsToActivate: []
 --- !u!50 &1934684572
 Rigidbody2D:
   serializedVersion: 4

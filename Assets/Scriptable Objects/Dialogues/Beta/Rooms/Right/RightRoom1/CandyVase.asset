@@ -19,9 +19,9 @@ MonoBehaviour:
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
-  QuestsToActivate:
-  - {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
+  NecessaryItems: []
+  QuestsToActivate: []
   ItemsToAdd:
-  - {fileID: 11400000, guid: 327237187af03074d99b673cf61a1711, type: 2}
+  - {fileID: 11400000, guid: 434e6d92447e5b34490f41f1fda0ae57, type: 2}
   ItemsToRemove: []
   GameObjectsToDestroy: []

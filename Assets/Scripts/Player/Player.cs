@@ -374,13 +374,10 @@ public class Player : MonoBehaviour
 	public void AddItem(Item item)
 	{
 		_items.Add(item);
-		//GameObject.FindGameObjectWithTag("Inventory").SendMessage("UpdateItems");
-		//string message = "Item acquired: " + item.Name;
-		//TextBoxManager.Instance.LoadScript(message, "");
-		//TextBoxManager.Instance.EnableTextBox();
 		
 		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyGetItem", item);
 		EventManager.TriggerEvent("AddItem" + item.Id);
+		EventManager.TriggerEvent("CheckQuestMark");
 	}
 
 	/// <summary>
