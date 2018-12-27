@@ -22,7 +22,10 @@ public class NotesListElementController : MonoBehaviour {
 	public void SetQuest(Quest quest, float top, float bottom, Scrollbar scrollbar)
 	{
 		_quest = quest;
-		NameField.text = _quest.Name;
+		StringBuilder questName = new StringBuilder();
+		questName.Append(_quest.Name);
+		if (_quest.Completed) questName.Append(" [COMPLETED]");
+		NameField.text = questName.ToString();
 
 		_top = top;
 		_bottom = bottom;
@@ -54,7 +57,7 @@ public class NotesListElementController : MonoBehaviour {
 			if (objective.Completed)
 			{
 				
-				obtained.Append(objective.Description);
+				obtained.Append("[x] " + objective.Description);
 				Debug.Log(objective.Description);
 				obtained.Append("\n");
 				lastCompleted++;
@@ -63,7 +66,7 @@ public class NotesListElementController : MonoBehaviour {
 
 		
 		if(lastCompleted < _quest.Objectives.Count)
-			obtained.Append(_quest.Objectives[lastCompleted].Description);
+			obtained.Append("[ ] " + _quest.Objectives[lastCompleted].Description);
 		
 		GameObject.FindGameObjectWithTag("NotesQuestObjectiveDescription").GetComponent<TextMeshProUGUI>().text = obtained.ToString();
 		
