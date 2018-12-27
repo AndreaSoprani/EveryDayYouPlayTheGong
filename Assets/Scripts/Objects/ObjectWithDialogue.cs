@@ -20,26 +20,10 @@ namespace Objects
 
         public override void Interact()
         {
-
-            if (Dialogue != null)
+            if (Dialogue != null && Dialogue.IsAvailable())
             {
-                Debug.Log(Dialogue.IsAvailable());
-                if (Dialogue.IsAvailable())
-                {
-                    Dialogue.StartDialogue();
-                    foreach (Quest quest in Dialogue.QuestsToActivate)
-                    {
-                        QuestManager.Instance.ActivateQuest(quest);
-                    }
-                    if (Dialogue.OneTimeDialogue)
-                        Dialogue = null;
-                }
-                
+                Dialogue.StartDialogue();
             }
-               
-            
-
-           
         }
     }
 }

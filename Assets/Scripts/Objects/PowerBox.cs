@@ -57,6 +57,7 @@ namespace Objects
             
             Broken = true;
             _spriteRenderer.sprite = BrokenSprite;
+            EventManager.TriggerEvent("Blackout");
             
             yield return new WaitForSeconds(BlackOutTime);
             

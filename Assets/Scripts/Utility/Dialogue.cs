@@ -37,6 +37,7 @@ namespace Utility
         /// </summary>
         public void StartDialogue()
         {
+            if (OneTimeDialogue && _hasBeenReproduced) return;
             TextBoxManager.Instance.LoadDialogue(this);
             TextBoxManager.Instance.EnableTextBox();
             _hasBeenReproduced = true;
@@ -46,6 +47,7 @@ namespace Utility
         /// </summary>
         public void StartDialogue(string NPCid)
         {
+            if (OneTimeDialogue && _hasBeenReproduced) return;
             TextBoxManager.Instance.LoadDialogue(this);
             TextBoxManager.Instance.EnableTextBox(NPCid);
             _hasBeenReproduced = true;
