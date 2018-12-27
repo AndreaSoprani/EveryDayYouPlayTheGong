@@ -163,7 +163,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df3473d5535ee584e8651d3d8e270423, type: 2}
   - {fileID: 11400000, guid: a163eea143ac0104ab6c67c543038168, type: 2}
   - {fileID: 11400000, guid: abcd025eba744bd4a8b24551fdd09abb, type: 2}
-  DestroyAfterLastDialogue: 0
+  DestroyAfterLastDialogue: 1
 --- !u!114 &114366921316399868
 MonoBehaviour:
   m_ObjectHideFlags: 1
