@@ -4,14 +4,12 @@ using System.Collections.ObjectModel;
 using UnityEngine;
 
 [System.Serializable]
-public class RayCastPositionsHd
+public class RayCastPositions
 {
 
 	public Transform UpLeft;
-	public Transform UpMiddle;
 	public Transform UpRight;
 	public Transform DownLeft;
-	public Transform DownMiddle;
 	public Transform DownRight;
 
 	/// <summary>
@@ -19,19 +17,17 @@ public class RayCastPositionsHd
 	/// </summary>
 	/// <param name="vec">The Vector3 involved with the movement/facing direction</param>
 	/// <returns>A Collection which contains all the RayCast positions involved</returns>
-	public Collection<Vector3> Vector3ToRayCastPositionHd(Vector3 vec)
+	public Collection<Vector3> Vector3ToRayCastPosition(Vector3 vec)
 	{
 		Collection<Vector3> positions = new Collection<Vector3>();
 
 		if (vec.y > 0)
 		{
 			positions.Add(UpLeft.position);
-			positions.Add(UpMiddle.position);
 			positions.Add(UpRight.position);
 		} else if (vec.y < 0)
 		{
 			positions.Add(DownLeft.position);
-			positions.Add(DownMiddle.position);
 			positions.Add(DownRight.position);
 		}
 

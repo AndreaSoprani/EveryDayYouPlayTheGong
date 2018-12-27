@@ -22,7 +22,7 @@ public class VirtualObstacle : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("Nope");
+		
 		if (other.gameObject.CompareTag("Player"))
 		{
 			

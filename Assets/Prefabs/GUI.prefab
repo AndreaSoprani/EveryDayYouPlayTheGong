@@ -4757,7 +4757,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114918004891253660}
         m_MethodName: ChangeMusicVolume
         m_Mode: 1
         m_Arguments:
@@ -5794,7 +5794,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114918004891253660}
         m_MethodName: ChangeEffectsVolume
         m_Mode: 1
         m_Arguments:

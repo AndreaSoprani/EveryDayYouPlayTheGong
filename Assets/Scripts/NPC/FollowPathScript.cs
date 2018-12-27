@@ -12,7 +12,7 @@ public class FollowPathScript : InGameObject
 	public Path PathToFollow;
 	
 	[Header("Collisions")] 
-	public RayCastPositions RayCastPositions;
+	public RayCastPositionsHd RayCastPositions;
 	public LayerMask ObstacleLayer;
 
 	private Vector3 _center;
@@ -51,17 +51,24 @@ public class FollowPathScript : InGameObject
 		if (!_isWaiting && !_inDialogue)
 		{
 			Vector3 nextPosition = Vector3.MoveTowards(transform.position, PathToFollow.WayPoints[_position].transform.position, Speed*Time.deltaTime);
-			//if (CanMove(nextPosition-transform.position)) 
-				transform.position = nextPosition; 
-			_direction = (PathToFollow.WayPoints[_position].transform.position - transform.position).normalized;
-			ChangeFacing(_direction);
-			_animator.SetBool("Walking", true);
-			
-			if (transform.position == PathToFollow.WayPoints[_position].transform.position)
+			if (CanMove(nextPosition - transform.position))
 			{
+				transform.position = nextPosition;
+				_direction = (PathToFollow.WayPoints[_position].transform.position - transform.position).normalized;
+				ChangeFacing(_direction);
+				_animator.SetBool("Walking", true);
+			}
+			else
+			{
+				_animator.SetBool("Walking", false);
+			}
+
+			if (transform.position == PathToFollow.WayPoints[_position].transform.position)
+			{Debug.Log("waypoint");
 				_animator.SetInteger("Direction", 2);
 				if (PathToFollow.WayPoints[_position].Type == PathNodeType.Dialogue)
 				{
+					
 					if (!_dialogueFinished)
 					{
 						_isWaiting = true;
@@ -199,13 +206,16 @@ public class FollowPathScript : InGameObject
 	/// <returns>True if the NPC can move in the direction set, false otherwise.</returns>
 	private bool CanMove(Vector3 delta)
 	{
-		Collection<Vector3> movement = RayCastPositions.Vector3ToRayCastPosition(delta);
+		Collection<Vector3> movement = RayCastPositions.Vector3ToRayCastPositionHd(delta);
 		
 		for (int i = 0; i < movement.Count; i++)
 		{
 			RaycastHit2D hit = Physics2D.Raycast(movement[i], delta, delta.magnitude , ObstacleLayer);
-			
-			if (hit.collider != null) return false;
+
+			if (hit.collider != null)
+			{
+				return false;
+			}
 		}
 
 		return true;
