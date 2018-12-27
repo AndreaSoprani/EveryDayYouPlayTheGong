@@ -28,6 +28,8 @@
 				<Event Id="401578499" Name="Bell5" ObjectPath="\Events\Default Work Unit\Bells\Bell5"/>
 				<Event Id="401578496" Name="Bell6" ObjectPath="\Events\Default Work Unit\Bells\Bell6"/>
 				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen"/>
+				<Event Id="2726606602" Name="Drum1" ObjectPath="\Events\Default Work Unit\Drum\Drum1"/>
+				<Event Id="2726606601" Name="Drum2" ObjectPath="\Events\Default Work Unit\Drum\Drum2"/>
 				<Event Id="3731896910" Name="EndClock" ObjectPath="\Events\Default Work Unit\EndClock"/>
 				<Event Id="1143543361" Name="MainGong" ObjectPath="\Events\Default Work Unit\Gong\MainGong"/>
 				<Event Id="3982073893" Name="NewQuest" ObjectPath="\Events\Default Work Unit\NewQuest"/>
@@ -94,6 +96,10 @@
 					<ShortName>PuzzleFinish.wav</ShortName>
 					<Path>SFX\PuzzleFinish_7544BA96.wem</Path>
 				</File>
+				<File Id="533661513" Language="SFX">
+					<ShortName>Drum2.wav</ShortName>
+					<Path>SFX\Drum2_7544BA96.wem</Path>
+				</File>
 				<File Id="579005895" Language="SFX">
 					<ShortName>Xylophone1_do.wav</ShortName>
 					<Path>SFX\Xylophone1_do_7544BA96.wem</Path>
@@ -109,6 +115,10 @@
 				<File Id="721963773" Language="SFX">
 					<ShortName>Bell4.wav</ShortName>
 					<Path>SFX\Bell4_7544BA96.wem</Path>
+				</File>
+				<File Id="726453151" Language="SFX">
+					<ShortName>Drum1.wav</ShortName>
+					<Path>SFX\Drum1_7544BA96.wem</Path>
 				</File>
 				<File Id="735219554" Language="SFX">
 					<ShortName>Bell1.wav</ShortName>

@@ -34,10 +34,12 @@
 						<ObjectRef Name="NewQuest" ID="{9BE3A667-D94A-4897-9166-AC2F0B0648E6}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PuzzleFinish" ID="{1899C2A1-55D8-48DA-8039-EDD59F4E1B12}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Xylophone2_re" ID="{556EEC78-42FC-4957-ACED-120FDCEC450B}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Drum1" ID="{165C382B-87D5-4A10-BF41-48BE6E71C863}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartClock" ID="{FEAB0247-BFD3-4A37-BAE1-DE7B73174B3B}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Xylophone5_sol" ID="{09684493-F067-4A5D-A26A-1115B2262630}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Xylophone4_fa" ID="{6D6AA3DE-69CD-4AE0-A040-171C5694CB57}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="EndClock" ID="{DF233FCB-9034-4BB0-B9A5-052B92FA7BF0}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Drum2" ID="{F1AA6DDE-E910-4D2D-965E-37DC50B94824}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Bell4" ID="{4A8B2481-FB38-4E9E-8092-CA3D2E349070}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PuzzleGong_mid" ID="{16379B19-E68E-4F8B-9A28-325730D5E4FC}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

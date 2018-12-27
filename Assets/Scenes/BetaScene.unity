@@ -33144,11 +33144,6 @@ Prefab:
       propertyPath: PathToFollow
       value: 
       objectReference: {fileID: 669145819}
-    - target: {fileID: 114288638213935262, guid: 17bc56b83641db1419979d318af02afe,
-        type: 2}
-      propertyPath: Speed
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17bc56b83641db1419979d318af02afe, type: 2}
   m_IsPrefabAsset: 0
@@ -36097,11 +36092,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4471351223623958, guid: 6edafd14798466f4fb24a4a1cc869d07, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 4.97
       objectReference: {fileID: 0}
     - target: {fileID: 4471351223623958, guid: 6edafd14798466f4fb24a4a1cc869d07, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 4.34
       objectReference: {fileID: 0}
     - target: {fileID: 4471351223623958, guid: 6edafd14798466f4fb24a4a1cc869d07, type: 2}
       propertyPath: m_LocalPosition.z
@@ -36126,6 +36121,11 @@ Prefab:
     - target: {fileID: 4471351223623958, guid: 6edafd14798466f4fb24a4a1cc869d07, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114661088866680214, guid: 6edafd14798466f4fb24a4a1cc869d07,
+        type: 2}
+      propertyPath: MaximumRadiusY
+      value: 1.76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6edafd14798466f4fb24a4a1cc869d07, type: 2}
@@ -42632,7 +42632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 2
-  ID: 
+  ID: librarian
 --- !u!95 &1660692269
 Animator:
   serializedVersion: 3

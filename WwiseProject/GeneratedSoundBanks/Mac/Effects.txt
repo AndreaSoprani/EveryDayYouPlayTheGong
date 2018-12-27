@@ -15,6 +15,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	2061935817	PuzzleGong_mid			\Default Work Unit\Gong\PuzzleGong_mid	
 	2441093981	Xylophone3_mi			\Default Work Unit\Xylophone\Xylophone3_mi	
 	2587593121	Xylophone5_sol			\Default Work Unit\Xylophone\Xylophone5_sol	
+	2726606601	Drum2			\Default Work Unit\Drum\Drum2	
+	2726606602	Drum1			\Default Work Unit\Drum\Drum1	
 	3383370049	Xylophone8_do2			\Default Work Unit\Xylophone\Xylophone8_do2	
 	3403877851	Xylophone7_si			\Default Work Unit\Xylophone\Xylophone7_si	
 	3731896910	EndClock			\Default Work Unit\EndClock	
@@ -39,10 +41,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	433397730	MainGong	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\MainGong_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Gong\MainGong		2359440
 	467298901	Xylophone8_do2	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone8_do2_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone8_do2		786576
 	493733225	PuzzleFinish	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\PuzzleFinish_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Jingle\PuzzleFinish		506440
+	533661513	Drum2	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Drum2_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Drum\Drum2		572252
 	579005895	Xylophone1_do	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone1_do_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone1_do		1048720
 	584497804	Xylophone7_si	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone7_si_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone7_si		786576
 	665867255	StartClock	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\StartClock_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Clock\StartClock		262288
 	721963773	Bell4	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Bell4_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Bells\Bell4		1835152
+	726453151	Drum1	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Drum1_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Drum\Drum1		572252
 	735219554	Bell1	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Bell1_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Bells\Bell1		1310864
 	848060149	Xylophone5_sol	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone5_sol_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone5_sol		1048720
 	886110465	Xylophone6_la	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone6_la_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone6_la		786576

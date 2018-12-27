@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectID: brian
-  Speed: 1
+  Speed: 10
   PathToFollow: {fileID: 0}
   RayCastPositions:
     UpLeft: {fileID: 4420773584509904}
@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 2
+  ID: brian
 --- !u!114 &114884771704170748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,6 +337,7 @@ MonoBehaviour:
   DayOverDialogue: {fileID: 11400000, guid: 67f6253709b66ac4bb1e4df3dc0661c2, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 19e7131c20674f44ba251e1c0bd034ae, type: 2}
   Dialogues: []
+  DestroyAfterLastDialogue: 0
 --- !u!212 &212637086172232832
 SpriteRenderer:
   m_ObjectHideFlags: 1

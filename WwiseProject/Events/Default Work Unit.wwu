@@ -367,6 +367,38 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Drum" ID="{67D94A14-5313-4B11-A15C-54514AB56CDE}" ShortID="69187334">
+					<ChildrenList>
+						<Event Name="Drum1" ID="{165C382B-87D5-4A10-BF41-48BE6E71C863}">
+							<ChildrenList>
+								<Action Name="" ID="{CAEA9BA0-AAF2-4CF9-A594-E0814432866C}" ShortID="196361830">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drum1" ID="{3DECB42E-E566-4D0D-A809-5E0EED6E5717}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Drum2" ID="{F1AA6DDE-E910-4D2D-965E-37DC50B94824}">
+							<ChildrenList>
+								<Action Name="" ID="{2053513E-9A5E-4949-AB74-7A28180D0DFE}" ShortID="880492414">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drum2" ID="{775B69AA-6852-4E45-9C3D-915849ADD184}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

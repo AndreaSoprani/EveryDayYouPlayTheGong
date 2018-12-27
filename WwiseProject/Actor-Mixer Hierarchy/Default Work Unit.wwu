@@ -423,6 +423,56 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Drum" ID="{335C9612-CEA4-4F39-B8B4-B4858F8D2566}" ShortID="513884610">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Drum1" ID="{3DECB42E-E566-4D0D-A809-5E0EED6E5717}" ShortID="386431522">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drum1" ID="{ED2CCB1B-6252-42D1-BF03-076D851812B6}" ShortID="726453151">
+													<Language>SFX</Language>
+													<AudioFile>Drum1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drum1" ID="{ED2CCB1B-6252-42D1-BF03-076D851812B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Drum2" ID="{775B69AA-6852-4E45-9C3D-915849ADD184}" ShortID="262717862">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CF12C8D5-7E0D-4242-A448-CE4E201D0DDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C838967-13F7-482A-A7EE-BCC8EFB19322}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drum2" ID="{046FC0E5-6176-45C0-985A-9E0A9B2BE786}" ShortID="533661513">
+													<Language>SFX</Language>
+													<AudioFile>Drum2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drum2" ID="{046FC0E5-6176-45C0-985A-9E0A9B2BE786}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</Folder>
 						<Sound Name="DoorOpen" ID="{5F3F6511-F236-46A4-9DF8-9C4F5B6346BA}" ShortID="992512328">

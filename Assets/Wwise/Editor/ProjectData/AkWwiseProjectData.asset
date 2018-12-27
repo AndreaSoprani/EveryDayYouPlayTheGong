@@ -186,7 +186,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 16271eb29c80434992f5c5998a5d8665
-    m_lastTime: -8586561953775880891
+    m_lastTime: -8586556896504393668
     List:
     - name: Effects
       guid: 51155da5fbca7144b63952d6d53058f0
@@ -210,7 +210,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 76273f77a9fc944fa2780518c1fa60d3
-    m_lastTime: -8586562047042957349
+    m_lastTime: -8586556896504503620
     List:
     - name: Bell1
       guid: 4ed4b648b5297448b4be7a37a425fb5a
@@ -305,6 +305,34 @@ MonoBehaviour:
       - ElementName: DoorOpen
         ObjectType: 3
       Path: Default Work Unit\DoorOpen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Drum1
+      guid: 2b385c16d587104abf4148be6e71c863
+      id: 2726606602
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Drum
+        ObjectType: 4
+      - ElementName: Drum1
+        ObjectType: 3
+      Path: Default Work Unit\Drum\Drum1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Drum2
+      guid: de6daaf110e92d4d965e37dc50b94824
+      id: 2726606601
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Drum
+        ObjectType: 4
+      - ElementName: Drum2
+        ObjectType: 3
+      Path: Default Work Unit\Drum\Drum2
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

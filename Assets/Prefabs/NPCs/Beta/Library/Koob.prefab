@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultFacingDirection: 0
-  ID: 
+  ID: Koob
 --- !u!212 &212569367076943220
 SpriteRenderer:
   m_ObjectHideFlags: 1
