@@ -39,8 +39,9 @@ public class NPCInteractable : InGameObject
 		{
 			_questMarkCanvas = GetComponentInChildren<Canvas>();
 			EventManager.StartListening("CheckQuestMark", ShowQuestMark);
-			ShowQuestMark();
 		}
+		
+		if(LastAvailableDialogue().CanStartQuest()) ShowQuestMark();
 	}
 
 	public override void Interact()
