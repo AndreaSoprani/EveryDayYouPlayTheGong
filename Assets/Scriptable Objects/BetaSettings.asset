@@ -25,4 +25,5 @@ MonoBehaviour:
   SFXVolume: 100
   QuestsPerDay: 3
   StartupText: {fileID: 0}
+  EndText: {fileID: 4900000, guid: d241f2705d6643b5a557bc2096b9d880, type: 3}
   NotificationsDelayTime: 0.5
