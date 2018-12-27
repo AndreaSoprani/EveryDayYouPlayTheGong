@@ -195,7 +195,7 @@ public class FollowPathScript : InGameObject
 			//Debug.Log("Start Dialogue");
 			ChangeFacing(Player.Instance.transform.position - transform.position);
 			_animator.SetBool("Walking", false);
-			_newDialogue.StartDialogue();
+			_newDialogue.StartDialogue(ObjectID);
 		}
 	}
 

@@ -16,6 +16,7 @@
 				<Property Name="Event Action List\{A0E985C5-191A-4779-BB72-1C9AB6C16AC8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A6EF1906-0D8D-425C-8756-6D68A43743AA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B4F04E4D-731A-4E8B-95C5-4A3FF73F08E7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D260B357-0176-473C-8A18-41F0B147584F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E05E7927-BA35-4813-A54E-B958B8EA45C8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E8952D19-E832-4F45-A58D-EF2A33EBE45A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F1AA6DDE-E910-4D2D-965E-37DC50B94824}\x64_Expand States" Type="string" Value=""/>
@@ -58,14 +59,14 @@
 				<Property Name="Music Transition List\{F8FEDE9C-72B9-4787-8708-FCA06B0BAA86}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{EB7A4632-DA1C-400C-8520-7190F45E5EEB}"/>
-				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{4A8B2481-FB38-4E9E-8092-CA3D2E349070}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{67D94A14-5313-4B11-A15C-54514AB56CDE}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="MkZ66xzaDECFIHGQ9F5e6z/GH3KMKehCqoHx5clzu0YbNTG6BsoIQ58bnSGT6+2w+uGFhSDPKkSmZ+FPOi3c6Jze/vi5codHhwj8oGsLqoazr8UsC3owSJOLLcWNFeh90qSjvj65OEyEQUdth/5M0ClAorVPm0tOoz/hHfmAsK8="/>
+				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="MkZ66xzaDECFIHGQ9F5e6w=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
@@ -76,8 +77,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="Z4mDfPcTKkin7rzI77GTIg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="fZvP6bt63kGwqQxk0tudNLelQvzH/81Cv5EPyYb2SALpgmLHmVhyTKMlDTNXHpKN"/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Pcdr2gzCDEG/ykSum5isy1fEDFKICO5Bq5u75t3IpIXbqfiACZ10Q43B4tzzTr6CRIOUyNbSEkWj6/ljlwxqCHYnP3ep/JRPongFGMH6YNM="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="fZvP6bt63kGwqQxk0tudNFrIW9kYfNZEo+eS/zY84fqE8x6quRmURrc13+wEB7B76YJix5lYckyjJQ0zVx6SjQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Pcdr2gzCDEG/ykSum5isy1fEDFKICO5Bq5u75t3IpIXbqfiACZ10Q43B4tzzTr6CRIOUyNbSEkWj6/ljlwxqCBRK2WcTUxFLoVxUUUq1bN52Jz93qfyUT6J4BRjB+mDT"/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="FicespyAQ0mS9cWZil2GZQ=="/>

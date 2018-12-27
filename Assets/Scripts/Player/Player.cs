@@ -62,6 +62,10 @@ public class Player : MonoBehaviour
 
 	private Vector2 _offsetValue;
 	
+	private bool _goBack = false;
+	private Vector3 _goBackPosition;
+	
+	
 	private void Awake()
 	{
 		if (Instance == null)
@@ -101,7 +105,7 @@ public class Player : MonoBehaviour
 		_onFrontalStairs = false;
 		_onRightStairs = false;
 		_onLeftStairs = false;
-
+		
 		_playableObjectsFound = new List<InGameObject>();
 		
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
@@ -113,19 +117,29 @@ public class Player : MonoBehaviour
 	{
 
 		if (_inDialogue || _blocked) return;
-		
-		Move();
 
-		InGameObject interactable = HasInteraction();
+		if (!_goBack)
+		{
+			Move();
 		
-		if (interactable != null && Input.GetKeyDown(Settings.Interact))
-		{
-			Interact(interactable);
-		} else if (Input.GetKeyDown(Settings.Play) && !_animator.GetBool("Playing"))
-		{
-			Play();
+
+			InGameObject interactable = HasInteraction();
+			
+			if (interactable != null && Input.GetKeyDown(Settings.Interact))
+			{
+				Interact(interactable);
+			} else if (Input.GetKeyDown(Settings.Play) && !_animator.GetBool("Playing"))
+			{
+				Play();
+			}
 		}
-		
+		else
+		{
+			
+			
+			if (_tr.position == _goBackPosition) _goBack = false;
+			else _tr.position =Vector3.MoveTowards(_tr.position,_goBackPosition,Velocity * Time.deltaTime); 
+		}
 	}
 
 	/*
@@ -543,5 +557,42 @@ public class Player : MonoBehaviour
 	public void RefreshCommand()
 	{
 		_directionsKeyCodes = Settings.GetDirectionsKeyCodes();
+	}
+
+	public void InvertFacing(float step)
+	{
+		_goBack = true;
+		int anim;
+		_animator.SetBool("Walking", true);
+		if (_facing == Vector3.left)
+		{
+			_facing=Vector3.right;
+			anim = 1;
+		}
+		else if (_facing == Vector3.right)
+		{
+			_facing=Vector3.left;
+			anim = 3;
+		}
+		else if (_facing == Vector3.up)
+		{
+			_facing=Vector3.down;
+			anim = 2;
+		}
+		else
+		{
+			_facing=Vector3.up;
+			anim = 0;
+		}
+		Debug.Log(_facing+" "+anim);
+		
+		_animator.SetInteger("Direction", anim);
+		_goBackPosition= _tr.position + _facing * step;
+		
+		
+		
+		
+		
+			
 	}
 }
