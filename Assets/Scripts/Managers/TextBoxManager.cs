@@ -164,6 +164,30 @@ public class TextBoxManager : MonoBehaviour
 	}
 
 	/// <summary>
+	/// Used to load a string as a dialogue.
+	/// </summary>
+	/// <param name="text">The string to read from.</param>
+	public void LoadString(string text)
+	{
+		if (text != null)
+		{
+			_textLines = new[]
+			{
+				text
+			};
+		}
+
+		_nametext.text = "";
+
+		_dontChangeNPCFacing = true;
+		_questsToActivate = new List<Quest>();
+		_itemsToAdd = new List<Item>();
+		_itemsToRemove = new List<Item>();
+
+		_currentLine = 0;
+	}
+
+	/// <summary>
 	/// Used to activate all quests, give all items and remove others.
 	/// </summary>
 	private void EndDialogueActivations()

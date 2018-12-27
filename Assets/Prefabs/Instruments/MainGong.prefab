@@ -178,6 +178,8 @@ MonoBehaviour:
   Dialogue: {fileID: 11400000, guid: cb3a94d53d015f54bbcadb7032172dab, type: 2}
   SoundName:
   - MainGong
+  AnimationDelay: 0.18
+  SoundDelay: 0
   HasInteraction: 1
   PauseTime: 0
   WrongTimeToPlayDialogue: {fileID: 11400000, guid: db657ebc29a4e394c8d15fd10a20a424,

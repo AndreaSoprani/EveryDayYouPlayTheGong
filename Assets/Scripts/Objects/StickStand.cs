@@ -41,7 +41,8 @@ namespace Objects
             else
             {
                 // Display Text
-                GameObject.FindGameObjectWithTag("GUIController").SendMessage("DisplayText", Settings.EndText.text);
+                if(Settings.EndText != null)
+                    GameObject.FindGameObjectWithTag("GUIController").SendMessage("DisplayText", Settings.EndText.text);
                 
                 // Teleport
                 Player.Instance.BlockMovement(true);
