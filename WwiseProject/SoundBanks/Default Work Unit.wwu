@@ -41,6 +41,7 @@
 						<ObjectRef Name="EndClock" ID="{DF233FCB-9034-4BB0-B9A5-052B92FA7BF0}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Drum2" ID="{F1AA6DDE-E910-4D2D-965E-37DC50B94824}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Bell4" ID="{4A8B2481-FB38-4E9E-8092-CA3D2E349070}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="OraEsattaRemix" ID="{E8952D19-E832-4F45-A58D-EF2A33EBE45A}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PuzzleGong_mid" ID="{16379B19-E68E-4F8B-9A28-325730D5E4FC}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

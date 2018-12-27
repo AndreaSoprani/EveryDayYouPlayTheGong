@@ -399,6 +399,20 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="OraEsattaRemix" ID="{E8952D19-E832-4F45-A58D-EF2A33EBE45A}">
+					<ChildrenList>
+						<Action Name="" ID="{43FE8D1E-B9F6-49D2-95A7-B1B750795A77}" ShortID="173981114">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="oraEsattaRemix" ID="{8453533B-B3B7-4481-AB97-FD56DD905E09}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

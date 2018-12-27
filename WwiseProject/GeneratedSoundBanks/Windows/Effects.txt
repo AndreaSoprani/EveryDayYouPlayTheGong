@@ -24,6 +24,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3982073893	NewQuest			\Default Work Unit\NewQuest	
 	4087751051	Xylophone2_re			\Default Work Unit\Xylophone\Xylophone2_re	
 	4238353680	PuzzleFinish			\Default Work Unit\PuzzleFinish	
+	4250769236	OraEsattaRemix			\Default Work Unit\OraEsattaRemix	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3328840097	FXVolume			\Default Work Unit\FXVolume	
@@ -34,6 +35,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	39644574	Bell6	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\Bell6_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Bells\Bell6		1835152
 	43710732	Xylophone4_fa	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\Xylophone4_fa_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone4_fa		1048720
 	86418673	PuzzleGong_mid	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\PuzzleGong_mid_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Gong\PuzzleGong_mid		2097296
+	281106014	oraEsattaRemix	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\oraEsattaRemix_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\EasterEgg\oraEsattaRemix		1352708
 	339085452	EndClock	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\EndClock_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Clock\EndClock		524432
 	358731419	PuzzleGong_high	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\PuzzleGong_high_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Gong\PuzzleGong_high		1835152
 	395398279	Xylophone2_re	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Windows\SFX\Xylophone2_re_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone2_re		1048720

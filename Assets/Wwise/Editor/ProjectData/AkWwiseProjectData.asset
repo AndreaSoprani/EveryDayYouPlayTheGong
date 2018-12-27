@@ -186,7 +186,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 16271eb29c80434992f5c5998a5d8665
-    m_lastTime: -8586556896504393668
+    m_lastTime: -8586556766857919261
     List:
     - name: Effects
       guid: 51155da5fbca7144b63952d6d53058f0
@@ -210,7 +210,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 76273f77a9fc944fa2780518c1fa60d3
-    m_lastTime: -8586556896504503620
+    m_lastTime: -8586556766857989050
     List:
     - name: Bell1
       guid: 4ed4b648b5297448b4be7a37a425fb5a
@@ -371,6 +371,18 @@ MonoBehaviour:
       - ElementName: NewQuest
         ObjectType: 3
       Path: Default Work Unit\NewQuest
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: OraEsattaRemix
+      guid: 192d95e832e8454fa58def2a33ebe45a
+      id: 4250769236
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OraEsattaRemix
+        ObjectType: 3
+      Path: Default Work Unit\OraEsattaRemix
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
