@@ -9,6 +9,8 @@ public class Instrument : InGameObject
 
 	public Dialogue Dialogue;
 	public List<string> SoundName;
+	public float AnimationDelay = 0.12f;
+	public float SoundDelay = 0.12f;
 	public bool HasInteraction;
 	public float PauseTime;
 	
@@ -24,20 +26,26 @@ public class Instrument : InGameObject
 	public override void Play()
 	{
 		StartCoroutine(DelayPlay());
+		StartCoroutine(DelayAnimation());
 	}
 
 	private IEnumerator DelayPlay()
 	{
-		yield return new WaitForSeconds(0.12f);
-		Animator animator = GetComponent<Animator>();
-		if (animator != null) animator.SetTrigger("Playing");
+		yield return new WaitForSeconds(SoundDelay);
 		foreach (string s in SoundName)
 		{
 				AudioManager.Instance.PlayEvent(s);
 				yield return new WaitForSeconds(PauseTime);
 		}
-		
 	}
+
+	private IEnumerator DelayAnimation()
+	{
+		yield return new WaitForSeconds(AnimationDelay);
+		Animator animator = GetComponent<Animator>();
+		if (animator != null) animator.SetTrigger("Playing");
+	}
+	
 	/*
 	 * INTERACT
 	 */
