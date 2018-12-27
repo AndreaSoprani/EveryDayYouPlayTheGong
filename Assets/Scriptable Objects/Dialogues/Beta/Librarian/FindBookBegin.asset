@@ -13,15 +13,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: 97e5b9c2b75846308db69f6c62f0be86, type: 3}
   NPCName: Librarian
+  DontChangeNPCFacing: 0
+  OneTimeDialogue: 0
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
-  CompletedQuests:
-  - {fileID: 11400000, guid: 79a3bbb5611889c4e847a024eeff74b9, type: 2}
+  CompletedQuests: []
   UncompletedQuests:
   - {fileID: 11400000, guid: ed0ad52836cda9042a12ff8397d0f0a9, type: 2}
-  OneTimeDialogue: 0
+  NecessaryItems:
+  - {fileID: 11400000, guid: e06563ffca7babe488a7b3558075354f, type: 2}
   QuestsToActivate:
   - {fileID: 11400000, guid: ed0ad52836cda9042a12ff8397d0f0a9, type: 2}
   ItemsToAdd: []
-  ItemsToRemove: []
-  GameObjectsToDestroy: []
+  ItemsToRemove:
+  - {fileID: 11400000, guid: e06563ffca7babe488a7b3558075354f, type: 2}

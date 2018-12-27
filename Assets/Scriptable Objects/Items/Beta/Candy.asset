@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: candy
   Name: A sweet candy
-  Description: For a real seeker.
+  Description: It's good for your teeth.
   InventoryArtwork: {fileID: 21300022, guid: f14975d44176b454588e18dfe2e54b98, type: 3}

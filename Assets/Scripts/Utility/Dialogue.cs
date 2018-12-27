@@ -17,18 +17,18 @@ namespace Utility
         public bool DontChangeNPCFacing; // If true the NPCs will not face the player when the dialogue starts.
         public bool OneTimeDialogue; // If true the dialogue can be reproduced just one time.
         
-        [Header("Condition on quest and objectives")]
+        [Header("Conditions")]
         public Quest ActiveQuest; // The quest that must be active in order to use this dialogue.
         public List<Objective> CompletedObjectives; // List of objectives that have to be accomplished in order to
         // make this dialogue available.
         public List<Quest> CompletedQuests; // List of quests that must be completed to make this dialogue available.
         public List<Quest> UncompletedQuests; // List of quests that must be not completed to make this dialogue available.
+        public List<Item> NecessaryItems;
         
         [Header("Consequences of the dialogue")]
         public List<Quest> QuestsToActivate; // List of quests to activate after the dialogue.
         public List<Item> ItemsToAdd; // List of the items to add after the dialogue.
         public List<Item> ItemsToRemove; // List of the items to remove after the dialogue.
-        public List<GameObject> GameObjectsToDestroy;
         
         private bool _hasBeenReproduced = false;
 
@@ -60,7 +60,6 @@ namespace Utility
         /// <returns>True if the dialogue can be performed, false otherwise</returns>
         public bool IsAvailable()
         {
-
             if (OneTimeDialogue && _hasBeenReproduced) return false;
 
             if (ActiveQuest != null &&
@@ -83,6 +82,11 @@ namespace Utility
             for (int i = 0; i < UncompletedQuests.Count; i++)
             {
                 if (UncompletedQuests[i].Completed) return false;
+            }
+
+            for (int i = 0; i < NecessaryItems.Count; i++)
+            {
+                if (!Player.Instance.HasItem(NecessaryItems[i])) return false;
             }
             
             return true;
