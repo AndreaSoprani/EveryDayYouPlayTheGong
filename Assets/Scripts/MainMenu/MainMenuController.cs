@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
@@ -9,6 +10,8 @@ public class MainMenuController : MonoBehaviour
 
 	public Button FirstButton;
 	public MainMenuOptionsController OptionsMenu;
+	public GameObject Buttons;
+	public Slider LoadingBar;
 
 	private void OnEnable()
 	{
@@ -17,7 +20,23 @@ public class MainMenuController : MonoBehaviour
 
 	public void Play()
 	{
-			
+			Buttons.SetActive(false);
+			LoadingBar.gameObject.SetActive(true);
+		StartCoroutine(LetTheShowBegin());
+	}
+
+	private IEnumerator LetTheShowBegin()
+	{
+		yield return null;
+
+		//Begin to load the Scene you specify
+		AsyncOperation asyncOperation = SceneManager.LoadSceneAsync("BetaScene");
+		while (!asyncOperation.isDone)
+		{
+			LoadingBar.value = asyncOperation.progress;
+		}
+
+		yield return null;
 	}
 
 	public void Options()
