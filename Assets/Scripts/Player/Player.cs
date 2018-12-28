@@ -97,7 +97,6 @@ public class Player : MonoBehaviour
 		_directionsPile = new List<Vector3>();
 		
 		_items = new Collection<Item>();
-		//TODO: initialize as checkpoint.
 
 		_inDialogue = false;
 		_running = false;
@@ -364,6 +363,7 @@ public class Player : MonoBehaviour
 	/// <returns>true if the player has the item, false otherwise</returns>
 	public bool HasItem(Item item)
 	{
+		if (_items == null) return false;
 		return _items.Contains(item);
 	}
 	
