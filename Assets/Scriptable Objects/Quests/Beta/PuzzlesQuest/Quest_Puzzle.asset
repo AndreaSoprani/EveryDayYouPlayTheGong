@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: A rusty key
   Description: You found a rusty key
   Objectives:
-  - {fileID: 11400000, guid: faa4d2518a750244f82b1fe8e8f37777, type: 2}
+  - {fileID: 11400000, guid: a0986d5859e958f4a9f038c43e4336f7, type: 2}
   - {fileID: 11400000, guid: e6a3ef7e4befa4540ba1d26bb9170547, type: 2}
   - {fileID: 11400000, guid: d40b02cee9fde7a4ea94330ed0c524aa, type: 2}
   - {fileID: 11400000, guid: 48f241b651676f048a1a1a135b9cadb0, type: 2}

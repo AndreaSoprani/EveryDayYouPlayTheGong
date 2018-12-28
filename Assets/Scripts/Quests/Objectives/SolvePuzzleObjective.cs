@@ -14,7 +14,7 @@ namespace Quests.Objectives
                 .Find(c => c.PuzzleId == PuzzleId);
             if (puzzle != null && puzzle.IsSolved())
             {
-                Complete();
+                base.Complete();
                 return;
             }
             EventManager.StartListening("PuzzleSolved" + PuzzleId, Complete);

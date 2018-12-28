@@ -53,6 +53,7 @@ public class Door : InGameObject
 		if(sr != null) sr.enabled = false;
 		GetComponent<Collider2D>().enabled = false;
 		IsOpen = true;
+		EventManager.TriggerEvent("OpenDoor" + ObjectID);
 		AudioManager.Instance.PlayEvent("DoorOpen");
 	}
 	

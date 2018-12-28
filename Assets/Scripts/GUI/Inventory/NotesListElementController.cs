@@ -49,24 +49,21 @@ public class NotesListElementController : MonoBehaviour {
 		
 		GameObject.FindGameObjectWithTag("NotesQuestTitle").GetComponent<TextMeshProUGUI>().text = _quest.Name;
 		StringBuilder obtained = new StringBuilder();
-		int lastCompleted= 0;
 		foreach (Objective objective in _quest.Objectives)
 		{
-			
-			Debug.Log(objective.Description+"   "+objective.Completed);
 			if (objective.Completed)
 			{
 				
 				obtained.Append("[x] " + objective.Description);
-				Debug.Log(objective.Description);
 				obtained.Append("\n");
-				lastCompleted++;
+			}
+			else
+			{
+				obtained.Append("[ ] " + objective.Description);
+				obtained.Append("\n");
+				break;
 			}
 		}
-
-		
-		if(lastCompleted < _quest.Objectives.Count)
-			obtained.Append("[ ] " + _quest.Objectives[lastCompleted].Description);
 		
 		GameObject.FindGameObjectWithTag("NotesQuestObjectiveDescription").GetComponent<TextMeshProUGUI>().text = obtained.ToString();
 		

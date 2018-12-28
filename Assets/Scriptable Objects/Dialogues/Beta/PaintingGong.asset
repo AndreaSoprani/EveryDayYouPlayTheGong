@@ -9,16 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
-  m_Name: Painting
+  m_Name: PaintingGong
   m_EditorClassIdentifier: 
   TextAsset: {fileID: 4900000, guid: c4de5f844eb1451293e9e4d5e0942094, type: 3}
-  NPCName: Painting
+  NPCName: 
+  DontChangeNPCFacing: 0
+  OneTimeDialogue: 0
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
-  OneTimeDialogue: 0
+  NecessaryItems: []
   QuestsToActivate: []
   ItemsToAdd: []
   ItemsToRemove: []
-  GameObjectsToDestroy: []

@@ -13,7 +13,7 @@ namespace Quests.Objectives
         {
             if (Player.Instance.HasItem(ItemId))
             {
-                Complete();
+                base.Complete();
                 return;
             }
             

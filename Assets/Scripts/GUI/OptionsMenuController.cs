@@ -208,7 +208,7 @@ public class OptionsMenuController : MonoBehaviour
 		SettingsFile.Interact = KeyCode.X;
 		SettingsFile.Play = KeyCode.Space;
 
-		SettingsFile.ItemsMenu = KeyCode.I;
+		SettingsFile.ItemsMenu = KeyCode.Z;
 		SettingsFile.Menu = KeyCode.Escape;
 
 		EffectsVolume.value =100 ;
