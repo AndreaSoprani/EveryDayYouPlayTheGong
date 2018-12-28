@@ -4124,6 +4124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Settings: {fileID: 11400000, guid: 58925e081488a27429338e0877d58552, type: 2}
+  DisplayStartupText: 0
   PauseMenu: {fileID: 114743112219349688}
   Inventory: {fileID: 114551579911337182}
   NotificationController: {fileID: 114764447652470782}
