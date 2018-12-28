@@ -229,7 +229,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1160606834615304}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b12e7fe8b8a7544186e3e0b1070e6ca, type: 3}
@@ -263,8 +263,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: Herb
   StandardDialogue: {fileID: 11400000, guid: 9c0426cb0c1995044936f727e66997b7, type: 2}
-  DayOverDialogue: {fileID: 0}
-  PlayingDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: fc203c7fce7f6714ebbe0c66e3e6ccc5, type: 2}
+  PlayingDialogue: {fileID: 11400000, guid: 452a1baf7590cd2428051f6b0ca19a20, type: 2}
+  Sound: {fileID: 0}
   Dialogues: []
   DestroyAfterLastDialogue: 0
 --- !u!212 &212637086172232832

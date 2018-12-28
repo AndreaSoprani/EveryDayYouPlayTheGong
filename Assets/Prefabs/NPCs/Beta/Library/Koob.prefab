@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: Koob
   StandardDialogue: {fileID: 11400000, guid: 429d75ca6b278fd42b123e86da9720ed, type: 2}
-  DayOverDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 3bcd41a02af223f4e8b757e4c2582025, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 14eec20dc14ae9948af517f64ecc3684, type: 2}
   Sound: {fileID: 0}
   Dialogues: []

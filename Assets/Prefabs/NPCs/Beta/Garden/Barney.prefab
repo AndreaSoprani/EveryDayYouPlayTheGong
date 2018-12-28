@@ -339,8 +339,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: Barney
   StandardDialogue: {fileID: 11400000, guid: 43e5ed590403f1a4e8ebbbb0c96eacbb, type: 2}
-  DayOverDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 12b711033d81bba429a7b8d79fc92d60, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: a90fd0fd35578234a9df4b44ff902879, type: 2}
+  Sound: {fileID: 0}
   Dialogues: []
   DestroyAfterLastDialogue: 0
 --- !u!212 &212637086172232832

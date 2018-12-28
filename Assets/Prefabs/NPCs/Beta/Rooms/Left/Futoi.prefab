@@ -375,7 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: Futoi
   StandardDialogue: {fileID: 11400000, guid: b9aab7afd8b45bf4c8c8197822702034, type: 2}
-  DayOverDialogue: {fileID: 0}
+  DayOverDialogue: {fileID: 11400000, guid: 692f25b5f85cb4e4587f76c3cfdbc043, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: b36636d41897b5348a7439d3d31eaf96, type: 2}
   Sound: {fileID: 114640796664648624}
   Dialogues: []
