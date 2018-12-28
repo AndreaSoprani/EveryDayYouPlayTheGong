@@ -396,7 +396,9 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: a01f03074e82f5546915e27e1469c186, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 67f6253709b66ac4bb1e4df3dc0661c2, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 19e7131c20674f44ba251e1c0bd034ae, type: 2}
-  Dialogues: []
+  Sound: {fileID: 0}
+  Dialogues:
+  - {fileID: 11400000, guid: 1995ae8703ec23a4a95569551be26599, type: 2}
   DestroyAfterLastDialogue: 0
 --- !u!212 &212637086172232832
 SpriteRenderer:

@@ -7,6 +7,7 @@ namespace Objects
     public class ObjectWithDialogue : InGameObject
     {
         public Dialogue Dialogue;
+        public bool DestroyAfterDialogue;
 
         private void Start()
         {
@@ -23,6 +24,7 @@ namespace Objects
             if (Dialogue != null && Dialogue.IsAvailable())
             {
                 Dialogue.StartDialogue();
+                if (DestroyAfterDialogue) Destroy(gameObject);
             }
         }
     }

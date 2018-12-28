@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7c7734cb6b4e2983a95fa56ea72824, type: 3}
   m_Name: Obj_AddChocolate
   m_EditorClassIdentifier: 
-  ObjectiveID: helpWilly_quest_02
+  ObjectiveID: helpWilly_quest_01
   QuestID: helpWilly_quest
   Description: Search in the garden
   Completed: 0

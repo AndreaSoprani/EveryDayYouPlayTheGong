@@ -15,7 +15,6 @@ MonoBehaviour:
   Name: Help Willy
   Description: You found a candy in a vase
   Objectives:
-  - {fileID: 11400000, guid: 6038394b51033e6459226725f9d66b19, type: 2}
   - {fileID: 11400000, guid: 19b401b7625cb4e43a9af4fd260db14f, type: 2}
   - {fileID: 11400000, guid: 4ee3c31cea8bccc449f1c5152e44cd23, type: 2}
   - {fileID: 11400000, guid: de9c1ebce16d9dc4e8b599368819b315, type: 2}

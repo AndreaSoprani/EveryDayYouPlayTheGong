@@ -34,7 +34,7 @@ namespace GUI.Inventory
 
         private IEnumerator WaitAndClose()
         {
-            yield return new WaitForSeconds(OnScreenTime);
+            yield return new WaitForSecondsRealtime(OnScreenTime);
             NewObjectiveText.enabled = false;
             Background.enabled = false;
         }

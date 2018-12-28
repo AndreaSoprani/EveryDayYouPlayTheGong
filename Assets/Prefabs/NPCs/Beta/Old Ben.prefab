@@ -209,8 +209,11 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: 22f6c2cac046165488797d196e3446d3, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 0f94628b17b30644cafc378a0a6ee722, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 1da9c0b807107dc4ebb49493080118e7, type: 2}
+  Sound: {fileID: 0}
   Dialogues:
+  - {fileID: 11400000, guid: 80e00e1b4dacfb745bc7f8b4f2566d77, type: 2}
   - {fileID: 11400000, guid: 56b922d5c917f8144a5e1174ded3c654, type: 2}
+  - {fileID: 11400000, guid: b265ea46f6a8b4f4e9ffe9cc55306f68, type: 2}
   - {fileID: 11400000, guid: 21753cda553e5a34ca998f4ae8a31071, type: 2}
   - {fileID: 11400000, guid: 7919aacbd192cfc4aa97941a35f3e27d, type: 2}
   - {fileID: 11400000, guid: 6d212699dae17d14e83fd32f7aeb6d8c, type: 2}

@@ -79,7 +79,7 @@ public class GUIController : MonoBehaviour
 
 		if (DisplayTextScreen.IsActive() && 
 		    !_isGamePaused && 
-		    Input.GetKeyDown(KeyCode.Return))
+		    Input.GetKeyDown(KeyCode.X))
 		{
 			DisplayTextScreen.Close();
 			Time.timeScale = 1;
