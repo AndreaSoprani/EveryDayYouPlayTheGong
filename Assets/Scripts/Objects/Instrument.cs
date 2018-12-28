@@ -13,7 +13,13 @@ public class Instrument : InGameObject
 	public float SoundDelay = 0.12f;
 	public bool HasInteraction;
 	public float PauseTime;
+
+	private Animator _animator;
 	
+	private void Start()
+	{
+		_animator = GetComponent<Animator>();
+	}
 	/*
 	 * PLAY
 	 */
@@ -42,8 +48,7 @@ public class Instrument : InGameObject
 	private IEnumerator DelayAnimation()
 	{
 		yield return new WaitForSeconds(AnimationDelay);
-		Animator animator = GetComponent<Animator>();
-		if (animator != null) animator.SetTrigger("Playing");
+		if (_animator != null) _animator.SetTrigger("Playing");
 	}
 	
 	/*

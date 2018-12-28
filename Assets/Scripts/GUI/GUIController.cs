@@ -60,9 +60,9 @@ public class GUIController : MonoBehaviour
 					Pause();
 			}
 		}
-		if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.gameObject.activeInHierarchy)
+		if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.gameObject.activeInHierarchy && (Inventory.gameObject.activeInHierarchy || !Player.Instance.IsBlocked()))
 		{
-			if (!Inventory.gameObject.activeInHierarchy)
+			if (!Inventory.gameObject.activeInHierarchy )
 				OpenInventory();
 			else
 				CloseInventory();
@@ -90,14 +90,14 @@ public class GUIController : MonoBehaviour
 	private void CloseInventory()
 	{
 		Inventory.gameObject.SetActive(false);
-		Time.timeScale = 1;
+		Player.Instance.BlockMovement(false);
 		_isGamePaused = false;
 	}
 
 	private void OpenInventory()
 	{
 		Inventory.gameObject.SetActive(true);
-		Time.timeScale = 0;
+		Player.Instance.BlockMovement(true);
 		_isGamePaused = true;
 	}
 

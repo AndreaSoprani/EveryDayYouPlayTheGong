@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Quests;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +25,8 @@ public class NotesListWindow : MonoBehaviour {
 
 	public void UpdateItems()
 	{
-	
+		GameObject.FindGameObjectWithTag("NotesQuestObjectiveDescription").GetComponent<TextMeshProUGUI>().text = "";
+		GameObject.FindGameObjectWithTag("NotesQuestTitle").GetComponent<TextMeshProUGUI>().text = "";
 		foreach (Transform child in Content.transform)
 		{
 			Destroy(child.gameObject);

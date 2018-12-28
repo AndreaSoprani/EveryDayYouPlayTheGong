@@ -422,7 +422,7 @@ public class Player : MonoBehaviour
 	{
 		_inDialogue = true;
 		_animator.SetBool("Walking", false);
-		_directionsPile.Clear();
+		BlockMovement(true);
 		EventManager.StopListening("EnterDialogue", EnterDialogue);
 		EventManager.StartListening("ExitDialogue", ExitDialogue);
 	}
@@ -433,6 +433,7 @@ public class Player : MonoBehaviour
 	/// </summary>
 	public void ExitDialogue()
 	{
+		BlockMovement(false);
 		_inDialogue = false;
 		EventManager.StopListening("ExitDialogue", ExitDialogue);
 		EventManager.StartListening("EnterDialogue", EnterDialogue);
