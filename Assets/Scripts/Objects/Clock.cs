@@ -13,16 +13,13 @@ namespace Objects
             if (DefaultString != null)
             {
                 StringBuilder output = new StringBuilder(DefaultString);
-                output.Append(DateTime.Now.Hour);
-                output.Append(":");
-                output.Append(DateTime.Now.Minute);
+
+                output.Append(DateTime.Now.ToString("HH:mm"));
                 
                 TextBoxManager.Instance.LoadString(output.ToString());
                 TextBoxManager.Instance.EnableTextBox();
             }
             Instrument.Interact();
-
-           
         }
     }
 }
