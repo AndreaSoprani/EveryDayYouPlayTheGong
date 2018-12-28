@@ -46,6 +46,7 @@ TextureImporter:
     21300082: MainMenuResetButtonPressed
     21300084: MainMenuReturnButtonPressed
     21300086: MainMenuEmptyButtonPressed
+    21300088: GUIElements_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -748,152 +749,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainMenuPanel
+      name: GUIElements_0
       rect:
         serializedVersion: 2
-        x: 813
-        y: 106
-        width: 315
-        height: 288
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc1217f381799f24bb3cbba52e7a63c8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuPlayButton
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 356
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1be9fdf910522ec43ab64ca1905ed937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuOptionsButton
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 321
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b66f0b66711b05c40bb239fa1900e304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuQuitButton
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 287
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45c63fb95e5920e49b50a9dfbd0d5dc2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuPlayButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 253
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 387c0305843f35f468f51a99fdaa7fcf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuOptionsButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 218
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ed3b03820d11404f979c6fabdb3f88e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuQuitButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 184
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6ccac5a8edfc2349a7e07420fea8273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuResetButton
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 600
-        width: 157
+        x: 1354
+        y: 456
+        width: 14
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -902,107 +763,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bac08c1f3eb454d4ca9bca68864ded84
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuReturnButton
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 566
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86445254ae37a354c968a7f79dba85dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuEmptyButton
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 532
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c23ce444a970ae4aa27ebb885db21e9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuResetButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 498
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10d4fa648adfc164c9a382b7ca9affa8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuReturnButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 464
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e258292613f93ab4096dd3bef120cd8e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuEmptyButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 430
-        width: 157
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 382b1b30e01da8b439efa8d8fe165ec0
+      spriteID: c5523a77c9fa6b645acab426d844c974
       vertices: []
       indices: 
       edges: []
