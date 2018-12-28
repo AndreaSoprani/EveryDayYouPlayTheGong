@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 68632132297162812}
   - component: {fileID: 50960677354096160}
   - component: {fileID: 114357627072814514}
-  - component: {fileID: 61140765842683078}
   m_Layer: 8
   m_Name: ReverseDrum
   m_TagString: Untagged
@@ -95,8 +94,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61140765842683078
-BoxCollider2D:
+--- !u!68 &68632132297162812
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -107,38 +106,13 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015607834, y: -0.015604019}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.70596695, y: 0.76839066}
-  m_EdgeRadius: 0
---- !u!68 &68632132297162812
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1465854934297802}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
   - {x: -0.6342697, y: -0.26686645}
   - {x: 0.5201097, y: -0.8484493}
-  - {x: 0.69725096, y: -0.73913634}
-  - {x: -0.4562205, y: -0.17721617}
+  - {x: 0.8203354, y: -0.6214013}
+  - {x: -0.31708145, y: -0.059481144}
   - {x: -0.6351246, y: -0.27267087}
 --- !u!68 &68773232831185946
 EdgeCollider2D:
@@ -188,6 +162,8 @@ MonoBehaviour:
   Dialogue: {fileID: 0}
   SoundName:
   - Drum2
+  AnimationDelay: 0.12
+  SoundDelay: 0.12
   HasInteraction: 0
   PauseTime: 0
 --- !u!212 &212845935210303474

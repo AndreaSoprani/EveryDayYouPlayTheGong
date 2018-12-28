@@ -114,7 +114,6 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
 		if (_inDialogue || _blocked) return;
 
 		if (!_goBack)
@@ -134,8 +133,6 @@ public class Player : MonoBehaviour
 		}
 		else
 		{
-			
-			
 			if (_tr.position == _goBackPosition) _goBack = false;
 			else _tr.position =Vector3.MoveTowards(_tr.position,_goBackPosition,Velocity * Time.deltaTime); 
 		}
@@ -168,7 +165,7 @@ public class Player : MonoBehaviour
 		{
 			KeyCode keyCode = _directionsKeyCodes[dir];
 			if (Input.GetKeyDown(keyCode)) _directionsPile.Add(dir);
-			if (Input.GetKeyUp(keyCode)) _directionsPile.Remove(dir);
+			if (Input.GetKeyUp(keyCode)) _directionsPile.RemoveAll(d => d == dir);
 		}
 
 		Vector3 delta = Vector3.zero;

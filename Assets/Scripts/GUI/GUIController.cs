@@ -23,6 +23,7 @@ public class GUIController : MonoBehaviour
 {
 
 	public Settings Settings;
+	public bool DisplayStartupText;
 	public MainPauseMenuController PauseMenu;
 	public InventoryController Inventory;
 	public NotificationController NotificationController;
@@ -36,7 +37,7 @@ public class GUIController : MonoBehaviour
 
 	private void Start()
 	{
-		if (Settings.StartupText != null)
+		if (DisplayStartupText && Settings.StartupText != null)
 		{
 			DisplayText(Settings.StartupText.text);
 		}

@@ -41,7 +41,7 @@ namespace Objects
 
         public override bool IsPlayable()
         {
-            return !Broken;
+            return true;
         }
 
         public override void Play()
