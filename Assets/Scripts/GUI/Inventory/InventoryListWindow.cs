@@ -19,10 +19,12 @@ public class InventoryListWindow : MonoBehaviour
 	private TextMeshProUGUI _description;
 	private Image _image;
 	private Color _color;
-	private void Start()
+	
+	private void Awake()
 	{
 		_description = GameObject.FindGameObjectWithTag("InventoryDescription").GetComponent<TextMeshProUGUI>();
 		_image = GameObject.FindGameObjectWithTag("InventoryImage").GetComponent<Image>();
+		_color = _image.color;
 		_color = _image.color;
 	}
 
@@ -37,7 +39,7 @@ public class InventoryListWindow : MonoBehaviour
 		{
 			Destroy(child.gameObject);			
 		}
-
+		
 		_description.text = "";
 		_color.a = 0;
 		_image.color = _color;
