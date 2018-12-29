@@ -70,3 +70,6 @@ TagManager:
   - name: gongGUI
     uniqueID: 4235606345
     locked: 0
+  - name: DayNightMask
+    uniqueID: 1938807487
+    locked: 0

@@ -6,6 +6,7 @@ using Utility;
 public class DayProgressionManager : MonoBehaviour {
 
 	public static DayProgressionManager Instance { get; private set; }
+    public DayNightManager DayNightManager;
 
 	private void Awake()
 	{
@@ -38,6 +39,7 @@ public class DayProgressionManager : MonoBehaviour {
 		if (DayProgress < Settings.QuestsPerDay)
 		{
 			DayProgress++;
+            DayNightManager.ChangeTimeSlot();
 			Debug.Log("progression: "+DayProgress);
 			GameObject.FindGameObjectWithTag("GUIController").SendMessage("UpdateDayProgression");
 		}
@@ -55,7 +57,8 @@ public class DayProgressionManager : MonoBehaviour {
 			Day++;
 			QuestManager.Instance.TodayQuests.Clear();
 			QuestManager.Instance.PopQuestsOnHold();
-			GameObject.FindGameObjectWithTag("GUIController").SendMessage("UpdateDayProgression");
+            DayNightManager.ChangeTimeSlot();
+            GameObject.FindGameObjectWithTag("GUIController").SendMessage("UpdateDayProgression");
 		}
 	}
 

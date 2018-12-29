@@ -9,6 +9,7 @@ namespace Objects
 
         public Dialogue WrongTimeToPlayDialogue;
         public TextAsset NewDayText;
+        public DayNightManager DayNightManager;
         
         /*
 	    * PLAY
