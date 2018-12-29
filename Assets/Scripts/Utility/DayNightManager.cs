@@ -7,7 +7,8 @@ public class DayNightManager : MonoBehaviour {
     public SpriteRenderer SpAfternoon;
     public SpriteRenderer SpNight;
 
-    int TimeSlot = 3;
+    public int TimeSlot = 3;
+    [Range(0,10)] public float TransitionTime = 2f;
 
     public void ChangeTimeSlot()
     {
@@ -18,13 +19,13 @@ public class DayNightManager : MonoBehaviour {
                 StartCoroutine(FadeMaskGradually(SpNight));
                 break;
             case 2:
-                break;
-            case 3:
                 StartCoroutine(ChangeMaskGradually(SpAfternoon));
                 break;
-            case 4:
+            case 3:
                 StartCoroutine(FadeMaskGradually(SpAfternoon));
                 StartCoroutine(ChangeMaskGradually(SpNight));
+                break;
+            case 4:
                 TimeSlot = 0;
                 break;
         }
@@ -33,16 +34,15 @@ public class DayNightManager : MonoBehaviour {
     IEnumerator ChangeMaskGradually(SpriteRenderer Mask)
     {
         float timeElapsed = 0f;
-        float transitionTime = 2f;
 
         Color32 startColor = Mask.color;
         Color32 endColor = Mask.color;
         endColor.a = 255;
 
-        while (timeElapsed < transitionTime)
+        while (timeElapsed < TransitionTime)
         {
             timeElapsed += Time.deltaTime;
-            Mask.color = Color.Lerp(startColor, endColor, timeElapsed / transitionTime);
+            Mask.color = Color.Lerp(startColor, endColor, timeElapsed / TransitionTime);
             yield return null;
         }
     }
@@ -50,16 +50,15 @@ public class DayNightManager : MonoBehaviour {
     IEnumerator FadeMaskGradually(SpriteRenderer Mask)
     {
         float timeElapsed = 0f;
-        float transitionTime = 2f;
 
         Color32 startColor = Mask.color;
         Color32 endColor = Mask.color;
         endColor.a = 0;
 
-        while (timeElapsed < transitionTime)
+        while (timeElapsed < TransitionTime)
         {
             timeElapsed += Time.deltaTime;
-            Mask.color = Color.Lerp(startColor, endColor, timeElapsed / transitionTime);
+            Mask.color = Color.Lerp(startColor, endColor, timeElapsed / TransitionTime);
             yield return null;
         }
     }

@@ -11604,8 +11604,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -3, y: -10, z: 0}
     second:
-      m_TileIndex: 77
-      m_TileSpriteIndex: 8
+      m_TileIndex: 82
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -22108,7 +22108,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f76cba1af78f0ba4a9836489c671fadd, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 70809f1e8cd148241a30fe21f9393fe9, type: 2}
-  - m_RefCount: 607
+  - m_RefCount: 606
     m_Data: {fileID: 11400000, guid: f3463e4cfef86b64092a6738f7246c32, type: 2}
   - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: 4396bb70e7f650248adfecbfcbd5162c, type: 2}
@@ -22118,14 +22118,14 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a946d135744d7ce429fabc03e2648b10, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: d5f0e0dde3ef9014a816bb247cadf9e1, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: c0a3b9aea2194114794c8a2b9eaa2406, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 21300020, guid: 7fa2105257e785d47a78f7478a96ff7d, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -22137,7 +22137,7 @@ Tilemap:
     m_Data: {fileID: 21300048, guid: 7fa2105257e785d47a78f7478a96ff7d, type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 21300050, guid: 7fa2105257e785d47a78f7478a96ff7d, type: 3}
-  - m_RefCount: 607
+  - m_RefCount: 606
     m_Data: {fileID: 21300028, guid: 7fa2105257e785d47a78f7478a96ff7d, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 21300032, guid: 7fa2105257e785d47a78f7478a96ff7d, type: 3}
@@ -30142,7 +30142,7 @@ SpriteRenderer:
   m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 08359784d6c6c634c81777fd0199e147, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36995,6 +36995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpAfternoon: {fileID: 553092366}
   SpNight: {fileID: 1654261175}
+  TimeSlot: 3
+  TransitionTime: 2
 --- !u!4 &919194462
 Transform:
   m_ObjectHideFlags: 0
@@ -48577,7 +48579,7 @@ SpriteRenderer:
   m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2d7f2ef4d90f2d8408643d512fc1f66c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
