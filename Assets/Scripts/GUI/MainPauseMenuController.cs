@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainPauseMenuController : MonoBehaviour
@@ -35,6 +36,14 @@ public class MainPauseMenuController : MonoBehaviour
 	
 	public void Quit()
 	{
+		/*Destroy(Player.Instance.gameObject);
+		Destroy(AudioManager.Instance.gameObject);
+		Destroy(DayProgressionManager.Instance.gameObject);
+		Destroy(EventManager.Instance.gameObject);
+		Destroy(TextBoxManager.Instance.gameObject);
+		Destroy(CameraFade.Instance.gameObject);
+		
+		SceneManager.LoadScene("MainMenu");*/
 		Application.Quit();
 	}
 

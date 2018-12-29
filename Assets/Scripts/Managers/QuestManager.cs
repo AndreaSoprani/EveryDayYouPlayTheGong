@@ -116,6 +116,8 @@ public class QuestManager : MonoBehaviour
 			ActivateQuest(quest.ActivateWhenComplete[i]);
 		}
 		
+		AudioManager.Instance.PlayEvent("NewQuest");
+		
 		// Stop listening on objectives.
 		StopListeningOnObjectives(quest);
 		EventManager.TriggerEvent("CheckQuestMark");

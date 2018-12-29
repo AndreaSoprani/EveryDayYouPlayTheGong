@@ -12,6 +12,12 @@ public class MainMenuController : MonoBehaviour
 	public MainMenuOptionsController OptionsMenu;
 	public GameObject Buttons;
 	public Slider LoadingBar;
+	[Header("Fade")]
+	public float TimeOut;
+	public float TimeIn;
+	public float Pause;
+	 
+	private AsyncOperation _asyncOperation;
 
 	private void OnEnable()
 	{
@@ -30,14 +36,20 @@ public class MainMenuController : MonoBehaviour
 		yield return null;
 
 		//Begin to load the Scene you specify
-		AsyncOperation asyncOperation = SceneManager.LoadSceneAsync("BetaScene");
-		while (!asyncOperation.isDone)
+		_asyncOperation = SceneManager.LoadSceneAsync("BetaScene");
+		_asyncOperation.allowSceneActivation = false;
+		while (!_asyncOperation.isDone)
 		{
-			LoadingBar.value = asyncOperation.progress;
+			LoadingBar.value = Mathf.Clamp(_asyncOperation.progress,0f,0.9f);
 		}
 
+		yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeIn, 1f));
+		_asyncOperation.allowSceneActivation = true;
+		yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeOut, 0f));
+		
 		yield return null;
 	}
+	
 
 	public void Options()
 	{

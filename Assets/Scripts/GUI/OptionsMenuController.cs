@@ -212,7 +212,7 @@ public class OptionsMenuController : MonoBehaviour
 		SettingsFile.Menu = KeyCode.Escape;
 
 		EffectsVolume.value =100 ;
-		MusicVolume.value = 60;
+		MusicVolume.value = 52;
 		
 		InitializeAllCommand();
 	}

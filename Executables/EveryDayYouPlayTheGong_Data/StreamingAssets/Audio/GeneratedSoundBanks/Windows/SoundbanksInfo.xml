@@ -11,24 +11,84 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="685410454" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Gong</ObjectPath>
-			<ShortName>Gong</ShortName>
-			<Path>Gong.bnk</Path>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1942696649" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Effects</ObjectPath>
+			<ShortName>Effects</ShortName>
+			<Path>Effects.bnk</Path>
 			<IncludedEvents>
+				<Event Id="401578503" Name="Bell1" ObjectPath="\Events\Default Work Unit\Bells\Bell1"/>
+				<Event Id="401578500" Name="Bell2" ObjectPath="\Events\Default Work Unit\Bells\Bell2"/>
+				<Event Id="401578501" Name="Bell3" ObjectPath="\Events\Default Work Unit\Bells\Bell3"/>
+				<Event Id="401578498" Name="Bell4" ObjectPath="\Events\Default Work Unit\Bells\Bell4"/>
+				<Event Id="401578499" Name="Bell5" ObjectPath="\Events\Default Work Unit\Bells\Bell5"/>
+				<Event Id="401578496" Name="Bell6" ObjectPath="\Events\Default Work Unit\Bells\Bell6"/>
+				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen"/>
+				<Event Id="2726606602" Name="Drum1" ObjectPath="\Events\Default Work Unit\Drum\Drum1"/>
+				<Event Id="2726606601" Name="Drum2" ObjectPath="\Events\Default Work Unit\Drum\Drum2"/>
+				<Event Id="3731896910" Name="EndClock" ObjectPath="\Events\Default Work Unit\EndClock"/>
 				<Event Id="1143543361" Name="MainGong" ObjectPath="\Events\Default Work Unit\Gong\MainGong"/>
+				<Event Id="3982073893" Name="NewQuest" ObjectPath="\Events\Default Work Unit\NewQuest"/>
+				<Event Id="1921840209" Name="OraEsatta" ObjectPath="\Events\Default Work Unit\OraEsatta"/>
+				<Event Id="4250769236" Name="OraEsattaRemix" ObjectPath="\Events\Default Work Unit\OraEsattaRemix"/>
+				<Event Id="4238353680" Name="PuzzleFinish" ObjectPath="\Events\Default Work Unit\PuzzleFinish"/>
 				<Event Id="1949314593" Name="PuzzleGong_high" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_high"/>
 				<Event Id="1424533253" Name="PuzzleGong_low" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_low"/>
 				<Event Id="2061935817" Name="PuzzleGong_mid" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_mid"/>
+				<Event Id="3764788319" Name="StartClock" ObjectPath="\Events\Default Work Unit\StartClock"/>
+				<Event Id="2016315246" Name="Xylophone1_do" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone1_do"/>
+				<Event Id="4087751051" Name="Xylophone2_re" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone2_re"/>
+				<Event Id="2441093981" Name="Xylophone3_mi" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone3_mi"/>
+				<Event Id="771121013" Name="Xylophone4_fa" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone4_fa"/>
+				<Event Id="2587593121" Name="Xylophone5_sol" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone5_sol"/>
+				<Event Id="678114561" Name="Xylophone6_la" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone6_la"/>
+				<Event Id="3403877851" Name="Xylophone7_si" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone7_si"/>
+				<Event Id="3383370049" Name="Xylophone8_do2" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone8_do2"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="29778758" Language="SFX">
+					<ShortName>DoorOpen.wav</ShortName>
+					<Path>SFX\DoorOpen_7544BA96.wem</Path>
+				</File>
+				<File Id="34896202" Language="SFX">
+					<ShortName>NewQuest_Jingle.wav</ShortName>
+					<Path>SFX\NewQuest_Jingle_7544BA96.wem</Path>
+				</File>
+				<File Id="39644574" Language="SFX">
+					<ShortName>Bell6.wav</ShortName>
+					<Path>SFX\Bell6_7544BA96.wem</Path>
+				</File>
+				<File Id="43710732" Language="SFX">
+					<ShortName>Xylophone4_fa.wav</ShortName>
+					<Path>SFX\Xylophone4_fa_7544BA96.wem</Path>
+				</File>
 				<File Id="86418673" Language="SFX">
 					<ShortName>PuzzleGong_mid.wav</ShortName>
 					<Path>SFX\PuzzleGong_mid_7544BA96.wem</Path>
 				</File>
+				<File Id="281106014" Language="SFX">
+					<ShortName>oraEsattaRemix.wav</ShortName>
+					<Path>SFX\oraEsattaRemix_7544BA96.wem</Path>
+				</File>
+				<File Id="299700375" Language="SFX">
+					<ShortName>oraEsatta.wav</ShortName>
+					<Path>SFX\oraEsatta_7544BA96.wem</Path>
+				</File>
+				<File Id="339085452" Language="SFX">
+					<ShortName>EndClock.wav</ShortName>
+					<Path>SFX\EndClock_7544BA96.wem</Path>
+				</File>
 				<File Id="358731419" Language="SFX">
 					<ShortName>PuzzleGong_high.wav</ShortName>
 					<Path>SFX\PuzzleGong_high_7544BA96.wem</Path>
+				</File>
+				<File Id="395398279" Language="SFX">
+					<ShortName>Xylophone2_re.wav</ShortName>
+					<Path>SFX\Xylophone2_re_7544BA96.wem</Path>
 				</File>
 				<File Id="422617908" Language="SFX">
 					<ShortName>PuzzleGong_low.wav</ShortName>
@@ -38,32 +98,53 @@
 					<ShortName>MainGong.wav</ShortName>
 					<Path>SFX\MainGong_7544BA96.wem</Path>
 				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="1240512178" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Bell</ObjectPath>
-			<ShortName>Bell</ShortName>
-			<Path>Bell.bnk</Path>
-			<IncludedEvents>
-				<Event Id="401578503" Name="Bell1" ObjectPath="\Events\Default Work Unit\Bells\Bell1"/>
-				<Event Id="401578500" Name="Bell2" ObjectPath="\Events\Default Work Unit\Bells\Bell2"/>
-				<Event Id="401578501" Name="Bell3" ObjectPath="\Events\Default Work Unit\Bells\Bell3"/>
-				<Event Id="401578498" Name="Bell4" ObjectPath="\Events\Default Work Unit\Bells\Bell4"/>
-				<Event Id="401578499" Name="Bell5" ObjectPath="\Events\Default Work Unit\Bells\Bell5"/>
-				<Event Id="401578496" Name="Bell6" ObjectPath="\Events\Default Work Unit\Bells\Bell6"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="39644574" Language="SFX">
-					<ShortName>Bell6.wav</ShortName>
-					<Path>SFX\Bell6_7544BA96.wem</Path>
+				<File Id="467298901" Language="SFX">
+					<ShortName>Xylophone8_do2.wav</ShortName>
+					<Path>SFX\Xylophone8_do2_7544BA96.wem</Path>
+				</File>
+				<File Id="493733225" Language="SFX">
+					<ShortName>PuzzleFinish.wav</ShortName>
+					<Path>SFX\PuzzleFinish_7544BA96.wem</Path>
+				</File>
+				<File Id="533661513" Language="SFX">
+					<ShortName>Drum2.wav</ShortName>
+					<Path>SFX\Drum2_7544BA96.wem</Path>
+				</File>
+				<File Id="579005895" Language="SFX">
+					<ShortName>Xylophone1_do.wav</ShortName>
+					<Path>SFX\Xylophone1_do_7544BA96.wem</Path>
+				</File>
+				<File Id="584497804" Language="SFX">
+					<ShortName>Xylophone7_si.wav</ShortName>
+					<Path>SFX\Xylophone7_si_7544BA96.wem</Path>
+				</File>
+				<File Id="665867255" Language="SFX">
+					<ShortName>StartClock.wav</ShortName>
+					<Path>SFX\StartClock_7544BA96.wem</Path>
 				</File>
 				<File Id="721963773" Language="SFX">
 					<ShortName>Bell4.wav</ShortName>
 					<Path>SFX\Bell4_7544BA96.wem</Path>
 				</File>
+				<File Id="726453151" Language="SFX">
+					<ShortName>Drum1.wav</ShortName>
+					<Path>SFX\Drum1_7544BA96.wem</Path>
+				</File>
 				<File Id="735219554" Language="SFX">
 					<ShortName>Bell1.wav</ShortName>
 					<Path>SFX\Bell1_7544BA96.wem</Path>
+				</File>
+				<File Id="848060149" Language="SFX">
+					<ShortName>Xylophone5_sol.wav</ShortName>
+					<Path>SFX\Xylophone5_sol_7544BA96.wem</Path>
+				</File>
+				<File Id="886110465" Language="SFX">
+					<ShortName>Xylophone6_la.wav</ShortName>
+					<Path>SFX\Xylophone6_la_7544BA96.wem</Path>
+				</File>
+				<File Id="917296971" Language="SFX">
+					<ShortName>Xylophone3_mi.wav</ShortName>
+					<Path>SFX\Xylophone3_mi_7544BA96.wem</Path>
 				</File>
 				<File Id="932724835" Language="SFX">
 					<ShortName>Bell3.wav</ShortName>
@@ -79,70 +160,23 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="2146896501" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Xylophone</ObjectPath>
-			<ShortName>Xylophone</ShortName>
-			<Path>Xylophone.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2016315246" Name="Xylophone1_do" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone1_do"/>
-				<Event Id="4087751051" Name="Xylophone2_re" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone2_re"/>
-				<Event Id="2441093981" Name="Xylophone3_mi" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone3_mi"/>
-				<Event Id="771121013" Name="Xylophone4_fa" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone4_fa"/>
-				<Event Id="2587593121" Name="Xylophone5_sol" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone5_sol"/>
-				<Event Id="678114561" Name="Xylophone6_la" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone6_la"/>
-				<Event Id="3403877851" Name="Xylophone7_si" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone7_si"/>
-				<Event Id="3383370049" Name="Xylophone8_do2" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone8_do2"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="43710732" Language="SFX">
-					<ShortName>Xylophone4_fa.wav</ShortName>
-					<Path>SFX\Xylophone4_fa_7544BA96.wem</Path>
-				</File>
-				<File Id="395398279" Language="SFX">
-					<ShortName>Xylophone2_re.wav</ShortName>
-					<Path>SFX\Xylophone2_re_7544BA96.wem</Path>
-				</File>
-				<File Id="467298901" Language="SFX">
-					<ShortName>Xylophone8_do2.wav</ShortName>
-					<Path>SFX\Xylophone8_do2_7544BA96.wem</Path>
-				</File>
-				<File Id="579005895" Language="SFX">
-					<ShortName>Xylophone1_do.wav</ShortName>
-					<Path>SFX\Xylophone1_do_7544BA96.wem</Path>
-				</File>
-				<File Id="584497804" Language="SFX">
-					<ShortName>Xylophone7_si.wav</ShortName>
-					<Path>SFX\Xylophone7_si_7544BA96.wem</Path>
-				</File>
-				<File Id="848060149" Language="SFX">
-					<ShortName>Xylophone5_sol.wav</ShortName>
-					<Path>SFX\Xylophone5_sol_7544BA96.wem</Path>
-				</File>
-				<File Id="886110465" Language="SFX">
-					<ShortName>Xylophone6_la.wav</ShortName>
-					<Path>SFX\Xylophone6_la_7544BA96.wem</Path>
-				</File>
-				<File Id="917296971" Language="SFX">
-					<ShortName>Xylophone3_mi.wav</ShortName>
-					<Path>SFX\Xylophone3_mi_7544BA96.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
 		<SoundBank Id="3161908922" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="608898761" Name="Dungeon" ObjectPath="\Events\Music\Dungeon" MaxAttenuation="0.000000"/>
+				<Event Id="608898761" Name="Dungeon" ObjectPath="\Events\Music\Dungeon"/>
 				<Event Id="579523862" Name="Explore" ObjectPath="\Events\Music\Explore"/>
-				<Event Id="3041563226" Name="Silence" ObjectPath="\Events\Music\Silence" MaxAttenuation="0.000000"/>
+				<Event Id="3448274439" Name="Head" ObjectPath="\Events\Music\Head"/>
+				<Event Id="2823359158" Name="Library" ObjectPath="\Events\Music\Library"/>
+				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Music\PlayMusic"/>
+				<Event Id="3041563226" Name="Silence" ObjectPath="\Events\Music\Silence"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="12774395" Language="SFX">
+					<ShortName>SIlence_74bpm_4-4_3M.wav</ShortName>
+					<Path>SFX\SIlence_74bpm_4-4_3M_F26CE7B0.wem</Path>
+				</File>
 				<File Id="29545386" Language="SFX">
 					<ShortName>Pianotema_12_74bpm4-4_2M.wav</ShortName>
 					<Path>SFX\Pianotema_12_74bpm4-4_2M_F26CE7B0.wem</Path>
@@ -151,11 +185,27 @@
 					<ShortName>Dungeon_Bell2_74bpm_L1M.wav</ShortName>
 					<Path>SFX\Dungeon_Bell2_74bpm_L1M_F26CE7B0.wem</Path>
 				</File>
+				<File Id="44774546" Language="SFX">
+					<ShortName>Shakuhachi_5_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_5_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
 				<File Id="47712567" Language="SFX">
 					<ShortName>Pianotema_2_74bpm4-4_2M.wav</ShortName>
 					<Path>SFX\Pianotema_2_74bpm4-4_2M_F26CE7B0.wem</Path>
 				</File>
-				<File Id="109450178" Language="SFX">
+				<File Id="118677107" Language="SFX">
+					<ShortName>Pianotema_13_74bpm4-4_3M.wav</ShortName>
+					<Path>SFX\Pianotema_13_74bpm4-4_3M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="120223093" Language="SFX">
+					<ShortName>Shakuhachi_3_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_3_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="170336223" Language="SFX">
+					<ShortName>Pianotema_3_74bpm4-4_2M1P.wav</ShortName>
+					<Path>SFX\Pianotema_3_74bpm4-4_2M1P_F26CE7B0.wem</Path>
+				</File>
+				<File Id="178676932" Language="SFX">
 					<ShortName>Shakuhachi_7_74bpm4-4.wav</ShortName>
 					<Path>SFX\Shakuhachi_7_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
@@ -183,6 +233,10 @@
 					<ShortName>Dungeon_Waterdrum2_74bpm_L1M.wav</ShortName>
 					<Path>SFX\Dungeon_Waterdrum2_74bpm_L1M_F26CE7B0.wem</Path>
 				</File>
+				<File Id="307395129" Language="SFX">
+					<ShortName>Shakuhachi_8_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_8_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
 				<File Id="311629409" Language="SFX">
 					<ShortName>Koto_4_74bpm4-4.wav</ShortName>
 					<Path>SFX\Koto_4_74bpm4-4_F26CE7B0.wem</Path>
@@ -191,17 +245,13 @@
 					<ShortName>Dungeon_Taiko2_74bpm_L1M_P1.wav</ShortName>
 					<Path>SFX\Dungeon_Taiko2_74bpm_L1M_P1_F26CE7B0.wem</Path>
 				</File>
-				<File Id="329577373" Language="SFX">
-					<ShortName>Shakuhachi_3_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_3_74bpm4-4_F26CE7B0.wem</Path>
-				</File>
 				<File Id="351698428" Language="SFX">
 					<ShortName>Dungeon_Waterdrum_74bpm_L1M.wav</ShortName>
 					<Path>SFX\Dungeon_Waterdrum_74bpm_L1M_F26CE7B0.wem</Path>
 				</File>
-				<File Id="374458043" Language="SFX">
-					<ShortName>Shakuhachi_2_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_2_74bpm4-4_F26CE7B0.wem</Path>
+				<File Id="380765023" Language="SFX">
+					<ShortName>Shakuhachi_4_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_4_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
 				<File Id="407125428" Language="SFX">
 					<ShortName>Piano_11_74bpm4-4_2M.wav</ShortName>
@@ -219,10 +269,6 @@
 					<ShortName>Dungeon_Windichimes_74bpm_L6M.wav</ShortName>
 					<Path>SFX\Dungeon_Windichimes_74bpm_L6M_F26CE7B0.wem</Path>
 				</File>
-				<File Id="435069105" Language="SFX">
-					<ShortName>Shakuhachi_8_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_8_74bpm4-4_F26CE7B0.wem</Path>
-				</File>
 				<File Id="437323013" Language="SFX">
 					<ShortName>Koto_2_74bpm4-4.wav</ShortName>
 					<Path>SFX\Koto_2_74bpm4-4_F26CE7B0.wem</Path>
@@ -239,25 +285,21 @@
 					<ShortName>Piano_1_74bpm4-4_2M.wav</ShortName>
 					<Path>SFX\Piano_1_74bpm4-4_2M_F26CE7B0.wem</Path>
 				</File>
-				<File Id="509055793" Language="SFX">
-					<ShortName>Pianotema_13_74bpm4-4_3M.wav</ShortName>
-					<Path>SFX\Pianotema_13_74bpm4-4_3M_F26CE7B0.wem</Path>
-				</File>
 				<File Id="541996865" Language="SFX">
 					<ShortName>Piano_9_74bpm4-4_1M.wav</ShortName>
 					<Path>SFX\Piano_9_74bpm4-4_1M_F26CE7B0.wem</Path>
 				</File>
-				<File Id="576510662" Language="SFX">
-					<ShortName>Shakuhachi_6_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_6_74bpm4-4_F26CE7B0.wem</Path>
-				</File>
-				<File Id="588212570" Language="SFX">
-					<ShortName>Shakuhachi_5_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_5_74bpm4-4_F26CE7B0.wem</Path>
+				<File Id="587655496" Language="SFX">
+					<ShortName>Shakuhachi_2_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_2_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
 				<File Id="595109767" Language="SFX">
 					<ShortName>Koto_10_74bpm4-4.wav</ShortName>
 					<Path>SFX\Koto_10_74bpm4-4_F26CE7B0.wem</Path>
+				</File>
+				<File Id="600331112" Language="SFX">
+					<ShortName>Shakuhachi_1_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_1_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
 				<File Id="623729909" Language="SFX">
 					<ShortName>Pianoend_15_74bpm4-4_4M.wav</ShortName>
@@ -283,13 +325,9 @@
 					<ShortName>Koto_9_74bpm4-4.wav</ShortName>
 					<Path>SFX\Koto_9_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
-				<File Id="758582819" Language="SFX">
-					<ShortName>Pianotema_5_74bpm4-4_4M.wav</ShortName>
-					<Path>SFX\Pianotema_5_74bpm4-4_4M_F26CE7B0.wem</Path>
-				</File>
-				<File Id="770004269" Language="SFX">
-					<ShortName>Shakuhachi_4_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_4_74bpm4-4_F26CE7B0.wem</Path>
+				<File Id="782910042" Language="SFX">
+					<ShortName>OM_Chanting_74bpm_4-4_L2M.wav</ShortName>
+					<Path>SFX\OM_Chanting_74bpm_4-4_L2M_F26CE7B0.wem</Path>
 				</File>
 				<File Id="817648182" Language="SFX">
 					<ShortName>Koto_5_74bpm4-4.wav</ShortName>
@@ -315,25 +353,25 @@
 					<ShortName>Koto_3_74bpm4-4.wav</ShortName>
 					<Path>SFX\Koto_3_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
-				<File Id="931762688" Language="SFX">
-					<ShortName>Shakuhachi_1_74bpm4-4.wav</ShortName>
-					<Path>SFX\Shakuhachi_1_74bpm4-4_F26CE7B0.wem</Path>
-				</File>
 				<File Id="964176968" Language="SFX">
 					<ShortName>Dungeon_Taikoloop_74bpm_L4M.wav</ShortName>
 					<Path>SFX\Dungeon_Taikoloop_74bpm_L4M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="971970162" Language="SFX">
+					<ShortName>Pianotema_5_74bpm4-4_4M.wav</ShortName>
+					<Path>SFX\Pianotema_5_74bpm4-4_4M_F26CE7B0.wem</Path>
 				</File>
 				<File Id="990781458" Language="SFX">
 					<ShortName>Kick_delay_74bpm4-4_1M.wav</ShortName>
 					<Path>SFX\Kick_delay_74bpm4-4_1M_F26CE7B0.wem</Path>
 				</File>
-				<File Id="1007377433" Language="SFX">
-					<ShortName>Pianotema_3_74bpm4-4_2M.wav</ShortName>
-					<Path>SFX\Pianotema_3_74bpm4-4_2M_F26CE7B0.wem</Path>
-				</File>
 				<File Id="1036819257" Language="SFX">
 					<ShortName>Piano_4_74bpm4-4_2M.wav</ShortName>
 					<Path>SFX\Piano_4_74bpm4-4_2M_F26CE7B0.wem</Path>
+				</File>
+				<File Id="1063724275" Language="SFX">
+					<ShortName>Shakuhachi_6_74bpm4-4.wav</ShortName>
+					<Path>SFX\Shakuhachi_6_74bpm4-4_F26CE7B0.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
