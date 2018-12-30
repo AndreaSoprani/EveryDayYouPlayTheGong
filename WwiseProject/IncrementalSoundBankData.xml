@@ -3,28 +3,28 @@
 	<Platform GUID="{40926950-9173-467E-B532-9E438F242F39}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Effects" Hash="820016384" Timestamp="1545943593"/>
-				<File Name="Init" Hash="3448522884" Timestamp="1545943593"/>
-				<File Name="Main" Hash="1190745973" Timestamp="1545943593"/>
+				<File Name="Effects" Hash="2063720708" Timestamp="1546176689"/>
+				<File Name="Init" Hash="3448522884" Timestamp="1546176689"/>
+				<File Name="Main" Hash="1190745973" Timestamp="1546176689"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3854878202" Timestamp="1545943593"/>
+				<File Name="" Hash="797504085" Timestamp="1546176689"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{588B7840-B2B8-4F3E-9E3D-0B64ED6A964B}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Effects" Hash="820016384" Timestamp="1545943594"/>
-				<File Name="Init" Hash="3296606250" Timestamp="1545943594"/>
-				<File Name="Main" Hash="1190745973" Timestamp="1545943594"/>
+				<File Name="Effects" Hash="2063720708" Timestamp="1546176690"/>
+				<File Name="Init" Hash="3296606250" Timestamp="1546176690"/>
+				<File Name="Main" Hash="1190745973" Timestamp="1546176689"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="29922264" Timestamp="1545943594"/>
+				<File Name="" Hash="3472597615" Timestamp="1546176690"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

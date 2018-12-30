@@ -51,9 +51,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f9d48680da96143ac2ae0f68f5da54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Settings: {fileID: 11400000, guid: 8ea745af787fe8d4ba476c78085831e4, type: 2}
+  Settings: {fileID: 11400000, guid: 58925e081488a27429338e0877d58552, type: 2}
   Quests:
-  - {fileID: 11400000, guid: 61590a74ede1aab4090116d9a2544865, type: 2}
-  - {fileID: 11400000, guid: ebe6a8bb9c64dd64783be0ab4efe4d8e, type: 2}
-  TodayQuests: []
+  - {fileID: 11400000, guid: 5adf4a7f85814114a8e0632cbb04d312, type: 2}
+  - {fileID: 11400000, guid: 4155549057dbe874c8a51468b2c819aa, type: 2}
+  - {fileID: 11400000, guid: ed0ad52836cda9042a12ff8397d0f0a9, type: 2}
+  - {fileID: 11400000, guid: 250026336953fdd409e21f9c965b45e2, type: 2}
+  - {fileID: 11400000, guid: 71cb29d78291b154e92a2fb627dec7a0, type: 2}
+  - {fileID: 11400000, guid: bbc7537d6193c0745a51d6f9f0e95a01, type: 2}
+  - {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
+  TodayQuests:
+  - {fileID: 11400000, guid: 5adf4a7f85814114a8e0632cbb04d312, type: 2}
   QuestsOnHold: []

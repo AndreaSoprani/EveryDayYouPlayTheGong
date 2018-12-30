@@ -34,6 +34,8 @@ public class GUIController : MonoBehaviour
 	public Button FirstPauseButton;
     private float _timePassed;
 	private bool _isGamePaused;
+	private bool _isShowingStartupScreen;
+	
 
 	private void Start()
 	{
@@ -46,44 +48,54 @@ public class GUIController : MonoBehaviour
 	// Update is called once per frame
 	void LateUpdate ()
 	{
-		if (Input.GetKeyDown(Settings.Menu))
+		if (!_isShowingStartupScreen)
 		{
-			if (_isGamePaused)
+			if (Input.GetKeyDown(Settings.Menu))
 			{
-				if (Inventory.gameObject.activeInHierarchy)
-					CloseInventory();
+				if (_isGamePaused)
+				{
+					if (Inventory.gameObject.activeInHierarchy)
+						CloseInventory();
+					else
+						Resume();
+				}
 				else
-					Resume();
-			}
-			else
-			{
+				{
 					Pause();
+				}
+			}
+
+			if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.gameObject.activeInHierarchy &&
+			    (Inventory.gameObject.activeInHierarchy || !Player.Instance.IsBlocked()))
+			{
+				if (!Inventory.gameObject.activeInHierarchy)
+					OpenInventory();
+				else
+					CloseInventory();
+			}
+
+			if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() &&
+			    Input.GetKeyDown(Settings.Interact))
+			{
+				NotificationController.HideNotification();
+				Player.Instance.BlockMovement(false);
+				_isGamePaused = false;
+			}
+
+			NotificationController.DisplayNotification();
+		}
+		else
+		{
+			if (DisplayTextScreen.CanBeClosed() && !_isGamePaused && Input.GetKeyDown(KeyCode.X))
+			{
+				DisplayTextScreen.Close();
+				Time.timeScale = 1;
+				_isShowingStartupScreen = false;
+				
 			}
 		}
-		if (Input.GetKeyDown(Settings.ItemsMenu) && !PauseMenu.gameObject.activeInHierarchy && (Inventory.gameObject.activeInHierarchy || !Player.Instance.IsBlocked()))
-		{
-			if (!Inventory.gameObject.activeInHierarchy )
-				OpenInventory();
-			else
-				CloseInventory();
-		}
-		
-		if (NotificationController.IsNotificationActive() && NotificationController.CanBeClosed() && Input.GetKeyDown(Settings.Interact))
-		{
-			NotificationController.HideNotification();
-			Player.Instance.BlockMovement(false);
-			_isGamePaused = false;
-		}
-		
-		NotificationController.DisplayNotification();
 
-		if (DisplayTextScreen.IsActive() && 
-		    !_isGamePaused && 
-		    Input.GetKeyDown(KeyCode.X))
-		{
-			DisplayTextScreen.Close();
-			Time.timeScale = 1;
-		}
+		
 		
 	}
 
@@ -149,6 +161,15 @@ public class GUIController : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		DisplayTextScreen.Display(text);
+		_isShowingStartupScreen = true;
+		Debug.Log("stampooo");
+	}
+	public void DisplayTextForTime(string text)
+	{
+		Time.timeScale = 0;
+		DisplayTextScreen.Display(text,1f);
+		_isShowingStartupScreen = true;
+		
 	}
 
 	

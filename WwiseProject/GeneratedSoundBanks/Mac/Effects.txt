@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	155090436	Spark			\Default Work Unit\Spark	
 	401578496	Bell6			\Default Work Unit\Bells\Bell6	
 	401578498	Bell4			\Default Work Unit\Bells\Bell4	
 	401578499	Bell5			\Default Work Unit\Bells\Bell5	
@@ -57,5 +58,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	917296971	Xylophone3_mi	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Xylophone3_mi_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Xylophone\Xylophone3_mi		1048720
 	932724835	Bell3	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Bell3_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Bells\Bell3		1573008
 	933487449	Bell2	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Bell2_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Bells\Bell2		1573008
+	1041647509	spark	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\spark_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\spark		53792
 	1055529281	Bell5	C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\.cache\Mac\SFX\Bell5_7544BA96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound FX\Musical Instruments\Bells\Bell5		1835152
 

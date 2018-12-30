@@ -11,7 +11,8 @@ public class MainMenuController : MonoBehaviour
 	public Button FirstButton;
 	public MainMenuOptionsController OptionsMenu;
 	public GameObject Buttons;
-	public Slider LoadingBar;
+	public GameObject LoadingBarObject; 
+	public Slider LoadingBarSlider;
 	[Header("Fade")]
 	public float TimeOut;
 	public float TimeIn;
@@ -27,7 +28,8 @@ public class MainMenuController : MonoBehaviour
 	public void Play()
 	{
 			Buttons.SetActive(false);
-			LoadingBar.gameObject.SetActive(true);
+			LoadingBarObject.gameObject.SetActive(true);
+		//SceneManager.LoadScene("BetaScene");
 		StartCoroutine(LetTheShowBegin());
 	}
 
@@ -35,17 +37,22 @@ public class MainMenuController : MonoBehaviour
 	{
 		yield return null;
 
+		float progress = 0;
 		//Begin to load the Scene you specify
 		_asyncOperation = SceneManager.LoadSceneAsync("BetaScene");
-		_asyncOperation.allowSceneActivation = false;
-		while (!_asyncOperation.isDone)
+		//_asyncOperation.allowSceneActivation = false;
+		while (progress!=1)
 		{
-			LoadingBar.value = Mathf.Clamp(_asyncOperation.progress,0f,0.9f);
+			progress=Mathf.Clamp01(_asyncOperation.progress / 0.9f);
+			LoadingBarSlider.value = progress;
+			Debug.Log(progress);
+			yield return null;
 		}
 
-		yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeIn, 1f));
+		/*yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeIn, 1f));
+		yield return new WaitForSeconds(Pause);
 		_asyncOperation.allowSceneActivation = true;
-		yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeOut, 0f));
+		yield return StartCoroutine(CameraFade.Instance.FadeTo(TimeOut, 0f));*/
 		
 		yield return null;
 	}

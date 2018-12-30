@@ -17,6 +17,7 @@
 				</SoundBank>
 				<SoundBank Name="Effects" ID="{A55D1551-CAFB-4471-B639-52D6D53058F0}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Spark" ID="{476A29B5-955B-402B-8FA5-AFA850EDF4D7}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Bell5" ID="{0C6C0198-8043-403E-BF76-D7C18E2DD90D}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Bell6" ID="{22DBA209-53E3-415F-9ADD-918DFC86A472}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Xylophone8_do2" ID="{5F4110ED-C273-418F-8AA3-44623B8FECFE}" WorkUnitID="{773F2776-FCA9-4F94-A278-0518C1FA60D3}" Filter="7" Origin="Manual"/>

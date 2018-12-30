@@ -52,7 +52,7 @@ namespace Objects
         private IEnumerator BlackOut()
         {
             yield return new WaitForSeconds(0.4f); // Playing animation.
-            
+            AudioManager.Instance.PlayEvent("Spark");
             CameraFade.Instance.InstantChange(1f);
             
             Broken = true;
@@ -60,7 +60,7 @@ namespace Objects
             EventManager.TriggerEvent("Blackout");
             
             yield return new WaitForSeconds(BlackOutTime);
-            
+            AudioManager.Instance.PlayEvent("StartClock");
             CameraFade.Instance.InstantChange(0f);
             
             if(CurrentBackOnDialogue != null) CurrentBackOnDialogue.StartDialogue();

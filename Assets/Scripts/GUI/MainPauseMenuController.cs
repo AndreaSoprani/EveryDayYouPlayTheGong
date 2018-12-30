@@ -36,15 +36,16 @@ public class MainPauseMenuController : MonoBehaviour
 	
 	public void Quit()
 	{
-		/*Destroy(Player.Instance.gameObject);
-		Destroy(AudioManager.Instance.gameObject);
+		Destroy(Player.Instance.gameObject);
+		
 		Destroy(DayProgressionManager.Instance.gameObject);
+		Destroy(QuestManager.Instance.gameObject);
 		Destroy(EventManager.Instance.gameObject);
 		Destroy(TextBoxManager.Instance.gameObject);
-		Destroy(CameraFade.Instance.gameObject);
 		
-		SceneManager.LoadScene("MainMenu");*/
-		Application.Quit();
+		AudioManager.Instance.PlayMusic("Explore");
+		SceneManager.LoadScene("MainMenu");
+		
 	}
 
 	

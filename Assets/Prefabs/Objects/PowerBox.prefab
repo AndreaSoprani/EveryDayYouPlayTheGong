@@ -88,7 +88,7 @@ MonoBehaviour:
   BrokenDialogue: {fileID: 11400000, guid: b365bc02df253e44a8b7467d41a45dcb, type: 2}
   CurrentBackOnDialogue: {fileID: 11400000, guid: 4a049df8cd620f74d8a9390ed16d5fb3,
     type: 2}
-  BlackOutTime: 5
+  BlackOutTime: 3
   Broken: 0
 --- !u!212 &212028058433546128
 SpriteRenderer:

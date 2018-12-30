@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
-	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1545941702" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1546176675" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>
@@ -20,9 +20,9 @@
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Effects\Factory McDSP Effects.wwu" DateLow="1545402181" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Events\Default Work Unit.wwu" DateLow="1545942262" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Events\Default Work Unit.wwu" DateLow="1546176675" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Events\Music.wwu" DateLow="1545402181" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Every Day You Play the Gong.Filippo.wsettings" DateLow="1545860526" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Every Day You Play the Gong.Filippo.wsettings" DateLow="1545951310" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Every Day You Play the Gong.wproj" DateLow="1545411507" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1545402181" DateHigh="0"/>
@@ -34,7 +34,7 @@
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Presets\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Queries\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Queries\Factory Queries.wwu" DateLow="1545402181" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1545942262" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1546176675" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\States\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Filippo\Desktop\Game\EveryDayYouPlayTheGong\WwiseProject\Switches\Default Work Unit.wwu" DateLow="1545402181" DateHigh="0"/>

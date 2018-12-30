@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectID: brian
-  Speed: 1
+  Speed: 1.4
   PathToFollow: {fileID: 0}
   RayCastPositions:
     UpLeft: {fileID: 4420773584509904}

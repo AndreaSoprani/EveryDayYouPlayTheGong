@@ -39,6 +39,7 @@
 				<Event Id="1949314593" Name="PuzzleGong_high" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_high"/>
 				<Event Id="1424533253" Name="PuzzleGong_low" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_low"/>
 				<Event Id="2061935817" Name="PuzzleGong_mid" ObjectPath="\Events\Default Work Unit\Gong\PuzzleGong_mid"/>
+				<Event Id="155090436" Name="Spark" ObjectPath="\Events\Default Work Unit\Spark"/>
 				<Event Id="3764788319" Name="StartClock" ObjectPath="\Events\Default Work Unit\StartClock"/>
 				<Event Id="2016315246" Name="Xylophone1_do" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone1_do"/>
 				<Event Id="4087751051" Name="Xylophone2_re" ObjectPath="\Events\Default Work Unit\Xylophone\Xylophone2_re"/>
@@ -153,6 +154,10 @@
 				<File Id="933487449" Language="SFX">
 					<ShortName>Bell2.wav</ShortName>
 					<Path>SFX\Bell2_7544BA96.wem</Path>
+				</File>
+				<File Id="1041647509" Language="SFX">
+					<ShortName>spark.wav</ShortName>
+					<Path>SFX\spark_7544BA96.wem</Path>
 				</File>
 				<File Id="1055529281" Language="SFX">
 					<ShortName>Bell5.wav</ShortName>

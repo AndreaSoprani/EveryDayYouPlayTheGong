@@ -186,7 +186,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 16271eb29c80434992f5c5998a5d8665
-    m_lastTime: -8586556646233623041
+    m_lastTime: -8586554302103351527
     List:
     - name: Effects
       guid: 51155da5fbca7144b63952d6d53058f0
@@ -210,7 +210,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 76273f77a9fc944fa2780518c1fa60d3
-    m_lastTime: -8586556646233722796
+    m_lastTime: -8586554302103451464
     List:
     - name: Bell1
       guid: 4ed4b648b5297448b4be7a37a425fb5a
@@ -449,6 +449,18 @@ MonoBehaviour:
       - ElementName: PuzzleGong_mid
         ObjectType: 3
       Path: Default Work Unit\Gong\PuzzleGong_mid
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Spark
+      guid: b5296a475b952b408fa5afa850edf4d7
+      id: 155090436
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Spark
+        ObjectType: 3
+      Path: Default Work Unit\Spark
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

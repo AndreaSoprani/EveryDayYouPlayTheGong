@@ -427,6 +427,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Spark" ID="{476A29B5-955B-402B-8FA5-AFA850EDF4D7}">
+					<ChildrenList>
+						<Action Name="" ID="{EF9E7A33-1592-476E-967A-6298CEDACCC4}" ShortID="65322152">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="spark" ID="{9E355CE1-AC57-437D-9F07-AFBA87086597}" WorkUnitID="{E9CF9B7D-7ABB-41DE-B0A9-0C64D2DB9D34}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

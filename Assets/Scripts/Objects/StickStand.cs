@@ -41,8 +41,10 @@ namespace Objects
             else
             {
                 // Display Text
-                if(Settings.EndText != null)
-                    GameObject.FindGameObjectWithTag("GUIController").SendMessage("DisplayText", Settings.EndText.text);
+                if (Settings.EndText != null)
+                {
+                    GameObject.FindGameObjectWithTag("GUIController").SendMessage("DisplayTextForTime", Settings.EndText.text);
+                }
                 
                 // Teleport
                 Player.Instance.BlockMovement(true);
@@ -51,6 +53,8 @@ namespace Objects
                 Player.Instance.BlockMovement(false);
             }
         }
+
+       
 
         private void SetStick()
         {
