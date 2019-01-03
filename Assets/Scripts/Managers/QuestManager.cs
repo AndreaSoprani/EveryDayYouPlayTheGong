@@ -94,6 +94,7 @@ public class QuestManager : MonoBehaviour
 		
 		GameObject.FindGameObjectWithTag("GUIController").SendMessage("NotifyQuestActivated", quest);
 		AudioManager.Instance.PlayEvent("NewQuest");
+		EventManager.TriggerEvent("QuestActivated" + quest.QuestID);
 		ListenOnObjectives(quest);
 	}
 
