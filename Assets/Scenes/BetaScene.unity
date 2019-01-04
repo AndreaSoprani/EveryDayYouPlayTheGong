@@ -28351,7 +28351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleId: SecretPuzzle
   PuzzlePiece:
-  - {fileID: 1408483673}
+  - {fileID: 1408483675}
   HasTimeout: 0
   Reward: {fileID: 0}
   DoorToBeOpened: {fileID: 1524164663}
@@ -34456,85 +34456,12 @@ PolygonCollider2D:
       - {x: -2.015625, y: -3.453125}
       - {x: 1.984375, y: -3.453125}
       - {x: 1.984375, y: 3.4296875}
---- !u!1 &780993848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1958096400748044, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 780993849}
-  - component: {fileID: 780993851}
-  - component: {fileID: 780993850}
-  m_Layer: 0
-  m_Name: Teleport
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &780993849
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4702501397378062, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 780993848}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1562788286}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &780993850
+--- !u!114 &780993850 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 114874769453721754, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 780993848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabInternal: {fileID: 844014143}
   m_Script: {fileID: 11500000, guid: 71407a3f6493e8e42bb813c2de8ee591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Destination: {fileID: 1276828055}
-  Offset: {x: 0.3, y: 0, z: 0}
-  CanChangeMusic: 1
-  MusicId: Dungeon
-  OpenDoor: 0
-  DoorToOpen: {fileID: 0}
-  TimeIn: 0.4
-  Pause: 0.3
-  TimeOut: 0.5
---- !u!61 &780993851
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 61863840499233074, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 780993848}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.2, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &785683965
 GameObject:
   m_ObjectHideFlags: 0
@@ -35528,6 +35455,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!1001 &844014143
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1963282310}
+    m_Modifications:
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114874769453721754, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
+        type: 2}
+      propertyPath: Destination
+      value: 
+      objectReference: {fileID: 1276828055}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52e92004d6e73f847bb2a70adfd2c9bd, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &845697541
 GameObject:
   m_ObjectHideFlags: 0
@@ -44144,8 +44118,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1408483671}
   - component: {fileID: 1408483674}
-  - component: {fileID: 1408483673}
   - component: {fileID: 1408483672}
+  - component: {fileID: 1408483675}
   m_Layer: 8
   m_Name: GongPainting
   m_TagString: Untagged
@@ -44194,24 +44168,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.5}
       - {x: 0.5, y: -0.5}
       - {x: 0.5, y: 0.5}
---- !u!114 &1408483673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1408483670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392d81108bc88dc44ac1b2372faeb9d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectID: GongPainting
-  Dialogue: {fileID: 11400000, guid: ef305acd2f8bd7941bd7bea902f2a89e, type: 2}
-  SoundName: []
-  AnimationDelay: 0.12
-  SoundDelay: 0.12
-  HasInteraction: 1
-  PauseTime: 0
 --- !u!212 &1408483674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44258,6 +44214,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1408483675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408483670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720ed8961284458982ef4d92d9894a92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: GongPainting
+  Dialogue: {fileID: 11400000, guid: ef305acd2f8bd7941bd7bea902f2a89e, type: 2}
+  SoundName: []
+  AnimationDelay: 0.12
+  SoundDelay: 0.12
+  HasInteraction: 1
+  PauseTime: 0
+  ActiveQuest: {fileID: 11400000, guid: 4155549057dbe874c8a51468b2c819aa, type: 2}
 --- !u!1001 &1410426345
 Prefab:
   m_ObjectHideFlags: 0
@@ -46799,105 +46774,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1562788285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1347647088751590, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1562788286}
-  - component: {fileID: 1562788289}
-  - component: {fileID: 1562788288}
-  - component: {fileID: 1562788287}
-  m_Layer: 8
-  m_Name: DoorRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1562788286
+--- !u!4 &1562788286 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 4409292376522152, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1562788285}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 780993849}
-  m_Father: {fileID: 1963282310}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1562788287
+  m_PrefabInternal: {fileID: 844014143}
+--- !u!114 &1562788287 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 114544926102552848, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1562788285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabInternal: {fileID: 844014143}
   m_Script: {fileID: 11500000, guid: 92b14602e9dab0844bda61b232e1fb5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectID: crroomright2doordungeons
-  IsOpen: 1
-  Secret: 0
-  OpenByScript: 1
-  ItemNeeded: {fileID: 0}
-  ClosedDoorDialogue: {fileID: 11400000, guid: 7fd771aa163ff3f4d9e2607eeb835cce, type: 2}
---- !u!61 &1562788288
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 61875408811686258, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1562788285}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.05, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &1562788289
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 50289937153522310, guid: 52e92004d6e73f847bb2a70adfd2c9bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1562788285}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!4 &1576458886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4412247146283882, guid: cd23d7501297b30419e234e2279bf203,
