@@ -10,56 +10,32 @@ namespace Objects
         public Sprite NoStickSprite;
         public Sprite StickSprite;
 
-        public Settings Settings;
-
-        public Vector3 TeleportAfterInteraciton;
+        public Dialogue NoStickDialogue;
+        public Dialogue StickDialogue;
 
         private SpriteRenderer _spriteRenderer;
-
+        
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             
-            if (!HasStick)
+            SetStick(HasStick);
+
+            if(HasStick) EventManager.StartListening("Blackout", () => SetStick(false));
+        }
+        
+        private void SetStick(bool hasStick)
+        {
+            if (hasStick)
             {
-                _spriteRenderer.sprite = NoStickSprite;
-                EventManager.StartListening("Blackout", SetStick);
+                _spriteRenderer.sprite = StickSprite;
+                Dialogue = StickDialogue;
             }
-            else _spriteRenderer.sprite = StickSprite;
-            
-        }
-
-        public override bool IsInteractable()
-        {
-            if (!HasStick) return base.IsInteractable();
-            return true;
-        }
-
-        public override void Interact()
-        {
-            if (!HasStick) base.Interact();
             else
             {
-                // Display Text
-                if (Settings.EndText != null)
-                {
-                    GameObject.FindGameObjectWithTag("GUIController").SendMessage("DisplayTextForTime", Settings.EndText.text);
-                }
-                
-                // Teleport
-                Player.Instance.BlockMovement(true);
-                Player.Instance.transform.position = TeleportAfterInteraciton;
-                GameObject.FindGameObjectWithTag("MainCamera").SendMessage("TeleportCamera");
-                Player.Instance.BlockMovement(false);
+                _spriteRenderer.sprite = NoStickSprite;
+                Dialogue = NoStickDialogue;
             }
-        }
-
-       
-
-        private void SetStick()
-        {
-            HasStick = true;
-            _spriteRenderer.sprite = StickSprite;
         }
     }
 }
