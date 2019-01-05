@@ -80,11 +80,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: GhettoBlaster
   Tracks:
+  - Xylophone1_do
   - Xylophone5_sol
   - Xylophone8_do2
-  - Xylophone2_re
-  - Xylophone5_sol
-  - Xylophone2_re
+  - Xylophone8_do2
+  - Xylophone1_do
   PauseTime: 0.8
 --- !u!212 &212371868345617676
 SpriteRenderer:

@@ -14,12 +14,13 @@ MonoBehaviour:
   TextAsset: {fileID: 4900000, guid: 2a46f25b1b474989a316fe5172d3e2c2, type: 3}
   NPCName: 
   DontChangeNPCFacing: 0
-  OneTimeDialogue: 0
+  OneTimeDialogue: 1
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
   CompletedQuests: []
   UncompletedQuests: []
+  NecessaryItems: []
   QuestsToActivate: []
-  ItemsToAdd: []
+  ItemsToAdd:
+  - {fileID: 11400000, guid: 962b520b00ff7bb4199f785159ed63ef, type: 2}
   ItemsToRemove: []
-  GameObjectsToDestroy: []
