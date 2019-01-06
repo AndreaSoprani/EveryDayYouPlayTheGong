@@ -104,7 +104,10 @@ public class NPCInteractable : InGameObject
 		Dialogue lastAvailable = LastAvailableDialogue();
 
 		if (lastAvailable != null && lastAvailable.CanStartQuest())
+		{
 			_questMarkCanvas.enabled = true;
+			Debug.Log("How dare you");
+		}
 	}
 
 	private void DestroyAfterTeleport()
