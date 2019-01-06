@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dd500175c0429ea1db7eed86ad3bf8, type: 3}
+  m_Name: AfterPuzzles
+  m_EditorClassIdentifier: 
+  TextAsset: {fileID: 4900000, guid: cf0fc40297594327830b3f98c89ca344, type: 3}
+  NPCName: Greg
+  DontChangeNPCFacing: 0
+  OneTimeDialogue: 1
+  ActiveQuest: {fileID: 0}
+  CompletedObjectives: []
+  CompletedQuests:
+  - {fileID: 11400000, guid: 250026336953fdd409e21f9c965b45e2, type: 2}
+  UncompletedQuests: []
+  NecessaryItems: []
+  QuestsToActivate: []
+  ItemsToAdd: []
+  ItemsToRemove: []

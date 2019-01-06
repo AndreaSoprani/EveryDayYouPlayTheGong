@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4898492555777918}
   - component: {fileID: 212136858531007382}
   - component: {fileID: 60130576604823728}
-  - component: {fileID: 114365975149902750}
+  - component: {fileID: 114109995104978252}
   m_Layer: 8
   m_Name: StickStand
   m_TagString: Untagged
@@ -118,7 +118,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5, y: 0.35}
   - {x: 0.5, y: 0.35}
---- !u!114 &114365975149902750
+--- !u!114 &114109995104978252
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,16 +126,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989496843717818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac6d36fd5b64ee8b27e365459f6e42f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d740503bc284e18b0742357ba11b23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: StickStand
-  Dialogue: {fileID: 11400000, guid: a89c502c39deb1249984a70cb2cf971c, type: 2}
-  HasStick: 0
+  ObjectID: StickStandOldBen
+  Dialogue: {fileID: 0}
+  DestroyAfterDialogue: 0
+  HasStick: 1
   NoStickSprite: {fileID: 21300000, guid: 804afb5c9691b584fa0479bd1964e4d2, type: 3}
   StickSprite: {fileID: 21300000, guid: 030d6ae52be95dc4fab9e7e2d4e04dc1, type: 3}
-  Settings: {fileID: 11400000, guid: 58925e081488a27429338e0877d58552, type: 2}
-  TeleportAfterInteraciton: {x: 0.5, y: -15, z: 0}
+  NoStickDialogue: {fileID: 11400000, guid: 66ef64812cb7c5d4d9caf5798840aede, type: 2}
+  StickDialogue: {fileID: 11400000, guid: 8684eb8440a8cd94bab2c9cd21f0574b, type: 2}
 --- !u!114 &114821698414426008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -184,7 +185,7 @@ SpriteRenderer:
   m_SortingLayerID: 1683700601
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 804afb5c9691b584fa0479bd1964e4d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 030d6ae52be95dc4fab9e7e2d4e04dc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

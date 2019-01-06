@@ -14,6 +14,7 @@ public class NPCInteractable : InGameObject
 	public List<Dialogue> Dialogues;
 
 	public bool DestroyAfterLastDialogue;
+	public NPCInteractable NPCToEnable;
 
 	private Canvas _questMarkCanvas;
 	private int _questCounter;
@@ -109,6 +110,7 @@ public class NPCInteractable : InGameObject
 	private void DestroyAfterTeleport()
 	{
 		Destroy(gameObject);
+		NPCToEnable.gameObject.SetActive(true);
 	}
 	
 }

@@ -134,6 +134,8 @@ public class TextBoxManager : MonoBehaviour
 			_NPCid = null;
 		}
 		
+		EventManager.TriggerEvent("CheckQuestMark");
+		
 		EndDialogueActivations();
 	}
 	

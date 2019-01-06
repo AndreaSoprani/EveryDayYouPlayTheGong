@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1347647088751590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4702501397378062}
@@ -154,10 +154,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b14602e9dab0844bda61b232e1fb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectID: 
+  ObjectID: crroomright2doordungeons
   IsOpen: 0
   Secret: 0
-  OpenByScript: 0
+  OpenByScript: 1
   ItemNeeded: {fileID: 0}
   ClosedDoorDialogue: {fileID: 11400000, guid: 7fd771aa163ff3f4d9e2607eeb835cce, type: 2}
 --- !u!114 &114874769453721754
@@ -172,9 +172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destination: {fileID: 0}
-  Offset: {x: 0.25, y: 0, z: 0}
-  CanChangeMusic: 0
-  MusicId: 
+  Offset: {x: 0.3, y: 0, z: 0}
+  CanChangeMusic: 1
+  MusicId: Dungeon
   OpenDoor: 0
   DoorToOpen: {fileID: 0}
   TimeIn: 0.4

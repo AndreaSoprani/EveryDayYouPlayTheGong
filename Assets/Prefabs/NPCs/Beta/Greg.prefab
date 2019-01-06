@@ -31,7 +31,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1398945463051414
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,11 +159,14 @@ MonoBehaviour:
   StandardDialogue: {fileID: 11400000, guid: ce2bb4aeb901af742aa1e9e9b8c7fd3b, type: 2}
   DayOverDialogue: {fileID: 11400000, guid: 44b3a6a51d9cdeb41aa41804d2dbff28, type: 2}
   PlayingDialogue: {fileID: 11400000, guid: 35aaca6dbd241de4d877e629ae0181f7, type: 2}
+  Sound: {fileID: 0}
   Dialogues:
   - {fileID: 11400000, guid: df3473d5535ee584e8651d3d8e270423, type: 2}
   - {fileID: 11400000, guid: a163eea143ac0104ab6c67c543038168, type: 2}
   - {fileID: 11400000, guid: abcd025eba744bd4a8b24551fdd09abb, type: 2}
-  DestroyAfterLastDialogue: 1
+  - {fileID: 11400000, guid: 51b934dc3e4d48a4cadce6398bb262d1, type: 2}
+  DestroyAfterLastDialogue: 0
+  NPCToEnable: {fileID: 0}
 --- !u!114 &114366921316399868
 MonoBehaviour:
   m_ObjectHideFlags: 1

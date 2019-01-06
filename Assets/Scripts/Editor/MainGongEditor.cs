@@ -5,7 +5,7 @@ using UnityEngine;
 using Utility;
 
 [CustomEditor (typeof(MainGong))]
-public class MainGongEditor : Editor
+public class MainGongEditor : UnityEditor.Editor
 {
     public override void OnInspectorGUI()
     {
