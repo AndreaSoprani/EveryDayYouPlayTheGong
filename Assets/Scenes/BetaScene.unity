@@ -60120,7 +60120,7 @@ GameObject:
   - component: {fileID: 2016203821}
   - component: {fileID: 2016203820}
   m_Layer: 0
-  m_Name: BackgoundEnvironment
+  m_Name: BackgroundEnvironment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60161,7 +60161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: 916bef1b779838d41b63cc472991b2ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5e640581851d5645a918d7b70c1963f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
