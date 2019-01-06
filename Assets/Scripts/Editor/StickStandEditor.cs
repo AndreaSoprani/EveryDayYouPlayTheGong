@@ -1,4 +1,5 @@
 using Objects;
+using Quests;
 using UnityEditor;
 using UnityEngine;
 using Utility;
@@ -29,6 +30,9 @@ namespace Editor
                 (Dialogue) EditorGUILayout.ObjectField("No Stick Dialogue", myScript.NoStickDialogue, typeof(Dialogue), true);
             myScript.StickDialogue =
                 (Dialogue) EditorGUILayout.ObjectField("Stick Dialogue", myScript.StickDialogue, typeof(Dialogue), true);
+
+            myScript.BlackoutQuest =
+                (Quest) EditorGUILayout.ObjectField("Blackout quest", myScript.BlackoutQuest, typeof(Quest), true);
 
             myScript.DestroyAfterDialogue = false;
             myScript.Dialogue = null;

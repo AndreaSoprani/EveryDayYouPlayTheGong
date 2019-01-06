@@ -1,3 +1,4 @@
+using Quests;
 using UnityEngine;
 using Utility;
 
@@ -13,6 +14,8 @@ namespace Objects
         public Settings Settings;
 
         public Vector3 TeleportAfterInteraction;
+
+        public Quest BlackoutQuest;
 
         private SpriteRenderer _spriteRenderer;
 
@@ -59,6 +62,8 @@ namespace Objects
 
         private void SetStick()
         {
+            if (!QuestManager.Instance.TodayQuests.Contains(BlackoutQuest)) return;
+            EventManager.StopListening("Blackout", SetStick);
             HasStick = true;
             _spriteRenderer.sprite = StickSprite;
         }

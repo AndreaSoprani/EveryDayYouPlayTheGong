@@ -17,7 +17,8 @@ MonoBehaviour:
   OneTimeDialogue: 0
   ActiveQuest: {fileID: 0}
   CompletedObjectives: []
-  CompletedQuests: []
+  CompletedQuests:
+  - {fileID: 11400000, guid: 5adf4a7f85814114a8e0632cbb04d312, type: 2}
   UncompletedQuests:
   - {fileID: 11400000, guid: 9c549c0b9046a5a418937f5a16cdd070, type: 2}
   NecessaryItems:
@@ -27,4 +28,3 @@ MonoBehaviour:
   ItemsToAdd: []
   ItemsToRemove:
   - {fileID: 11400000, guid: 434e6d92447e5b34490f41f1fda0ae57, type: 2}
-  GameObjectsToDestroy: []

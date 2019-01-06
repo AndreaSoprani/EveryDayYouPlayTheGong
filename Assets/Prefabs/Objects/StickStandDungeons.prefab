@@ -150,6 +150,7 @@ MonoBehaviour:
   StickSprite: {fileID: 21300000, guid: 030d6ae52be95dc4fab9e7e2d4e04dc1, type: 3}
   Settings: {fileID: 11400000, guid: 58925e081488a27429338e0877d58552, type: 2}
   TeleportAfterInteraction: {x: 0.5, y: -15, z: 0}
+  BlackoutQuest: {fileID: 11400000, guid: bbc7537d6193c0745a51d6f9f0e95a01, type: 2}
 --- !u!212 &212804323643164268
 SpriteRenderer:
   m_ObjectHideFlags: 1

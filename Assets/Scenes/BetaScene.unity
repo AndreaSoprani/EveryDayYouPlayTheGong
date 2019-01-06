@@ -20820,10 +20820,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 1989496843717818, guid: 04f0fc0e7e03d154ba5496b7cc29b0fa, type: 2}
-      propertyPath: m_Name
-      value: StickStand
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f0fc0e7e03d154ba5496b7cc29b0fa, type: 2}
   m_IsPrefabAsset: 0
