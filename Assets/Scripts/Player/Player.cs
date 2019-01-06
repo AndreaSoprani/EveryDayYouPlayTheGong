@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 	[Header("Movement")]
 	public float Velocity = 2f;
 	public float RunIncrement = 1.2f;
-	public float CrawlDecrement = 0.7f;
+	
 
 	[Header("Collisions")] 
 	public RayCastPositions RayCastPositions;

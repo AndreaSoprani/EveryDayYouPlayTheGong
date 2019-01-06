@@ -17,7 +17,7 @@ namespace Utility
         public KeyCode Play;
 
         public KeyCode Run;
-        public KeyCode Crawl;
+        
 
         public KeyCode ItemsMenu;
         public KeyCode Menu;

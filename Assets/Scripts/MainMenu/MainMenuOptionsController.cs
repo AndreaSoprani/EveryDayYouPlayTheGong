@@ -200,7 +200,7 @@ public class MainMenuOptionsController : MonoBehaviour {
 		SettingsFile.Right = KeyCode.RightArrow;
 		SettingsFile.Left = KeyCode.LeftArrow;
 
-		SettingsFile.Run = KeyCode.LeftControl;
+		SettingsFile.Run = KeyCode.LeftShift;
 		SettingsFile.Interact = KeyCode.X;
 		SettingsFile.Play = KeyCode.Space;
 

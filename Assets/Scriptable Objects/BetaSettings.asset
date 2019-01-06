@@ -17,8 +17,7 @@ MonoBehaviour:
   Left: 276
   Interact: 120
   Play: 32
-  Run: 306
-  Crawl: 304
+  Run: 304
   ItemsMenu: 122
   Menu: 27
   MusicVolume: 60
