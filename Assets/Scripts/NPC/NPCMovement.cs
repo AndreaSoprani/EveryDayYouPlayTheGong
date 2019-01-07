@@ -21,7 +21,7 @@ public class NPCMovement : MonoBehaviour
 
 	
 	[Header("Collisions")] 
-	public RayCastPositions RayCastPositions;
+	public RayCastPositionsHd RayCastPositions;
 	public LayerMask ObstacleLayer;
 
 	
@@ -114,7 +114,7 @@ public class NPCMovement : MonoBehaviour
 	/// <returns>True if the NPC can move in the direction set, false otherwise.</returns>
 	private bool CanMove(Vector3 delta)
 	{
-		Collection<Vector3> movement = RayCastPositions.Vector3ToRayCastPosition(delta);
+		Collection<Vector3> movement = RayCastPositions.Vector3ToRayCastPositionHd(delta);
 		
 		for (int i = 0; i < movement.Count; i++)
 		{

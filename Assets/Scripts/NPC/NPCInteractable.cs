@@ -92,7 +92,7 @@ public class NPCInteractable : InGameObject
 
 	public override void Play()
 	{
-		PlayingDialogue.StartDialogue();
+		PlayingDialogue.StartDialogue(ObjectID);
 		if(Sound!=null) Sound.Play();
 	}
 
