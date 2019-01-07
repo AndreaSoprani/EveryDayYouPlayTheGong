@@ -148,7 +148,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411309408395616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.229, y: 0.06700003, z: 0}
+  m_LocalPosition: {x: -0.216, y: 0.06700003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4049966961486744}
@@ -174,7 +174,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1826035226641708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.243, y: -0.071, z: 0}
+  m_LocalPosition: {x: -0.223, y: -0.071, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4049966961486744}
@@ -345,6 +345,7 @@ MonoBehaviour:
   Dialogues:
   - {fileID: 11400000, guid: 5faca278da000f743857e76316c411a3, type: 2}
   DestroyAfterLastDialogue: 0
+  NPCToEnable: {fileID: 0}
 --- !u!212 &212637086172232832
 SpriteRenderer:
   m_ObjectHideFlags: 1
