@@ -11,7 +11,7 @@ public class MainMenuController : MonoBehaviour
 	public Button FirstButton;
 	public MainMenuOptionsController OptionsMenu;
 	public GameObject Buttons;
-	public GameObject LoadingBarObject; 
+	public GameObject LoadingBarObject;
 	public Slider LoadingBarSlider;
 	[Header("Fade")]
 	public float TimeOut;
@@ -27,8 +27,8 @@ public class MainMenuController : MonoBehaviour
 
 	public void Play()
 	{
-			Buttons.SetActive(false);
-			LoadingBarObject.gameObject.SetActive(true);
+		Buttons.SetActive(false);
+		LoadingBarObject.gameObject.SetActive(true);
 		//SceneManager.LoadScene("BetaScene");
 		StartCoroutine(LetTheShowBegin());
 	}
@@ -45,7 +45,6 @@ public class MainMenuController : MonoBehaviour
 		{
 			progress=Mathf.Clamp01(_asyncOperation.progress / 0.9f);
 			LoadingBarSlider.value = progress;
-			Debug.Log(progress);
 			yield return null;
 		}
 
