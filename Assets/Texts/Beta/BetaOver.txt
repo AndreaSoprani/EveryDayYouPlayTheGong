@@ -4,7 +4,9 @@ You didn't recognize your assaulter.
 If you want to continue playing press X.
 You'll wake up in the garden.
 
-
 Thank you for playing the beta.
+- The gong team.
 
-- "Every day you play the gong."'s team.
+Credits: Andrea Soprani, Filippo Sciamanna, Alberto Patti, Pietro Prebianca, Ludovica Piro, Kasper Rise, Matteo Bettanin.
+
+Developed for the Video game Design and Programming course of the Politecnico di Milano (Prof. Pier Luca Lanzi, Dr. Daniele Loiacono).
