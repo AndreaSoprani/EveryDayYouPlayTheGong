@@ -30,7 +30,8 @@ public class CameraMovement : MonoBehaviour {
 
     void LateUpdate()
     {
-       
+        if (Player.Instance == null) return;
+        
         _dynamicOffset = transform.position - Player.Instance.transform.position;
 
         float factor = (Player.Instance.IsRunning() ? smoothTime * Player.Instance.RunIncrement : smoothTime) * Time.deltaTime;

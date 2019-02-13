@@ -44,6 +44,7 @@ public class MainPauseMenuController : MonoBehaviour
 		Destroy(TextBoxManager.Instance.gameObject);
 		
 		AudioManager.Instance.PlayMusic("Explore");
+		Time.timeScale = 1;
 		SceneManager.LoadScene("MainMenu");
 		
 	}
