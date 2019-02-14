@@ -45906,30 +45906,6 @@ Prefab:
       propertyPath: m_Name
       value: GUI
       objectReference: {fileID: 0}
-    - target: {fileID: 114170236287734528, guid: 66d03267967328c488272641fa844daf,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114170236287734528, guid: 66d03267967328c488272641fa844daf,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114326799943299978, guid: 66d03267967328c488272641fa844daf,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114326799943299978, guid: 66d03267967328c488272641fa844daf,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1340204660562590, guid: 66d03267967328c488272641fa844daf, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d03267967328c488272641fa844daf, type: 2}
   m_IsPrefabAsset: 0
