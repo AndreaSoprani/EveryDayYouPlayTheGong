@@ -36,8 +36,7 @@ public class NotesListWindow : MonoBehaviour {
 		bool first = true;
 		foreach (Quest todayQuest in QuestManager.Instance.TodayQuests)
 		{
-			NotesListElementController newItem = Instantiate(ItemSlotPrefab);
-			newItem.transform.SetParent(Content.transform);
+			NotesListElementController newItem = Instantiate(ItemSlotPrefab, Content.transform);
 			newItem.SetQuest(todayQuest, Top.position.y, Bottom.position.y, Scrollbar);
 			if (first)
 			{

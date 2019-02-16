@@ -47,8 +47,7 @@ public class InventoryListWindow : MonoBehaviour
 		bool first = true;
 		foreach (Item item in Player.Instance.GetItem())
 		{	
-			InventoryListElementController newItem = Instantiate(ItemSlotPrefab);
-			newItem.transform.SetParent(Content.transform);
+			InventoryListElementController newItem = Instantiate(ItemSlotPrefab, Content.transform);
 			newItem.SetItem(item, Top.position.y, Bottom.position.y, Scrollbar);
 			if (first)
 			{
