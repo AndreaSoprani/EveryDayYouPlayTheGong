@@ -26,8 +26,6 @@ public class SplashScript : MonoBehaviour
 		Team.color = tmp;
 		Team.enabled = true;
 		
-		Debug.Log(Time.deltaTime);
-		
 		for (float t = 0f; t < 1.0f; t += Time.deltaTime / TransitionTime)
 		{
 			tmp.a = t;
@@ -37,8 +35,6 @@ public class SplashScript : MonoBehaviour
 
 		tmp.a = 1;
 		Team.color = tmp;
-		
-		Debug.Log("Post team loop");
 		
 		yield return new WaitForSeconds(OnScreenTime);
 		
